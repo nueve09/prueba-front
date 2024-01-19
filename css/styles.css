@@ -1,0 +1,202 @@
+
+
+body {
+	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#FFFFFF;
+	color: #000;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+	border:none;
+    background:#ededed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+img {
+  object-fit: cover;
+}
+
+.centrar_v {
+    top: 50%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    position: absolute;
+}
+
+.centrar_h {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    position: absolute;
+}
+
+.centrar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+::-webkit-scrollbar          { width:0px;}
+::-webkit-scrollbar-button       { opacity:0}
+::-webkit-scrollbar-track        { opacity:0}
+::-webkit-scrollbar-track-piece  { opacity:0}
+::-webkit-scrollbar-thumb        { background-color:cadetblue;}
+::-webkit-scrollbar-corner       { opacity:0}
+::-webkit-resizer{ opacity:0}
+
+
+
+.circulo {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.redondo {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    padding: 0px;
+}
+
+.lista_remesas {
+    width: 80%; 
+    left: 10%; 
+    position: absolute; 
+    top:34%; 
+    font-size: 10px; 
+    height: 61%; 
+    overflow-y: auto;
+}
+
+.item_remesas {
+    width: 100%; 
+    height: 25px; 
+    padding-top: 6px; 
+    border-top: 1px solid #ccc;
+}
+
+.item_remesas_text {
+    width: 33%; 
+    position: relative; 
+    float: left;
+}    
+
+.item_remesas_number {
+    width: 33%; 
+    position: relative; 
+    float: left;
+    text-align: right;
+}  
+
+.icon{
+    width: 10px;
+}
+
+.perfil{
+    width: 30px;
+}
+
+.logo{
+    width: 75px;
+}
+
+.nav_left{
+    width: 35px;
+}
+
+.chevron_right{
+    width: 5px;
+}
+
+.boton_numero{
+    font-size: 26px; 
+    font-weight: bold;
+    border:#FFFFFF;
+}
+
+
+.modal {
+    display: none; /* Por defecto, estará oculto */
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Se situará por encima de otros elementos de la página*/
+    padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Algura completa */
+    overflow: auto; /* Se activará el scroll si es necesario */
+    background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+  }
+
+.contenido-modal {
+    position: relative; /* Relativo con respecto al contenedor -modal- */
+    background-color: white;
+    margin: auto; /* Centrada */
+    padding: 20px;
+    width: 30%;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s
+  }
+
+  /* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+
+@keyframes animarsuperior {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+.close {
+    color: black;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-control {
+    border-radius: 0px !important;
+    border: 1px;
+    border-bottom: 1.3px solid #0069d9;
+    margin: 10px;
+}
+
+.form-control:valid {
+    border-color: #0069d9 !important;
+}
+
+.modal-footer{
+    margin: 15px;
+}

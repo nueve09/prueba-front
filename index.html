@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+       
+        <link rel='stylesheet' href='css/styles.css' type='text/css' />
+        <title>:: NUEVE09</title>
+    </head>
+
+    <body>
+
+        <!-- Ventana modal -->
+        <div id="ventanaModal" class="modal">
+            <div class="contenido-modal">
+                <span class="cerrar">&times;</span>
+                <h2>Buscar</h2>
+                <form id="inputs" class="needs-validation" >
+                    <div class="form-group mx-2 mb-3">                        
+                        <input type="text" class="form-control" id="id" placeholder="Id" required="">
+                    </div>
+                    <div class="form-group mx-2">
+                        
+                        <input type="text" class="form-control" id="empresa" placeholder="Empresa" required="">
+                    </div>
+                    <div class="form-group mx-2">
+                        
+                        <input type="text" class="form-control" id="monto" placeholder="Monto" required="">
+                    </div>
+                </form>
+                <div class="modal-footer justify text-14">
+                    <button id="btnfiltro" type="submit" class="btnbuscar" data-toggle="modal" data-target="#modalForm">Submit</button>
+                </div>
+            </div>
+        </div>
+        <!-- Ventana modal -->
+
+        <div class="centrar" style="width: 90%; max-width: 800px; height: 500px; background: #2a2a2a;">
+            <div style="position: relative; float: left; width: 12%; height: 100%; background-color: #353535;">
+                <div class="centrar_h" style="width: 80%; height: 16%; top: 3%; background: #000; border-radius: 10px;">
+                    <img class="logo centrar" src="img/logo.png" alt="">  
+                </div>
+                
+                <div style="width: 90%; display: flex; flex-direction: column; justify-content: space-between; top: 26%; background: #fff;">
+                    <div class="centrar_h" style="width: 30px; height: 30px; top: 26%; background: #fff;">
+                        <img class="nav_left centrar" src="img/home.png" alt="">    
+                    </div>
+                    <div class="centrar_h" style="width: 30px; height: 30px; top: 36%;  background: #fff;">
+                        <img class="nav_left centrar" src="img/up_money.png" alt="">    
+                    </div>
+                    <div class="centrar_h" style="width: 30px; height: 30px; top: 46%; ">
+                        <img class="nav_left centrar" src="img/card.png" alt="">    
+                    </div>
+                    <div class="centrar_h" style="width: 30px; height: 30px; top: 56%; background: #fff;">
+                        <img class="nav_left centrar" src="img/seguro.png" alt="">    
+                    </div>
+                    <div class="centrar_h" style="width: 30px; height: 30px; top: 66%; background: #fff;">
+                        <img class="nav_left centrar" src="img/devolucion.png" alt="">    
+                    </div>
+                    <div class="centrar_h" style="width: 30px; height: 30px; top: 76%; background: #fff;">
+                        <img class="nav_left centrar" src="img/grafica.png" alt="">    
+                    </div>
+                </div>
+
+                <div class="circulo" style="right: -8px; width: 16px; height: 16px; top: 10%; background: #2fa9b4; position: absolute;">
+                    <img class="chevron_right centrar" src="img/chevron-right-solid.svg" alt="">
+                </div>
+                
+            </div>
+
+
+            <div style="position: relative; float: left; width: calc(45% - 40px); height: calc(100% - 40px); padding: 20px; color: #fff;">
+                <div style="width: 100%; height: 5%; position: relative; float: left; margin-top: 3%;">
+                    Ventanilla <b>Digital</b>
+                </div>
+                <div style="width: 100%; height: 1px; position: relative; float: left; background-color: #2fa9b4; margin-top: 2%;"></div>
+                <div style="width: 100%; height: 5%; position: relative; float: left; margin-top: 3%; font-size: 16px; color: #2fa9b4;">
+                    <b>Remesas</b>
+                </div>
+
+                <div style="width: 100%; height: 11%; position: relative; float: left; margin-top: 5%;">
+                    <span id="resultado" 
+                        style="height: 100%; width: 65%; border: none; background: #fff; border-radius: 10px; position: absolute; 
+                        left: 10%; padding-left: 15%; background: url(img/contrasena.png); background-repeat: no-repeat; background-position: 5% 50%; background-size: 10%; background-color: #fff; color: #000000; 
+                        text-align: center;
+                        font-size: xxx-large; font-weight: bold;
+                        "></span>
+                </div>
+                
+                <div style="width: 100%; height: 12%; position: relative; float: left; margin-top: 5%;">
+                    <div style="height: 100%; width: 60%; position: absolute; left: 10%; color: #353535;">
+                        <div  class="circulo" style="width: 57px; height: 57px; position: absolute; background: #fff;">
+                            <button id="uno" class="boton_numero centrar" >1</button>
+                        </div>
+                        <div class="circulo centrar_h" style="width: 57px; height: 57px; position: absolute; background: #fff;">
+                            
+                            <button id="dos" class="boton_numero centrar" >2</button>
+                        </div>
+                        <div class="circulo" style="width: 57px; height: 57px; position: absolute; background: #fff; right: 0px;">
+                            <button id="tres" class="boton_numero centrar" >3</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="width: 100%; height: 12%; position: relative; float: left; margin-top: 4%;">
+                    <div style="height: 100%; width: 60%; position: absolute; left: 10%; color: #353535;">
+                        <div id="cuatro" class="circulo" style="width: 57px; height: 57px; position: absolute; background: #fff;">
+                            <button id="cuatro" class="boton_numero centrar" >4</button>
+                        </div>
+                        <div class="circulo centrar_h" style="width: 57px; height: 57px; position: absolute; background: #fff;">
+                            <button id="cinco" class="boton_numero centrar" >5</button>
+                        </div>
+                        <div class="circulo" style="width: 57px; height: 57px; position: absolute; background: #fff; right: 0px;">
+                            <button id="seis" class="boton_numero centrar" >6</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="width: 100%; height: 12%; position: relative; float: left; margin-top: 4%;">
+                    <div style="height: 100%; width: 60%; position: absolute; left: 10%; color: #353535;">
+                        <div class="circulo" style="width: 57px; height: 57px; position: absolute; background: #fff;">
+                            <button id="siete" class="boton_numero centrar" >7</button>
+                        </div>
+                        <div class="circulo centrar_h" style="width: 57px; height: 57px; position: absolute; background: #fff;">
+                            <button id="ocho" class="boton_numero centrar" >8</button>
+                        </div>
+                        <div class="circulo" style="width: 57px; height: 57px; position: absolute; background: #fff; right: 0px;">
+                            <button id="nueve" class="boton_numero centrar" >9</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="width: 100%; height: 12%; position: relative; float: left; margin-top: 4%;">
+                    <div style="height: 100%; width: 60%; position: absolute; left: 10%; color: #353535;">
+                        <div style="width: calc(36% + 57px); height: 57px; position: absolute; background: #fff; border-radius: 27px;">
+                            <button id="cero" class="boton_numero centrar" >0</button>
+                        </div>
+
+                        <div class="circulo" style="width: 57px; height: 57px; position: absolute; background: #fff; right: 0px;">
+                            <button id="punto" class="boton_numero centrar" >.</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="width: 57px; height:calc(14% + 57px); position: absolute; background: #fff; border-radius: 27px; right: 13%; top: 36%;">
+                    <img src="img/atras.png" class="centrar" style="height: 30px;">
+                </div>
+
+                <div style="width: 57px; height:calc(14% + 57px); position: absolute; background: #00289e; border-radius: 27px; right: 13%; top: 64%;">
+                    <img src="img/enter.png" class="centrar" style="height: 24px;">
+                </div>
+
+            </div>
+            <div style="position: relative; float: left; width: 43%; height: 100%; background-color: #fff;">
+                <div class="circulo" style="position: absolute; top:5%; height:32px; width:32px; background-color: #c3c3c3; right: 50%;">
+                    
+                    <img class="icon centrar" src="img/icons/bell-regular.svg" alt="">
+                </div>
+                <div class="circulo" style="position: absolute; top:5%; height:32px; width:32px; background-color: #353535; right: 35%;">
+                    <img class="perfil centrar" src="img/perfil.png" alt="">
+                </div>
+                <div  style="position: absolute; top:6%; height:25px; width:25px; right: 24%; line-height: 10px;"> Elizabeth<br><span style="font-size: 10px;">Operador</span></div>
+                <img src="img/abajo.png" style="position: absolute; right: 10%; height: 10px; top:7%">
+                
+                <div style="position: absolute; top:16%; left: 10%;"><span style="font-size: 16px; color: #00289e; font-weight: bold;">Hoy</span><br>
+                    <span id="today">15 de enero de 2024</span>
+                </div>
+                <div class="circulo" style="position: absolute; top:14%; right: 10%; width: 40px; height: 40px; background-color: #00289e;">
+                    <img src="img/teclado.png" class="centrar" style="height: 27px;">
+                </div>
+
+                <div style="position: absolute; top:25%; right: 10%; width: 32px; height: 32px; border: 2px solid #ccc; border-radius: 5px;">
+                    <img src="img/printer.png" class="centrar" style="height: 24px;">
+                    
+                </div>
+                <div style="position: absolute; top:25%; right: 23%; width: 32px; height: 32px; border: 2px solid #ccc; border-radius: 5px;">
+                    <img src="img/slider.png" class="centrar" style="height: 24px;">
+                </div>
+                <div style="position: absolute; top:25%; right: 36%; width: 32px; height: 32px; border: 2px solid #ccc; border-radius: 5px;">
+                    
+                    <button id="filtros" class="centrar">
+                        <img src="img/search.png" class="centrar" style="height: 24px;">
+                    </button>
+                </div>
+
+                <div class="lista_remesas" id="lista_remesas" >
+                    
+                    <!-- <div class="item_remesas" >
+                        <div style="width: 33%; position: relative; float: left;">#29939303</div>
+                        <div style="width: 33%; position: relative; float: left;">Wester Union</div>
+                        <div style="width: 33%; position: relative; float: left; text-align: right;">$12,000,000</div>
+                    </div>
+
+                    <div style="width: 100%; height: 35px; padding-top: 10px; border-top: 1px solid #ccc;">
+                        <div style="width: 33%; position: relative; float: left;">#29939303</div>
+                        <div style="width: 33%; position: relative; float: left;">Wester Union</div>
+                        <div style="width: 33%; position: relative; float: left; text-align: right;">$12,000,000</div>
+                    </div>
+
+                    <div style="width: 100%; height: 35px; padding-top: 10px; border-top: 1px solid #ccc;">
+                        <div style="width: 33%; position: relative; float: left;">#29939303</div>
+                        <div style="width: 33%; position: relative; float: left;">Wester Union</div>
+                        <div style="width: 33%; position: relative; float: left; text-align: right;">$12,000,000</div>
+                    </div>
+
+                    <div style="width: 100%; height: 35px; padding-top: 10px; border-top: 1px solid #ccc;">
+                        <div style="width: 33%; position: relative; float: left;">#29939303</div>
+                        <div style="width: 33%; position: relative; float: left;">Wester Union</div>
+                        <div style="width: 33%; position: relative; float: left; text-align: right;">$12,000,000</div>
+                    </div>
+
+                    <div style="width: 100%; height: 35px; padding-top: 10px; border-top: 1px solid #ccc;">
+                        <div style="width: 33%; position: relative; float: left;">#29939303</div>
+                        <div style="width: 33%; position: relative; float: left;">Wester Union</div>
+                        <div style="width: 33%; position: relative; float: left; text-align: right;">$12,000,000</div>
+                    </div>
+
+                    <div style="width: 100%; height: 35px; padding-top: 10px; border-top: 1px solid #ccc;">
+                        <div style="width: 33%; position: relative; float: left;">#29939303</div>
+                        <div style="width: 33%; position: relative; float: left;">Wester Union</div>
+                        <div style="width: 33%; position: relative; float: left; text-align: right;">$12,000,000</div>
+                    </div>
+
+                    <div style="width: 100%; height: 35px; padding-top: 10px; border-top: 1px solid #ccc;">
+                        <div style="width: 33%; position: relative; float: left;">#29939303</div>
+                        <div style="width: 33%; position: relative; float: left;">Wester Union</div>
+                        <div style="width: 33%; position: relative; float: left; text-align: right;">$12,000,000</div>
+                    </div>
+
+                    <div style="width: 100%; height: 35px; padding-top: 10px; border-top: 1px solid #ccc;">
+                        <div style="width: 33%; position: relative; float: left;">#29939303</div>
+                        <div style="width: 33%; position: relative; float: left;">Wester Union</div>
+                        <div style="width: 33%; position: relative; float: left; text-align: right;">$12,000,000</div>
+                    </div>
+                     -->
+                </div>
+
+                <div class="buttons" id="buttons"></div>
+            </div>
+        </div>
+
+        
+        <script src="js/utils.js"></script>
+    </body>
+</html>
