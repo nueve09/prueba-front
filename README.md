@@ -14,6 +14,7 @@ Principalmente los siguientes aspectos:
 + Calidad del código entregado (estructura y buenas prácticas),
 + Sencilles y calidad,
 + Menor uso de dependencias o frameworks,
++ Ajuste de los componentes en diferentes dimensiones.
 
 ## IMPORTANTE
 1. Asegúrate de tener `git` y tus herramientas de desarrollo instaladas.
@@ -56,6 +57,8 @@ Principalmente los siguientes aspectos:
     1) validar datos de entrada
     2) validar formato de id, max(8)
     3) validar que el id de la remesa,no haya sido cobrada en la lista. Si, no agrega la fecha en que se cobro, actualiza el estatus de "NO_COBRADO" a "COBRADO" y muestrala en el listado de la interfaz.
+
+- Qué la aplicación sea capaz de ajustarse de manera correcta a diversas dimensiones. 
 
 
 - Incluir un componente para mostrar mensajes de Errores Generales en toda la aplicación.
