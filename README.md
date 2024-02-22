@@ -1,7 +1,7 @@
 
 # Prueba Técnica - (Front End) - N09
 
-- (https://preba-tecnica-n09-juan-toledo.web.app)[https://preba-tecnica-n09-juan-toledo.web.app]
+- [https://preba-tecnica-n09-juan-toledo.web.app](https://preba-tecnica-n09-juan-toledo.web.app)
 
 En la prueba técnica se realizó un análisis para del diseño para poder dividir la pantalla en componentes y así obtener un atomic design. Todo esto siempre con tecnologías libres.
 
@@ -59,7 +59,7 @@ Adicional a esta prueba técnica me tomé la libertad de desplegar la aplicació
 
 En la siguiente URL podemos consultar el proyecto desplegado:
 
-- (https://preba-tecnica-n09-juan-toledo.web.app)[https://preba-tecnica-n09-juan-toledo.web.app]
+- [https://preba-tecnica-n09-juan-toledo.web.app](https://preba-tecnica-n09-juan-toledo.web.app)
 
 
 ## Contacto
