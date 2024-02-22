@@ -1,6 +1,8 @@
 
 # Prueba Técnica - (Front End) - N09
 
+- (https://preba-tecnica-n09-juan-toledo.web.app)[https://preba-tecnica-n09-juan-toledo.web.app]
+
 En la prueba técnica se realizó un análisis para del diseño para poder dividir la pantalla en componentes y así obtener un atomic design. Todo esto siempre con tecnologías libres.
 
 También identifiqué que la app está diseñada para tablets por sus botones y la funcionalidad de calculadora que viene integrada.
@@ -19,6 +21,7 @@ Para ejecutar la app de manera local seguir los siguientes pasos:
 
 - npm install
 - npm run dev
+
 ## Tecnologías utilizadas
 
 - [ReactJS](https://react.dev/)
@@ -50,12 +53,15 @@ Tailwind CSS es una de las dependencias de desarrollo que nos facilitan la escri
 
 Se implementó Material UI solo para poder utilizar el componente de alert.
 
-
-
-
 ## Despliegue
 
 Adicional a esta prueba técnica me tomé la libertad de desplegar la aplicación en (Firebase)[https://firebase.google.com/?hl=es] solo para que se pudiera consultar la aplicación de manera sencilla y demostrar un poco mis conocimiento sobre Firebase.
+
+En la siguiente URL podemos consultar el proyecto desplegado:
+
+- (https://preba-tecnica-n09-juan-toledo.web.app)[https://preba-tecnica-n09-juan-toledo.web.app]
+
+
 ## Contacto
 
 Sin más que agregar reciba un cordial saludo, quedo atento a la retrospectiva sobre esta prueba técnica que para mí fue muy enriquecedora.
