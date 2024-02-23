@@ -1,74 +1,104 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --primary: #2714A2;
+  --secondary: #353535;
+  --success: #2DCE89;
+  --info: #54CEDF;
+  --warning: #FB6340;
+  --danger: #F5365C;
+  --light: #E8E8E8;
+  --dark: #2A2A2A;
+  --default: #150A57;
+  --gray: #8E8E8E;
+  --white: #FFF;
+  --darker: #000;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  --sidebar-width: 300px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--dark);
+  background-color: var(--white);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  line-height: 1.2;
+  color: inherit
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--sidebar-width);
+}
+
+.toogle-button {
+  background-color: var(--info);
+  position: absolute;
+  top: 2.5rem;
+  left: calc(var(--sidebar-width) - .75rem - 1px);
   cursor: pointer;
-  transition: border-color 0.25s;
+  border-radius: 50%;
+  border: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 2px solid var(--dark);
+  color: var(--white);
 }
 
-button:hover {
-  border-color: #646cff;
+.toogle-button .expand {
+  display: none;
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.toogle-button:active {
+  background-color: var(--primary);
 }
 
-@media (prefers-color-scheme: light) {
+@media (max-width:1200px) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --sidebar-width: 100px;
   }
 
-  a:hover {
-    color: #747bff;
+  .sidebar .sidebar-content button {
+    width: 100%;
+    margin-left: 0;
   }
 
-  button {
-    background-color: #f9f9f9;
+  .sidebar .brand-container h2 {
+    display: none;
+  }
+
+  .sidebar .sidebar-content button h2 {
+    display: none;
+  }
+
+  .toogle-button .expand {
+    display: block;
+  }
+
+  .toogle-button .collapse {
+    display: none;
   }
 }
