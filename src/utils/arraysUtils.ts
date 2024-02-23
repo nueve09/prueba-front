@@ -20,7 +20,7 @@ export const getFilteredList = (
   searchCompany: string,
   searchAmount: string,
 ) => {
-  return list.filter((remittance) => {
+  return list.filter((remittance: Remittence) => {
     return (
       String(remittance.id).toLowerCase().includes(searchId) &&
       remittance.company.toLowerCase().includes(searchCompany) &&
