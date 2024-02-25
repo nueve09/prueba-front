@@ -1,0 +1,35 @@
+.remittances-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media (max-width:1200px) {
+    .calculator-container {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .calculator-container .keyboard-container {
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
+
+    .remittances-list-container {
+        width: 100%;
+    }
+}
+
+@media (max-width:1000px) {
+    .calculator-container .keyboard-container {
+        padding-left: 7.5rem;
+        padding-right: 7.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    .calculator-container .keyboard-container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}

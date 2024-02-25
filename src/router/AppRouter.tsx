@@ -1,16 +1,13 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { EmptyPage, MainPage, RemittancesPage } from '@/pages'
-import { Sidebar } from '@/components'
+import { AppLayout } from '@/layouts/AppLayout'
+import { Sidenav } from '@/components'
 
 export const AppRouter = () => {
     return (
-        <div>
-            <Sidebar />
-            <div className="container">
-                <button className="toogle-button">
-                    <i className="fa-solid fa-chevron-right expand"></i>
-                    <i className="fa-solid fa-chevron-left collapse"></i>
-                </button>
+        <>
+            <Sidenav />
+            <AppLayout>
                 <Routes>
                     <Route path="/" element={<RemittancesPage />} />
                     <Route path="/main" element={<MainPage />} />
@@ -21,7 +18,7 @@ export const AppRouter = () => {
 
                     <Route path="/*" element={<Navigate to="/" />} />
                 </Routes>
-            </div>
-        </div>
+            </AppLayout>
+        </>
     )
 }
