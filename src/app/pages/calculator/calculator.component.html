@@ -1,0 +1,34 @@
+<div class="wrapper">
+  <div style="width: 100%;">
+    <span style="color: white;">Ventanilla <span class="fw-bold">Digital</span></span>
+    <hr class="secondary">
+    <span class="text-secondary fw-bold fs-600">Remesas</span>
+  </div>
+  <form class="calc-container" [formGroup]="updateForm" (ngSubmit)="submit()">
+    <input 
+      type="text" 
+      class="calc-display bg-light-gray"
+      formControlName="id" 
+      maxlength="8"
+      (keydown)="userInput($event)"/>
+    <div class="calc-keyboard">
+        <button type="button" (click)="pressKey('1')">1</button>
+        <button type="button" (click)="pressKey('2')">2</button>
+        <button type="button" (click)="pressKey('3')">3</button>
+        <button type="button" (click)="pressKey('Backspace')"class="rowspan-2">
+          <fa-icon icon="delete-left"></fa-icon>
+        </button>
+        <button type="button" (click)="pressKey('4')">4</button>
+        <button type="button" (click)="pressKey('5')">5</button>
+        <button type="button" (click)="pressKey('6')">6</button>
+        <button type="button" (click)="pressKey('7')">7</button>
+        <button type="button" (click)="pressKey('8')">8</button>
+        <button type="button" (click)="pressKey('9')">9</button>
+        <button type="submit" class="rowspan-2 round bg-primary">
+          <fa-icon icon="level-down" [rotate]="90" style="color: white;"></fa-icon>
+        </button>
+        <button type="button" (click)="pressKey('0')"class="colspan-2">0</button>
+        <button type="button" (click)="pressKey('.')">.</button>
+    </div>
+  </form>
+</div>

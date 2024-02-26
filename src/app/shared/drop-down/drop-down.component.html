@@ -1,0 +1,9 @@
+<div class="wrapper">
+    <div class="button" (click)="toggle()">
+        <ng-content select="[dropdownButton]"></ng-content>
+        <fa-icon [ngClass]="{'open':open}" class="chevron" icon="chevron-down"></fa-icon>
+    </div>
+    <div class="body" [ngClass]="{'open':open}">
+        <ng-content select="[dropdownMenu]"></ng-content>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="container">
+  <app-nav-bar #navbar class="nav-bar"></app-nav-bar>  
+  <div>
+    <button class="open-btn bg-secondary round" (click)="navbar.collapseToggle()">
+        <fa-icon icon="chevron-right"></fa-icon>
+    </button>
+  </div>
+  <div class="main">
+    <div class="body">
+      <router-outlet ></router-outlet>
+    </div>
+    <app-side-bar class="side-bar"></app-side-bar>
+    <div class="notification-area">
+      @for(notif of toatService.toasts; track notif) {
+        <div>
+          <app-toast
+            [title]="notif.title"
+            [message]="notif.message"
+            [type]="notif.type"
+            (hidden)="toatService.remove($index)"
+            ></app-toast>
+        </div>
+      }
+    </div>
+  </div>
+</div>

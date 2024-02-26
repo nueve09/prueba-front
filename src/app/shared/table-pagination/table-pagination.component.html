@@ -1,0 +1,33 @@
+@if (show) {
+<div class="wrapper overlay-height" #wrapper>
+    @if(loading) {
+    <div class="overlay-spinner d-flex align-content-center flex-wrap">
+        <div class='spinner'></div>
+    </div>
+    }
+    @if (collectionSize) {
+    <div>
+        <ng-content></ng-content>
+        @if(pages.length > 0) {
+            <div class="paginator">
+                <button [disabled]="page === 1" (click)="pageChange(page - 1)">
+                    <fa-icon icon="chevron-left"></fa-icon>
+                </button>
+                <div>
+                    @for(p of pages; track $index) {
+                    <button (click)="pageChange($index + 1)" [ngClass]="{'active': ($index + 1) === page}">{{$index + 1}}</button>
+                    }
+                </div>
+                <button [disabled]="page === pages.length" (click)="pageChange(page + 1)">
+                    <fa-icon icon="chevron-right"></fa-icon>
+                </button>
+            </div>
+        }
+    </div>
+    } @else {
+    <div class="no-results" *ngIf="!loading">
+        <h3>Sin resultados</h3>
+    </div>
+    }
+</div>
+}

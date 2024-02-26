@@ -1,0 +1,71 @@
+<div class="container fs-400">
+    <div class="header">
+        <div class="user-menu">
+            <button class="round btn-shadow bg-light-gray" (click)="$event.stopPropagation(); userMenu.toggle()">
+                <fa-icon icon="user"></fa-icon>
+            </button>
+            <div class="d-flex flex-column justify-content-center" (click)="$event.stopPropagation(); userMenu.toggle()">
+                <div>
+                    <span class="fw-semi-bold">{{user.nombre}}</span>
+                </div>
+                <div>
+                    <span class="fs-300 fw-bold">{{user.rol}}</span>
+                </div>
+            </div>
+            <app-drop-down #userMenu>
+                <ng-container dropdownMenu>
+                    <app-dropdown-item (click)="$event.stopPropagation(); userMenu.toggle()">
+                        <span>Cerrar sesión</span>
+                    </app-dropdown-item>
+                </ng-container>
+            </app-drop-down>
+        </div>
+        <button class="round  bg-light-gray" style="position: relative; overflow: visible;">
+            <fa-icon [icon]="['far', 'bell']"></fa-icon>
+            <span class="badge">4</span>
+        </button>
+    </div>
+    <div class="title">
+        <div>
+            <div>
+                <span class="text-primary fs-500 fw-bold">Hoy</span>
+            </div>
+            <div>
+                <span class="fw-bold">{{today | date : 'd \'de\' MMMM \'de\' y'}}</span>
+            </div>
+        </div>
+        <button class="bg-primary round text-secondary btn-shadow">
+            <fa-icon icon="keyboard"></fa-icon>
+        </button>
+    </div>
+    <div class="filters">
+        <button class="square-btn text-primary">
+            <fa-icon icon="print"></fa-icon>
+        </button>
+        <button class="square-btn text-primary">
+            <fa-icon icon="sliders"></fa-icon>
+        </button>
+        <form [formGroup]="searchForm" class="search-box" [ngClass]="{'active': activeSearchBox}">
+            <input #searchInput (blur)="activeSearchBox = false" type="text" formControlName="searchString">
+            <button type="button" (click)="openSearchBox()" class="square-btn text-primary">
+                <fa-icon icon="magnifying-glass"></fa-icon>
+            </button>
+        </form>
+    </div>
+    <div class="body">
+        <app-table-pagination [dataObservable]="data" #table [pageSize]="10" [params]="filterParams"
+            sortColumn="charged_at" sortDirection="desc">
+            <table>
+                <tbody>
+                    @for (remesa of table.rows; track remesa) {
+                    <tr>
+                        <td>#{{remesa.id.toString().padStart(8, '0')}}</td>
+                        <td>{{remesa.company}}</td>
+                        <td>{{remesa.amount | currency :'MXN':'symbol-narrow':'1.2-2':'es-MX'}}</td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </app-table-pagination>
+    </div>
+</div>

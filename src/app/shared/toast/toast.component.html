@@ -1,0 +1,21 @@
+<div #wrapper [@toastAnimation]="state" (@toastAnimation.done)="$event.toState === 'hidden'?hidden.next():null" class="wrapper bg-light-gray"
+(mouseenter)="pause()" (mouseleave)="resume()" [ngClass]="{'hidden': this.state === 'hidden'}"
+>
+    <div class="bar" [ngClass]="class"></div>
+    <div class="body">
+        <div [ngClass]="class">
+            <fa-icon [icon]="icon"></fa-icon>
+        </div>
+        <div>
+            @if(title) {
+            <h4>{{title}}</h4>
+            }
+            @if(message) {
+            <p>{{message}}</p>
+            }
+        </div>
+    </div>
+    <button (click)="hide()">
+        <fa-icon icon="xmark"></fa-icon>
+    </button>
+</div>

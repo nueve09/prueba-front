@@ -1,0 +1,46 @@
+.wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+}
+
+.body {
+    margin-top: 3px;
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    transform-origin: top;
+    transform: matrix(1, 0, 0, 1, 0, -20);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform .3s ease-in-out,
+    opacity .3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+.body.open {
+    padding: 8px 0;
+    display: block;
+    box-shadow: 0 0 3px 0px gray;
+    border-radius: 5px;
+    z-index: 2;
+    background-color: white;
+    opacity: 100;
+    visibility: visible;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+fa-icon.chevron {
+    transition: transform .1s ease-in-out;
+}
+
+fa-icon.chevron.open {
+    transform: rotate(180deg);
+}

@@ -1,0 +1,184 @@
+:root {
+    --fs-300: 0.65rem;
+    --fs-400: 0.85rem;
+    --fs-500: 1rem;
+    --fs-600: 1.5rem;
+    --fs-700: 2rem;
+
+    --fw-bold: 700;
+    --fw-semi-bold: 500;
+
+    --w-calc: 50vmin;
+    --fs-calc: 5vmin
+}
+
+* {
+    font: inherit;
+}
+
+html {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--back-ground);
+    margin: 0;
+}
+
+button:not([disabled]) {
+    cursor: pointer;
+}
+
+.overlay-height {
+    min-height: 300px;
+}
+
+.overlay-spinner {
+    height: 100%;
+    background: var(--bg-overlay);
+    min-height: 300px;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+}
+
+.spinner {
+    margin: 0 auto;
+    border: 10px solid var(--primary);
+    border-left-color: transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    overflow: visible;
+    background-color: var(--danger);
+    border-radius: 50vb;
+    padding: 0.4em 0.65em;
+    display: inline-block;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    line-height: 1;
+    transform: translate(-60%, 0);
+    font-size: var(--fs-300);
+    color: white;
+}
+
+input.ng-invalid.ng-touched{
+    outline: 2px solid var(--danger);
+}
+
+/* Utility classes */
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-light-gray {
+    background-color: var(--light-gray);
+}
+
+.bg-success {
+    background-color: var(--success);
+}
+
+.bg-warning {
+    background-color: var(--warning);
+}
+.bg-danger {
+    background-color: var(--danger);
+}
+
+.text-primary {
+    color: var(--primary);
+}
+
+.text-secondary {
+    color: var(--secondary);
+}
+
+.text-white {
+    color: var(--secondary-back-ground);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw-semi-bold {
+    font-weight: var(--fw-semi-bold);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+.fs-500 {
+    font-size: var(--fs-500);
+}
+
+.fs-600 {
+    font-size: var(--fs-600);
+}
+
+.fs-700 {
+    font-size: var(--fs-700);
+}
+
+.fs-1000 {
+    font-size: var(--fs-1000);
+}
+
+.rowspan-2 {
+    grid-row: span 2;
+}
+
+.colspan-2 {
+    grid-column: span 2;
+}
+
+.round {
+    border-radius: 50vb;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}

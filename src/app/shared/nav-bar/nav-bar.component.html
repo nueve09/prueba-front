@@ -1,0 +1,12 @@
+<div class="navbar" [ngClass]="{'collapsed': isCollapsed}">
+    <div class="header">
+        <img src="assets/images/logo.png" width="80">
+    </div>
+    <div class="menu">
+        @for(menu of menus; track menu) {
+        <div class="text-white fs-700"> 
+            <fa-icon [routerLink]="menu.link" style="cursor: pointer;" [routerLinkActive]="['text-secondary']" [icon]="menu.icon"></fa-icon>
+        </div>
+        }
+    </div>
+</div>

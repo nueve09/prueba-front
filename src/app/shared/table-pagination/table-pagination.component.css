@@ -1,0 +1,44 @@
+.wrapper {
+    position: relative;
+}
+
+.overlay-spinner {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.paginator {
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    padding: 0.5rem;
+}
+
+.paginator>div {
+    display: flex;
+}
+
+.paginator button {
+    border: 0;
+    border-radius: 5px;
+    height: 100%;
+    background-color: transparent;
+    aspect-ratio: 1;
+}
+
+.paginator button:not([disabled], .active):hover {
+    background-color: grey;
+}
+
+.paginator button.active {
+    background-color: var(--secondary);
+}
+
+.no-results {
+    margin: 3rem 3rem;
+}
+
+.no-results>h3 {
+    text-align: center;
+}
