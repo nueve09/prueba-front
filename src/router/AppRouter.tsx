@@ -1,9 +1,18 @@
+import { useEffect } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { EmptyPage, MainPage, RemittancesPage } from '@/pages'
 import { AppLayout } from '@/layouts/AppLayout'
 import { Sidenav } from '@/components'
+import { useAppDispatch } from '@/hooks'
+import { startLoadRemittances } from '@/store/remittances'
 
 export const AppRouter = () => {
+    const dispatch = useAppDispatch()
+
+    useEffect(() => {
+        dispatch(startLoadRemittances())
+    }, [])
+
     return (
         <>
             <Sidenav />

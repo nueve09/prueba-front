@@ -15,6 +15,8 @@
 
   scroll-behavior: smooth;
   --sidenav-width: 300px;
+  --main-transition: all 0.3s ease-in-out;
+  --short-transition: all 0.15s ease-in-out;
 }
 
 *,
@@ -45,11 +47,9 @@ h6 {
   color: inherit
 }
 
-.container {
+.main-container {
   width: 100%;
-  max-width: 1500px;
-  margin-left: auto;
-  margin-right: auto;
+  transition: var(--main-transition);
 }
 
 .full-center {
@@ -99,4 +99,28 @@ h6 {
 .col-3-3 {
   flex: 0 0 auto;
   width: calc(100% / 3 * 3);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-info {
+  color: var(--info);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-danger {
+  color: var(--danger);
 }

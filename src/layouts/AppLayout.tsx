@@ -17,7 +17,7 @@ export const AppLayout = ({ children }: Props) => {
     }, [width])
 
     return (
-        <div className="container" style={{ paddingLeft: hiddenSidenav ? '0' : sidenavWidth }}>
+        <div className="main-container" style={{ paddingLeft: hiddenSidenav ? '0' : sidenavWidth }}>
             {children}
         </div>
     )

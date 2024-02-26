@@ -11,10 +11,10 @@ const generateRandomCompany = (): string => {
     return COMPANIES[Math.floor(Math.random() * COMPANIES.length)]
 }
 
-// genera el time de una fecha entre 1-1-2019 y el 1-1-2023
-const generateRandomDate = (): number => {
-    const start = new Date('2019-01-01').getTime()
-    const end = new Date('2023-01-01').getTime()
+// genera el time de una fecha entre 1-1-2019 y el 1-1-2023 o las definidas en los parametros
+const generateRandomDate = (startStr: string = '2019-01-01', endStr: string = '2023-01-01'): number => {
+    const start = new Date(startStr).getTime()
+    const end = new Date(endStr).getTime()
 
     return Math.floor(start + Math.random() * (end - start))
 }
@@ -24,13 +24,16 @@ export const getRemittances = async (): Promise<Remittance[]> => {
     let remittances: Remittance[] = []
 
     for (let i = 0; i < 50; i++) {
+        const isCharged = Math.random() > 0.5
+        const createdAt = generateRandomDate()
+
         const remittance: Remittance = {
             id: generateRandomId(),
             company: generateRandomCompany(),
             amount: Number((Math.random() * 10000).toFixed(2)), // genera un monto aleatorio entre 0 y 10000 con dos decimales
-            status: 'NO_COBRADO',
-            created_at: generateRandomDate(),
-            charged_at: 0
+            status: isCharged ? 'COBRADO' : 'NO_COBRADO',
+            created_at: createdAt,
+            charged_at: isCharged ? generateRandomDate(new Date(createdAt).toISOString(), '2023-01-02') : null,
         }
 
         remittances.push(remittance)

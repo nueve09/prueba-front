@@ -1,5 +1,5 @@
 import { store } from '@/store'
-import { setIsLoading, setRemittances } from '@/store/remittances'
+import { filterRemittances, setIsLoading, setRemittances } from '@/store/remittances'
 import { getRemittances } from '@/helpers'
 
 export const startLoadRemittances = () =>
@@ -9,4 +9,5 @@ export const startLoadRemittances = () =>
         const remittances = await getRemittances()
 
         dispatch(setRemittances(remittances))
+        dispatch(filterRemittances(''))
     }

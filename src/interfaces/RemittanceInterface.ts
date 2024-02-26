@@ -4,5 +4,5 @@ export interface Remittance {
     amount: number
     status: 'NO_COBRADO' | 'COBRADO'
     created_at: number
-    charged_at: number
+    charged_at: number | null
 }

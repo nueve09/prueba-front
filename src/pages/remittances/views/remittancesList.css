@@ -1,6 +1,93 @@
 .remittances-list-container {
-    background-color: var(--light);
+    background-color: var(--white);
     min-height: 100vh;
     width: 40%;
     padding: 2rem;
+    transition: var(--main-transition);
+}
+
+.remittances-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.remittances-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.table-controls {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+#remittances-table {
+    width: 100%;
+    border-collapse: collapse;
+    vertical-align: top;
+    overflow-x: auto;
+    border-top: 1px solid var(--light);
+    margin: 1rem 0 1rem 0;
+}
+
+#remittances-table td,
+#remittances-table th {
+    border: none;
+    padding: 1rem 1rem;
+    text-align: left;
+}
+
+#remittances-table tbody tr {
+    border-bottom: 1px solid var(--light);
+}
+
+.pagination-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.filter-bar {
+    width: 100%;
+    position: relative;
+}
+
+.filter-bar input {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: 0;
+    width: 100%;
+    /* height: 2.5rem; */
+    background-color: var(--white);
+    padding: .5rem 3rem .5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(39, 20, 162, 0.15);
+    transition: var(--main-transition);
+}
+
+.filter-bar i {
+    position: absolute;
+    right: .5rem;
+    top: calc(2.5rem / 2 - 1.5rem / 2);
+    color: var(--danger);
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: var(--main-transition);
+}
+
+.filter-bar i:active {
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.15);
 }
