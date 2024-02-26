@@ -1,3 +1,5 @@
+// Constantes de la aplicacion
+
 export const BRAND = 'Nueve 09'
 
 export const USER = {

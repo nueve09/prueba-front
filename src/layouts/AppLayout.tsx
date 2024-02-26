@@ -12,6 +12,12 @@ export const AppLayout = ({ children }: Props) => {
     const { width } = useViewport()
 
     useEffect(() => {
+        setTimeout(() => {
+            dispatch(setMiniSidenav(true))
+        }, 200)
+    }, [])
+
+    useEffect(() => {
         dispatch(setMiniSidenav(width < 1200))
         dispatch(setHiddenSidenav(width < 700))
     }, [width])

@@ -4,3 +4,5 @@ export const waitForSeconds = (seconds: number): Promise<void> =>
             resolve()
         }, 1000 * seconds)
     })
+
+// waitForSeconds es una promesa que tarda x segundos en resolverse

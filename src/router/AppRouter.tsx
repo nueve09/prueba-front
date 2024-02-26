@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { EmptyPage, MainPage, RemittancesPage } from '@/pages'
+import { AlertPage, EmptyPage, MainPage, RemittancesPage } from '@/pages'
 import { AppLayout } from '@/layouts/AppLayout'
 import { Sidenav } from '@/components'
 import { useAppDispatch } from '@/hooks'
@@ -28,6 +28,7 @@ export const AppRouter = () => {
                     <Route path="/*" element={<Navigate to="/" />} />
                 </Routes>
             </AppLayout>
+            <AlertPage />
         </>
     )
 }

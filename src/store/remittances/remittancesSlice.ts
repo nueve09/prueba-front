@@ -54,6 +54,21 @@ export const remittancesSlice = createSlice({
                 String(x.amount).includes(term)
             )
         },
+        chargeRemittance: (state, { payload }: PayloadAction<string>) => {
+            state.remittances = state.remittances.map(x => {
+                if (x.id !== payload) return x
+
+                return {
+                    ...x,
+                    status: 'COBRADO',
+                    charged_at: new Date().getTime(),
+                }
+            })
+
+            state.filteredRemittances = state.remittances.filter(x => x.status === 'COBRADO').sort((a, b) =>
+                state.filterOrder === 'ASC' ? (a.charged_at! - b.charged_at!) : (b.charged_at! - a.charged_at!)
+            )
+        },
     },
 })
 
@@ -62,4 +77,8 @@ export const {
     setRemittances,
     setFilterOrder,
     filterRemittances,
+    chargeRemittance,
 } = remittancesSlice.actions
+
+// Este slice representa el estado de las remesas en la aplicacion,
+// asi como los reducers que lo pueden manipular y los action creators que permiten inicializarlos

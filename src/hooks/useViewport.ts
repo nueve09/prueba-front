@@ -17,3 +17,5 @@ export const useViewport = () => {
 
     return { width, height }
 }
+
+// UseViewport mantiene el estado de las dimenciones de la pantalla para control de los elementos del dom

@@ -1,8 +1,13 @@
-import { CalcBtn } from '@/pages/remittances/components'
-import '@/pages/remittances/views/calculator.css'
 import { useState } from 'react'
+import { CalcBtn } from '@/pages/remittances/components'
+import { useAppDispatch, useAppSelector } from '@/hooks'
+import { setAlertMsg } from '@/store/essentials'
+import { chargeRemittance } from '@/store/remittances'
+import '@/pages/remittances/views/calculator.css'
 
 export const CalculatorView = () => {
+    const { remittances } = useAppSelector(state => state.remittances)
+    const dispatch = useAppDispatch()
     const [number, setNumber] = useState('')
 
     const buildNumber = (txt: string) => {
@@ -23,13 +28,43 @@ export const CalculatorView = () => {
     }
 
     const validateExternalValue = (value: string) => {
-        if (!/^[0-9]{0,8}$/.test(value)) return
+        if (!/^[0-9]{0,8}$/.test(value)) return dispatch(setAlertMsg({
+            title: 'Espera',
+            message: 'Intentas ingresar un "Id" inválido !',
+            type: 'warning',
+            duration: 1,
+        }))
 
         setNumber(value)
     }
 
-    const chargeRemittance = () => {
-        console.log('charging', number)
+    const startChargeRemittance = () => {
+        if (!/^[0-9]{8}$/.test(number)) return dispatch(setAlertMsg({
+            title: 'Espera',
+            message: 'El "Id" no es válido !',
+            type: 'warning',
+            duration: 1.8,
+        }))
+
+        const remittance = remittances.find(x => x.id === number)
+
+        if (!remittance) return dispatch(setAlertMsg({
+            title: 'Error',
+            message: `La remesa con el id "${number}" no existe !`,
+            type: 'error',
+            duration: 1.8,
+        }))
+
+        dispatch(chargeRemittance(number))
+
+        dispatch(setAlertMsg({
+            title: 'Cobrada',
+            message: `La remesa con el id "${number}" ha sido cobrada !`,
+            type: 'success',
+            duration: 1.8,
+        }))
+
+        setNumber('')
     }
 
     return (
@@ -96,7 +131,7 @@ export const CalculatorView = () => {
                         </div>
                     </div>
                     <div className="col-1-4">
-                        <CalcBtn size={2} direction="vertical" style={{ backgroundColor: 'var(--primary)' }} onClick={chargeRemittance}>
+                        <CalcBtn size={2} direction="vertical" style={{ backgroundColor: 'var(--primary)' }} onClick={startChargeRemittance}>
                             <i className="fa-solid fa-arrow-turn-down fa-rotate-90 text-white"></i>
                         </CalcBtn>
                     </div>

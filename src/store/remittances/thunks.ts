@@ -3,7 +3,7 @@ import { filterRemittances, setIsLoading, setRemittances } from '@/store/remitta
 import { getRemittances } from '@/helpers'
 
 export const startLoadRemittances = () =>
-    async (dispatch: typeof store.dispatch, getState: typeof store.getState) => {
+    async (dispatch: typeof store.dispatch) => {
         dispatch(setIsLoading())
 
         const remittances = await getRemittances()

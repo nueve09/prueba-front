@@ -124,3 +124,11 @@ h6 {
 .text-danger {
   color: var(--danger);
 }
+
+.text-error {
+  color: var(--danger);
+}
+
+.text-warning {
+  color: var(--warning);
+}

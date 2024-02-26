@@ -41,3 +41,5 @@ export const usePagination = <T>({ records, recordsPerPage }: Props<T>): Paginat
         pages,
     }
 }
+
+// UsePagination mantiene el estado de una paginacion dependiendo de los registros iniciales y los registros por pagina definidos al invocarlo

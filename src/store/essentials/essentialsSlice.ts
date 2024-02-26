@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
-import { ErrorAlert } from '@/interfaces'
+import { AlertMsg } from '@/interfaces'
 import { DIMENTIONS } from '@/utils/constants'
 
 const { MINISIDENAV_WIDTH, SIDENAV_WIDTH } = DIMENTIONS
@@ -8,14 +8,14 @@ interface EssentialsState {
     hiddenSidenav: boolean
     miniSidenav: boolean
     sidenavWidth: string
-    errors: ErrorAlert[]
+    alertMsg: AlertMsg | null
 }
 
 const initialState: EssentialsState = {
     hiddenSidenav: false,
     miniSidenav: false,
     sidenavWidth: SIDENAV_WIDTH,
-    errors: [],
+    alertMsg: null
 }
 
 export const essentialsSlice = createSlice({
@@ -29,11 +29,8 @@ export const essentialsSlice = createSlice({
             state.miniSidenav = payload
             state.sidenavWidth = payload ? MINISIDENAV_WIDTH : SIDENAV_WIDTH
         },
-        addError: (state, { payload }: PayloadAction<ErrorAlert>) => {
-            state.errors.push(payload)
-        },
-        deleteError: (state, { payload }: PayloadAction<string>) => {
-            state.errors = state.errors.filter(x => x.id !== payload)
+        setAlertMsg: (state, { payload }: PayloadAction<AlertMsg | null>) => {
+            state.alertMsg = payload
         },
     },
 })
@@ -41,6 +38,8 @@ export const essentialsSlice = createSlice({
 export const {
     setHiddenSidenav,
     setMiniSidenav,
-    addError,
-    deleteError,
+    setAlertMsg,
 } = essentialsSlice.actions
+
+// Este slice representa el estado de los parametros esenciales para la app,
+// asi como los reducers que lo pueden manipular y los action creators que permiten inicializarlos

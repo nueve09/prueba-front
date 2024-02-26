@@ -35,7 +35,13 @@ export const FilterBar = () => {
 
     return (
         <div className="filter-bar" title="Buscar">
-            <i className="fa-solid fa-circle-xmark" onClick={() => setOpen(false)}></i>
+            <i
+                className="fa-solid fa-circle-xmark"
+                onClick={() => {
+                    setOpen(false)
+                    setFilterTerm('')
+                }}
+            ></i>
             <input
                 ref={inputRef}
                 placeholder="Busca id, compañia o monto"
