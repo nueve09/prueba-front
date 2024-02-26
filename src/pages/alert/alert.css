@@ -1,0 +1,60 @@
+.alert-page-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert-page-container .alert-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0.25rem rgba(0, 0, 0, 0.15);
+    width: 30rem;
+    height: auto;
+}
+
+.alert-page-container .alert-card h1 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.alert-page-container .alert-card h1 i {
+    margin-right: 1rem;
+}
+
+.alert-page-container.success {
+    background-color: rgba(45, 206, 137, .15);
+}
+
+.alert-page-container.success .alert-card {
+    background-color: var(--success);
+    color: var(--white);
+    box-shadow: 0 0 2rem 1rem rgba(255, 255, 255, 0.25);
+}
+
+.alert-page-container.error {
+    background-color: rgba(245, 54, 92, .15);
+}
+
+.alert-page-container.error .alert-card {
+    background-color: var(--danger);
+    color: var(--white);
+    box-shadow: 0 0 2rem 1rem rgba(255, 255, 255, 0.25);
+}
+
+.alert-page-container.warning {
+    background-color: rgba(251, 99, 64, .15);
+}
+
+.alert-page-container.warning .alert-card {
+    background-color: var(--warning);
+    color: var(--white);
+    box-shadow: 0 0 2rem 1rem rgba(255, 255, 255, 0.25);
+}

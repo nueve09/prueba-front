@@ -1,0 +1,67 @@
+.btn {
+    --btn-color: var(--primary);
+    --btn-bg-color: var(--white);
+    --btn-border-color: var(transparent);
+    display: inline-block;
+    padding: .25rem .5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--btn-color);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid var(--btn-border-color);
+    border-radius: .3rem;
+    background-color: var(--btn-bg-color);
+    transition: var(--short-transition);
+    min-height: 2.5rem;
+    min-width: 2.5rem;
+}
+
+.btn:active {
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+    --btn-color: var(--info);
+    --btn-bg-color: var(--primary);
+}
+
+.btn-outline-primary {
+    --btn-color: var(--primary);
+    --btn-bg-color: var(--white);
+    box-shadow: 0 0 0 0.25rem rgba(39, 20, 162, 0.15);
+}
+
+.btn-light {
+    --btn-color: var(--dark);
+    --btn-bg-color: var(--light);
+}
+
+.btn.btn-circle {
+    border-radius: 50% !important;
+}
+
+.btn-outline-primary:active {
+    --btn-bg-color: var(--primary);
+    --btn-color: var(--white);
+    box-shadow: none;
+}
+
+.btn-secondary {
+    --btn-color: var(--secondary);
+    --btn-bg-color: var(--light);
+}
+
+.btn-outline-secondary {
+    --btn-color: var(--secondary);
+    --btn-bg-color: var(--white);
+    --btn-border-color: var(--light);
+}
+
+.btn:disabled {
+    opacity: .5;
+    box-shadow: none;
+    cursor: not-allowed;
+}

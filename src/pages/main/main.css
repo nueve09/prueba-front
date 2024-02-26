@@ -1,0 +1,39 @@
+.mainpage-container {
+    padding: 2rem;
+    width: 100%;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#all-remittances-table {
+    width: 100%;
+    border-collapse: collapse;
+    vertical-align: top;
+    overflow-x: auto;
+    border-top: 1px solid var(--light);
+    margin: 3rem 0 1rem 0;
+}
+
+#all-remittances-table thead {
+    background-color: var(--light);
+}
+
+#all-remittances-table td,
+#all-remittances-table th {
+    border: none;
+    padding: .25rem 0;
+    text-align: center;
+}
+
+#all-remittances-table tr {
+    border-bottom: 1px solid var(--light);
+}
+
+.mainpage-pagination-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 3rem;
+}

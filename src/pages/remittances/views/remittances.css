@@ -1,0 +1,17 @@
+.remittances-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: var(--main-transition);
+}
+
+@media (max-width:1200px) {
+    .calculator-container {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .remittances-list-container {
+        width: 100% !important;
+    }
+}

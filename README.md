@@ -1,3 +1,17 @@
+# Resultado de la prueba - Alejandro Ríos
+![Resultado de la prueba](/src/assets/img/prueba-front-alejandro-rios.jpg)
+### ¿Qué hice?
+He cumplido con los requisitos establecidos en la definicion de la prueba. A continuación, detallo algunas de las decisiones y acciones que llevé a cabo durante el desarrollo:
++ Opté por utilizar React JS para construir la aplicación principalmente por su soporte para la gestión del estado, mismo que junto a Redux Toolkit me permitieron construir una aplicación reactiva manejando estados independientes y un estado global.
++ Implementé la maquetación utilizando flexbox en su mayoría para lograr un diseño flexible y adaptable.
++ Incluí una lista de objetos con información de más de 50 remesas aleatorias, permitiendo búsqueda por id, compañía o monto, así como paginación de los resultados de 10 en 10.
++ La interfaz tipo calculadora es funcional y valida los datos de entrada, incluyendo el formato del id y la verificación de cobro de remesas.
++ Integré Font Awesome 6 como librería de iconos para mejorar la experiencia de usuario, optando por su versatilidad y facilidad de uso.
++ Para mostrar los errores generales de la aplicación creé un componente que se muestra cada vez que es disparado un cambio en el estado de lo que llamé "Alerta", este recibe parametros configurables de modo que permite mostrar no solo mensajes de error, sino tambien de exito y de advertencia.
++ Decidí agregar React Router Dom 6 para controlar la navegación de la aplicación, permitiendo de una manera sencilla hacer funcionar la barra lateral de navegación.
++ Incluí también una pagina extra en la primer opción del menú lateral, esta muestra todo el listado de remesas unicamente como referencia.
++ La integración de Typescript hace que la aplicación tenga un tipado estricto, muy útil en todos los casos en esta aplicación.
+
 # Prueba Técnica - (Front-end) - N09
 
 Esta evaluación se ha creado para analizar las habilidades de los candidatos que aspiran a la posición de desarrollador **Front-end**.
