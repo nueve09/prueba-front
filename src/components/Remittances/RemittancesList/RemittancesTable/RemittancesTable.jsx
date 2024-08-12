@@ -12,7 +12,6 @@ function RemittancesTable({ payedRemittances }) {
   const [itemsPerPage] = useState(10);
 
   useEffect(() => {
-    // Ordenar y filtrar remesas
     const sortedRemittances = [...payedRemittances].sort((a, b) => {
       if (!a.charged_at) return 1;
       if (!b.charged_at) return -1;
@@ -33,10 +32,9 @@ function RemittancesTable({ payedRemittances }) {
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
-    setCurrentPage(1); // Resetear la página cuando cambie la búsqueda
+    setCurrentPage(1);
   };
 
-  // Calcular las remesas a mostrar en la página actual
   const indexOfLastRemittance = currentPage * itemsPerPage;
   const indexOfFirstRemittance = indexOfLastRemittance - itemsPerPage;
   const currentRemittances = remittances.slice(
@@ -44,12 +42,10 @@ function RemittancesTable({ payedRemittances }) {
     indexOfLastRemittance
   );
 
-  // Cambiar de página
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
 
-  // Número total de páginas
   const totalPages = Math.ceil(remittances.length / itemsPerPage);
 
   return (
@@ -83,7 +79,7 @@ function RemittancesTable({ payedRemittances }) {
           </div>
         )}
       </div>
-      {/* Controles de paginación */}
+
       <div className={styles.pagination}>
         <button
           onClick={() => handlePageChange(currentPage - 1)}
