@@ -1,0 +1,373 @@
+.linkButton {
+  width: 2rem;
+  height: 2rem;
+  /* color: var(--foreground); */
+}
+
+.selected {
+  color: var(--blue-selected);
+}
+
+.logo {
+  width: 80%;
+  height: calc((100vw * 0.1) * 0.8);
+  border-radius: 14px;
+}
+
+.circleButton {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.verticalCapsuleButton {
+  width: 4rem;
+  height: 9rem;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.horizontalCapsuleButton {
+  width: 9rem;
+  height: 4rem;
+  border-radius: 50px;
+  text-align: center;
+  border: none;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.capsuleButtonDeleteIcon {
+  width: 2rem;
+  height: 2rem;
+  color: black;
+}
+
+.capsuleButtonEnterIcon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--foreground);
+}
+
+.enter {
+  background-color: var(--blue-enter);
+}
+
+.circleButton:hover,
+.verticalCapsuleButton:hover,
+.horizontalCapsuleButton:hover {
+  background-color: var(--blue-selected);
+}
+
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+}
+
+.inputSuffix {
+  z-index: 1;
+  position: absolute;
+  left: 0.5rem;
+  font-weight: 800;
+}
+
+.input {
+  background-color: var(--primary-foreground);
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: medium;
+  padding: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  position: absolute;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.sectionHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem 0 1rem;
+}
+
+.sectionHeader > p:first-child {
+  width: 100%;
+  color: var(--foreground);
+  font-size: small;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--blue-selected);
+}
+
+.sectionHeader > p:first-child > span {
+  font-weight: 700;
+}
+
+.sectionHeader > p:nth-child(2) {
+  width: 100%;
+  color: var(--blue-selected);
+  font-weight: 700;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.configAccordion {
+  border: none;
+  margin: 0 1rem 0rem 1.8rem;
+  background-color: transparent;
+  position: relative;
+}
+
+.configAccordion > button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.configAccordion > button > div {
+  padding-left: 0.7rem;
+}
+
+.configAccordion > button > div > p:first-child {
+  font-size: medium;
+  text-align: left;
+  font-weight: 500;
+}
+
+.configAccordion > button > div > p:nth-child(2) {
+  font-size: small;
+  text-align: left;
+  font-weight: 600;
+}
+
+.configAccordionChevronIcon {
+  margin-left: 0.5rem;
+}
+
+.configAccordionOptions {
+  position: absolute;
+  bottom: 1;
+  left: 30px;
+  padding: "10px";
+  width: 70%;
+  border-radius: 4px;
+  padding: 0.3rem;
+  background-color: var(--primary-foreground);
+  z-index: 10;
+}
+
+.configAccordionOptions > ul > li {
+  list-style: none;
+}
+
+.notificationsBellContainer {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  position: relative;
+  background-color: var(--primary-foreground);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.1rem;
+}
+
+.notificationsBell {
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0.2rem;
+  position: relative;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-left: -0.1rem;
+}
+
+.notificationsBubble {
+  position: absolute;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  background-color: var(--red);
+  color: var(--foreground);
+  top: 5px;
+  right: 5px;
+  font-size: xx-small;
+  padding: 1px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.logOutButton,
+.configButton {
+  border: none;
+  width: 100%;
+  font-size: small;
+  text-align: left;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.logOutButtonIcon {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-left: 0.5rem;
+  color: var(--red);
+}
+
+.configButtonIcon {
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.configButton:hover,
+.logOutButton:hover {
+  background-color: var(--dusty-gray);
+}
+
+.dateSubHeader {
+  width: 100%;
+  height: 3rem;
+}
+
+.dateSubHeader > p:first-child {
+  font-size: large;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+  color: var(--blue-enter);
+}
+
+.dateSubHeader > p:nth-child(2) {
+  width: 100%;
+  font-size: smaller;
+  color: var(--background);
+  font-weight: 800;
+}
+
+.keyboardButton {
+  position: relative;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--blue-enter);
+  cursor: pointer;
+}
+
+.keyboardButtonIcon {
+  color: var(--blue-selected);
+}
+
+/* Remittances card*/
+.remittancesCard {
+  border-top: 1px solid var(--dusty-gray);
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+
+.remittancesCard > span {
+  text-align: center;
+  font-size: smaller;
+  color: var(--dusty-gray);
+}
+
+.squareButton {
+  position: relative;
+  border: 4px solid var(--primary-foreground);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.squareButtonIcon {
+  color: var(--blue-enter);
+}
+
+.globalNotification {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--primary);
+  border: 1px solid var(--primary-foreground);
+  color: var(--primary-foreground);
+  padding: 10px 20px;
+  border-radius: 4px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .logo {
+    display: none;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}

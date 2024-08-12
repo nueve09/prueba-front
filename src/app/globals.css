@@ -1,0 +1,34 @@
+:root {
+  --background: #2c2a2a;
+  --foreground: #ffffff;
+
+  --primary: #353535;
+  --primary-foreground: #d6d6d6;
+
+  --mercury: #e8e8e8;
+  --blue-enter: #2714a2;
+
+  --blue-selected: #54cedf;
+  --red: #ef0405;
+
+  --dusty-gray: #9a9a9a;
+  --havelock-blue: #4696d4;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

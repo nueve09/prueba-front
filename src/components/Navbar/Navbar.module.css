@@ -1,0 +1,48 @@
+.navbar {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 10%;
+  min-height: 60px;
+  z-index: 1;
+  background: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbarButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 70%;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .navbar {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbarButtonsContainer {
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}

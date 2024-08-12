@@ -1,0 +1,60 @@
+.remittancesTableContainer {
+  width: 100%;
+  height: calc(100vh - 12rem);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.remittancesSearchAdSortContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.inputSearchList {
+  height: 3rem;
+  width: 100%;
+  position: relative;
+}
+
+.remittancesTable {
+  width: 100%;
+  height: calc(100% - 6rem);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.noRemmitences {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  margin-top: 0.4rem;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .remittancesTableContainer {
+    max-height: calc(100vh - 16rem);
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}

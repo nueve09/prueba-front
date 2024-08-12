@@ -1,0 +1,122 @@
+[
+  {
+    "id": "12345678",
+    "company": "Google",
+    "amount": "12000",
+    "status": "COBRADO",
+    "created_at": "20231203",
+    "charged_at": "20231203"
+  },
+  {
+    "id": "22448788",
+    "company": "Apple",
+    "amount": "100000",
+    "status": "NO_COBRADO",
+    "created_at": "20231203",
+    "charged_at": ""
+  },
+  {
+    "id": "34895721",
+    "company": "Microsoft",
+    "amount": "75000",
+    "status": "COBRADO",
+    "created_at": "20231202",
+    "charged_at": "20231204"
+  },
+  {
+    "id": "56234109",
+    "company": "Amazon",
+    "amount": "50000",
+    "status": "NO_COBRADO",
+    "created_at": "20231201",
+    "charged_at": ""
+  },
+  {
+    "id": "98765432",
+    "company": "Tesla",
+    "amount": "90000",
+    "status": "COBRADO",
+    "created_at": "20231205",
+    "charged_at": "20231206"
+  },
+  {
+    "id": "21436587",
+    "company": "Google",
+    "amount": "20000",
+    "status": "NO_COBRADO",
+    "created_at": "20231204",
+    "charged_at": ""
+  },
+  {
+    "id": "65432198",
+    "company": "Meta",
+    "amount": "45000",
+    "status": "COBRADO",
+    "created_at": "20231203",
+    "charged_at": "20231207"
+  },
+  {
+    "id": "11223344",
+    "company": "Apple",
+    "amount": "30000",
+    "status": "NO_COBRADO",
+    "created_at": "20231206",
+    "charged_at": ""
+  },
+  {
+    "id": "44332211",
+    "company": "Netflix",
+    "amount": "80000",
+    "status": "COBRADO",
+    "created_at": "20231202",
+    "charged_at": "20231205"
+  },
+  {
+    "id": "66554433",
+    "company": "Spotify",
+    "amount": "25000",
+    "status": "NO_COBRADO",
+    "created_at": "20231205",
+    "charged_at": ""
+  },
+  {
+    "id": "77665544",
+    "company": "Google",
+    "amount": "10000",
+    "status": "COBRADO",
+    "created_at": "20231207",
+    "charged_at": "20231208"
+  },
+  {
+    "id": "99887766",
+    "company": "Microsoft",
+    "amount": "65000",
+    "status": "NO_COBRADO",
+    "created_at": "20231206",
+    "charged_at": ""
+  },
+  {
+    "id": "55443322",
+    "company": "Apple",
+    "amount": "85000",
+    "status": "COBRADO",
+    "created_at": "20231204",
+    "charged_at": "20231209"
+  },
+  {
+    "id": "33221100",
+    "company": "Tesla",
+    "amount": "75000",
+    "status": "NO_COBRADO",
+    "created_at": "20231207",
+    "charged_at": ""
+  },
+  {
+    "id": "11009988",
+    "company": "Amazon",
+    "amount": "30000",
+    "status": "COBRADO",
+    "created_at": "20231201",
+    "charged_at": "20231203"
+  }
+]

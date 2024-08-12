@@ -1,0 +1,42 @@
+.remittancesListContainer {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--foreground);
+  padding: 1.5rem 2rem 0.5rem 2rem;
+}
+
+.remittancesListHeader {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.remittancesListSubHeader {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .remittancesListContainer {
+    width: 100%;
+    min-height: calc(100vh - 10%);
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+}
