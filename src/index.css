@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo-container{
+    background-image: url("/img/Nueve09.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.user-image-container{
+    background-image: url("/img/user.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.buttons-container {
+    justify-content: end;    
+  }
+
+  input[type="text"]
+{
+    font-size:30px;
+    font-weight: bold;
+}
+
+ input:focus{
+    outline: none;
+ }
