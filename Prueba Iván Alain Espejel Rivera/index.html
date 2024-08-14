@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1078c9cbde.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Prueba Iván Alain Espejel</title>
+  </head>
+  <body>
+    <!--Inicia sección de general -->
+    <div id="GeneralSection">
+      <!--Inicia sección de iconos -->
+      <div id="IconSection">
+        <!--Inicia sección img de iconos -->
+        <div id="ImgIconSection">
+          <img id="ImgIs" src="img/crown.png" alt="" />
+        </div>
+        <!--Termina sección img de iconos -->
+        <!--Inicia sección icon de iconos -->
+        <div id="IconIsection">
+          <div class="Is">
+            <i class="fa-solid fa-house IcoIs"></i>
+          </div>
+          <div class="Is">
+            <i class="fa-solid fa-money-bill-trend-up IcoIs"></i>
+          </div>
+          <div class="Is">
+            <i class="fa-solid fa-id-card IcoIs"></i>
+          </div>
+          <div class="Is">
+            <i class="fa-solid fa-file-invoice-dollar IcoIs"></i>
+          </div>
+          <div class="Is">
+            <i class="fa-solid fa-share-from-square IcoIs"></i>
+          </div>
+          <div class="Is">
+            <i class="fa-solid fa-chart-column IcoIs"></i>
+          </div>
+        </div>
+        <!--Termina sección icon de iconos -->
+      </div>
+      <!--Termina sección de iconos -->
+      <!--Inicia sección de Calculadora -->
+      <div id="CalculadoraSection">
+        <!--Inicia Título de sección de Calculadora -->
+        <div id="TitulosCs">
+          <div class="TituloCSection">
+            <p id="TituloP">Ventanilla <b>Digital</b></p>
+          </div>
+          <div id="divisor">
+            <hr />
+          </div>
+          <div class="TituloCSection">
+            <h2 id="TituloH">Remesas</h2>
+          </div>
+        </div>
+        <!--Termina Título de sección de Calculadora -->
+        <!--Inicia Calculadora -->
+        <div id="contenedorCalculadora">
+          <div id="Calculadora">
+            <div id="Pantalla">
+              <input
+                id="EntradaCalculadora"
+                type="text"
+                name="Pantalla"
+                disabled
+                maxlength="8"
+              />
+              <label id="alertaPantalla" for="Pantalla" hidden
+                >La longituda máxima del id es de 8 digitos</label
+              >
+            </div>
+            <div id="Botones">
+              <div id="BtnCuadrado">
+                <div id="Digitos">
+                  <div class="Digit">
+                    <button class="btnDigito" onclick="ingresar('1')">1</button>
+                    <button class="btnDigito" onclick="ingresar('2')">2</button>
+                    <button class="btnDigito" onclick="ingresar('3')">3</button>
+                  </div>
+                  <div class="Digit">
+                    <button class="btnDigito" onclick="ingresar('4')">4</button>
+                    <button class="btnDigito" onclick="ingresar('5')">5</button>
+                    <button class="btnDigito" onclick="ingresar('6')">6</button>
+                  </div>
+                  <div class="Digit">
+                    <button class="btnDigito" onclick="ingresar('7')">7</button>
+                    <button class="btnDigito" onclick="ingresar('8')">8</button>
+                    <button class="btnDigito" onclick="ingresar('9')">9</button>
+                  </div>
+                </div>
+                <div id="Punto">
+                  <button id="btnCero" onclick="ingresar('0')">0</button>
+                  <button id="btnPunto" onclick="ingresar('.')">.</button>
+                </div>
+              </div>
+              <div id="BtnFin">
+                <button id="btnDel" onclick="borrar()">
+                  <i class="fa-solid fa-delete-left"></i>
+                </button>
+                <button
+                  id="btnEnt"
+                  onclick="ValidaCalcu(document.getElementById('EntradaCalculadora').value)"
+                >
+                  <i class="fa-solid fa-circle-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Termina Calculadora -->
+      </div>
+      <!--Termina sección de Calculadora -->
+      <!--Inicia sección de Remesas -->
+      <div id="RemesasSection">
+        <!--Inicia Sección de Info en sección de Remesas -->
+        <div id="InfoRemesas">
+          <!--Inicia Sección de perfil en sección de Remesas -->
+          <div id="contenedorPerfil">
+            <div id="contenedorSelect">
+              <div id="contenedorAlerta">
+                <i id="icoAlerta" class="fa-solid fa-bell"></i>
+                <div id="Alerta"><h6>1</h6></div>
+              </div>
+              <img
+                id="imgPerfil"
+                src="img/WhatsApp Image 2020-02-27 at 18.52.27 (3).jpeg"
+                alt=""
+              />
+              <div id="nombrePerfil">
+                <h6>Pedro Perez</h6>
+                <p>Administrador</p>
+              </div>
+              <button id="btnMasPerfil">
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </div>
+          </div>
+          <!--Termina Sección de perfil en sección de Remesas -->
+          <!--Inicia Sección de Fecha en sección de Remesas -->
+          <div id="contenedorFecha">
+            <div id="tituloFecha">
+              <h6>HOY</h6>
+              <p>12 de Agosto de 2024</p>
+            </div>
+            <div id="btnFecha">
+              <button>
+                <i class="fa-solid fa-keyboard"></i>
+              </button>
+            </div>
+          </div>
+          <!--Termina Sección de Fecha en sección de Remesas -->
+          <!--Inicia Sección de Busqueda en sección de Remesas -->
+          <div id="contenedorBusqueda">
+            <div id="inputBusqueda">
+              <div id="ContenedorEntradaB">
+                <input
+                  id="entradaBusqueda"
+                  name="entrada"
+                  type="text"
+                  pattern="[0-9][^a-zA-Z]*"
+                  maxlength="8"
+                  placeholder="Ingrese un no. de Id"
+                />
+                <label for="entrada" id="busquedaLabel" hidden
+                  >Este campo solo admite números</label
+                >
+              </div>
+              <button
+                id="btnSearch"
+                type="button"
+                onclick="valida(document.getElementById('filtrosBusqueda').value)"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <button><i class="fa-solid fa-filter"></i></button>
+              <select
+                name="filtros"
+                id="filtrosBusqueda"
+                onchange="cambiarValidaciones()"
+              >
+                <option value="id" selected>Id</option>
+                <option value="company">Compañia</option>
+                <option value="amount">Monto</option>
+              </select>
+              <button><i class="fa-solid fa-print"></i></button>
+            </div>
+          </div>
+          <!--Termina Sección de Busqueda en sección de Remesas -->
+        </div>
+        <!--Termina Sección de Info en sección de Remesas -->
+        <!--Inicia Sección de Lista en sección de Remesas -->
+        <div id="ListaRemesas">
+          <div id="ContenedorLista"></div>
+          <div id="paginacion">
+            <button id="anterior">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button id="siguiente">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <!--Termina Sección de Lista en sección de Remesas -->
+      </div>
+      <!--Termina sección de Remesas -->
+    </div>
+    <!--Termina sección de general -->
+    <!--Inicia sección de modal -->
+    <div id="ventanaModal" class="modal">
+      <div class="contenido-modal">
+        <div id="Cerrar">
+          <span class="cerrar">&times;</span>
+        </div>
+        <div id="alertaNula" style="display: none;">
+          <h2>Su busqueda no ha tenido resultados</h2>
+        </div>
+        <div id="contenedorEstado" style="display: none;">
+          <h2>Ingrese la Fecha de Cobro</h2>
+          <div id="InfoEstado">
+            <h2 id="idCambioe">Id:</h2>
+            <p id="CompanyCambioe">Compañía:</p>
+            <p id="MontoCambioe">Monto:</p>
+          </div>
+          <div id="formEstado">
+            <div>
+              <label for="fecha">Fecha de cobro</label>
+              <input name="fecha" type="text" id="fechaCobro" />
+            </div>
+            <button id="ActFecha">Actualizar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--termina sección de modal -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
