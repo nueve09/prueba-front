@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test Front Lucero</title>
+    <meta name="author" content="Lucero Villafuerte" />
+    <meta name="description" content="Test Fronend" />
+    <meta name="keywords" content="Test Fronend" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div class="page">
+      <section class="menu">
+        <img
+          class="menu-logo__company"
+          src="images/logo_n09.png"
+          alt="home"
+          data-type="home"
+        />
+        <img
+          class="menu__logo"
+          src="images/home.svg"
+          alt="home"
+          data-type="home"
+        />
+        <img
+          class="menu__logo"
+          src="images/card.svg"
+          alt="card"
+          data-type="card"
+        />
+        <img
+          class="menu__logo"
+          src="images/count.svg"
+          alt="estado_cuenta"
+          data-type="estado_cuenta"
+        />
+        <img
+          class="menu__logo"
+          src="images/money.svg"
+          alt="money"
+          data-type="money"
+        />
+        <img
+          class="menu__logo"
+          src="images/folder.svg"
+          alt="folder"
+          data-type="folder"
+        />
+      </section>
+      <section class="remittance">
+        <div class="remittance-title">
+          <p class="remittance-title__bank">Ventanilla <b>Digital</b></p>
+        </div>
+        <div class="remittance-subtitle">
+          <h3 class="remittance-subtitle__name"><b>Remesas</b></h3>
+        </div>
+        <div class="remittance-account">
+          <div
+            class="remittance-account__number"
+            id="remittanceAccountNumber"
+          ></div>
+        </div>
+        <div class="remittance-calculator">
+          <img
+            class="remittance-calculator__numbers"
+            src="images/1.png"
+            alt="numbre"
+            data-type="number"
+            data-target="1"
+          />
+          <img
+            class="remittance-calculator__numbers"
+            src="images/2.png"
+            alt="numbre"
+            data-type="number"
+            data-target="2"
+          />
+          <img
+            class="remittance-calculator__numbers"
+            src="images/3.png"
+            alt="numbre"
+            data-type="number"
+            data-target="3"
+          />
+          <img
+            class="remittance-calculator__delete"
+            src="images/delete.png"
+            alt="delete"
+            data-type="delete"
+            id = "deleteButton"
+          />
+          <img
+            class="remittance-calculator__numbers"
+            src="images/4.png"
+            alt="numbre"
+            data-type="number"
+            data-target="4"
+          />
+          <img
+            class="remittance-calculator__numbers"
+            src="images/5.png"
+            alt="numbre"
+            data-type="number"
+            data-target="5"
+          />
+          <img
+            class="remittance-calculator__numbers"
+            src="images/6.png"
+            alt="numbre"
+            data-type="number"
+            data-target="6"
+          />
+          <img
+            class="remittance-calculator__numbers"
+            src="images/7.png"
+            alt="numbre"
+            data-type="number"
+            data-target="7"
+          />
+          <img
+            class="remittance-calculator__numbers"
+            src="images/8.png"
+            alt="numbre"
+            data-type="number"
+            data-target="8"
+          />
+          <img
+            class="remittance-calculator__numbers"
+            src="images/9.png"
+            alt="numbre"
+            data-type="number"
+            data-target="9"
+          />
+          <img
+            class="remittance-calculator__enter"
+            src="images/enter.png"
+            alt="enter"
+            data-type="enter"
+            id="enterButton"
+          />
+          <img
+            class="remittance-calculator__cero"
+            src="images/cero.png"
+            alt="numbre"
+            data-type="number"
+            data-target="0"
+          />
+          <img
+            class="remittance-calculator__numbers"
+            src="images/punto.png"
+            alt="punto"
+            data-type="punto"
+          />
+        </div>
+      </section>
+      <section class="movements">
+        <div class="movements-profile">
+          <img
+            class="movements-profile__notification"
+            src="images/notification.jpg"
+            alt="notification"
+            data-type="notification"
+          />
+          <img
+            class="movements-profile__face"
+            src="images/face.jpg"
+            alt="face"
+            data-type="face"
+          />
+          <p class="movements-profile__name">Lucero <br /></p>
+          <p class="movements-profile__profile">Operador</p>
+        </div>
+        <div class="movements-dates">
+          <h2 class="movements-dates__title"><b>Hoy</b></br></h2>
+          <h3 class="movements-dates__day">16 de Agosto de 2024</h3>
+          <img
+          class="movements-dates__keyboard"
+          src="images/keyboard.svg"
+          alt="keyboard"
+          data-type="keyboard"
+        />
+        </div>
+        <div class="movements-buttons">
+            <img
+            class="movements-buttons__search"
+            src="images/buscar.svg"
+            alt="keyboard"
+            data-type="keyboard"
+            id="searchButton"
+          />
+          <img
+          class="movements-buttons__filter"
+          src="images/filter.svg"
+          alt="keyboard"
+          data-type="keyboard"
+        />
+        <img
+        class="movements-buttons__print"
+        src="images/print.svg"
+        alt="keyboard"
+        data-type="keyboard"
+      />
+        </div>
+        <div class="popup" id="popupSearch">
+          <div class="popup-container__close" id="popupSearchclose">
+            <button class="popup-container_closed">Cerrar</button>
+          </div>
+          <div class="popup-container" >
+            <input class="popup-container__search" id="searchInput" type="text"  placeholder="Buscar por referencia...">
+            <button class="popup-container__filter" id="searchButtonFilter">Buscar</button>
+          </div>
+
+        </div>
+        <div class="movements-operations">
+            <table class="remittances-table" id = "remittancesTable" >
+              <thead>
+                <tr>
+                  <th>Referencia</th>
+                  <th>Banco</th>
+                  <th>Monto</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table> 
+        </div>
+      </section>
+      <footer class="footer"></footer>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
