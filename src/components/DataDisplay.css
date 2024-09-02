@@ -1,0 +1,163 @@
+.remesas-container {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .remesas-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    background-color: #ddd;
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .profile-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #000; 
+  }
+  
+  .notification-icon {
+    font-size: 1.5em;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #007bff; 
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  
+  .search-input {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .remesas-list {
+    max-height: calc(100vh - 150px); 
+    overflow-y: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .remesa-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; 
+  }
+  
+  .remesa-item:last-child {
+    border-bottom: none;
+  }
+  
+  .remesa-id {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .remesa-company {
+    color: #333; 
+  }
+  
+  .remesa-amount {
+    color: #000; 
+    font-weight: bold;
+  }
+  
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .remesas-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .profile {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    .notification-icon,
+    .search-button {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .search-input {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .remesas-container {
+      padding: 10px;
+    }
+  
+    .profile-info h3 {
+      font-size: 1em;
+    }
+  
+    .notification-icon,
+    .search-button {
+      font-size: 1.2em;
+    }
+  
+    .pagination button {
+      padding: 8px 16px;
+    }
+  }
+  

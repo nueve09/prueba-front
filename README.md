@@ -1,68 +1,70 @@
-# Prueba Técnica - (Front-end) - N09
+# Getting Started with Create React App
 
-Esta evaluación se ha creado para analizar las habilidades de los candidatos que aspiran a la posición de desarrollador **Front-end**.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## INTRODUCCIÓN
+## Available Scripts
 
-En este repositorio, encontrarás un conjunto de criterios para un caso práctico diseñado para evaluar las habilidades técnicas de los candidatos en relación con las funciones y responsabilidades clave en el ámbito del Desarrollo de Tecnología. El objetivo es medir la capacidad del candidato para abordar los desafíos y tareas esenciales dentro de este campo específico.
+In the project directory, you can run:
 
-#### ¿Qué se busca evaluar?
+### `npm start`
 
-Principalmente los siguientes aspectos:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-+ Creatividad para resolver los requerimientos,
-+ Calidad del código entregado (estructura y buenas prácticas),
-+ Sencilles y calidad,
-+ Menor uso de dependencias o frameworks,
-+ Ajuste de los componentes en diferentes dimensiones.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## IMPORTANTE
-1. Asegúrate de tener `git` y tus herramientas de desarrollo instaladas.
+### `npm test`
 
-2. Se solicita crear la aplicación utilizando tecnología vanilla (html + css + js) o usando la libería/framework de tu elección:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-3. Se requiere de una **cuenta de GitHub** para realizar este ejercicio.
+### `npm run build`
 
-4.  **Antes de comenzar a programar:**
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-* Realizar un `Fork` de este repositorio (https://github.com/nueve09/prueba-front).
-* Clonar el fork a su máquina local `git clone git@github.com:USERNAME/FORKED-PROJECT.git`
-* Crear un `branch` en su cuenta de GitHub utilizando su nombre completo.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-5.  **Al finalizar**:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-* 1) Realizar un `Commit` de su proyecto, **enviar un `Pull Request` al branch con su NOMBRE**, y notificar a la siguiente dirección de correo electrónico rmartinez@nueve09.mx, CC: jaraurjo@nueve09.mx y ubasurto@nueve09.mx.
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## EJERCICIO PRÁCTICO
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-**Objetivo:** Desarrollar una aplicación web, con base a maqueta.png.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
- 
-#### Requerimientos generales
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-1. La aplicación debe cumplir con los siguientes **requisitos funcionales:**
+## Learn More
 
-- Crear una aplicación que incluya todos los componentes mostrados en la maqueta.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- Crear una lista de objetos que contenga información de más de 12 remesas. [{"id":"","company":"","amount":"12000","status":"", created_at:"20231203","charged_at":"20231203"}]
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- Crear sección de busqueda por id, company o monto
+### Code Splitting
 
-- Paginación de las remesas 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- Mostrar los primeros 10 remesas por **charged_at** y que hayan sido cobradas; del resultado de la búsqueda, incluyendo id (`'remesa.id'`), la compañia (`'remesa.company'`) y monto (`'remesa.amount'`) de cada registro.
+### Analyzing the Bundle Size
 
-- La interfaz tipo calculadora debe ser funcional.
-    1) validar datos de entrada
-    2) validar formato de id, max(8)
-    3) validar que el id de la remesa,no haya sido cobrada en la lista. Si, no agrega la fecha en que se cobro, actualiza el estatus de "NO_COBRADO" a "COBRADO" y muestrala en el listado de la interfaz.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-- Qué la aplicación sea capaz de ajustarse de manera correcta a diversas dimensiones. 
+### Making a Progressive Web App
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-- Incluir un componente para mostrar mensajes de Errores Generales en toda la aplicación.
+### Advanced Configuration
 
-2.  **CSS:** Utilizar CSS Grid y/o CSS Flexbox, para la maquetación del proyecto 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-3.  **Iconos:** Utilizar una librería para el manejo de iconos donde lo considere necesario (_se recomienda el uso de [Font Awesome](http://fontawesome.io/) o [Glyphicons](http://glyphicons.com/)._)
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
