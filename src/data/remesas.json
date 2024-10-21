@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "id": "29939303",
+      "company": "Wise",
+      "amount": 5000,
+      "status": "COBRADO",
+      "created_at": "20231020",
+      "charged_at": ""
+    },
+    {
+      "id": "29939406",
+      "company": "Remitly",
+      "amount": 8300,
+      "status": "NO_COBRADO",
+      "created_at": "20231125",
+      "charged_at": ""
+    },
+    {
+      "id": "29939509",
+      "company": "Western Union",
+      "amount": 100000,
+      "status": "COBRADO",
+      "created_at": "20231010",
+      "charged_at": ""
+    },
+    {
+      "id": "29939612",
+      "company": "Currencies Direct",
+      "amount": 1000,
+      "status": "NO_COBRADO",
+      "created_at": "20231103",
+      "charged_at": ""
+    },
+    {
+      "id": "29939715",
+      "company": "Skrill",
+      "amount": 1670,
+      "status": "NO_COBRADO",
+      "created_at": "20231201",
+      "charged_at": ""
+    },
+    {
+      "id": "29939818",
+      "company": "Small World",
+      "amount": 1330,
+      "status": "NO_COBRADO",
+      "created_at": "20231115",
+      "charged_at": ""
+    },
+    {
+      "id": "29939921",
+      "company": "ACE Money Transfer",
+      "amount": 1670,
+      "status": "NO_COBRADO",
+      "created_at": "20231112",
+      "charged_at": ""
+    },
+    {
+      "id": "29940024",
+      "company": "TransferGo",
+      "amount": 1670,
+      "status": "NO_COBRADO",
+      "created_at": "20231028",
+      "charged_at": "20231029"
+    },
+    {
+      "id": "29940127",
+      "company": "WorldRemit",
+      "amount": 2500,
+      "status": "NO_COBRADO",
+      "created_at": "20231110",
+      "charged_at": ""
+    },
+    {
+      "id": "29940230",
+      "company": "Nium",
+      "amount": 1000,
+      "status": "NO_COBRADO",
+      "created_at": "20231120",
+      "charged_at": "20231121"
+    },
+    {
+      "id": "29940333",
+      "company": "XE",
+      "amount": 1000,
+      "status": "COBRADO",
+      "created_at": "20231130",
+      "charged_at": ""
+    },
+    {
+      "id": "29940436",
+      "company": "MoneyGram International Inc",
+      "amount": 16700,
+      "status": "NO_COBRADO",
+      "created_at": "20231105",
+      "charged_at": "20231106"
+    },
+    {
+      "id": "29940539",
+      "company": "Xoom (Paypal)",
+      "amount": 7500,
+      "status": "NO_COBRADO",
+      "created_at": "20231101",
+      "charged_at": "20231102"
+    },
+    {
+      "id": "29940642",
+      "company": "TorFX",
+      "amount": 1670,
+      "status": "NO_COBRADO",
+      "created_at": "20231108",
+      "charged_at": "20231109"
+    },
+    {
+      "id": "29940745",
+      "company": "TransferMate",
+      "amount": 1670,
+      "status": "COBRADO",
+      "created_at": "20231018",
+      "charged_at": ""
+    }
+  ]
+}
