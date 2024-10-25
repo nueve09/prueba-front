@@ -1,0 +1,64 @@
+/* ----------------------------------------
+          Componente Transferecnias.jsx
+---------------------------------------- */
+
+article {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.seccion_transferencias {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-color: var(--mine-shaft-950);
+  display: flex;
+  padding: 1.2rem 1.2rem 3rem 1.2rem;
+  flex-direction: column;
+}
+
+
+/* ----------------------------------------
+              Media Queries
+---------------------------------------- */
+
+@media (min-width: 640px) {
+
+  /* Componente Transferecnias.jsx */
+
+  .seccion_transferencias {
+    padding-top: 1.6rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  /* Componente Transferecnias.jsx */
+
+  .seccion_transferencias {
+    padding-top: 2rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  /* Componente Transferecnias.jsx */
+
+  .seccion_transferencias {
+    padding-top: 2.3rem;
+  }
+
+}
+
+@media (min-width: 1280px) {
+
+  /* Componente Transferecnias.jsx */
+
+  .seccion_transferencias {
+    padding-top: 2.7rem;
+  }
+
+}

@@ -1,5 +1,7 @@
 // Bibliotecas
 import React from 'react';
+// CSS Styles
+import '@styles/Navbar.css';
 // Componentes
 import BotonMenu from './BotonMenu';
 import Logo from './Logo';
@@ -15,21 +17,15 @@ const Navbar = ({ navbarOpen, setNavbarOpen }) => {
   };
 
   return (
-    <div
-      className={`
-        ${navbarOpen ? "w-screen" : "w-16"} relative p-2 bg-tuatara-900 duration-200 flex flex-col
-        ${navbarOpen ? "sm:w-56" : "sm:w-16"}
-        ${navbarOpen ? "md:w-64" : "md:w-20"}
-        ${navbarOpen ? "lg:w-80" : "lg:w-28"}
-        ${navbarOpen ? "xl:w-80" : "xl:w-32"}
-        ${navbarOpen ? "2xl:w-96" : "2xl:w-36"}
-      `}>
+
+    <div className={`navbar ${navbarOpen ? 'navbar_open' : 'navbar_closed'}`}>
 
       <BotonMenu navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen}/>
       <Logo navbarOpen={navbarOpen} />
       <NavbarMenu navbarOpen={navbarOpen} onMenuClick={handleMenuClick} />
 
     </div>
+    
   );
 };
 

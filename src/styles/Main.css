@@ -1,0 +1,12 @@
+/* ----------------------------------------
+            Componente Main.jsx
+---------------------------------------- */
+
+.contenido_main {
+  flex-grow: 1;
+  height: 100%;
+  background-color: var(--mine-shaft-950);
+  color: var(--white-50);
+  min-width: 20rem;
+}
+

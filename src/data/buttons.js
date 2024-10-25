@@ -3,7 +3,7 @@ import { Icons } from '@data/icons';
 
 // Botones de la calculadora
 export const Buttons = [
-  { area: 'zero', value: '0', type: "normal" },
+  { area: 'zero', value: '0', type: "zero" },
   { area: 'one', value: '1', type: "normal" },
   { area: 'two', value: '2', type: "normal" },
   { area: 'three', value: '3', type: "normal" },

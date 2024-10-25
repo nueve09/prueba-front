@@ -1,0 +1,120 @@
+/* ----------------------------------------
+      Componente TituloArticle.jsx
+---------------------------------------- */
+
+.titulo_articulo {
+  border-bottom: 1px solid var(--viking-400);
+  color: var(--white-50);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding-bottom: 0.6rem;
+}
+
+.titulo_articulo strong {
+  font-weight: 900;
+}
+
+/* ----------------------------------------
+      Componente TituloSeccion.jsx
+---------------------------------------- */
+
+.titulo_seccion {
+  color: var(--viking-400);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 0.3rem;
+}
+
+/* ----------------------------------------
+              Media Queries
+---------------------------------------- */
+
+@media (min-width: 640px) {
+
+  /* Componente TituloArticle.jsx */
+
+  .titulo_articulo {
+    font-size: 1rem;
+    padding-bottom: 0.7rem;
+  }
+
+  /* Componente TituloSeccion.jsx */
+
+  .titulo_seccion {
+    font-size: 1.4rem;
+    padding-top: 0.45rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  /* Componente TituloArticle.jsx */
+
+  .titulo_articulo {
+    font-size: 1.1rem;
+    padding-bottom: 0.85rem;
+  }
+
+  /* Componente TituloSeccion.jsx */
+
+  .titulo_seccion {
+    font-size: 1.6rem;
+    padding-top: 0.5rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  /* Componente TituloArticle.jsx */
+
+  .titulo_articulo {
+    font-size: 1.2rem;
+    padding-bottom: 0.9rem;
+  }
+
+  /* Componente TituloSeccion.jsx */
+
+  .titulo_seccion {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  /* Componente TituloArticle.jsx */
+
+  .titulo_articulo {
+    font-size: 1.3rem;
+    padding-bottom: 0.95rem;
+  }
+
+  /* Componente TituloSeccion.jsx */
+
+  .titulo_seccion {
+    font-size: 1.8rem;
+    padding-top: 0.6rem;
+  }
+
+}
+
+@media (min-width: 1536px) {
+
+  /* Componente TituloArticle.jsx */
+
+  .titulo_articulo {
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+
+  }
+
+  /* Componente TituloSeccion.jsx */
+
+  .titulo_seccion {
+    font-size: 1.9rem;
+    padding-top: 0.7rem;
+  }
+
+}

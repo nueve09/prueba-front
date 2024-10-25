@@ -1,5 +1,7 @@
 // Bibliotecas
 import React from "react";
+// CSS Styles
+import '@styles/Credito.css'
 // Componentes
 import { TituloArticle } from "@components/main/ui/TituloArticle";
 import { TituloSeccion } from "@components/main/ui/TituloSeccion";
@@ -8,17 +10,26 @@ import { TituloSeccion } from "@components/main/ui/TituloSeccion";
 // Componente Remesas
 const Credito = () => {
 
-
   return (
-    <article className="flex h-full lg:flex-row">
 
-      <section className={`relative h-full w-full bg-gray-dark flex flex-col p-8`}>
+    <article>
+
+      {/* Seccion */}
+      <section className="seccion_credito">
+
+        {/* Titulo del articulo */}
         <TituloArticle />
-        <TituloSeccion title="Credito" />
+
+        {/* Titulo de la seccion */}
+        <TituloSeccion title="Crédito" />
+
+
       </section>
 
     </article>
+
   );
 };
 
 export default Credito;
+

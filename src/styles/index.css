@@ -1,5 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  /* Black */
+  --black-50: #f6f6f6;
+  --black-100: #e7e7e7;
+  --black-200: #d1d1d1;
+  --black-300: #b0b0b0;
+  --black-400: #888888;
+  --black-500: #6d6d6d;
+  --black-600: #5d5d5d;
+  --black-700: #4f4f4f;
+  --black-800: #454545;
+  --black-900: #3d3d3d;
+  --black-950: #000000;
+  /* Original */
+  --black-t-200: #d1d1d14b;
+  --black-t-800: #454545a8;
+
+  /* Red */
+  --red-50: #fff0f0;
+  --red-100: #ffdddd;
+  --red-200: #ffc1c1;
+  --red-300: #ff9696;
+  --red-400: #ff5a5b;
+  --red-500: #ff2728;
+  --red-600: #ef0405;
+  --red-700: #d40102;
+  /* Original */
+  --red-800: #ae0607;
+  --red-900: #900c0d;
+  --red-950: #4f0000;
+
+  /* Tuatara */
+  --tuatara-50: #f6f6f6;
+  --tuatara-100: #e7e7e7;
+  --tuatara-200: #d1d1d1;
+  --tuatara-300: #b0b0b0;
+  --tuatara-400: #888888;
+  --tuatara-500: #6d6d6d;
+  --tuatara-600: #5d5d5d;
+  --tuatara-700: #4f4f4f;
+  --tuatara-800: #454545;
+  --tuatara-900: #353535;
+  /* Original */
+  --tuatara-950: #262626;
+
+  /* Mercury */
+  --mercury-50: #f8f8f8;
+  --mercury-100: #e8e8e8;
+  /* Original */
+  --mercury-200: #dcdcdc;
+  --mercury-300: #bdbdbd;
+  --mercury-400: #989898;
+  --mercury-500: #7c7c7c;
+  --mercury-600: #656565;
+  --mercury-700: #525252;
+  --mercury-800: #464646;
+  --mercury-900: #3d3d3d;
+  --mercury-950: #292929;
+  --mercury-t-200: #dcdcdcd0;
+
+  /* Mine Shaft */
+  --mine-shaft-50: #f6f6f6;
+  --mine-shaft-100: #e7e7e7;
+  --mine-shaft-200: #d1d1d1;
+  --mine-shaft-300: #b0b0b0;
+  --mine-shaft-400: #888888;
+  --mine-shaft-500: #6d6d6d;
+  --mine-shaft-600: #5d5d5d;
+  --mine-shaft-700: #4f4f4f;
+  --mine-shaft-800: #454545;
+  --mine-shaft-900: #3d3d3d;
+  --mine-shaft-950: #2a2a2a;
+  /* Original */
+
+  /* Dark Blue */
+  --dark-blue-50: #f2f3ff;
+  --dark-blue-100: #e8eaff;
+  --dark-blue-200: #d3d6ff;
+  --dark-blue-300: #b0b2ff;
+  --dark-blue-400: #8583ff;
+  --dark-blue-500: #5d51ff;
+  --dark-blue-600: #482ef9;
+  --dark-blue-700: #391ce5;
+  --dark-blue-800: #2e16bb;
+  /* Original */
+  --dark-blue-900: #29159d;
+  --dark-blue-950: #140a6b;
+
+  /* Viking */
+  --viking-50: #eefcfd;
+  --viking-100: #d5f5f8;
+  --viking-200: #afecf2;
+  --viking-300: #78dce8;
+  --viking-400: #52cadb;
+  /* Original */
+  --viking-500: #1ea6bc;
+  --viking-600: #1c869e;
+  --viking-700: #1d6c81;
+  --viking-800: #20596a;
+  --viking-900: #1f4a5a;
+  --viking-950: #0f303d;
+
+  /* White */
+  --white-50: #ffffff;
+  /* Original */
+  --white-100: #efefef;
+  --white-200: #dcdcdc;
+  --white-300: #bdbdbd;
+  --white-400: #989898;
+  --white-500: #7c7c7c;
+  --white-600: #656565;
+  --white-700: #525252;
+  --white-800: #464646;
+  --white-900: #3d3d3d;
+  --white-950: #292929;
+
+  /* Emerald */
+  --emerald-50: #f1fcf4;
+  --emerald-100: #dff9e9;
+  --emerald-200: #c1f1d3;
+  --emerald-300: #90e5b1;
+  --emerald-400: #59cf86;
+  --emerald-500: #38c870;
+  --emerald-600: #249550;
+  /* Original */
+  --emerald-700: #207542;
+  --emerald-800: #1e5d37;
+  --emerald-900: #1a4d2f;
+  --emerald-950: #092a18;
+
+  /* Matisse */
+  --matisse-50: #f0f8ff;
+  --matisse-100: #e1f0fd;
+  --matisse-200: #bbe1fc;
+  --matisse-300: #7fc8fa;
+  --matisse-400: #3badf5;
+  --matisse-500: #1293e5;
+  --matisse-600: #056ab4;
+  /* Original */
+  --matisse-700: #065b9e;
+  --matisse-800: #094e83;
+  --matisse-900: #0e426c;
+  --matisse-950: #092a48;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--mine-shaft-950);
+  font-family: 'Plus Jakarta Sans';
+}

@@ -1,10 +1,13 @@
 // Biblioteca
 import React from 'react'
+// CSS Styles
+import '@styles/TitulosUI.css'
+
 
 // Componente Titulo Seccion
 export const TituloSeccion = ({ title }) => {
   return (
-    <h1 className={`text-viking-400 font-extrabold my-4 text-xl md:text-2xl xl:text-3xl `}>
+    <h1 className="titulo_seccion">
       {title}
     </h1>
   )

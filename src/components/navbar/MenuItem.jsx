@@ -20,15 +20,14 @@ const MenuItem = ({ menu, navbarOpen, onClick }) => {
 
   return (
 
-    <li className={`flex items-center cursor-pointer duration-100 hover:text-sky-500 ${navbarActivo ? 'text-sky-400' : 'text-white-50'} gap-3`} onClick={handleNavigation}>
+    <li className={`elemento_menu ${navbarActivo ? 'elemento_menu_activo' : 'elemento_menu_inactivo'}`} onClick={handleNavigation}>
 
-      <FontAwesomeIcon icon={menu.nameIcon} className={`min-w-8 mx-1 text-xl sm:min-w-10 md:min-w-12 md:text-2xl md:mx-2 lg:min-w-16  xl:min-w-20 xl:text-3xl 2xl:min-w-24`} />
+      <FontAwesomeIcon icon={menu.nameIcon} className="icono_menu" />
+      <span className={`titulo_elemento_menu ${navbarOpen ? 'slide-in' : 'slide-out'}`}> {menu.title} </span>
 
-      <span className={`${!navbarOpen && "scale-0"} origin-left duration-200 text-lg font-semibold md:text-xl lg:text-lg xl:text-2xl`}>
-        {menu.title}
-      </span>
 
     </li>
+
   );
 };
 

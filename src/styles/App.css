@@ -1,0 +1,33 @@
+/* ----------------------------------------
+            Componente App.jsx
+---------------------------------------- */
+
+.contenedor_app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contenedor_main {
+  flex: 1;
+  display: flex;
+}
+
+.mostrar_navbar .contenedor_main {
+  display: none;
+}
+
+/* ----------------------------------------
+              Media Queries
+---------------------------------------- */
+
+@media (min-width: 768px) {
+
+  /* Componente App.jsx */
+
+  .mostrar_navbar .contenedor_main {
+    display: flex;
+  }
+
+}

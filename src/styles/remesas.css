@@ -1,50 +1,1125 @@
-/* Animacion para alerta IN */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
+/* ----------------------------------------
+          Componente Remesas.jsx
+---------------------------------------- */
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Animacion para alerta OUT */
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-}
-
-.scroll-container {
+article {
+  display: flex;
+  height: 100vh;
   width: 100%;
-  max-height: 100%;
-  border: 2px solid;
-  overflow-y: auto;
 }
 
-.scroll-container::-webkit-scrollbar {
+.seccion_remesas {
+  height: 100%;
+  position: relative;
+  width: 50%;
+}
+
+.seccion_calculadora {
+  background-color: var(--mine-shaft-950);
+  display: flex;
+  padding: 1.2rem 1.2rem 3rem 1.2rem;
+}
+
+.seccion_tabla {
+  background-color: var(--mercury-100);
+  color: var(--black-950);
+  display: flex;
+  height: 100%;
+  padding: 2rem 2.5rem 3rem 2rem;
+}
+
+.seccion_notificacion {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  padding: 0.25rem 0;
+  width: 100%;
+}
+
+.contenedor_fecha {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.contenedor_acciones {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.contenedor_tabla {
+  flex-grow: 1;
+  max-height: calc(100vh - 230px);
+  overflow-y: auto;
+  width: 100%;
+}
+
+.contenedor_tabla::-webkit-scrollbar {
   width: 8px;
 }
 
-.scroll-container::-webkit-scrollbar-track {
-  background: #e8e8e8;
+.contenedor_tabla::-webkit-scrollbar-track {
+  background: var(--mercury-100);
   border-radius: 10px;
 }
 
-.scroll-container::-webkit-scrollbar-thumb {
-  background: #c2c2c2;
+.contenedor_tabla::-webkit-scrollbar-thumb {
+  background: var(--tuatara-300);
   border-radius: 10px;
 }
 
-.scroll-container::-webkit-scrollbar-thumb:hover {
-  background: #353535;
+.contenedor_tabla::-webkit-scrollbar-thumb:hover {
+  background: var(--tuatara-900);
+}
+
+/* ----------------------------------------
+    Funcion de intercambio de secciones
+---------------------------------------- */
+
+@media (max-width: 1023px) {
+  article {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .seccion_remesas {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .mostrar_calculadora .seccion_calculadora {
+    display: block;
+  }
+
+  .mostrar_tabla .seccion_tabla {
+    display: block;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .seccion_remesas {
+    display: block;
+  }
+
+  .seccion_calculadora {
+    width: 50%;
+  }
+
+  .mostrar_calculadora .seccion_calculadora {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .seccion_tabla {
+    width: 50%;
+  }
+
+}
+
+/* ----------------------------------------
+        Componente Calculadora.jsx
+---------------------------------------- */
+
+.contenedor_calculadora {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  max-height: calc(100vh - 100px);
+}
+
+.contenido_calculadora {
+  aspect-ratio: 1;
+  max-width: 22rem;
+  min-width: 10rem;
+  width: 100%;
+}
+
+.contenedor_pantalla_calculadora {
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.pantalla_calculadora {
+  background-color: var(--mercury-100);
+  border-radius: 0.75rem;
+  border: 1px solid none;
+  color: var(--mine-shaft-950);
+  font-size: 1.75rem;
+  font-weight: 700;
+  outline: none;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.pantalla_calculadora:hover {
+  background-color: var(--mercury-t-200);
+}
+
+.leyenda_pantalla_calculadora {
+  color: var(--black-950);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  left: 0.75rem;
+  position: absolute;
+  top: 1.4rem;
+}
+
+.contenedor_botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "one two three delete"
+    "four five six delete"
+    "seven eight nine enter"
+    "zero zero point enter";
+  height: 100%;
+  gap: 0.75rem;
+}
+
+.btn_calculadora {
+  align-items: center;
+  background-color: var(--mercury-100);
+  border-radius: 80rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: center;
+  transition: background-color 0.3s;
+  font-weight: 800;
+}
+
+.btn_calculadora:hover {
+  background-color: var(--mercury-t-200);
+}
+
+.delete {
+  color: var(--black-950);
+}
+
+.enter {
+  background-color: var(--dark-blue-800);
+  color: var(--white-50) !important;
+}
+
+.enter:hover {
+  background-color: var(--dark-blue-700);
+}
+
+/* ----------------------------------------
+        Componente Notificacion.jsx
+---------------------------------------- */
+
+.btn_notificacion {
+  align-items: center;
+  background-color: var(--mercury-200);
+  border-radius: 50%;
+  border: 2px solid var(--mercury-200);
+  cursor: pointer;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  position: relative;
+  transition: background-color 0.3s;
+  width: 2rem;
+}
+
+.btn_notificacion:hover {
+  background-color: var(--mercury-300);
+  transition: background-color 0.3s;
+}
+
+.contador_notificacion {
+  align-items: center;
+  background-color: var(--red-700);
+  border-radius: 50%;
+  color: var(--white-50);
+  display: flex;
+  font-size: 0.75rem;
+  font-weight: bold;
+  height: 1.2rem;
+  justify-content: center;
+  padding: 0.2rem;
+  position: absolute;
+  right: -0.6rem;
+  top: -0.6rem;
+  width: 1.2rem;
+}
+
+.icono_notificacion {
+  color: var(--black-950);
+  font-size: 1.1rem;
+}
+
+/* ----------------------------------------
+          Componente Usuario.jsx
+---------------------------------------- */
+
+.contenedor_usuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btn_usuario {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 2.3rem;
+  height: 2.3rem;
+  border: 2px solid var(--mercury-200);
+  background-color: var(--mercury-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.img_usuario {
+  background-image: url(../assets/imgs/user.webp);
+}
+
+.no_img_usuario {
+  background-color: var(--mercury-200);
+}
+
+.contenido_perfil {
+  color: var(--black-950);
+  font-weight: bold;
+}
+
+.nombre_usuario {
+  font-size: 0.85rem;
+  line-height: 1.25;
+}
+
+.rol_usuario {
+  font-size: 0.6rem;
+  line-height: 1.25;
+}
+
+.icono_flecha {
+  color: var(--black-950);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+/* ----------------------------------------
+            Componente Fecha.jsx
+---------------------------------------- */
+
+.contenido_fecha {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.titulo_fecha {
+  color: var(--dark-blue-800);
+  font-weight: 800;
+  line-height: normal;
+  font-size: 1rem;
+}
+
+.texto_fecha {
+  color: var(--mine-shaft-950);
+  font-weight: 800;
+  font-size: 0.75rem;
+}
+
+/* ----------------------------------------
+        Componente BotonTeclado.jsx
+---------------------------------------- */
+
+.btn_teclado {
+  align-items: center;
+  background-color: var(--dark-blue-800);
+  border-radius: 50%;
+  border: 2px solid var(--dark-blue-800);
+  cursor: pointer;
+  display: flex;
+  height: 2.3rem;
+  justify-content: center;
+  transition: background-color 0.3s;
+  width: 2.3rem;
+}
+
+.btn_teclado:hover {
+  background-color: var(--dark-blue-700);
+}
+
+.icono_teclado {
+  color: var(--viking-400);
+  font-size: 1.05rem;
+}
+
+/* ----------------------------------------
+        Componente BotonAccion.jsx
+---------------------------------------- */
+
+.btn_accion {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--dark-blue-200);
+  background-color: var(--mercury-100);
+  padding: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.btn_accion:hover {
+  background-color: var(--mercury-t-200);
+}
+
+.icono_accion {
+  color: var(--dark-blue-800);
+  font-size: 1rem;
+}
+
+/* ----------------------------------------
+          Componente Filtro.jsx
+---------------------------------------- */
+
+.contenedor_filtro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.texto_filtro {
+  position: absolute;
+  left: 0.5rem;
+  top: -0.75rem;
+  font-size: 0.875rem;
+  color: var(--dark-blue-800);
+  background-color: var(--mercury-100);
+  padding: 0 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0.125rem;
+  font-weight: 800;
+  transform-origin: left;
+}
+
+.input_filtro {
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--dark-blue-200);
+  background-color: var(--mercury-100);
+  padding-left: 1rem;
+  height: 2.5rem;
+  flex-grow: 1;
+  font-size: 0.75rem;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.input_filtro:hover {
+  background-color: var(--mercury-t-200);
+}
+
+/* ----------------------------------------
+        Componente TablaRemesas.jsx
+---------------------------------------- */
+
+.contenedor_tabla_remesas {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.encabezado_tabla_remesas {
+  border-bottom: 2px solid var(--tuatara-300);
+  font-weight: 900;
+  font-size: 1rem;
+  color: var(--mine-shaft-950);
+}
+
+.encabezado_tabla_remesas th {
+  padding: 0.75rem 0;
+}
+
+.fila_tabla_remesas {
+  border-bottom: 2px solid var(--tuatara-300);
+  font-size: 0.85rem;
+  color: var(--mine-shaft-950);
+}
+
+.fila_tabla_remesas td {
+  padding: 1.5rem 0;
+}
+
+/* ----------------------------------------
+      Componente BotonAuxiliar.jsx
+---------------------------------------- */
+
+.btn_aux {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 0.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn_calculadora {
+  left: 2rem;
+  color: var(--mine-shaft-950);
+}
+
+.btn_tabla {
+  right: 2rem;
+  color: var(--mercury-100);
+}
+
+.btn_aux_icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.icono_btn_aux {
+  font-size: 1.125rem;
+}
+
+/* ----------------------------------------
+              Media Queries
+---------------------------------------- */
+
+@media (min-width: 640px) {
+
+  /* Componente Remesas.jsx */
+
+  .seccion_calculadora {
+    padding-top: 1.6rem;
+  }
+
+  /* Componente Calculadora.jsx */
+
+  .contenido_calculadora {
+    max-width: 28rem;
+    min-width: 20rem;
+  }
+
+  .contenedor_pantalla_calculadora {
+    margin-bottom: 2.5rem;
+  }
+
+  .pantalla_calculadora {
+    border-radius: 0.7rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.2rem;
+    padding: 1.2rem;
+  }
+
+  .leyenda_pantalla_calculadora {
+    font-size: 1.25rem;
+    left: 1.5rem;
+    top: 1.7rem;
+  }
+
+  .contenedor_botones {
+    gap: 1.2rem;
+  }
+
+  .btn_calculadora {
+    font-size: 2.5rem;
+  }
+
+  /* Componente Notificacion.jsx */
+
+  .btn_notificacion {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  .contador_notificacion {
+    font-size: 0.8rem;
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+
+  .icono_notificacion {
+    font-size: 1.2rem;
+  }
+
+  /* Componente Usuario.jsx */
+
+  .contenedor_usuario {
+    gap: 0.7rem;
+  }
+
+  .btn_usuario {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .nombre_usuario {
+    font-size: 0.90rem;
+  }
+
+  .rol_usuario {
+    font-size: 0.65rem;
+  }
+
+  .icono_flecha {
+    font-size: 1.1rem;
+  }
+
+  /* Componente Fecha.jsx */
+
+  .titulo_fecha {
+    font-size: 1.1rem;
+  }
+
+  .texto_fecha {
+    font-size: 0.80rem;
+  }
+
+  /* Componente BotonTeclado.jsx */
+
+  .btn_teclado {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .icono_teclado {
+    font-size: 1.1rem;
+  }
+
+  /* Componente BotonAccion.jsx */
+
+  .btn_accion {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .icono_accion {
+    font-size: 1.05rem;
+  }
+
+  /* Componente Filtro.jsx */
+
+  .texto_filtro {
+    font-size: 0.9rem;
+  }
+
+  .input_filtro {
+    height: 2.6rem;
+    font-size: 0.8rem;
+  }
+
+  /* Componente TablaRemesas.jsx */
+
+  .tabla-encabezado {
+    font-size: 1.2rem;
+  }
+
+  .tabla-fila {
+    font-size: 0.95rem;
+  }
+
+  /* Componente BotonAuxiliar.jsx */
+
+  .btn_aux {
+    top: 1rem;
+  }
+
+  .icono_btn_aux {
+    font-size: 1.25rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  /* Componente Remesas.jsx */
+
+  .seccion_calculadora {
+    padding-top: 2rem;
+  }
+
+  /* Componente Calculadora.jsx */
+
+  .contenido_calculadora {
+    max-width: 28rem;
+    min-width: 26rem;
+  }
+
+  .contenedor_pantalla_calculadora {
+    margin-bottom: 2.8rem;
+  }
+
+  .pantalla_calculadora {
+    border-radius: 0.8rem;
+    font-size: 2.5rem;
+  }
+
+  .leyenda_pantalla_calculadora {
+    font-size: 1.4rem;
+  }
+
+  .contenedor_botones {
+    gap: 1.8rem;
+  }
+
+  .btn_calculadora {
+    font-size: 2.7rem;
+  }
+
+  /* Componente Notificacion.jsx */
+
+  .btn_notificacion {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .contador_notificacion {
+    font-size: 0.9rem;
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+
+  .icono_notificacion {
+    font-size: 1.3rem;
+  }
+
+  /* Componente Usuario.jsx */
+
+  .contenedor_usuario {
+    gap: 0.75rem;
+  }
+
+  .btn_usuario {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .nombre_usuario {
+    font-size: 0.95rem;
+  }
+
+  .rol_usuario {
+    font-size: 0.7rem;
+  }
+
+  .icono_flecha {
+    font-size: 1.15rem;
+  }
+
+  /* Componente Fecha.jsx */
+
+  .titulo_fecha {
+    font-size: 1.2rem;
+  }
+
+  .texto_fecha {
+    font-size: 0.85rem;
+  }
+
+  /* Componente BotonTeclado.jsx */
+
+  .btn_teclado {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .icono_teclado {
+    font-size: 1.2rem;
+  }
+
+  /* Componente BotonAccion.jsx */
+
+  .btn_accion {
+    width: 2.65rem;
+    height: 2.65rem;
+  }
+
+  .icono_accion {
+    font-size: 1.1rem;
+  }
+
+  /* Componente Filtro.jsx */
+
+  .texto_filtro {
+    font-size: 0.95rem;
+  }
+
+  .input_filtro {
+    height: 2.65rem;
+    font-size: 0.85rem;
+  }
+
+  /* Componente TablaRemesas.jsx */
+
+  .tabla-encabezado {
+    font-size: 1.4rem;
+  }
+
+  .tabla-fila {
+    font-size: 1.05rem;
+  }
+
+  /* Componente BotonAuxiliar.jsx */
+
+  .btn_aux {
+    top: 1.2rem;
+  }
+
+  .icono_btn_aux {
+    font-size: 1.4rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  /* Componente Remesas.jsx */
+
+  .seccion_calculadora {
+    padding-top: 2.3rem;
+  }
+
+  /* Componente Calculadora.jsx */
+
+  .contenedor_calculadora {
+    align-items: center;
+  }
+
+  .contenido_calculadora {
+    max-width: 24rem;
+    min-width: 20rem;
+  }
+
+  .contenedor_pantalla_calculadora {
+    margin-bottom: 2.8rem;
+  }
+
+  .pantalla_calculadora {
+    border-radius: 0.7rem;
+    font-size: 2.2rem;
+  }
+
+  .leyenda_pantalla_calculadora {
+    font-size: 1.2rem;
+  }
+
+  .contenedor_botones {
+    gap: 1.0rem;
+  }
+
+  .btn_calculadora {
+    font-size: 2.2rem;
+  }
+
+  /* Componente Notificacion.jsx */
+
+  .btn_notificacion {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  .contador_notificacion {
+    font-size: 0.8rem;
+    height: 1.3rem;
+    width: 1.3rem;
+  }
+
+  .icono_notificacion {
+    font-size: 1.2rem;
+  }
+
+  /* Componente Fecha.jsx */
+
+  .titulo_fecha {
+    font-size: 1.1rem;
+  }
+
+  .texto_fecha {
+    font-size: 0.80rem;
+  }
+
+  /* Componente BotonTeclado.jsx */
+
+  .btn_teclado {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .icono_teclado {
+    font-size: 1.1rem;
+  }
+
+  /* Componente BotonAccion.jsx */
+
+  .btn_accion {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .icono_accion {
+    font-size: 1rem;
+  }
+
+  /* Componente Filtro.jsx */
+
+  .texto_filtro {
+    font-size: 0.9rem;
+  }
+
+  .input_filtro {
+    height: 2.6rem;
+    font-size: 0.8rem;
+  }
+
+  /* Componente TablaRemesas.jsx */
+
+  .tabla-encabezado {
+    font-size: 1.2rem;
+  }
+
+  .tabla-fila {
+    font-size: 0.95rem;
+  }
+
+  /* Componente BotonAuxiliar.jsx */
+
+  .btn_aux {
+    display: none;
+  }
+
+}
+
+@media (min-width: 1280px) {
+
+  /* Componente Remesas.jsx */
+
+  .seccion_calculadora {
+    padding-top: 2.7rem;
+  }
+
+  /* Componente Calculadora.jsx */
+
+  .contenido_calculadora {
+    max-width: 24rem;
+    min-width: 20rem;
+  }
+
+  .contenedor_pantalla_calculadora {
+    margin-bottom: 2rem;
+  }
+
+  .pantalla_calculadora {
+    font-size: 2.4rem;
+  }
+
+  .leyenda_pantalla_calculadora {
+    font-size: 1.4rem;
+    left: 1.5rem;
+    top: 1.7rem;
+  }
+
+  .contenedor_botones {
+    gap: 1.5rem;
+  }
+
+  .btn_calculadora {
+    font-size: 2.4rem;
+  }
+
+  /* Componente Notificacion.jsx */
+
+  .btn_notificacion {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .contador_notificacion {
+    font-size: 0.9rem;
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+
+  .icono_notificacion {
+    font-size: 1.3rem;
+  }
+
+  /* Componente Fecha.jsx */
+
+  .titulo_fecha {
+    font-size: 1.2rem;
+  }
+
+  .texto_fecha {
+    font-size: 0.85rem;
+  }
+
+  /* Componente BotonTeclado.jsx */
+
+  .btn_teclado {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .icono_teclado {
+    font-size: 1.2rem;
+  }
+
+  /* Componente Filtro.jsx */
+
+  .texto_filtro {
+    font-size: 0.95rem;
+  }
+
+  .input_filtro {
+    height: 2.65rem;
+    font-size: 0.85rem;
+  }
+
+  /* Componente TablaRemesas.jsx */
+
+  .tabla-encabezado {
+    font-size: 1.4rem;
+  }
+
+  .tabla-fila {
+    font-size: 1.05rem;
+  }
+
+}
+
+@media (min-width: 1536px) {
+
+  /* Componente Remesas.jsx */
+
+  .seccion_calculadora {
+    padding-top: 3.2rem;
+  }
+
+  /* Componente Calculadora.jsx */
+
+  .contenido_calculadora {
+    max-width: 26rem;
+    min-width: 22rem;
+  }
+
+  .contenedor_pantalla_calculadora {
+    margin-bottom: 2rem;
+  }
+
+  .pantalla_calculadora {
+    font-size: 2rem;
+  }
+
+  .leyenda_pantalla_calculadora {
+    font-size: 1.6rem;
+    top: 1.2rem;
+  }
+
+  .contenedor_botones {
+    gap: 1.8rem;
+  }
+
+  .btn_calculadora {
+    font-size: 2.2rem;
+  }
+
+  /* Componente Notificacion.jsx */
+
+  .btn_notificacion {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .contador_notificacion {
+    font-size: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .icono_notificacion {
+    font-size: 1.4rem;
+  }
+
+  /* Componente Fecha.jsx */
+
+  .titulo_fecha {
+    font-size: 1.3rem;
+  }
+
+  .texto_fecha {
+    font-size: 0.9rem;
+  }
+
+  /* Componente BotonTeclado.jsx */
+
+  .btn_teclado {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+
+  .icono_teclado {
+    font-size: 1.3rem;
+  }
+
+  /* Componente BotonAccion.jsx */
+
+  .btn_accion {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .icono_accion {
+    font-size: 1.1rem;
+  }
+
+  /* Componente Filtro.jsx */
+
+  .texto_filtro {
+    font-size: 1rem;
+  }
+
+  .input_filtro {
+    height: 2.7rem;
+    font-size: 0.9rem;
+  }
+
+  /* Componente TablaRemesas.jsx */
+
+  .tabla-encabezado {
+    font-size: 1.6rem;
+  }
+
+  .tabla-fila {
+    font-size: 1.15rem;
+  }
 }

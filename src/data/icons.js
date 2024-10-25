@@ -21,4 +21,9 @@ export const Icons = {
   Table: i.faTable,
   GoRight: i.faAnglesRight,
   GoLeft: i.faAnglesLeft,
+  Success: i.faCheck,
+  Error: i.faXmark,
+  Warning: i.faExclamation,
+  Info: i.faInfo,
+  Question: i.faQuestion,
 };

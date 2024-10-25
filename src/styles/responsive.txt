@@ -1,0 +1,43 @@
+
+/* ----------------------------------------
+              Media Queries
+---------------------------------------- */
+
+/* @media (min-width: 640px) {} */
+
+/* @media (min-width: 768px) {} */
+
+/* @media (min-width: 1024px) {} */
+
+/* @media (min-width: 1280px) {} */
+
+/* @media (min-width: 1536px) {} */
+
+
+/* ----------------------------------------
+            Dimensiones Test
+---------------------------------------- */
+
+* Moviles: 
+    - 480px x 800px
+    - 480px x 960px
+
+* Tablets pequeñas: 
+    - 640px x 800px
+    - 640px x 1200px
+
+* Tablets Medianas: 
+    - 768px x 1024px
+    - 768px x 1280px
+
+* Tablets Grandes / Laptops Pequeñas: 
+    - 1024px x 768px
+    - 1024px x 1280px
+
+* Laptops Grandes / Escritorios medianos: 
+    - 1280px x 800px
+    - 1280px x 1440px
+
+* Monitores grandes: 
+    - 1536px x 800px
+    - 1536px x 1600x

@@ -1,5 +1,7 @@
-// React
+// Bibliotecas
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+// CSS Styles
+import '@styles/Main.css';
 // Componentes
 import Inicio from "@components/main/inicio/Inicio";
 import Remesas from "@components/main/remesas/Remesas";
@@ -14,7 +16,8 @@ const Main = () => {
 
   return (
 
-    <div className={`flex-grow h-full bg-mine-shaft-950 text-white-50 min-w-80`} >
+    <div className="contenido_main">
+      
       <Routes>
         <Route path="/" element={<Navigate to="/remesas" />} />
         <Route path="/inicio" element={<Inicio />} />
@@ -24,6 +27,7 @@ const Main = () => {
         <Route path="/transferencias" element={<Transferencias />} />
         <Route path="/graficas" element={<Graficas />} />
       </Routes>
+
     </div>
 
   );

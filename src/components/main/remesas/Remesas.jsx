@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import RemesasData from '@redux/slices/remesas';
 // CSS Styles
-import '@styles/remesas.css'
+import '@styles/Remesas.css'
 // Componentes
 import { Calculadora } from "@components/main/remesas/Calculadora";
 import { Notificacion } from "@components/main/remesas/Notificacion";
@@ -23,11 +23,11 @@ import { Icons } from "@data/icons";
 const Remesas = () => {
 
   // Hooks
+  const [showSection, setShowSection] = useState(true);
   const [isInputVisible, setInputVisible] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [tempSearchQuery, setTempSearchQuery] = useState("");
   const [currentFilter, setCurrentFilter] = useState(0);
-  const [visibleSection, setVisibleSection] = useState("calculadora");
   const [remesas, setRemesas] = useState(RemesasData.data);
 
   // Constantes
@@ -50,57 +50,62 @@ const Remesas = () => {
     setCurrentFilter((prev) => (prev + 1) % opcionesFiltro.length);
   };
 
-  // Alternar la visibilidad de calculadora o tabla de remesas
-  const toggleSection = () => {
-    setVisibleSection((prev) => (prev === "calculadora" ? "tablaremesas" : "calculadora"));
-  };
-
 
   return (
-    <article className="flex h-full lg:flex-row">
 
-      {/* Seccion izquierda - Calculadora */}
-      <section className={`relative h-full w-full lg:w-1/2 bg-gray-dark flex flex-col p-8 ${visibleSection === "calculadora" ? "block" : "hidden"} lg:block lg:static`}>
+    <article className={showSection ? 'mostrar_calculadora' : 'mostrar_tabla'}>
 
-        <BotonAuxiliar onClick={toggleSection} icons={[Icons.Table, Icons.GoRight]} type="tabla" />
+      {/* Seccion derecha - Tabla de remesas */}
+      <section className="seccion_remesas seccion_calculadora">
 
+        {/* Boton para intercambiar secciones */}
+        <BotonAuxiliar onClick={() => setShowSection(false)} icons={[Icons.Table, Icons.GoRight]} type="tabla" />
+
+        {/* Titulo del articulo */}
         <TituloArticle />
+
+        {/* Titulo de la seccion */}
         <TituloSeccion title="Remesas" />
 
+        {/* Calculadora */}
         <Calculadora remesas={remesas} setRemesas={setRemesas} />
 
       </section>
 
 
+
       {/* Seccion derecha - Tabla de remesas */}
-      <section className={`relative h-full w-full lg:w-1/2 bg-white-50 text-tuatara-900 flex flex-col px-5 py-4 ${visibleSection === "tablaremesas" ? "block" : "hidden"} lg:block lg:static`}>
+      <section className="seccion_remesas seccion_tabla">
 
-        <BotonAuxiliar onClick={toggleSection} icons={[Icons.GoLeft, Icons.Calculator]} type="calculadora" />
+        {/* Boton para intercambiar secciones */}
+        <BotonAuxiliar onClick={() => setShowSection(true)} icons={[Icons.GoLeft, Icons.Calculator]} type="calculadora" />
 
-        <div className={`w-full h-14 flex justify-end items-center gap- py-5 sm:gap-4`}>
+        <div className="seccion_notificacion">
           <Notificacion />
           <Usuario />
         </div>
 
-        <div className={`w-full h-12 flex items-center justify-between py-7 sm:h-16 md:h-20`}>
+        <div className="contenedor_fecha">
           <Fecha title="Hoy" />
           <BotonTeclado onClick={toggleFilterVisibility} />
         </div>
 
-        <div className={`w-full h-16 flex items-center justify-end py-4 gap-2`}>
+        <div className="contenedor_acciones">
           <Filtro isInputVisible={isInputVisible} currentFilter={currentFilter} filterOptions={opcionesFiltro} tempSearchQuery={tempSearchQuery} handleSearch={handleSearch} />
           <BotonAccion value={Icons.Search} onClick={() => !isInputVisible && toggleFilterVisibility()} />
           <BotonAccion value={Icons.Filter} onClick={handleFilterToggle} />
           <BotonAccion value={Icons.Print} />
         </div>
 
-        <div className={`w-full flex-grow border-none overflow-y-auto max-h-[calc(100vh-230px)] scroll-container`}>
+        <div className="contenedor_tabla scroll-container">
           <TablaRemesas remesas={remesas} searchQuery={searchQuery} currentFilter={opcionesFiltro[currentFilter].toLowerCase()} />
         </div>
 
       </section>
 
+
     </article>
+
   );
 };
 

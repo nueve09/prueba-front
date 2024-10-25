@@ -1,0 +1,420 @@
+/* ----------------------------------------
+          Componente Navbar.jsx
+---------------------------------------- */
+
+.navbar {
+  background-color: var(--tuatara-900);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: width 0.2s ease;
+}
+
+.navbar_closed {
+  width: 5rem;
+}
+
+.navbar_open {
+  width: 100vw;
+}
+
+/* ----------------------------------------
+            Componente Logo.jsx
+---------------------------------------- */
+
+.contenedor_logo {
+  align-items: center;
+  display: flex;
+  height: 5rem;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+
+.imagen_logo {
+  border-radius: 1.4rem;
+  height: 100%;
+  padding: 0.5rem;
+  width: 5rem;
+}
+
+.titulo_logo {
+  align-items: center;
+  color: var(--white-50);
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 800;
+  height: 100%;
+  justify-content: center;
+  opacity: 1;
+  transform-origin: left;
+  transition: opacity 0.2s ease-out;
+}
+
+.titulo_logo.slide-in {
+  opacity: 1;
+}
+
+.titulo_logo.slide-out {
+  opacity: 0;
+}
+
+/* ----------------------------------------
+        Componente NavbarMenu.jsx
+---------------------------------------- */
+
+.menu_navbar {
+  color: var(--white-50);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: auto;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.menu_navbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ----------------------------------------
+        Componente MenuItem.jsx
+---------------------------------------- */
+
+.elemento_menu {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 7rem;
+}
+
+/* ----------------------------------------
+        Componente MenuItem.jsx
+---------------------------------------- */
+
+.elemento_menu:hover {
+  color: var(--viking-600);
+}
+
+.elemento_menu_activo {
+  color: var(--viking-400);
+}
+
+.elemento_menu_inactivo {
+  color: var(--white-50);
+}
+
+.icono_menu {
+  min-width: 5rem;
+  font-size: 1.6rem;
+}
+
+.titulo_elemento_menu {
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 1;
+  transform-origin: left;
+  transition: opacity 0.2s ease-out;
+}
+
+.titulo_elemento_menu.slide-in {
+  opacity: 1;
+}
+
+.titulo_elemento_menu.slide-out {
+  opacity: 0;
+}
+
+/* ----------------------------------------
+        Componente BotonMenu.jsx
+---------------------------------------- */
+
+.boton_menu {
+  background-color: var(--viking-400);
+  border-radius: 50%;
+  border: 2px solid var(--mine-shaft-950);
+  color: var(--white-50);
+  cursor: pointer;
+  height: 0.75rem;
+  padding: 0.15rem;
+  position: absolute;
+  right: -0.80rem;
+  top: 2.25rem;
+  transform: rotate(0);
+  transition: background-color 0.3s, transform 0.3s;
+  width: 0.75rem;
+  z-index: 1;
+}
+
+.boton_menu:hover {
+  background-color: var(--viking-600);
+}
+
+.boton_menu.rotar_icono {
+  transform: rotate(180deg);
+}
+
+.boton_menu.icono_activo {
+  right: 1.5rem;
+}
+
+/* ----------------------------------------
+              Media Queries
+---------------------------------------- */
+
+@media (min-width: 640px) {
+
+  /* Componente Navbar.jsx */
+
+  .navbar_closed {
+    width: 6rem;
+  }
+
+  .navbar_open {
+    width: 100vw;
+  }
+
+  /* Componente Logo.jsx */
+
+  .contenedor_logo {
+    height: 6rem;
+  }
+
+  .imagen_logo {
+    border-radius: 1.6rem;
+    padding: 0.55rem;
+    width: 6rem;
+  }
+
+  /* Componente MenuItem.jsx */
+
+  .icono_menu {
+    font-size: 1.8rem;
+    min-width: 6rem;
+  }
+
+  .titulo_elemento_menu {
+    font-size: 1.3rem;
+  }
+
+  .boton_menu {
+    top: 2.8rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  /* Componente Navbar.jsx */
+
+  .navbar_closed {
+    width: 7rem;
+  }
+
+  .navbar_open {
+    width: 20rem;
+  }
+
+  /* Componente Logo.jsx */
+
+  .contenedor_logo {
+    height: 7rem;
+  }
+
+  .imagen_logo {
+    border-radius: 1.7rem;
+    padding: 0.65rem;
+    width: 7rem;
+  }
+
+  .titulo_logo {
+    font-size: 1.45rem;
+  }
+
+  /* Componente MenuItem.jsx */
+
+  .elemento_menu {
+    height: 6.5rem;
+  }
+
+  /* Componente MenuItem.jsx */
+
+  .icono_menu {
+    font-size: 2rem;
+    min-width: 7rem;
+  }
+
+  .titulo_elemento_menu {
+    font-size: 1.5rem;
+  }
+
+  .boton_menu {
+    height: 0.8rem;
+    padding: 0.18rem;
+    right: -0.85rem;
+    top: 3.3rem;
+    width: 0.8rem;
+  }
+
+  .boton_menu.icono_activo {
+    right: -0.85rem;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  /* Componente Navbar.jsx */
+
+  .navbar_closed {
+    width: 8rem;
+  }
+
+  .navbar_open {
+    width: 20rem;
+  }
+
+  /* Componente Logo.jsx */
+
+  .contenedor_logo {
+    height: 8rem;
+  }
+
+  .imagen_logo {
+    border-radius: 1.9rem;
+    padding: 0.7rem;
+    width: 8rem;
+  }
+
+  .titulo_logo {
+    font-size: 1.7rem;
+  }
+
+  /* Componente MenuItem.jsx */
+
+  .elemento_menu {
+    height: 6rem;
+  }
+
+  /* Componente MenuItem.jsx */
+
+  .icono_menu {
+    font-size: 2.2rem;
+    min-width: 8rem;
+  }
+
+  .titulo_elemento_menu {
+    font-size: 1.3rem;
+  }
+
+  .boton_menu {
+    height: 0.85rem;
+    padding: 0.20rem;
+    right: -0.85rem;
+    top: 3.7rem;
+    width: 0.85rem;
+  }
+
+}
+
+@media (min-width: 1280px) {
+
+  /* Componente Navbar.jsx */
+
+  .navbar_closed {
+    width: 9rem;
+  }
+
+  .navbar_open {
+    width: 21rem;
+  }
+
+  /* Componente Logo.jsx */
+
+  .contenedor_logo {
+    height: 9rem;
+  }
+
+  .imagen_logo {
+    border-radius: 2.1rem;
+    padding: 0.75rem;
+    width: 9rem;
+  }
+
+  .titulo_logo {
+    font-size: 1.8rem;
+  }
+
+  /* Componente MenuItem.jsx */
+
+  .icono_menu {
+    font-size: 2.3rem;
+    min-width: 9rem;
+  }
+
+  .titulo_elemento_menu {
+    font-size: 1.35rem;
+  }
+
+  .boton_menu {
+    height: 0.95rem;
+    right: -0.95rem;
+    top: 4.2rem;
+    width: 0.95rem;
+  }
+
+}
+
+@media (min-width: 1536px) {
+
+  /* Componente Navbar.jsx */
+
+  .navbar_closed {
+    width: 10rem;
+  }
+
+  .navbar_open {
+    width: 23rem;
+  }
+
+  /* Componente Logo.jsx */
+
+  .contenedor_logo {
+    height: 10rem;
+  }
+
+  .imagen_logo {
+    border-radius: 2.2rem;
+    padding: 0.8rem;
+    width: 10rem;
+  }
+
+  .titulo_logo {
+    font-size: 1.85rem;
+  }
+
+  /* Componente MenuItem.jsx */
+
+  .elemento_menu {
+    height: 5.5rem;
+  }
+
+  /* Componente MenuItem.jsx */
+
+  .icono_menu {
+    font-size: 2.6rem;
+    min-width: 10rem;
+  }
+
+  .titulo_elemento_menu {
+    font-size: 1.4rem;
+  }
+
+  .boton_menu {
+    height: 1rem;
+    padding: 0.22rem;
+    right: -1rem;
+    top: 4.6rem;
+    width: 1rem;
+  }
+
+}

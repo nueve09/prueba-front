@@ -1,6 +1,8 @@
 // Bibliotecas
 import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+// CSS Styles
+import "@styles/App.css"
 // Componentes
 import Main from "@components/main/Main";
 import Navbar from './components/navbar/Navbar';
@@ -15,16 +17,17 @@ function App() {
   return (
 
     <Router>
-      <div className="flex h-svh font-plus-jakarta">
+      <div className={`contenedor_app ${navbarOpen ? 'mostrar_navbar' : ''}`}>
 
         <Navbar navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} />
-
-        <div className={`flex-1 ${navbarOpen ? 'hidden sm:flex' : 'flex'}`}>
+        
+        <div className="contenedor_main">
           <Main />
         </div>
 
       </div>
     </Router>
+
 
   );
 }

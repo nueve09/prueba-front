@@ -11,11 +11,14 @@ const NavbarMenu = ({ navbarOpen, onMenuClick }) => {
 
   return (
 
-    <ul className={`flex flex-grow h-full flex-col justify-around text-white-50 `}>
+    <ul className="menu_navbar">
 
-      {Menu.map((menu, index) => (<MenuItem key={index} menu={menu} navbarOpen={navbarOpen} onClick={onMenuClick} />))}
+      {Menu.map((menu, index) => (
+        <MenuItem key={index} menu={menu} navbarOpen={navbarOpen} onClick={onMenuClick} />
+      ))}
 
     </ul>
+
   );
 };
 
