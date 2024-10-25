@@ -20,10 +20,28 @@ export const remesasSlice = createSlice({
     isError: (state, action) => {
       state.error = action.payload
     },
+    findRemesaAndChangeStatus: (state, {payload}) => {
+     // Buscas la remesa específica en el array `remesas`
+    const remesaIndex = state.remesas.findIndex(remesa => remesa.id === payload.id);
+
+    // Si la remesa no existe, no hagas nada
+    if (remesaIndex === -1) return;
+
+    // Cambias el estado de la remesa a `Completed`
+    state.remesas[remesaIndex].status = payload.status;
+
+      
+    },
     
    
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { isLoading, addRemesa, isError} = remesasSlice.actions
+export const 
+{ 
+  isLoading, 
+  addRemesa, 
+  isError,
+  findRemesaAndChangeStatus
+} = remesasSlice.actions

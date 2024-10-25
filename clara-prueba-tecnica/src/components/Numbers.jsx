@@ -1,9 +1,14 @@
 import { Box, Button, Grid2, Paper } from '@mui/material'
-import React from 'react'
 
-export const Numbers = () => {
+export const Numbers = ({formmatId}) => {
 
     const numbers = [1,2,3,4,5,6,7,8,9]
+    const handleClick = (e) => {
+     e.preventDefault()
+
+     const number = e.target.textContent
+     formmatId(number)
+    }
 
   return (
     <>
@@ -20,13 +25,14 @@ export const Numbers = () => {
             <Grid2 container spacing={{ xs: 3, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                 {numbers.map((number, index) => (
                     <Grid2 key={index} size={{ xs: 2, sm: 4, md: 4 }}>
-                        <Button
-                            variant="contained"
-                            color="primary"
-                            sx={{ width: '100%', height: '100%' }}
+                        <button
+                            
+                            onClick={handleClick}
+                            className="h-20 rounded-full bg-white hover:bg-gray-200 text-3xl px-4 py-2"
+
                         >
                             {number}
-                        </Button>
+                        </button>
                   </Grid2>
                 ))}
             </Grid2>
@@ -43,22 +49,14 @@ export const Numbers = () => {
             gap: 2
         }}
         >
-            <Button
-            variant="contained"
-            color="primary"
-            sx={{ width: '40%' }}
+            <button
+                className="h-20 bg-white hover:bg-gray-200 text-3xl px-5  rounded-full m-auto"
+                  onClick={handleClick}
             >
                 0
-            </Button>
+            </button>
 
-            <Button
-            variant="contained"
-            color="primary"
-            sx={{ width: '40%' }}
             
-            >
-                .
-            </Button>
         </Paper>
 
       </Box>

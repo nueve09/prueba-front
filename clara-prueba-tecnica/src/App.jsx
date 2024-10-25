@@ -11,10 +11,10 @@ function App() {
         >
 
         <div className="flex flex-col md:flex-row h-screen">
-          <div className="w-full md:w-1/2 h-1/2 md:h-full p-4">
+          <div className="w-full md:w-1/2  bg-slate-950">
             <Calculadora />
           </div>
-          <div className="w-full md:w-1/2 h-1/2 md:h-full p-4">
+          <div className="w-full md:w-1/2 p-5">
             <Remesas />
           </div>
         </div>

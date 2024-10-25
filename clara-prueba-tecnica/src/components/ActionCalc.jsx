@@ -1,6 +1,6 @@
-import { Box, Button, Grid2, Paper } from '@mui/material'
+import { Box, Button,  Paper } from '@mui/material'
 
-export const ActionCalc = () => {
+export const ActionCalc = ({deleteOneDigit, setInitialValue, findRemesas}) => {
   return (
     <Paper 
         sx={{ 
@@ -8,8 +8,9 @@ export const ActionCalc = () => {
           padding: 2, 
           textAlign: 'center',
           maxWidth: '100%',
-          overflow: 'auto'
-
+          overflow: 'auto',
+          height: '80%',
+          my: 2
         }}
       >
         <Box
@@ -21,20 +22,19 @@ export const ActionCalc = () => {
             }}
 
         >
-            <Button
-                variant="contained"
-                color="primary"
-                sx={{ width: '100%', height: '00%' }}
+            <button
+                
+                onClick={deleteOneDigit}
+                className="h-50 bg-indigo-700 rounded-md hover:bg-indigo-800 h-40 text-3xl "
             >
-                Calcular
-            </Button>
-            <Button
-                variant="contained"
-                color="primary"
-                sx={{ width: '100%' }}
+              <i className="fa-solid fa-delete-left text-white"></i>            </button>
+            <button
+                
+                onClick={findRemesas}
+                className="h-50 bg-indigo-700 rounded-md hover:bg-indigo-800 h-40 text-3xl "
             >
-                Limpiar
-            </Button>
+                <i className="fas fa-arrow-left text-white"></i> 
+            </button>
         </Box>
 
       </Paper>
