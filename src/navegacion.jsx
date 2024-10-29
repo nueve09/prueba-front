@@ -1,24 +1,17 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Sliderbar from './compon/sliderbar'; 
-import ErrorProvider from './compon/ErrorProvider'; 
-
-
+import { useState } from 'react'
+import Sliderbar from './compon/sliderbar';
+import { ErrorProvider } from './compon/ErrorProvider';
 
 function Navegacion() {
   return (
     <>
-      <Box className="caja" >
-      <ErrorProvider> 
-          <Sliderbar />
-        </ErrorProvider>
-      </Box>
-      
-
-
+    <ErrorProvider>
+      <div className="caja" >
+        <Sliderbar />
+      </div>
+      </ErrorProvider>
     </>
-  );
+  )
 }
 
-export default Navegacion;
-  
+export default Navegacion

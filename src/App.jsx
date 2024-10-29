@@ -1,20 +1,14 @@
-import { useState } from 'react';
-import './App.css';
-import Navegacion from './navegacion';
-
-
+import React from 'react';
+import Navegacion from './Navegacion';
 
 function App() {
   return (
-    <>
+
     <div>
-        <Navegacion />
-  
-      </div>
-     
-    
-    </>
+      <Navegacion />
+    </div>
   );
 }
 
 export default App;
+

@@ -1,0 +1,39 @@
+.push-notifications-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.push-notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.notification-good {
+  background-color: #4caf50; /* Verde para notificaciones exitosas */
+}
+
+.notification-bad {
+  background-color: #f44336; /* Rojo para notificaciones de error */
+}
+.notification-content {
+  flex: 1;
+}
+
+.close-icon {
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
