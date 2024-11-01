@@ -1,0 +1,853 @@
+div#main-navigator {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+    grid-template-columns: 150px auto;
+    display: grid;
+    font-family: 'Poppins';
+}
+
+body {
+    margin: 0;
+}
+
+
+div#left-bar {
+    background: #363636;
+    grid-template-rows: 150px auto;
+    display: grid;
+}
+
+div#content-navigator {
+    background: #2a2a2a;
+    grid-template-columns: auto 50%;
+    display: grid;
+}
+
+div#right-bar {
+    background: #ffffff;
+    position: relative;
+}
+
+div#left-bar-logo {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    background: url("../images/logo.png"), black;
+    border-radius: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    display: grid;
+}
+
+div#left-bar-logo-area {
+    position: relative;
+}
+div#left-bar-navigation-buttons-inner {
+    position: absolute;
+    /* background: red; */
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    bottom: 130px;
+    grid-template-rows: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+    display: grid;
+}
+
+div#left-bar-navigation-buttons-area {position: relative;}
+
+
+
+.hover-effect-white-shadow:hover {
+    transform: scale(1.1);
+    transition: .15s;
+    cursor: pointer;
+    filter: brightness(1.5);
+    box-shadow: 0 0 0 5px #ffffff0a, 0 0 0 14px #ffffff05, 0 0 0 30px #ffffff05;
+}
+
+.hover-effect-white-shadow {
+    transition: .3s;
+}
+
+div#upper-navigator {
+    display: grid;
+    grid-template-rows: 60px auto;
+}
+
+div#upper-buttons-area {
+    height: 100%;
+    width: 250px;
+    float: right;
+    grid-template-columns: 50px auto;
+    display: grid;
+    position: relative;
+}
+
+div#right-bar-inner-margin {
+    grid-template-rows: 233px auto 54px;
+    display: grid;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    bottom: 20px;
+    right: 40px;
+}
+
+div#notification-button {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    right: 0px;
+    bottom: 5px;
+    background: #e8e8e8;
+    border-radius: 41px;
+}
+
+div#notification-button-area {
+    position: relative;
+}
+
+div#user-options-area {
+    position: relative;
+    width: 95%;
+    float: right;
+    margin-left: 5%;
+    grid-template-columns: 55px auto;
+    display: grid;
+}
+
+div#user-options {
+    grid-template-columns: 40px auto;
+    width: 90%;
+    float: right;
+    background: green;
+    height: 100%;
+    display: grid;
+}
+
+div#user-photo-area {
+    display: grid;
+    position: relative;
+}
+
+div#user-options-buttons-area {
+    width: 90%;
+    float: right;
+    margin-left: 10%;
+    grid-template-columns: 90px auto;
+    display: grid;
+}
+
+div#user-photo-button {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 0px;
+    bottom: 5px;
+    background-image: url("../images/diego.jpeg");
+    border-radius: 110px;
+    box-shadow: -2px 3px 3px #00000033;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+div#options-area {
+    grid-template-columns: auto 190px;
+    display: grid;
+}
+
+div#options-area-left-info-today {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    bottom: -5px;
+    grid-template-rows: auto 60px;
+    display: grid;
+}
+
+div#options-area-left-info-area {
+    position: relative;
+}
+
+div#options-area-right-buttons-area {
+    position: relative;
+    grid-template-rows: auto 60px;
+    display: grid;
+}
+
+div#keyboard-button {
+    background: #1515BC;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    border-radius: 60px;
+    margin-right: 7px;
+    box-shadow: -2px 3px 3px #00000033;
+    transition: .3s;
+    cursor: pointer;
+}
+
+div#upper-button-area {
+    position: relative;
+}
+
+div#options-area-right-buttons-down-area {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.left-bar-nav-button {
+    background: #ffffff;
+    box-shadow: 0 0 0 4px #d1d1f1;
+    border-radius: 3px;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: .3s;
+    fill: #3232c3;
+}
+
+div#options-area-right-search-button-area {
+    position: relative;
+    align-items: center;
+    display: grid;
+}
+
+.left-bar-nav-button-icon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    /* background: blue; */
+}
+
+div#options-area-right-options-button-area {
+    position: relative;
+    align-items: center;
+    display: grid;
+}
+
+div#options-area-right-print-button-area {
+    position: relative;
+    align-items: center;
+    display: grid;
+}
+
+.upper-transaction-button-area {
+    grid-template-columns: 100px auto 120px;
+    display: grid;
+    box-shadow: 0 -1px #e9e9e9;
+    align-items: center;
+    display: grid;
+    font-size: 15px;
+    text-align: center;
+}
+
+div#center-navigator {
+    grid-template-rows: 180px auto;
+    display: grid;
+}
+
+div#id-selector {
+    width: 70%;
+    margin: auto;
+    height: 91%;
+    grid-template-rows: 109px auto;
+    display: grid;
+    max-width: 490px;
+    min-width: 490px;
+}
+
+div#center-navigator-info-tittle-area {
+    margin-top: 51px;
+}
+
+div#center-navigator-tittle-screen-area {
+    float: right;
+    width: 90%;
+    margin-left: 5%;
+}
+
+div#center-navigator-info-tittle-area-text {
+    color: white;
+    padding-bottom: 11px;
+    box-shadow: 0 1px #177886;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+div#center-navigator-tittle-area {
+    margin-top: 12px;
+    font-size: 24px;
+    color: #54cedf;
+    font-weight: 600;
+}
+
+
+
+div#logo-arrow-button {
+    width: 20px;
+    height: 20px;
+    background: #54cedf;
+    border-radius: 10px;
+    margin-right: -22px;
+    justify-self: end;
+}
+
+div#transaction-id-input-area {
+    position: relative;
+    margin-bottom: 30px;
+    height: 90px;
+}
+
+textarea.flowPromptInput.big {}
+
+input#name {
+    border-radius: 9px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    bottom: 10px;
+    font-size: 35px;
+    text-align: center;
+    border: none;
+    color: #252525;
+    letter-spacing: 11px;
+}
+
+div#text-keyboard-input-area {
+    grid-template-columns: auto 110px;
+    display: grid;
+}
+
+div#number-button-area {
+    grid-template-rows: auto 108px;
+    display: grid;
+}
+
+div#down-number-button-area {
+    grid-template-columns: 66.66% auto;
+    display: grid;
+}
+
+div#delete-or-confirm-area {
+    /* background: red; */
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    display: grid;
+}
+
+div#upper-number-button-area {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    display: grid;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+}
+
+.number-button {
+    background: white;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 151px;
+    align-items: center;
+    display: grid;
+    font-size: 41px;
+    margin: auto;
+    color: #515151;
+    font-weight: 600;
+}
+
+div#number-one-area {}
+
+.number-button-area {
+    align-items: center;
+    display: grid;
+}
+
+.number-button.zero {
+    width: 228px;
+}
+
+.number-button.right {
+    height: 228px;
+    margin-top: 10px;
+}
+
+
+
+div#user-options-area:hover {
+    background: #0000000a;
+    border-radius: 51px;
+}
+
+.left-bar-button {
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 11px;
+    display: grid;
+    cursor: pointer;
+}
+
+.left-bar-button-area {
+    align-items: center;
+    display: grid;
+}
+
+.left-bar-button:hover {
+    background: #00000012;
+}
+
+b#tittle_bold {
+    font-weight: 600;
+}
+
+.transaction-button-area {
+    grid-template-rows: auto 30px;
+    display: grid;
+    height: 78px;
+    font-weight: 200;
+    color: #565656;
+}
+
+.transaction-button-area:hover {
+    background: #d1d1f145;
+}
+
+.transaction-id {
+    text-align: left;
+    letter-spacing: 1px;
+    margin-left: 7px;
+}
+
+.is-cashed-area {
+    float: right;
+    WIDTH: 120px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.is-cashed-icon {
+    border-radius: 21px;
+    float: right;
+    margin-right: 11px;
+    background: #80c283;
+    width: 20px;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    color: white;
+}
+
+.is-cashed-text {
+    width: fit-content;
+    float: right;
+    color: #858585;
+}
+
+.transaction-amount {
+    text-align: right;
+    margin-right: 10px;
+    letter-spacing: 1px;
+}
+
+.is-cashed-icon.not-cashed {
+    background: #acacac;
+}
+
+.transaction-button-area.not-cashed {
+    background: #dcdcdc2e;
+}
+
+.is-cashed-text.not-cashed {
+    color: #989797;
+}
+
+div#user-options-buttons-text-area {
+    grid-template-rows: 18px 10px;
+    display: grid;
+    color: #515151;
+}
+
+div#user-options-buttons-text-name {
+    font-weight: 300;
+}
+
+div#user-options-buttons-text-role {
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+div#options-area-left-info-today-text {
+    font-weight: 600;
+    font-size: 18px;
+    color: #1515BC;
+}
+
+div#options-area-left-info-today-date-text {
+    font-size: 14px;
+}
+
+.number-button.right.enter {background: #1515BC;color: white;}
+
+div#transaction-list {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.transaction-list-pages {
+    background: #00000008;
+    border-radius: 41px;
+    margin-top: 12px;
+    align-items: center;
+    display: grid;
+}
+
+.page-button {
+    width: 35px;
+    height: 35px;
+    background: gainsboro;
+    border-radius: 11px;
+    float: left;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.page-buttons-area {
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+
+
+
+
+.page-button.selected {
+    background: #d1d1f1;
+    transform: none;
+    color: #1514bc;
+    transform: scale(1.2);
+}
+
+.left-bar-nav-button:hover {
+    box-shadow: 0 0 0 4px #a4a4cc, 0 0 0 13px #d1d1f11a, 0 0 0 26px #d1d1f10f;
+    transition: .15s;
+    cursor: pointer;
+    fill: #7f7f9d;
+}
+
+.left-bar-button-icon {
+    width: 50px;
+    height: 50px;
+    fill: white;
+    margin: auto;
+}
+
+div#left-bar-button.selected {}
+
+.left-bar-button-icon.selected {
+    fill: #54cedf;
+}
+
+.page-button:hover {
+    transform: scale(1.1);
+    transition: .15s;
+    background: #c2c2c2;
+    cursor: pointer;
+}
+
+div#icon-keyboard-button {
+    margin-top: -1px;
+}
+
+div#keyboard-button:hover {
+    transform: scale(1.2);
+    background: #1212a2;
+    transition: .15s;
+}
+
+
+.transaction-button-area.selected {
+    background: #ddddeb;
+    height: 100px;
+    font-weight: 300;
+}
+
+.down-transaction-button-area {
+    color: #6f6f6f;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.date-of-transaction {
+    width: fit-content;
+    float: left;
+    margin-left: 10px;
+    background: #0000000d;
+    border-radius: 17px;
+    padding: 7px 7px 1px 7px;
+    margin-top: -8px;
+}
+
+.date-of-transaction.hidden {
+    filter: opacity(0);
+    pointer-events: none;
+}
+
+svg#remove_icon {
+    width: 70px;
+    margin: auto;
+}
+
+svg#enter-icon {
+    width: 63px;
+    margin: auto;
+    fill: white;
+}
+
+div#options-area-left-upper-text {
+    position: relative;
+    margin-top: -29px;
+}
+
+input#search {
+    box-shadow: 0 0 0 4px #d1d1f1;
+    border-radius: 3px;
+    width: 96%;
+    height: 40px;
+    margin-top: 5px;
+    border: navajowhite;
+    float: right;
+    margin-right: 11px;
+    font-weight: 400;
+    font-size: 19px;
+    color: #424242;
+    letter-spacing: .5px;
+    padding-left: 11px;
+}
+
+div#message_alert_area {
+    background: #80c283;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    margin-top: -39px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    transition: .15s;
+}
+
+div#message_alert_area.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: .0s;
+}
+
+div#message_alert_area.error {
+    transition: .3s;
+    background: #ff000029;
+}
+
+div#content-navigator.vertical {
+    grid-template-columns: none;
+}
+
+
+div#options-area-left-upper-text.vertical {}
+
+div#right-bar-inner-margin.vertical {
+    grid-template-rows: 483px auto 55px;
+    top: 13px;
+    min-width: 348px;
+}
+
+div#id-input-calculator {
+    background: #2a2a2a;
+    width: 270px;
+    margin: auto;
+    height: 101%;
+    margin-top: 10px;
+    grid-template-rows: 55px auto;
+    display: grid;
+    border-radius: 11px;
+    margin-top: 16px;
+    max-height: 283px;
+}
+
+div#id-input-calculator-buttons {
+    grid-template-columns: auto 70px;
+    display: grid;
+}
+
+div#id-input {
+    position: relative;
+    width: 94%;
+    margin: auto;
+    height: 100%;
+}
+
+input#id-input-box {
+    border-radius: 9px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+    border: none;
+    color: #252525;
+    letter-spacing: 4px;
+}
+
+div#right-calculator-buttons {
+    grid-template-rows: 50% 50%;
+    display: grid;
+}
+
+.remove-button-vertical-calculator {
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background: white;
+    border-radius: 40px;
+    align-items: center;
+    display: grid;
+}
+.remove-button-vertical-calculator-area {
+    position: relative;
+}
+
+div#enter-button-vertical-calculator-area {}
+
+div#left-calculator-buttons {
+    grid-template-rows: 165px auto;
+    display: grid;
+}
+
+div#grid-number-buttons {grid-template-rows: 33.33% 33.33% 33.33%;display: grid;grid-template-columns: 33.33% 33.33% 33.33%;}
+
+.vertical-number-button {
+    background: white;
+    width: 45px;
+    height: 45px;
+    margin: auto;
+    border-radius: 31px;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.vertical-number-buttons-area {
+    align-items: center;
+    display: grid;
+}
+
+div#upper-navigator.vertical {
+    grid-template-rows: 61px auto 149px;
+}
+
+div#id-input-calculator.hidden {
+    display: none;
+}
+
+div#center-navigator.hidden {
+    display: none;
+}
+
+
+div#content-navigator.medium-size {
+    grid-template-columns: 400px auto;
+}
+
+div#id-selector.medium-size {
+    transform: scale(0.7);
+    margin-left: -46px;
+    margin-top: -72px;
+}
+
+
+div#content-navigator.small-size {
+    grid-template-columns: 270px auto;
+}
+
+div#id-selector.small-size {
+    transform: scale(0.5);
+    margin-left: -109px;
+    margin-top: -132px;
+}
+
+.vertical-number-button:hover {
+    transform: scale(1.1);
+    transition: .15s;
+    cursor: pointer;
+    filter: brightness(1.5);
+    box-shadow: 0 0 0 5px #ffffff0a, 0 0 0 14px #ffffff05, 0 0 0 30px #ffffff05;
+}
+.hover-effect-white-shadow:hover {
+    transform: scale(1.1);
+    transition: .15s;
+    cursor: pointer;
+    filter: brightness(1.5);
+    box-shadow: 0 0 0 5px #ffffff0a, 0 0 0 14px #ffffff05, 0 0 0 30px #ffffff05;
+};
+
+
+svg#remove_icon_vertical {
+    width: 41px;
+    margin: auto;
+}
+
+.remove-button-vertical-calculator:hover {
+    transform: scale(1.1);
+    transition: .15s;
+    cursor: pointer;
+    filter: brightness(1.5);
+    box-shadow: 0 0 0 5px #ffffff0a, 0 0 0 14px #ffffff05, 0 0 0 30px #ffffff05;
+}
+
+.remove-button-vertical-calculator.enter {
+    background: #1515BC;
+    color: white;
+}
+
+svg#enter-icon-vertical {
+    width: 35px;
+    margin: auto;
+    fill: white;
+}
+
+div#bottom-number-buttons {
+    grid-template-columns: 66.66% auto;
+    display: grid;
+}
+
+.vertical-number-button.large {
+    width: 110px;
+}
