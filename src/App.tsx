@@ -1,10 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { House } from 'react-bootstrap-icons';
-import { CurrencyExchange } from 'react-bootstrap-icons';
-import { ClipboardData } from 'react-bootstrap-icons';
-import { CashCoin } from 'react-bootstrap-icons';
-import { ArrowReturnRight } from 'react-bootstrap-icons';
-import { FileEarmarkSpreadsheet } from 'react-bootstrap-icons';
 import { XCircleFill } from 'react-bootstrap-icons';
 import { ArrowReturnLeft } from 'react-bootstrap-icons';
 import { Bell } from 'react-bootstrap-icons';
@@ -14,70 +8,71 @@ import { Keyboard } from 'react-bootstrap-icons';
 import { Search } from 'react-bootstrap-icons';
 import { Sliders } from 'react-bootstrap-icons';
 import { Printer } from 'react-bootstrap-icons';
+import Menu from './components/Menu'
+import MessageError from './components/MessageError'
 
 export default function App () {
+  const [inputValue, setInputValue] = useState<any>('')
+  const [showError, setShowError] = useState<any>('')
+  const [textMessage, setTextMessage] = useState<string>('')
+  const setInput = (number: any) => {
+    if (inputValue.length < 8) {
+      let value = inputValue
+      value = value + number
+      setInputValue(value)
+    } else {
+      setShowError(true)
+      setTextMessage('Máximo 0 digitos')
+      setTimeout(function () {
+        setShowError(false)
+      }, 6000)
+    }
+  }
+
+  const deleteInput = () => {
+    let value = inputValue.slice(0, -1)
+    setInputValue(value)
+  }
 
   return (
     <div className="d-flex align-items-center justify-content-center container-remesas">
       <div className="d-flex container-back">
         <div className="element-left">
-          <ul>
-            <li>
-              <img className="logo" src="https://jlvr.sweaghe.com/vistas/contenedor/uno/img/sweaghe_copyright.jpg?5" alt="" />
-            </li>
-            <li>
-              <House color="#FFFFFF" className="icons" size={25}  />
-            </li>
-            <li>
-              <CurrencyExchange color="#a3e4d7" className="icons" size={25}  />
-            </li>
-            <li>
-              <ClipboardData color="#FFFFFF" className="icons" size={25}  />
-            </li>
-            <li>
-              <CashCoin color="#FFFFFF" className="icons" size={25}  />
-            </li>
-            <li>
-              <ArrowReturnRight color="#FFFFFF" className="icons" size={25}  />
-            </li>
-            <li>
-              <FileEarmarkSpreadsheet color="#FFFFFF" className="icons" size={25}  />
-            </li>
-          </ul>
+          <Menu />
         </div>
         <div className="element-center">
           <div>
             <div className="title">ventanilla <b>Digital</b></div>
             <div className="subtitle">Remesas</div>
             <div className="numbers">
-              <input type="text" name="" id="" />
+              <input type="text" name="inputValue" id="inputValue" value={inputValue} />
               <div className="d-flex align-items-center justify-content-center mt-3">
                 <div className="d-flex">
                   <div className="d-flex flex-column">
                     <div className="d-flex">
                       <div>
-                        <div className="back-numbers">1</div>
-                        <div className="back-numbers">2</div>
-                        <div className="back-numbers">3</div>
+                        <div className="back-numbers" onClick={() => setInput(1)}>1</div>
+                        <div className="back-numbers" onClick={() => setInput(4)}>4</div>
+                        <div className="back-numbers" onClick={() => setInput(7)}>7</div>
                       </div>
                       <div>
-                        <div className="back-numbers">4</div>
-                        <div className="back-numbers">5</div>
-                        <div className="back-numbers">6</div>
+                        <div className="back-numbers" onClick={() => setInput(2)}>2</div>
+                        <div className="back-numbers" onClick={() => setInput(5)}>5</div>
+                        <div className="back-numbers" onClick={() => setInput(8)}>8</div>
                       </div>
                       <div>
-                        <div className="back-numbers">7</div>
-                        <div className="back-numbers">8</div>
-                        <div className="back-numbers">9</div>
+                        <div className="back-numbers" onClick={() => setInput(3)}>3</div>
+                        <div className="back-numbers" onClick={() => setInput(6)}>6</div>
+                        <div className="back-numbers" onClick={() => setInput(9)}>9</div>
                       </div>
                     </div>
                     <div className="d-flex">
-                      <div className="back-numbers back-numbers-cero">0</div>
-                      <div className="back-numbers mt-0">.</div>
+                      <div className="back-numbers back-numbers-cero" onClick={() => setInput(0)}>0</div>
+                      <div className="back-numbers mt-0" onClick={() => setInput('.')}>.</div>
                     </div>
                   </div>
                   <div className="d-flex flex-column">
-                    <div className="d-flex align-items-center justify-content-center back-numbers back-numbers-delete">
+                    <div className="d-flex align-items-center justify-content-center back-numbers back-numbers-delete" onClick={() => deleteInput()}>
                       <XCircleFill size={30} />
                     </div>
                     <div className="d-flex align-items-center justify-content-center back-numbers back-numbers-enter">
@@ -89,7 +84,7 @@ export default function App () {
             </div>
           </div>
         </div>
-        <div className="element-right">
+        <div className="element-right position-relative">
           <div className="d-flex align-items-center justify-content-end p-3">
             <div className="d-flex align-items-center justify-content-center notification">
               <Bell />
@@ -101,7 +96,7 @@ export default function App () {
               <div>José Luis</div>
               <div><b>Operador</b></div>
             </div>
-            <div className="ms-1">
+            <div className="ms-2">
               <ChevronDown size={10} />
             </div>
           </div>
@@ -152,6 +147,11 @@ export default function App () {
               <div>$12.000.00</div>
             </div>
           </div>
+          {
+        showError && (
+          <MessageError message={textMessage} close={setShowError} />
+        )
+      }
         </div>
       </div>
     </div>

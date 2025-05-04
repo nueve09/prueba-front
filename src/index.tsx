@@ -5,7 +5,7 @@ import './scss/index.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import Layout from './components/Layout';
 import App from './App';
-import About from './components/About';
+import Error404 from './components/Error404';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -17,7 +17,7 @@ root.render(
         <Routes>
           <Route path="/" element={<Layout />}>
           <Route index element={<App />} />
-          <Route path="about" element={<About />} />
+          <Route path="error" element={<Error404 />} />
           </Route>
         </Routes>
       </BrowserRouter>

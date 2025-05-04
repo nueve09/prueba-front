@@ -1,11 +1,11 @@
 import { useState } from "react"
 
-const About = () => {
+const Error404 = () => {
   return (
     <div>
-      About
+      Error
     </div>
   )
 }
   
-export default About
+export default Error404
