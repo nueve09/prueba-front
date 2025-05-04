@@ -66,3 +66,11 @@ Principalmente los siguientes aspectos:
 2.  **CSS:** Utilizar CSS Grid y/o CSS Flexbox, para la maquetación del proyecto 
 
 3.  **Iconos:** Utilizar una librería para el manejo de iconos donde lo considere necesario (_se recomienda el uso de [Font Awesome](http://fontawesome.io/) o [Glyphicons](http://glyphicons.com/)._)
+
+## EJECUTAR APLICACIÓN
+
+Usar versión de node mayor a la 20, se recomienda usar v20.15.1.
+
+Para instalar la aplicación usar: npm install o yarn install
+
+Para ejecutar la aplicación usar: npm start o yarn start
