@@ -127,6 +127,7 @@ export default function App () {
                   <XCircle color={'blank'} size={30} />
                 </div>
               </div>
+              <div className="show-desktop"></div>
               <div className="d-flex">
                 <div className="d-flex align-items-center justify-content-center notification">
                   <Bell />

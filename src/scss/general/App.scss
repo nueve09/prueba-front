@@ -193,6 +193,10 @@
   color: #196f3d;
 }
 
+.show-desktop{
+  display: block;
+}
+
 .show-mobile{
   display: none;
 }
@@ -207,5 +211,9 @@
 
   .show-mobile{
     display: block;
+  }
+
+  .show-desktop{
+    display: none;
   }
 }
