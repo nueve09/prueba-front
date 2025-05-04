@@ -7,7 +7,7 @@
     
     .element-left{
       width: 80px;
-      height: 550px;
+      height: 600px;
       background-color: #21262b;
   
       ul{
@@ -35,7 +35,7 @@
     
     .element-center{
       width: 400px;
-      height: 550px;
+      height: 600px;
       background-color: #0e141a;
 
       > div{
@@ -45,6 +45,9 @@
           font-size: 12px;
           color: #FFFFFF;
           padding: 15px 0px;
+        }
+
+        .separador{
           border-bottom: 1px solid #a3e4d7;
         }
 
@@ -109,8 +112,15 @@
     
     .element-right{
       width: 400px;
-      height: 550px;
+      height: 600px;
       background-color: #FFFFFF;
+
+      .back-notification{
+        width: calc(100% - 50px);
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f8f9f9;
+      }
 
       .notification{
         width: 40px;
@@ -171,4 +181,31 @@
   background-color: #f2d7d5;
   padding: 10px;
   color: #FF0000;
+}
+
+.back-message-success{
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  width: 80%;
+  background-color: #a3e4d7;
+  padding: 10px;
+  color: #196f3d;
+}
+
+.show-mobile{
+  display: none;
+}
+
+@media (max-width: 855px) {
+  .show-right{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 80px;
+  }
+
+  .show-mobile{
+    display: block;
+  }
 }
