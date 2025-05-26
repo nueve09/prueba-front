@@ -1,0 +1,29 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  height: 100vh;
+}
+
+.menu {
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.calculator {
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.table {
+  padding: 20px;
+}
+
+.highlighted-row {
+  background-color: #d4edda !important;
+  animation: fadeHighlight 2s ease-out;
+}
+
+@keyframes fadeHighlight {
+  0% { background-color: #d4edda; }
+  100% { background-color: white; }
+}

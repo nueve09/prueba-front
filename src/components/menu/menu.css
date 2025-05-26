@@ -1,0 +1,22 @@
+nav{
+    background-color: #353535;
+}
+
+.menu-custom {
+    gap: 15px;
+}
+
+.menu-item-custom {
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 150%;
+}
+
+.menu-item-custom:hover {
+    color: #52C7D7;
+}
+
+.menu-item-custom:hover i {
+    color: #52C7D7;
+}
