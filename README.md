@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Examen Final - Proyecto Calculadora de Remesas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto corresponde al examen final basado en la maqueta entregada como imagen de referencia. La implementación incluye una calculadora interactiva conectada a una lista de remesas, una tabla dinámica con funciones de búsqueda, filtrado y paginación, y un sistema de alertas integradas mediante modales.
 
-## Available Scripts
+## 🧰 Tecnologías Utilizadas
 
-In the project directory, you can run:
+- **React** para la estructura del proyecto.
+- **Bootstrap 5** para estilos, componentes visuales y layout responsivo.
+- **CSS personalizado** para ajustes adicionales.
+- **JavaScript** (ES6+) para la lógica de interacción.
 
-### `npm start`
+## 🧮 Funcionalidades de la Calculadora
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+La calculadora permite ingresar un ID de remesa manualmente y cuenta con validaciones clave:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ✅ Valida que el número ingresado tenga un **máximo de 8 dígitos**.
+- ✅ Solo permite **un punto decimal**.
+- ✅ Al presionar el botón de **confirmación (✓)**:
+  - Busca el ID dentro del archivo `data/data_remittances.js`.
+  - Si encuentra un ID con `status: NO_COBRADO`, lo cambia a `COBRADO`.
+  - Actualiza la tabla principal para reflejar el cambio.
 
-### `npm test`
+> ⚠️ Nota: No se especificó claramente el uso completo de la calculadora, por lo que se asumió una funcionalidad de **validación y activación de remesas por ID**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📋 Tabla de Remesas
 
-### `npm run build`
+- Ordenada por fecha de **`charged_at`** (cuando ha sido cobrado).
+- Solo muestra remesas con status **"COBRADO"**.
+- Paginación incluida de **10 en 10**.
+- Soporte de **búsqueda por ID, compañía o monto**.
+- Las filas nuevas agregadas por la calculadora se destacan visualmente.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔔 Sistema de Alertas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Se implementó un sistema de alertas generales utilizando **modales de Bootstrap** que permiten notificar:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Errores de validación.
+- ID no encontrado.
+- Confirmaciones visuales de cambios exitosos.
 
-### `npm run eject`
+## 📁 Estructura Base del Proyecto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- `src/components/Calculator.js` – Lógica de la calculadora.
+- `src/components/TableInformation.js` – Lógica de la tabla con paginación.
+- `src/data/data_remittances.js` – Fuente de datos original.
+- `src/components/AlertModal.js` – Componente para mostrar mensajes de error o éxito.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📝 Consideraciones
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- El layout fue diseñado para adaptarse a pantallas móviles y de escritorio.
+- Se mantuvo la fidelidad visual con la maqueta base usando Bootstrap.
+- Las funciones y diseño pueden ampliarse fácilmente según nuevos requerimientos.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desarrollado como entrega final para evaluación técnica.
