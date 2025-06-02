@@ -7,21 +7,21 @@
 }
 
 .subtitle {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #fff;
     margin-bottom: 3px;
 }
 
 .line{
-    border-color: #54CEDF;
-    border-style: solid; 
+    height: 3px;
+    border: none;
+    background-color: #54CEDF;
 }
 
 .title {
     font-size: 1.5rem;
-    margin-top: 3px;
-    margin-bottom: 20px;
     color: #54CEDF;
+    line-height: normal;
 }
 
 .calc-center {
@@ -84,18 +84,83 @@
 
 .buttons-grid .zero-btn {
     grid-column: 1 / span 2;
-    border-radius: 35px;
+    border-radius: 50px;
     width: (100% - 5%);
-    height: 90px;
+    height: 80px;
 }
 
 .buttons-grid .tall-btn {
     grid-row: span 2;
     height: 90%;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 .blue{
     color: #fff;
     background-color: #2714A2 !important;
+}
+
+@media (max-width: 768px) {
+  .calculator-container {
+    padding: 35px;
+    margin-top: 50px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .display {
+    font-size: 1.2rem;
+    height: 50px;
+  }
+
+  .buttons-grid {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 75%;
+  }
+
+  .buttons-grid button {
+    font-size: 1rem;
+    width: 75%;
+    gap: 1px;
+    place-items: center;
+  }
+
+  .buttons-grid .zero-btn {
+    height: 70px;
+    width: 90%;
+  }
+
+  .buttons-grid .tall-btn {
+    height: 90%;
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .display {
+    font-size: 1rem;
+    height: 45px;
+  }
+
+  .buttons-grid button {
+    font-size: 1rem;
+  }
+
+  .buttons-grid .zero-btn {
+    height: 60px;
+  }
 }

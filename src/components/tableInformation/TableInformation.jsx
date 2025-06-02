@@ -1,5 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import './tableInformation.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faKeyboard, faUser, faBell, faPrint, faFilter, faMagnifyingGlass, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const TableInformation = ({remittances}) => {
   const monthNames = [
@@ -43,72 +45,65 @@ const TableInformation = ({remittances}) => {
   };
 
   return (
-    <div className="table-container p-4">
-      
-      <div className="d-flex justify-content-between align-items-start mb-3">
-        
-        <div className='space-between'>
+    <div className="table-container">
+      <div className="top-bar">
+        <div className="notification-user">
+          <div className="notification">
+            <FontAwesomeIcon icon={faBell} />
+          </div>
+          <div className="user-toggle" onClick={toggleUserMenu}>
+            <FontAwesomeIcon icon={faUser} />
+            <div className="user-position">
+              <p className="name">Elizabeth</p>
+              <p className="position">Operador</p>
+            </div>
+            <FontAwesomeIcon icon={faChevronDown} style={{fontSize: "10px"}}/>
+          </div>
+
+          {showUserMenu && (
+            <div className="user-dropdown">
+              <div className="dropdown-item"><i className="fa-solid fa-user"></i> Perfil</div>
+              <div className="dropdown-item"><i className="fa-solid fa-gear"></i> Configuración</div>
+              <div className="dropdown-item text-danger" onClick={() => alert("Sesión cerrada")}>
+                <i className="fa-solid fa-right-from-bracket"></i> Cerrar sesión
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      <div className="date-bar">
+        <div className="date-info">
           <p className="day">Hoy</p>
           <p className="current-date">{currentDate}</p>
         </div>
+        <button className="keyboard-button">
+          <FontAwesomeIcon icon={faKeyboard} />
+        </button>
+      </div>
 
-        <div className="d-flex align-items-center gap-3">
-          <i className="bi bi-bell-fill fs-5 text-primary"></i>
-          <div className="position-relative">
-            <div
-              className="user-toggle d-flex align-items-center justify-content-center"
-              onClick={toggleUserMenu}
-            >
-              <span className="me-1"><i class="bi bi-person-circle"></i></span>
-              <i className="bi bi-chevron-down"></i>
-            </div>
-
-            {showUserMenu && (
-              <div className="user-dropdown">
-                <div className="dropdown-item"><i class="bi bi-person"></i> Perfil</div>
-                <div className="dropdown-item"><i class="bi bi-gear-wide"></i> Configuración</div>
-                <div className="dropdown-item text-danger" onClick={() => alert("Sesión cerrada")}>
-                  <i class="bi bi-box-arrow-left"></i> Cerrar sesión
-                </div>
-              </div>
-            )}
-          </div>
+      <div className="filter-bar">
+        {showSearch && (
+          <input
+            type="text"
+            className="search-input"
+            placeholder="Buscar por ID, compañía o monto"
+            value={searchText}
+            onChange={(e) =>{ setSearchText(e.target.value); setCurrentPage(1);}}
+          />
+        )}
+        <div className="filter-buttons">
+          <button onClick={() => setShowSearch(!showSearch)}><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+          <button><FontAwesomeIcon icon={faFilter} /></button>
+          <button><FontAwesomeIcon icon={faPrint} /></button>
         </div>
       </div>
 
-      <div className="d-flex align-items-center mb-3 flex-wrap filter-bar w-100">
-        <div className="flex-grow-1 me-2"> 
-          {showSearch ? (
-            <input
-              type="text"
-              className="form-control w-100"
-              placeholder="Buscar por ID, compañía o monto"
-              value={searchText}
-              onChange={(e) => setSearchText(e.target.value)}
-            />
-          ) : (
-            <div style={{ height: '38px' }}></div>
-          )}
-        </div>
-
-        <div className="d-flex gap-2 filter-buttons">
-          <button className="btn btn-filter" onClick={() => setShowSearch(!showSearch)}>
-            <i className="bi bi-search"></i>
-          </button>
-          <button className="btn btn-filter">
-            <i className="bi bi-filter"></i>
-          </button>
-          <button className="btn btn-filter">
-            <i className="bi bi-printer"></i>
-          </button>
-        </div>
-      </div>
-
-      <table className="table custom-table">
+      <table className="custom-table">
         <tbody>
           {currentData.length === 0 ? (
             <tr>
-              <td colSpan="3" className="text-center text-muted">
+              <td colSpan="3" className="no-results">
                 No se encontraron resultados
               </td>
             </tr>
@@ -124,14 +119,10 @@ const TableInformation = ({remittances}) => {
         </tbody>
       </table>
 
-      <div className="d-flex justify-content-between align-items-center">
-        <button className="btn btn-sm btn-outline-primary" onClick={() => goToPage(currentPage - 1)} disabled={currentPage === 1}>
-          Anterior
-        </button>
-        <span className="text-muted small">Página {currentPage} de {totalPages}</span>
-        <button className="btn btn-sm btn-outline-primary" onClick={() => goToPage(currentPage + 1)} disabled={currentPage === totalPages}>
-          Siguiente
-        </button>
+      <div className="pagination">
+        <button onClick={() => goToPage(currentPage - 1)} disabled={currentPage === 1}>Anterior</button>
+        <span>Página {currentPage} de {totalPages}</span>
+        <button onClick={() => goToPage(currentPage + 1)} disabled={currentPage === totalPages}>Siguiente</button>
       </div>
     </div>
   );

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faDeleteLeft } from '@fortawesome/free-solid-svg-icons';
 import './calculator.css';
 
 const Calculator = ({remittances, setRemittances, showAlert}) => {
@@ -73,17 +75,27 @@ const Calculator = ({remittances, setRemittances, showAlert}) => {
       <hr className='line'/>
       <p className="title">Remesas</p>
       <div className="calc-center">
-        <input type="text" className="display" readOnly value={display || 0} />
+        <input type="text" className="display" value={display} 
+          placeholder='0'
+          onChange={(e) =>{
+            const val = e.target.value;
+            if (/^\d*\.?\d*$/.test(val) && val.length <= 8) {
+              setDisplay(val);
+            }
+          }}
+          inputMode="decimal"
+          pattern="[0-9]*"
+          onPaste={(e) => {
+            const text = e.clipboardData.getData('text');
+            if (!/^\d*\.?\d*$/.test(text)) {
+              e.preventDefault();
+            }}}
+        />
 
         {alert.visible && (
-          <div className={`alert alert-${alert.type} alert-dismissible fade show mt-2`} role="alert">
+          <div className={`custom-alert ${alert.type}`}>
             {alert.message}
-            <button
-              type="button"
-              className="btn-close"
-              aria-label="Close"
-              onClick={closeAlert}
-            ></button>
+            <button className="close-btn" onClick={closeAlert}>×</button>
           </div>
         )}
 
@@ -94,7 +106,9 @@ const Calculator = ({remittances, setRemittances, showAlert}) => {
 
           <button 
             className="tall-btn" 
-            onClick={() => eraseNumber()}><i className="bi bi-backspace"></i></button>
+            onClick={() => eraseNumber()}>
+          <FontAwesomeIcon icon={faDeleteLeft} />
+          </button>
 
           <button onClick={() => handleNumberClick('4')}>4</button>
           <button onClick={() => handleNumberClick('5')}>5</button>
@@ -107,7 +121,9 @@ const Calculator = ({remittances, setRemittances, showAlert}) => {
           <button 
             onClick={() => handleEnter()} 
             className="tall-btn blue" 
-            ><i className="bi bi-arrow-return-left"></i></button>
+            >
+              <FontAwesomeIcon icon={faArrowLeft} />
+          </button>
           <button onClick={() => handleNumberClick('0')} className="zero-btn">0</button>
           <button onClick={() => handleNumberClick('.')}>.</button>
         </div> 

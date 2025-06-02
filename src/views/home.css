@@ -1,6 +1,6 @@
 .grid-container {
   display: grid;
-  grid-template-columns: 100px 1fr 1fr;
+  grid-template-columns: 0.1fr 1.5fr 1fr;
   height: 100vh;
 }
 
@@ -26,4 +26,36 @@
 @keyframes fadeHighlight {
   0% { background-color: #d4edda; }
   100% { background-color: white; }
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+  }
+
+  .menu,
+  .calculator,
+  .table {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+  }
+
+  .menu,
+  .calculator,
+  .table {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
 }
