@@ -1,0 +1,117 @@
+.consignments-table__container {
+  background: var(--background-color);
+  border-radius: 16px;
+  width: 100%;
+  padding: 32px 28px 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.consignments-table__header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.consignments-table__user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.consignments-table__user-notification {
+  width: 40px;
+  height: 40px;
+  background-color: var(--background-color-secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--success-n09);
+  position: relative;
+}
+
+.consignments-table__user-notification::after {
+  content: attr(data-notification);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: var(--text-color);
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+}
+
+.consignments-table__username {
+  font-weight: 600;
+  color: #222;
+}
+
+.consignments-table__role {
+  font-size: 0.95rem;
+  color: #888;
+}
+
+.consignments-table__date {
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.consignments-table__date-label {
+  color: var(--success-n09);
+  font-size: 1.2rem;
+}
+
+.consignments-table__actions {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 12px;
+  justify-content: flex-end;
+}
+
+.consignments-table__action-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--success-n09);
+  font-size: 1.3rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0px 0px 5px 2px rgba(var(--rgb-success-n09), 0.69);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(var(--rgb-success-n09), 0.69);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(var(--rgb-success-n09), 0.69);
+}
+
+.consignments-table__action-btn:hover {
+  background: var(--success-n09);
+  color: #fff;
+}
+
+.consignments-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+.consignments-table td {
+  padding: 14px 12px;
+  text-align: left;
+}
+
+.consignments-table tbody tr {
+  border-top: 1px solid #e6e6e6;
+  transition: background 0.15s;
+}
+
+.consignments-table td {
+  color: #222;
+  font-size: 1rem;
+}
