@@ -1,0 +1,12 @@
+.app_container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+@media (max-width: 600px) {
+  .app_container {
+    flex-direction: column-reverse;
+  }
+}

@@ -71,3 +71,60 @@
   font-size: 1rem;
   transition: display, width 0.3s ease 0.6s;
 }
+
+/* SideMenu.css */
+
+/* Desktop styles (default) */
+.side-menu {
+  height: 100vh;
+  background: #434343;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 30px;
+  transition: width 0.6s ease;
+}
+
+/* ...rest of your styles... */
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 70vw;
+    max-width: 300px;
+    min-width: 200px;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+    padding: 0 16px;
+  }
+
+  .side-menu.open {
+    transform: translateX(0);
+  }
+
+  .side-menu__toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: auto;
+    z-index: 1100;
+    background: #434343;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .side-menu__logo-container {
+    margin-top: 60px;
+  }
+
+  .side-menu__button {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+}

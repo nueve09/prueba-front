@@ -115,3 +115,96 @@
   color: #222;
   font-size: 1rem;
 }
+
+@media (max-width: 600px) {
+  .consignments-table__container {
+    padding: 16px 8px 12px 8px;
+    border-radius: 8px;
+    gap: 16px;
+  }
+
+  .consignments-table__header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 4px;
+    gap: 8px;
+  }
+
+  .consignments-table__user {
+    gap: 8px;
+  }
+
+  .consignments-table__user-notification {
+    width: 32px;
+    height: 32px;
+    font-size: 1.1rem;
+  }
+
+  .consignments-table__username {
+    font-size: 1rem;
+  }
+
+  .consignments-table__role {
+    font-size: 0.85rem;
+  }
+
+  .consignments-table__date {
+    font-size: 1rem;
+  }
+
+  .consignments-table__date-label {
+    font-size: 1rem;
+  }
+
+  .consignments-table__actions {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .consignments-table__action-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .consignments-table {
+    font-size: 0.95rem;
+    display: block;
+    overflow-x: auto;
+    border-radius: 6px;
+  }
+
+  .consignments-table thead {
+    display: none;
+  }
+
+  .consignments-table tbody,
+  .consignments-table tr,
+  .consignments-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .consignments-table tr {
+    margin-bottom: 16px;
+    border-top: none;
+    border-bottom: 1px solid #e6e6e6;
+    background: #fff;
+  }
+
+  .consignments-table td {
+    padding: 10px 6px;
+    text-align: left;
+    position: relative;
+    font-size: 0.98rem;
+  }
+
+  .consignments-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+    color: #888;
+    font-size: 0.9rem;
+  }
+}

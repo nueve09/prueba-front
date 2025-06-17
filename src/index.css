@@ -64,6 +64,7 @@ p {
   /* colors */
   --aqua-n09: #75f8ff;
   --success-n09: #0833a2;
+  --error-n09: #ff4d4d;
   --rgb-aqua-n09: 117, 248, 255;
   --rgb-success-n09: 8, 51, 162;
 }
