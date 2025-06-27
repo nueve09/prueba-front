@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBell,
   faKeyboard,
   faPrint,
   faFilter,
@@ -10,6 +9,7 @@ import {
   faCircleUser,
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
+import { faBell } from "@fortawesome/free-regular-svg-icons";
 import { useRemittanceStore } from "../store/useRemittanceStore";
 import SearchBar from "./SearchBar";
 
@@ -55,33 +55,41 @@ export default function RemittanceHeader({
         >
           <FontAwesomeIcon icon={faBars} className="text-2xl text-gray-700" />
         </button>
-        <div className="flex items-center gap-4">
-          <div className="relative pr-4">
+        <div className="flex items-center gap-6 pr-6">
+          <div className="relative w-12 h-12 bg-[#e8e8e8] rounded-full flex items-center justify-center ">
             <FontAwesomeIcon icon={faBell} className="text-xl text-gray-600" />
-            <span className="absolute top-0 right-4 w-2.5 h-2.5 bg-red-500 rounded-full" />
+            <span className="absolute top-2 right-2 w-3.5 h-3.5 bg-red-500 rounded-full" />
           </div>
 
-          <FontAwesomeIcon
-            icon={faCircleUser}
-            className="rounded-full object-cover"
-            size="2x"
-          />
+          <div className=" rounded-full overflow-hidden">
+            <FontAwesomeIcon
+              icon={faCircleUser}
+              className="rounded-full object-cover"
+              size="3x"
+            />
+          </div>
 
-          <button className="flex items-center gap-1 text-gray-800 font-semibold">
-            Juan Pérez
-            <FontAwesomeIcon icon={faChevronDown} className="text-xs" />
-          </button>
+          <div className="flex flex-col">
+            <div className="flex items-center gap-1 text-gray-800 font-semibold">
+              Juan Pérez
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                className="text-sm text-gray-600"
+              />
+            </div>
+            <span className="text-sm text-gray-500">Operador</span>
+          </div>
         </div>
       </div>
 
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex justify-between items-center py-8 mb-6">
         <div>
-          <h2 className="text-lg font-semibold text-blue-600">Hoy</h2>
+          <h2 className="text-lg font-semibold text-[#0e33a3]">Hoy</h2>
           <p className="text-md font-bold">{getDay()}</p>
         </div>
 
-        <button className="w-12 h-12 rounded-full bg-blue-700 flex items-center justify-center">
-          <FontAwesomeIcon icon={faKeyboard} className="text-blue-400" />
+        <button className="w-12 h-12 rounded-full bg-[#002eb6] flex items-center justify-center">
+          <FontAwesomeIcon icon={faKeyboard} className="text-[#00a1d2]" />
         </button>
       </div>
 
@@ -100,14 +108,14 @@ export default function RemittanceHeader({
         <div className="flex gap-2">
           <button
             onClick={() => setShowSearch((s) => !s)}
-            className="border-4 border-blue-300 text-blue-500 px-4 py-2 rounded-md flex items-center gap-2"
+            className="border-4 border-[#ced2ef] text-[#214bc1] px-4 py-2 rounded-md flex items-center gap-2"
           >
             <FontAwesomeIcon icon={faSearch} />
           </button>
 
           <button
             onClick={() => setOpen((o) => !o)}
-            className="border-4 border-blue-300 text-blue-500 px-4 py-2 rounded-md flex items-center gap-2"
+            className="border-4 border-[#ced2ef] text-[#214bc1] px-4 py-2 rounded-md flex items-center gap-2"
           >
             <FontAwesomeIcon icon={faFilter} />
           </button>
@@ -149,7 +157,7 @@ export default function RemittanceHeader({
 
           <button
             onClick={handlePrint}
-            className="border-4 border-blue-300 text-blue-500 px-4 py-2 rounded-md flex items-center gap-2"
+            className="border-4 border-[#ced2ef] text-[#214bc1] px-4 py-2 rounded-md flex items-center gap-2"
           >
             <FontAwesomeIcon icon={faPrint} />
           </button>

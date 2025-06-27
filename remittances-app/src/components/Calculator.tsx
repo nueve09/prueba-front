@@ -1,25 +1,37 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { useRemittanceStore } from "../store/useRemittanceStore";
+
+const MAX_LENGTH = 8;
+
+const isValidValue = (val: string) => {
+  if (!/^\d*\.?\d*$/.test(val)) return false;
+  if ((val.match(/\./g) || []).length > 1) return false;
+  if (val.length > MAX_LENGTH) return false;
+  return true;
+};
 
 export default function Calculator() {
   const [input, setInput] = useState("");
   const chargeRemesa = useRemittanceStore((s) => s.chargeRemesa);
   const clearError = useRemittanceStore((s) => s.clearError);
 
-  const handleClick = (key: string) => {
+  const updateInput = useCallback(
+    (newVal: string) => {
+      if (isValidValue(newVal)) {
+        setInput(newVal);
+      }
+    },
+    [setInput]
+  );
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     clearError();
-    if (key === ".") {
-      if (input.includes(".")) return;
-      setInput((p) => p + key);
-    } else {
-      if (input.length >= 8) return;
-      setInput((p) => p + key);
-    }
+    updateInput(e.target.value);
   };
 
   const handleBack = () => {
     clearError();
-    setInput((p) => p.slice(0, -1));
+    setInput((prev) => prev.slice(0, -1));
   };
 
   const handleSubmit = () => {
@@ -28,103 +40,82 @@ export default function Calculator() {
     setInput("");
   };
 
-  return (
-    <div className="bg-gray-800 text-white p-4 rounded-lg">
-      <div className="bg-gray-100 text-black rounded p-2 mb-4 text-2xl font-mono text-right">
-        {input || "0"}
-      </div>
+  const handleButtonClick = (key: string) => {
+    clearError();
+    updateInput(input + key);
+  };
 
-      <div className="grid grid-cols-4 grid-rows-4 gap-2">
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      handleSubmit();
+    }
+  };
+
+  const buttons = [
+    ["1", "2", "3"],
+    ["4", "5", "6"],
+    ["7", "8", "9"],
+    ["0", "."],
+  ];
+
+  return (
+    <div className="bg-[#2a2a2a] text-white p-4 rounded-lg">
+      <input
+        type="text"
+        value={input}
+        onChange={handleInputChange}
+        onKeyDown={handleKeyDown}
+        className="bg-gray-100 text-black rounded p-2 mb-4 text-2xl font-mono text-center w-full outline-none"
+        inputMode="decimal"
+        maxLength={MAX_LENGTH}
+      />
+
+      <div className="grid grid-cols-4 grid-rows-4 gap-2  ">
         <button
           onClick={handleBack}
           className="
-            bg-gray-100 text-black 
+            bg-gray-100 text-black font-bold
             row-start-1 col-start-4 row-span-2
-            rounded-full flex items-center justify-center text-4xl
+            rounded-full max-w-[56px] sm:max-w-[72px] md:max-w-[96px]
+            flex items-center justify-center text-4xl
           "
         >
           ⌫
         </button>
 
-        <button
-          onClick={() => handleClick("1")}
-          className="bg-gray-200 text-black text-xl aspect-square rounded-full"
-        >
-          1
-        </button>
-        <button
-          onClick={() => handleClick("2")}
-          className="bg-gray-200 text-black text-xl aspect-square rounded-full"
-        >
-          2
-        </button>
-        <button
-          onClick={() => handleClick("3")}
-          className="bg-gray-200 text-black text-xl aspect-square rounded-full"
-        >
-          3
-        </button>
-
-        <button
-          onClick={() => handleClick("4")}
-          className="bg-gray-200 text-black text-xl aspect-square rounded-full"
-        >
-          4
-        </button>
-        <button
-          onClick={() => handleClick("5")}
-          className="bg-gray-200 text-black text-xl aspect-square rounded-full"
-        >
-          5
-        </button>
-        <button
-          onClick={() => handleClick("6")}
-          className="bg-gray-200 text-black text-xl aspect-square rounded-full"
-        >
-          6
-        </button>
-
-        <button
-          onClick={() => handleClick("7")}
-          className="bg-gray-200 text-black text-xl aspect-square rounded-full"
-        >
-          7
-        </button>
-        <button
-          onClick={() => handleClick("8")}
-          className="bg-gray-200 text-black text-xl aspect-square rounded-full"
-        >
-          8
-        </button>
-        <button
-          onClick={() => handleClick("9")}
-          className="bg-gray-200 text-black text-xl aspect-square rounded-full"
-        >
-          9
-        </button>
+        {buttons.flatMap((row, rowIndex) =>
+          row.map((key) => {
+            const isZeroButton = key === "0";
+            const spanClass = isZeroButton
+              ? "col-span-2 rounded-full"
+              : "aspect-square rounded-full max-w-[56px] sm:max-w-[72px] md:max-w-[96px]";
+            return (
+              <button
+                key={key}
+                onClick={() => handleButtonClick(key)}
+                className={`bg-gray-200 text-black text-3xl font-bold ${spanClass}`}
+                style={{
+                  gridColumn:
+                    rowIndex === 3 && isZeroButton ? "1 / span 2" : undefined,
+                }}
+              >
+                {key}
+              </button>
+            );
+          })
+        )}
 
         <button
           onClick={handleSubmit}
           className="
-            bg-blue-600 text-white 
+            bg-[#00289e] text-white font-bold
             row-start-3 col-start-4 row-span-2
-            rounded-full flex items-center justify-center text-4xl
+            rounded-full max-w-[56px] sm:max-w-[72px] md:max-w-[96px]
+            flex items-center justify-center text-4xl
           "
         >
           ↵
-        </button>
-
-        <button
-          onClick={() => handleClick("0")}
-          className="bg-gray-200 text-black text-xl col-span-2 rounded-full py-4"
-        >
-          0
-        </button>
-        <button
-          onClick={() => handleClick(".")}
-          className="bg-gray-200 text-black text-xl aspect-square rounded-full"
-        >
-          .
         </button>
       </div>
     </div>

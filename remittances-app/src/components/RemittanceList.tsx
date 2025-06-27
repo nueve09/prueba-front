@@ -67,11 +67,11 @@ export default function RemesaList() {
       {paged.map((r) => (
         <li
           key={r.id}
-          className="flex justify-between p-4 border-t-1  border-gray-400"
+          className="flex justify-between p-4 border-t-1  border-[#e8e8e8] pb-10"
         >
-          <span className="font-mono text-gray-400">{r.id}</span>
-          <span className="font-mono text-gray-400">{r.company}</span>
-          <span className="font-mono text-gray-400">${r.amount}</span>
+          <span className="font-mono text-[#545454]">{r.id}</span>
+          <span className="font-mono text-[#545454]">{r.company}</span>
+          <span className="font-mono text-[#545454]">${r.amount}</span>
         </li>
       ))}
     </ul>

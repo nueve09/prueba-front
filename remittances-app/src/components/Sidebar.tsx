@@ -46,7 +46,7 @@ export default function Sidebar({
 
           <aside
             className={`
-              fixed inset-y-0 left-0 z-30 w-32 bg-gray-700 text-gray-200
+              fixed inset-y-0 left-0 z-30 w-32 bg-[#353535] text-gray-200
               flex flex-col items-center py-6 space-y-6 md:hidden
               transform transition-transform duration-500 ease-out
               ${drawerOpen ? "translate-x-0" : "-translate-x-full"}
@@ -87,7 +87,7 @@ export default function Sidebar({
 
       <aside
         className="
-          hidden md:flex h-screen w-20 bg-gray-700 text-gray-200
+          hidden md:flex h-screen w-20 bg-[#353535] text-gray-200
           flex-col items-center py-6 space-y-6 z-20
         "
       >
@@ -107,7 +107,7 @@ export default function Sidebar({
                     transition-colors duration-200
                     ${
                       isActive
-                        ? "text-blue-400"
+                        ? "text-[#00cfdd]"
                         : "hover:bg-gray-600 text-gray-200"
                     }
                   `}
