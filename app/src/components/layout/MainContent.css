@@ -1,0 +1,22 @@
+.main-content {
+  background-color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content__body {
+  flex: 1;
+  padding: var(--spacing-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    margin-bottom: 80px; /* Espacio para footer fijo */
+  }
+  
+  .main-content__body {
+    padding: var(--spacing-md);
+  }
+}
