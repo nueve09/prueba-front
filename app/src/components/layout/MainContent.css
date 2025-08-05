@@ -10,10 +10,9 @@
   padding: var(--spacing-lg);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .main-content {
-    margin-bottom: 80px; /* Espacio para footer fijo */
+    margin-bottom: 120px; /* Space for both navigation footer and app footer */
   }
   
   .main-content__body {
