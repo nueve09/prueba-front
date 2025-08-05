@@ -60,7 +60,6 @@
     padding: var(--spacing-md);
     min-height: auto;
     margin-top: 72px;
-    margin-bottom: 120px; /* Space for both navigation footer and app footer */
     background-color: #1F1F1F;
   }
   

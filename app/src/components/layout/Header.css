@@ -189,7 +189,7 @@
 
 @media (max-width: 1024px) {
   .header {
-    padding: var(--spacing-md);
+    padding: var(--spacing-md)!important;
     gap: var(--spacing-sm);
   }
   
