@@ -31,7 +31,7 @@ Principalmente los siguientes aspectos:
 
 5.  **Al finalizar**:
 
-* 1) Realizar un `Commit` de su proyecto, **enviar un `Pull Request` al branch con su NOMBRE**, y notificar a la siguiente dirección de correo electrónico rmartinez@nueve09.mx, CC: jaraurjo@nueve09.mx y ubasurto@nueve09.mx.
+* 1) Realizar un `Commit` de su proyecto, **enviar un `Pull Request` al branch con su NOMBRE**, y notificar a la siguiente dirección de correo electrónico jrios@nueve09.mx, CC: jaraujo@nueve09.mx.
 
 
 ## EJERCICIO PRÁCTICO
