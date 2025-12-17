@@ -1,0 +1,88 @@
+.card {
+  background: white;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s;
+}
+
+.card:hover {
+  background-color: #f9f9f9;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.id {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+  font-family: monospace;
+  min-width: 80px;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status[data-status="COBRADO"] {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status[data-status="NO_COBRADO"] {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+  text-align: left;
+}
+
+.amount {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  text-align: right;
+  min-width: 100px;
+}
+
+.chargedAt {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 0.75rem;
+  }
+
+  .company {
+    font-size: 1rem;
+  }
+
+  .amount {
+    font-size: 1.1rem;
+  }
+}
+

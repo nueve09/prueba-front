@@ -1,0 +1,37 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+

@@ -1,0 +1,178 @@
+.history {
+  background: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.topBar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00DCDC, #0B3CFF);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.userRole {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.topActions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.notificationButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+  background: white;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.notificationButton:hover {
+  border-color: #00DCDC;
+  color: #00DCDC;
+  background: #f0f9f9;
+}
+
+.calendarButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #0B3CFF;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(11, 60, 255, 0.3);
+}
+
+.calendarButton:hover {
+  background: #0a33d9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(11, 60, 255, 0.4);
+}
+
+.dateSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.todayLabel {
+  font-size: 0.9rem;
+  color: #2718a8 ;
+  font-weight: 500;
+}
+
+.dateText {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  justify-content: end;
+}
+
+.actionButton {
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background: white;
+  color: #0B3CFF;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.actionButton:hover {
+  border-color: #0B3CFF;
+  background: #f0f4ff;
+}
+
+.transactionsList {
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .history {
+    padding: 1rem;
+  }
+
+  .topBar {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 0.95rem;
+  }
+
+  .userName {
+    font-size: 0.9rem;
+  }
+
+  .userRole {
+    font-size: 0.8rem;
+  }
+}
+
