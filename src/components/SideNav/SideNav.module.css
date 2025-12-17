@@ -1,0 +1,72 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100vh;
+  background-color: #565555;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.navIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navIcon {
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1.25rem;
+  color: #f1ecec ;
+  border: none;
+}
+
+.navIcon:hover {
+  background-color: #00DCDC;
+  color: #1E1E1E;
+  transform: scale(1.1);
+}
+
+.navIcon:active {
+  transform: scale(0.95);
+  color: #00DCDC;
+
+}
+
+.logo {
+  width: 80%;
+  border-radius: 10px;
+  position: relative;
+  top: -4rem;
+}
+
+/* Responsive: ocultar en móvil */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .navIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .navIcons {
+    gap: 1.5rem;
+  }
+}
+

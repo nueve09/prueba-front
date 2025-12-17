@@ -1,0 +1,246 @@
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+}
+
+.inputContainer {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 0.2em;
+  background-color: white;
+  color: transparent; /* Ocultar texto real */
+  caret-color: #00DCDC; /* Mostrar cursor */
+  transition: all 0.2s;
+  text-shadow: 0 0 0 #333; /* Truco para mantener el ancho del texto */
+}
+
+.input:focus {
+  outline: 2px solid #00DCDC;
+  outline-offset: 2px;
+}
+
+.input::placeholder {
+  color: transparent;
+}
+
+.maskedDisplay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #999;
+  font-family: monospace;
+  text-align: center;
+  width: 100%;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);
+  grid-template-areas: 
+    "one two three delete"
+    "four five six delete"
+    "seven eight nine confirm"
+    "zero zero dot confirm";
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+  align-items: center;
+}
+
+.btnSelectors {
+  width: 50px;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.delete {
+  grid-area: delete;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.zero {
+  grid-area: zero;
+  width: 140px;
+}
+
+.dot {
+  grid-area: dot;
+}
+
+.confirm {
+  grid-area: confirm;
+  background-color: #2718a8 ;
+}
+
+.key {
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #333;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.key:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.key:active {
+  transform: scale(0.95);
+}
+
+/* Botón 0 ancho (oval) */
+.zeroButton {
+  border-radius: 30px;
+  aspect-ratio: 2 / 1;
+}
+
+/* Botón punto */
+.dotButton {
+  border-radius: 30px;
+  aspect-ratio: 1;
+}
+
+/* Botón Delete vertical (oval) - ocupa 2 filas */
+.deleteButton {
+  border-radius: 30px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 130px;
+}
+
+.deleteButton:hover {
+  background-color: #444;
+}
+
+.confirmButton {
+  border-radius: 40px;
+  background-color: #0B3CFF;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(11, 60, 255, 0.3);
+  min-height: 130px;
+}
+
+.confirmButton:hover:not(:disabled) {
+  background-color: #0a33d9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(11, 60, 255, 0.4);
+}
+
+.confirmButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.confirmButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .calculator {
+    gap: 1.5rem;
+  }
+
+  .input {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.25rem;
+  }
+
+  .maskedDisplay {
+    font-size: 1.25rem;
+  }
+
+  .key {
+    min-height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .deleteButton {
+    min-height: 150px;
+  }
+
+  .confirmButton {
+    width: 60px;
+    min-height: 150px;
+    font-size: 1.25rem;
+  }
+
+  .keypad {
+    max-width: 250px;
+  }
+}
