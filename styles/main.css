@@ -1,0 +1,328 @@
+/* ================================
+   CSS Variables
+   ================================ */
+:root {
+    --primary-color: #3b82f6;
+    --primary-dark: #2563eb;
+    --secondary-color: #8b5cf6;
+    --text-color: #1f2937;
+    --text-light: #6b7280;
+    --bg-color: #ffffff;
+    --bg-light: #f9fafb;
+    --border-color: #e5e7eb;
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+}
+
+/* ================================
+   Reset & Base Styles
+   ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    margin-left: 10rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul {
+    list-style: none;
+}
+
+/* ================================
+   Utility Classes
+   ================================ */
+.container {
+    background-color: #353535;
+    max-width: 10rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* ================================
+   Icon Styling
+   ================================ */
+.nav-link i,
+.nav-link .glyphicon {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    color: white;
+}
+
+.nav-text {
+    display: none;
+}
+
+/* ================================
+   Header Component
+   ================================ */
+.header {
+    background-color: #353535;
+    box-shadow: var(--shadow);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 10rem;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    max-width: 30rem;
+    height: 100%;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding: 0 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.nav-menu {
+    display: flex;
+    padding-top:5rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.nav-item {
+    width: 100%;
+    max-width: 8rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 1.5rem 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0.25rem;
+    height: 0;
+    background-color: #00CDDE;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    padding-left: 2rem;
+}
+
+.nav-link:hover i,
+.nav-link:hover .glyphicon {
+    color: #00CDDE;
+}
+
+.nav-link:hover::before {
+    height: 100%;
+}
+
+.nav-link.active {
+    color: #00CDDE;
+}
+
+.nav-link.active i,
+.nav-link.active .glyphicon {
+    color: #00CDDE;
+}
+
+.nav-link.active::before {
+    height: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding-top: 1.5rem;
+}
+
+.hamburger .bar {
+    width: 1.5rem;
+    height: 0.2rem;
+    background-color: white;
+    margin: 0.2rem 0;
+    transition: var(--transition);
+}
+
+/* ================================
+   Hero Section
+   ================================ */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+@media (max-width: 768px) {
+    body {
+        margin-left: 0;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .header {
+        background-color: #353535;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        max-width: 100%;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .logo h1 {
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 6rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: var(--bg-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: var(--shadow-md);
+        padding: 0;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nav-link {
+        padding: 1.5rem;
+        background-color: #2A2A2A;
+        color: white;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+
+    .nav-link i,
+    .nav-link .glyphicon {
+        display: block;
+        font-size: 1.25rem;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-text {
+        display: block;
+        font-size: 0.85rem;
+    }
+
+    .nav-link:hover {
+        padding-left: 1.5rem;
+    }
+
+    .nav-link::before {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(0.5rem) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-0.5em) rotate(-45deg);
+    }
+
+    .hero {
+        margin-top: 4.25rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+}

@@ -1,0 +1,271 @@
+/* ================================
+   Main Content Layout
+   ================================ */
+.main-content {
+    min-height: 100vh;
+        background-color: #2A2A2A;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 0;
+
+}
+
+/* ================================
+   Numpad Section
+   ================================ */
+.numpad-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    color:white;
+}
+.numpad-divider{
+    border: 1px solid #00CDDE;
+    margin: 0.5rem 0 1rem 0;
+}
+.numpad-title{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.numpad-subtitle{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00CDDE;
+}
+
+.numpad-header {
+    padding-left:3rem;
+    width: 100%;
+}
+
+.numpad-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.numpad-input {
+    width: 100%;
+    letter-spacing: 0.5rem;
+    font-size: 2rem;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.75rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: var(--bg-light);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.numpad-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* ================================
+   Numpad Grid
+   ================================ */
+.numpad-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0.75rem;
+    aspect-ratio: 1;
+}
+
+.numpad-btn {
+    border: none;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4b4b4b;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    min-height: 70px;
+}
+
+.numpad-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.numpad-btn:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow);
+}
+
+/* ================================
+   Special Buttons (Delete, Enter, Zero)
+   ================================ */
+
+/* Delete button - spans 2 rows */
+.numpad-btn-delete {
+    grid-column: 4;
+    grid-row: 1 / 3;
+    border-radius: 3rem;
+    background-color: white;
+    color: black;
+    aspect-ratio: auto;
+}
+
+.numpad-btn-delete:hover {
+    background-color: #dc2626;
+    color: white;
+}
+
+/* Enter button - spans 2 rows */
+.numpad-btn-enter {
+    grid-column: 4;
+    grid-row: 3 / 5;
+    border-radius: 3rem;
+    background-color: #2714A2;
+    color: white;
+    aspect-ratio: auto;
+}
+
+.numpad-btn-enter:hover {
+    background-color: #16a34a;
+    color: white;
+}
+
+/* Zero button - spans 2 columns */
+.numpad-btn-zero {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    border-radius: 3rem;
+    aspect-ratio: auto;
+}
+
+/* Decimal button - disabled state */
+.numpad-btn-decimal {
+    grid-column: 3;
+    grid-row: 4;
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.numpad-btn-decimal:hover {
+    background-color: var(--bg-light);
+    color: var(--text-color);
+    transform: none;
+    box-shadow: var(--shadow);
+}
+
+/* ================================
+   Error Message Display
+   ================================ */
+.numpad-error {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: #fee2e2;
+    border: 1px solid #fecaca;
+    border-radius: 0.5rem;
+    color: #dc2626;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ================================
+   Table Section
+   ================================ */
+.table-section {
+    padding: 2rem 1rem;
+    background-color: white;
+}
+
+.table-container {
+    border-radius: 0.75rem;
+    padding: 2rem;
+    padding-top: 0;
+    min-height: 400px;
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+@media (max-width: 1024px) {
+    .content-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .numpad-section {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding-top: 6rem;
+    }
+
+    .numpad-container {
+        max-width: 100%;
+    }
+
+    .numpad-input {
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+
+    .numpad-btn {
+        font-size: 1.25rem;
+        min-height: 60px;
+    }
+
+    .table-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .numpad-input {
+        font-size: 1.5rem;
+        padding: 0.875rem;
+    }
+
+    .numpad-grid {
+        gap: 0.5rem;
+    }
+
+    .numpad-btn {
+        font-size: 1.125rem;
+        min-height: 50px;
+    }
+
+    .table-container {
+        padding: 1rem;
+    }
+}
