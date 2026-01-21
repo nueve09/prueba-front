@@ -1,0 +1,34 @@
+/* Sidebar */
+.sidebar {
+  width: 80px;
+  background: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+
+  nav {
+    display: contents;
+  }
+
+  .icon {
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  .icon.active {
+    color: #22d3ee;
+  }
+}
+
+.logo {
+  background: black;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 20px;
+}

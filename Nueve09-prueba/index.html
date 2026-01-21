@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nueve09</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">09</div>
+        <nav>
+          <button class="icon active">🏠</button>
+          <button class="icon">💱</button>
+          <button class="icon">💳</button>
+          <button class="icon">↔</button>
+          <button class="icon">📊</button>
+        </nav>
+      </aside>
+
+      <main class="remesas">
+        <!-- Panel izquierdo -->
+        <section class="panel-left">
+          <header>
+            <h2>Ventanilla Digital</h2>
+            <h3>Remesas</h3>
+          </header>
+
+          <div class="transfer-input">
+            <div class="pin-display">
+              <span>**</span>
+              <span class="pin">290034</span>
+            </div>
+
+            <div class="keypad">
+              <button>1</button><button>2</button><button>3</button>
+              <button class="backspace">✖</button>
+              <button>4</button><button>5</button><button>6</button>
+              <button>7</button><button>8</button><button>9</button>
+
+              <button class="enter">↩</button>
+              <button class="zero">0</button>
+              <button>.</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Panel derecho -->
+        <section class="panel-right">
+          <header class="top-bar">
+            <div>
+              <strong>Hoy</strong>
+              <p>6 de octubre de 2023</p>
+            </div>
+
+            <div class="user">
+              <span>Elizabeth</span>
+              <small>Operador</small>
+              <img src="https://i.pravatar.cc/40" />
+            </div>
+          </header>
+
+          <div class="actions">
+            <button>🔍</button>
+            <button>⚙</button>
+            <button>🖨</button>
+          </div>
+
+        
+          <!-- Tabla de remesas -->
+          <div class="table-transfers">
+             <table>
+              <thead>
+                <tr>
+                  <th scope="col">Id</th>
+                  <th scope="col">Institución</th>
+                  <th scope="col">Monto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="col">Id</td>
+                  <td scope="col">Institución</td>
+                  <td scope="col">Monto</td>
+                </tr>
+                <tr>
+                  <td scope="col">Id</td>
+                  <td scope="col">Institución</td>
+                  <td scope="col">Monto</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3">
+                    <p>Página: </p>
+                    <button> &lt; </button>
+                    <button> > </button>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          
+        </section>
+      </main>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
