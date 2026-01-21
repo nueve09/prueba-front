@@ -1,0 +1,6 @@
+export const TRASFER_STATUS = {
+  NO_CHARGED: 'NO_COBRADO',
+	CHARGED: 'COBRADO'
+}
+
+export const ROWS_PER_PAGE = 10;

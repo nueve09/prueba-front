@@ -7,13 +7,25 @@
 /* Panel izquierdo */
 .panel-left {
   width: 40%;
+  min-width: 360px;
   background: #2b2b2b;
   color: white;
-  padding: 20px;
+  padding: 1.8rem 20px;
+}
+
+.panel-left h4 {
+  margin: 0;
 }
 
 .panel-left h3 {
   color: #22d3ee;
+  margin-top: 0;
+}
+
+.panel-left hr {
+  margin-bottom: 0.8rem;
+  border: none;
+  border-top: 0.5px solid #22d3ee; 
 }
 
 .transfer-input {
@@ -22,7 +34,6 @@
 
 .pin-display {
   background: #f5f5f5;
-  color: black;
   padding: 15px;
   border-radius: 10px;
   margin: 20px 0;
@@ -30,6 +41,8 @@
   display: flex;
   gap: 10px;
   max-width: 350px; /* limita tamaño máximo */
+  width: 100%;
+  text-align: center;
 }
 
 .keypad {
@@ -39,6 +52,7 @@
   gap: 18px;
   width: 100%;  /* ocupa todo el contenedor padre */
   max-width: 350px; /* limita tamaño máximo */
+  color: #404040;
 }
 
 .keypad button {
@@ -46,14 +60,24 @@
   height: 100%;
   border-radius: 50%;
   border: none;
-  font-size: 1.2em;
+  font-size: 1.7em;
   cursor: pointer;
   transition: background 0.2s;
+  font-weight: bold;
+  color: #404040;
 }
 
 .keypad button:hover {
-  background-color: #22d3ee;
+  background-color: #787878;
+  color: white;
 }
+
+.keypad button.active {
+  transform: scale(0.9);
+  background-color: #787878;
+  transition: transform 0.1s, background 0.1s;
+}
+
 
 button.zero {
   grid-column: span 2;
@@ -66,7 +90,7 @@ button.backspace {
 }
 
 button.enter {
-  background: #4f46e5;
+  background: #2714a2;
   color: white;
   grid-row: span 2;
   border-radius: 40px;
@@ -75,13 +99,13 @@ button.enter {
 /* Panel derecho */
 .panel-right {
   flex: 1;
-  background: #f8fafc;
-  padding: 20px;
+  color: black;
+  padding: 1.8rem 2.5rem;
 }
 
 .top-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
 }
 
@@ -91,22 +115,69 @@ button.enter {
   gap: 10px;
 }
 
+.user .notification-button {
+  border-radius: 25px;
+  padding: 5px 10px;
+  border: 0;
+  background-color: #ccc;
+  color: #2714a2;
+}
+
+.user .arrow-button {
+  border-radius: 25px;
+  padding: 5px 10px;
+  border: 0;
+  background-color: white;
+  color: #2714a2;
+}
+
+.user-name {
+  display: flex;
+  flex-direction: column;
+}
+
 .user img {
   border-radius: 50%;
+}
+
+.date-section strong {
+  color: #2714a2;
+}
+
+.date-section p {
+  margin-top: 0;
+  font-size: 14px;
 }
 
 .actions {
   display: flex;
   justify-content: end;
   gap: 10px;
-  margin: 20px 0;
+  margin: 1rem 0;
 }
 
 .actions button {
-  border-radius: 8px;
-  border: 1px solid #c7d2fe;
+  border-radius: 5px;
+  border: 2px solid #c7d2fe;
   background: white;
   padding: 8px 12px;
+  color:#2714a2;
+}
+
+.actions input {
+  width: 0;
+  padding: 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: width 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.actions input.active {
+  width: 100%; 
+  padding: 5px 10px;
+  opacity: 1;
 }
 
 .table-transfers {
@@ -114,17 +185,17 @@ button.enter {
 }
 
 table {
-  color: black;
+  color: #787878;
   border-collapse: collapse;
   width: 100%;
 }
 
 thead th {
-  border-top: 1px solid #999;
+  border-top: 3px solid #f2f2f2;
 }
 
 th, td {
-  border-bottom: 1px solid #999;
+  border-bottom: 3px solid #f2f2f2;
   padding: 10px 0 25px 0;
   width: 25%;
   text-align: start;
@@ -134,9 +205,30 @@ tr td:last-child, tr th:last-child  {
   text-align: end;
 }
 
-.transactions li {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  padding: 12px 0;
-  border-bottom: 1px solid #e5e7eb;
+tfoot button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.transfer-item {
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.transfer-item:hover {
+  background-color: #f0f4f8;
+}
+
+/* Diseño pequeño */
+/* Estilos para pantallas menores a 800px */
+@media (max-width: 800px) {
+  .remesas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .panel-left {
+    width: 100%;
+  }
 }

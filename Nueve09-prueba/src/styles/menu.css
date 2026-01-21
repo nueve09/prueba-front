@@ -15,9 +15,9 @@
   .icon {
     background: none;
     border: none;
-    color: #94a3b8;
+    color: white;
     font-size: 20px;
-    margin: 10px 0;
+    margin: 1rem 0;
     cursor: pointer;
   }
 
@@ -29,6 +29,11 @@
 .logo {
   background: black;
   border-radius: 12px;
-  padding: 10px;
+  padding: 1rem;
   margin-bottom: 20px;
+}
+
+.outlined {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #111;
 }

@@ -3,20 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nueve09</title>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div id="app">
       <!-- Sidebar -->
       <aside class="sidebar">
-        <div class="logo">09</div>
+        <div class="logo">N09</div>
         <nav>
-          <button class="icon active">🏠</button>
-          <button class="icon">💱</button>
-          <button class="icon">💳</button>
-          <button class="icon">↔</button>
-          <button class="icon">📊</button>
+          <button class="icon"><i class="fa-solid fa-house"></i></button>
+          <button class="icon active"><i class="fa-solid fa-arrow-up-short-wide"></i></button>
+          <button class="icon"><i class="fa-solid fa-credit-card"></i></button>
+          <button class="icon"><i class="fa-solid fa-file-invoice-dollar"></i></button>
+          <button class="icon"><i class="fa-solid fa-share"></i></button>
+          <button class="icon"><i class="fa-solid fa-folder-plus"></i></button>
         </nav>
       </aside>
 
@@ -24,24 +34,23 @@
         <!-- Panel izquierdo -->
         <section class="panel-left">
           <header>
-            <h2>Ventanilla Digital</h2>
+            <h4>Ventanilla <b>Digital</b> </h4>
+            <hr />
             <h3>Remesas</h3>
           </header>
 
           <div class="transfer-input">
-            <div class="pin-display">
-              <span>**</span>
-              <span class="pin">290034</span>
-            </div>
+            <input class="pin-display" type="text" id="transferId" placeholder="Ej: 12345678" maxlength="8" />
+            
 
             <div class="keypad">
-              <button>1</button><button>2</button><button>3</button>
-              <button class="backspace">✖</button>
-              <button>4</button><button>5</button><button>6</button>
-              <button>7</button><button>8</button><button>9</button>
+              <button data-num="1">1</button><button data-num="2">2</button><button data-num="3">3</button>
+              <button class="backspace" id="backspace">✖</button>
+              <button data-num="4">4</button><button data-num="5">5</button><button data-num="6">6</button>
+              <button data-num="7">7</button><button data-num="8">8</button><button data-num="9">9</button>
 
-              <button class="enter">↩</button>
-              <button class="zero">0</button>
+              <button class="enter" id="enter">↩</button>
+              <button data-num="0" class="zero">0</button>
               <button>.</button>
             </div>
           </div>
@@ -50,22 +59,27 @@
         <!-- Panel derecho -->
         <section class="panel-right">
           <header class="top-bar">
-            <div>
-              <strong>Hoy</strong>
-              <p>6 de octubre de 2023</p>
-            </div>
-
             <div class="user">
-              <span>Elizabeth</span>
-              <small>Operador</small>
+              <button class="notification-button"><i class="fa-solid fa-bell"></i></button>
               <img src="https://i.pravatar.cc/40" />
+              <div class="user-name">
+                <span>Elizabeth</span>
+                <small><b>Operador</b></small>
+              </div>
+              <button class="arrow-button"><i class="fa-solid fa-angle-down"></i></button>
             </div>
           </header>
 
+          <div class="date-section">
+            <strong class="date-title">Hoy</strong>
+            <b><p class="date" id="date"><p></b>
+          </div>
+
           <div class="actions">
-            <button>🔍</button>
-            <button>⚙</button>
-            <button>🖨</button>
+            <input type="text" id="searchInput" placeholder="Buscar por ID, Compañía o Monto..." />
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button><i class="fa-solid fa-sliders"></i></button>
+            <button><i class="fa-solid fa-print"></i></button>
           </div>
 
         
@@ -79,24 +93,14 @@
                   <th scope="col">Monto</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td scope="col">Id</td>
-                  <td scope="col">Institución</td>
-                  <td scope="col">Monto</td>
-                </tr>
-                <tr>
-                  <td scope="col">Id</td>
-                  <td scope="col">Institución</td>
-                  <td scope="col">Monto</td>
-                </tr>
+              <tbody id="tbody-transfers">
               </tbody>
               <tfoot>
                 <tr>
                   <td colspan="3">
-                    <p>Página: </p>
-                    <button> &lt; </button>
-                    <button> > </button>
+                    <p id="paginationInfo"></p>
+                    <button id="previous-page"> &lt; </button>
+                    <button id="next-page"> > </button>
                   </td>
                 </tr>
               </tfoot>
@@ -105,6 +109,16 @@
           
         </section>
       </main>
+
+      <!-- Modal -->
+      <div id="modalId" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modalTitle"></h2>
+          <hr/>
+          <div id="modalBody"></div>
+        </div>
+      </div>
 
     </div>
     <script type="module" src="/src/main.js"></script>
