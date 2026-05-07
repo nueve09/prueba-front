@@ -1,0 +1,86 @@
+.sidebar {
+    background-color: #111111;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    z-index: 10;
+}
+
+.sidebar-logo-container {
+    position: relative;
+    display: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.sidebar-logo {
+    color: #00e6b8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.toggle-calc-btn {
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00e6b8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.3s ease;
+}
+
+.toggle-calc-btn:hover {
+    background-color: #00b38f;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: #00e6b8;
+}
+
+@media (min-width: 1024px) {
+    .sidebar {
+        width: 80px;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px 0;
+    }
+
+    .sidebar-logo-container {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .sidebar-nav {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

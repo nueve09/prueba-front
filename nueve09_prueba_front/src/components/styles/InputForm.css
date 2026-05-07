@@ -1,0 +1,33 @@
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 400px;
+    transition: border-color 0.3s ease;
+}
+
+.input-container:focus-within {
+    border-color: #0033cc;
+}
+
+.input-icon {
+    color: #0033cc;
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.input-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-field::placeholder {
+    color: #999;
+}

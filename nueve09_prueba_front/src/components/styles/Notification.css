@@ -1,0 +1,70 @@
+.notification-toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: slideDown 0.3s ease-out;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.notification-message {
+    flex-grow: 1;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 12px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    color: inherit;
+}
+
+.close-btn:hover {
+    opacity: 1;
+}
+
+.variant-success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.variant-error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+.variant-alert {
+    background-color: #fff8e1;
+    color: #f57f17;
+    border: 1px solid #ffe082;
+}
+
+.variant-general {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    border: 1px solid #90caf9;
+}
+
+@keyframes slideDown {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+
+    to {
+        top: 20px;
+        opacity: 1;
+    }
+}

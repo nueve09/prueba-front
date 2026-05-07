@@ -1,0 +1,78 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-sm {
+    padding: 4px 12px;
+    font-size: 14px;
+}
+
+.btn-md {
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.btn-lg {
+    padding: 12px 24px;
+    font-size: 18px;
+}
+
+.btn-calc {
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 40px;
+    height: 80px;
+    width: 100%;
+}
+
+.btn-primary {
+    background-color: #0033cc;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #e4e4e4;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: #555;
+}
+
+.btn-ghost:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-icon {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #0033cc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn-icon:hover {
+    background-color: #f8f9fa;
+}

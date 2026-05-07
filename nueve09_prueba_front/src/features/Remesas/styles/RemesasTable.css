@@ -1,0 +1,221 @@
+.remesas-list-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex: 1;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.date-info h2 {
+    color: #0033cc;
+    font-size: 22px;
+    margin: 0 0 5px 0;
+}
+
+.date-info p {
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+    font-size: 14px;
+}
+
+.header-actions-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fa-bell {
+    color: #666;
+    font-size: 20px;
+}
+
+.avatar-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-text .name {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.user-text .role {
+    color: #888;
+    font-size: 12px;
+}
+
+.keyboard-btn {
+    background-color: #0033cc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 51, 204, 0.4);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.keyboard-btn:hover {
+    background-color: #002299;
+    transform: scale(1.05);
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.toolbar-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.status-switch {
+    display: flex;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.switch-btn {
+    border: none;
+    background: transparent;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.switch-btn.active {
+    background: white;
+    color: #0033cc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+    font-size: 14px;
+}
+
+.col-id {
+    width: 30%;
+    color: #888;
+}
+
+.col-company {
+    width: 40%;
+}
+
+.col-amount {
+    width: 30%;
+    text-align: right;
+    font-weight: 600;
+    color: #333;
+}
+
+.no-data {
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.pagination span {
+    color: #555;
+    font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+    .remesas-list-section {
+        padding: 40px;
+    }
+
+    .toolbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .toolbar-actions {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .action-buttons {
+        border-left: 1px solid #eee;
+        padding-left: 20px;
+    }
+
+    .table-row {
+        font-size: 16px;
+        padding: 20px 0;
+    }
+}
