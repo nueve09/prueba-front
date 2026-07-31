@@ -1,8 +1,39 @@
 const remittanceList = document.getElementById("remittance-list");
 const pagination = document.getElementById("pagination");
 
+const calculatorValue = document.getElementById("calculator-value");
+const numberButtons = document.querySelectorAll(
+  ".calculator__key[data-value]",
+);
+const deleteButton = document.getElementById("delete-button");
+const submitButton = document.getElementById("submit-button");
+
+const globalMessage = document.getElementById("global-message");
+const globalMessageText = document.getElementById(
+  "global-message-text",
+);
+
+/* Estado */
+
 const itemsPerPage = 5;
+const maxIdLength = 8;
+
 let currentPage = 1;
+let currentId = "";
+
+/* Mensajes */
+
+function showMessage(message) {
+  globalMessageText.textContent = message;
+  globalMessage.hidden = false;
+}
+
+function hideMessage() {
+  globalMessageText.textContent = "";
+  globalMessage.hidden = true;
+}
+
+/* Render de remesas */
 
 function renderRemittances(items) {
   remittanceList.innerHTML = "";
@@ -21,27 +52,13 @@ function renderRemittances(items) {
       <article class="remittance-row">
         <span>#${item.id}</span>
         <span>${item.company}</span>
-        <strong>$${item.amount.toLocaleString("es-MX")}</strong>
+        <strong>${formatCurrency(item.amount)}</strong>
       </article>
     `;
   });
 }
 
-function getChargedRemittances() {
-  return remittances
-    .filter(
-      (remittance) =>
-        remittance.status === "COBRADO" && remittance.charged_at
-    )
-    .sort((a, b) => b.charged_at.localeCompare(a.charged_at));
-}
-
-function getPageItems(items, page) {
-  const startIndex = (page - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-
-  return items.slice(startIndex, endIndex);
-}
+/* Paginación */
 
 function renderPagination(totalItems) {
   pagination.innerHTML = "";
@@ -53,8 +70,10 @@ function renderPagination(totalItems) {
   }
 
   const previousButton = document.createElement("button");
+
   previousButton.type = "button";
-  previousButton.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+  previousButton.innerHTML =
+    '<i class="fa-solid fa-chevron-left"></i>';
   previousButton.setAttribute("aria-label", "Página anterior");
   previousButton.disabled = currentPage === 1;
 
@@ -72,7 +91,10 @@ function renderPagination(totalItems) {
 
     pageButton.type = "button";
     pageButton.textContent = page;
-    pageButton.setAttribute("aria-label", `Ir a la página ${page}`);
+    pageButton.setAttribute(
+      "aria-label",
+      `Ir a la página ${page}`,
+    );
 
     if (page === currentPage) {
       pageButton.classList.add("pagination__page--active");
@@ -88,8 +110,10 @@ function renderPagination(totalItems) {
   }
 
   const nextButton = document.createElement("button");
+
   nextButton.type = "button";
-  nextButton.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+  nextButton.innerHTML =
+    '<i class="fa-solid fa-chevron-right"></i>';
   nextButton.setAttribute("aria-label", "Página siguiente");
   nextButton.disabled = currentPage === totalPages;
 
@@ -104,9 +128,10 @@ function renderPagination(totalItems) {
 }
 
 function renderCurrentPage() {
-  const chargedRemittances = getChargedRemittances();
+  const chargedRemittances = getChargedRemittances(remittances);
+
   const totalPages = Math.ceil(
-    chargedRemittances.length / itemsPerPage
+    chargedRemittances.length / itemsPerPage,
   );
 
   if (currentPage > totalPages && totalPages > 0) {
@@ -115,11 +140,91 @@ function renderCurrentPage() {
 
   const pageItems = getPageItems(
     chargedRemittances,
-    currentPage
+    currentPage,
+    itemsPerPage,
   );
 
   renderRemittances(pageItems);
   renderPagination(chargedRemittances.length);
 }
 
+/* Calculadora */
+
+function updateCalculatorDisplay() {
+  calculatorValue.textContent = currentId || "--------";
+}
+
+function addNumber(value) {
+  if (currentId.length >= maxIdLength) {
+    showMessage(
+      `El ID debe tener máximo ${maxIdLength} caracteres.`,
+    );
+    return;
+  }
+
+  hideMessage();
+
+  currentId += value;
+  updateCalculatorDisplay();
+}
+
+function deleteLastNumber() {
+  currentId = currentId.slice(0, -1);
+
+  hideMessage();
+  updateCalculatorDisplay();
+}
+
+/* Cobro de remesa */
+
+function chargeRemittance() {
+  const validationError = validateRemittanceId(
+    currentId,
+    maxIdLength,
+  );
+
+  if (validationError) {
+    showMessage(validationError);
+    return;
+  }
+
+  const remittance = remittances.find(
+    (item) => item.id === currentId,
+  );
+
+  if (!remittance) {
+    showMessage("No existe una remesa con ese ID.");
+    return;
+  }
+
+  if (remittance.status === "COBRADO") {
+    showMessage("Esta remesa ya fue cobrada.");
+    return;
+  }
+
+  remittance.status = "COBRADO";
+  remittance.charged_at = getCurrentDate();
+
+  currentId = "";
+  currentPage = 1;
+
+  hideMessage();
+  updateCalculatorDisplay();
+  renderCurrentPage();
+}
+
+/* Eventos */
+
+numberButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    addNumber(button.dataset.value);
+  });
+});
+
+deleteButton.addEventListener("click", deleteLastNumber);
+submitButton.addEventListener("click", chargeRemittance);
+
+/* Inicio de la aplicación */
+
+updateCalculatorDisplay();
 renderCurrentPage();
