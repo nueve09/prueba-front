@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prueba Frontend</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="app-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand__text">n09</span>
+        </div>
+
+        <button class="sidebar__toggle" aria-label="Contraer menú">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <nav class="sidebar__nav" aria-label="Navegación principal">
+          <a class="sidebar__link" href="#" aria-label="Inicio">
+            <i class="fa-regular fa-house"></i>
+          </a>
+
+          <a
+            class="sidebar__link sidebar__link--active"
+            href="#"
+            aria-label="Remesas"
+          >
+            <i class="fa-solid fa-money-bill-transfer"></i>
+          </a>
+
+          <a class="sidebar__link" href="#" aria-label="Tarjetas">
+            <i class="fa-regular fa-credit-card"></i>
+          </a>
+
+          <a class="sidebar__link" href="#" aria-label="Operaciones">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+          </a>
+
+          <a class="sidebar__link" href="#" aria-label="Transferencias">
+            <i class="fa-solid fa-share"></i>
+          </a>
+
+          <a class="sidebar__link" href="#" aria-label="Reportes">
+            <i class="fa-regular fa-folder-closed"></i>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Panel de remesas -->
+      <section class="remittance-panel">
+        <header class="remittance-panel__header">
+          <div class="section-heading">
+            <span>Ventanilla <strong>Digital</strong></span>
+          </div>
+
+          <h1>Remesas</h1>
+        </header>
+
+        <section class="calculator" aria-label="Captura de remesa">
+          <div class="calculator__display">
+            <span class="calculator__prefix">|**</span>
+            <span class="calculator__value" id="calculator-value">290034</span>
+            <span class="calculator__cursor" aria-hidden="true"></span>
+          </div>
+
+          <div class="calculator__keyboard">
+            <div class="calculator__numbers">
+              <button
+                class="calculator__key"
+                type="button"
+                data-value="1"
+              >
+                1
+              </button>
+              <button
+                class="calculator__key"
+                type="button"
+                data-value="2"
+              >
+                2
+              </button>
+              <button
+                class="calculator__key"
+                type="button"
+                data-value="3"
+              >
+                3
+              </button>
+
+              <button
+                class="calculator__key"
+                type="button"
+                data-value="4"
+              >
+                4
+              </button>
+              <button
+                class="calculator__key"
+                type="button"
+                data-value="5"
+              >
+                5
+              </button>
+              <button
+                class="calculator__key"
+                type="button"
+                data-value="6"
+              >
+                6
+              </button>
+
+              <button
+                class="calculator__key"
+                type="button"
+                data-value="7"
+              >
+                7
+              </button>
+              <button
+                class="calculator__key"
+                type="button"
+                data-value="8"
+              >
+                8
+              </button>
+              <button
+                class="calculator__key"
+                type="button"
+                data-value="9"
+              >
+                9
+              </button>
+
+              <button
+                class="calculator__key calculator__key--zero"
+                type="button"
+                data-value="0"
+              >
+                0
+              </button>
+
+              <button
+                class="calculator__key"
+                type="button"
+                data-value="."
+              >
+                .
+              </button>
+            </div>
+
+            <div class="calculator__actions">
+              <button
+                class="calculator__action calculator__action--delete"
+                id="delete-button"
+                type="button"
+                aria-label="Borrar"
+              >
+                <i class="fa-solid fa-delete-left"></i>
+              </button>
+
+              <button
+                class="calculator__action calculator__action--submit"
+                id="submit-button"
+                type="button"
+                aria-label="Confirmar remesa"
+              >
+                <i class="fa-solid fa-arrow-turn-down"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Panel del historial -->
+      <section class="history-panel">
+        <header class="topbar">
+          <button
+            class="topbar__notification"
+            type="button"
+            aria-label="Notificaciones"
+          >
+            <i class="fa-regular fa-bell"></i>
+            <span class="topbar__notification-dot"></span>
+          </button>
+
+          <div class="user">
+            <div class="user__avatar" aria-hidden="true">E</div>
+
+            <div class="user__information">
+              <strong>Elizabeth</strong>
+              <span>Operador</span>
+            </div>
+
+            <button
+              class="user__menu"
+              type="button"
+              aria-label="Abrir menú de usuario"
+            >
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+          </div>
+        </header>
+
+        <div class="history-panel__content">
+          <section class="history-heading">
+            <div>
+              <h2>Hoy</h2>
+              <p>6 de octubre de 2023</p>
+            </div>
+
+            <button
+              class="keyboard-button"
+              type="button"
+              aria-label="Abrir teclado"
+            >
+              <i class="fa-regular fa-keyboard"></i>
+            </button>
+          </section>
+
+          <section
+            class="global-message"
+            id="global-message"
+            role="alert"
+            aria-live="polite"
+            hidden
+          >
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p id="global-message-text"></p>
+          </section>
+
+          <section class="history-toolbar" aria-label="Herramientas de remesas">
+            <div class="history-toolbar__search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <input
+                id="search-input"
+                type="search"
+                placeholder="Buscar por ID, compañía o monto"
+                aria-label="Buscar remesas"
+              />
+            </div>
+
+            <button type="button" aria-label="Filtrar">
+              <i class="fa-solid fa-sliders"></i>
+            </button>
+
+            <button type="button" aria-label="Imprimir">
+              <i class="fa-solid fa-print"></i>
+            </button>
+          </section>
+
+          <section
+            class="remittance-list"
+            id="remittance-list"
+            aria-label="Remesas cobradas"
+          >
+          </section>
+
+          <nav
+            class="pagination"
+            id="pagination"
+            aria-label="Paginación"
+          >
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+
+</html>
