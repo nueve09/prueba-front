@@ -15,7 +15,7 @@ const globalMessageText = document.getElementById(
 
 /* Estado */
 
-const itemsPerPage = 5;
+const itemsPerPage = 10;
 const maxIdLength = 8;
 
 let currentPage = 1;
