@@ -13,6 +13,8 @@ const globalMessageText = document.getElementById(
   "global-message-text",
 );
 
+const searchInput = document.getElementById("search-input");
+
 /* Estado */
 
 const itemsPerPage = 10;
@@ -20,6 +22,8 @@ const maxIdLength = 8;
 
 let currentPage = 1;
 let currentId = "";
+
+let searchTerm = "";
 
 /* Mensajes */
 
@@ -130,8 +134,13 @@ function renderPagination(totalItems) {
 function renderCurrentPage() {
   const chargedRemittances = getChargedRemittances(remittances);
 
+  const filteredRemittances = filterRemittances(
+    chargedRemittances,
+    searchTerm,
+  );
+
   const totalPages = Math.ceil(
-    chargedRemittances.length / itemsPerPage,
+    filteredRemittances.length / itemsPerPage,
   );
 
   if (currentPage > totalPages && totalPages > 0) {
@@ -139,13 +148,13 @@ function renderCurrentPage() {
   }
 
   const pageItems = getPageItems(
-    chargedRemittances,
+    filteredRemittances,
     currentPage,
     itemsPerPage,
   );
 
   renderRemittances(pageItems);
-  renderPagination(chargedRemittances.length);
+  renderPagination(filteredRemittances.length);
 }
 
 /* Calculadora */
@@ -223,6 +232,13 @@ numberButtons.forEach((button) => {
 
 deleteButton.addEventListener("click", deleteLastNumber);
 submitButton.addEventListener("click", chargeRemittance);
+
+searchInput.addEventListener("input", (event) => {
+  searchTerm = event.target.value;
+  currentPage = 1;
+
+  renderCurrentPage();
+});
 
 /* Inicio de la aplicación */
 

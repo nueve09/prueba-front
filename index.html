@@ -245,9 +245,16 @@
           </section>
 
           <section class="history-toolbar" aria-label="Herramientas de remesas">
-            <button type="button" aria-label="Buscar">
+            <div class="history-toolbar__search">
               <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+
+              <input
+                id="search-input"
+                type="search"
+                placeholder="Buscar por ID, compañía o monto"
+                aria-label="Buscar remesas"
+              />
+            </div>
 
             <button type="button" aria-label="Filtrar">
               <i class="fa-solid fa-sliders"></i>

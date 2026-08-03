@@ -46,3 +46,23 @@ function getCurrentDate() {
 
   return `${year}${month}${day}`;
 }
+
+function filterRemittances(items, searchTerm) {
+  const normalizedTerm = searchTerm.trim().toLowerCase();
+
+  if (!normalizedTerm) {
+    return items;
+  }
+
+  return items.filter((item) => {
+    const id = item.id.toLowerCase();
+    const company = item.company.toLowerCase();
+    const amount = String(item.amount);
+
+    return (
+      id.includes(normalizedTerm) ||
+      company.includes(normalizedTerm) ||
+      amount.includes(normalizedTerm)
+    );
+  });
+}
