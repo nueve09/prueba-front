@@ -7,6 +7,7 @@ import type { Transaction } from './types/transaction';
 import { INITIAL_TRANSACTIONS } from './mock/mockData';
 import './index.css';
 
+/* Componente principal */
 export default function App() {
 	const [pinInput, setPinInput] = useState('29939301');
 	const [errorMessage, setErrorMessage] = useState('');
