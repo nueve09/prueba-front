@@ -109,7 +109,7 @@ Salida en `graphify-out/` (`GRAPH_REPORT.md`, `graph.json`, `graph.html`). En Cu
 - La interfaz tipo calculadora debe ser funcional.
     1) validar datos de entrada
     2) validar formato de id, max(8)
-    3) validar que el id de la remesa,no haya sido cobrada en la lista. Si, no agrega la fecha en que se cobro, actualiza el estatus de "NO_COBRADO" a "COBRADO" y muestrala en el listado de la interfaz.
+    3) validar que el id de la remesa,no haya sido cobrada en la lista. Si, no agrega la fecha en que se cobro, actualiza el estatus de "NO_COBRADO" a "COBRADO" y muéstrala en el listado de la interfaz.
 
 - Qué la aplicación sea capaz de ajustarse de manera correcta a diversas dimensiones.
 
