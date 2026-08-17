@@ -1,0 +1,14 @@
+---
+description: Zustand — selector only for rendered values; getState in handlers
+globs: "**/*.{ts,tsx}"
+alwaysApply: false
+---
+
+# Zustand access
+
+Follow `.agents/skills/zustand/SKILL.md`.
+
+- Rendered value → `useAppStore((state) => state.count)`
+- Handler / non-UI read → `useAppStore.getState().count` (or `.increment()`)
+- Never call `useAppStore(...)` inside nested non-hook functions
+- Never use `getState()` as a substitute when the UI must update

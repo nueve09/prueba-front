@@ -17,28 +17,81 @@ Principalmente los siguientes aspectos:
 + Ajuste de los componentes en diferentes dimensiones.
 
 ## IMPORTANTE
+
 1. Asegúrate de tener `git` y tus herramientas de desarrollo instaladas.
 
 2. Se solicita crear la aplicación utilizando tecnología vanilla (html + css + js) o usando la libería/framework de tu elección:
 
 3. Se requiere de una **cuenta de GitHub** para realizar este ejercicio.
 
-4.  **Antes de comenzar a programar:**
+4. **Antes de comenzar a programar:**
 
 * Realizar un `Fork` de este repositorio (https://github.com/nueve09/prueba-front).
 * Clonar el fork a su máquina local `git clone git@github.com:USERNAME/FORKED-PROJECT.git`
 * Crear un `branch` en su cuenta de GitHub utilizando su nombre completo.
 
-5.  **Al finalizar**:
+5. **Al finalizar**:
 
 * 1) Realizar un `Commit` de su proyecto, **enviar un `Pull Request` al branch con su NOMBRE**, y notificar a la siguiente dirección de correo electrónico jrios@nueve09.mx, CC: jaraujo@nueve09.mx.
 
+## CÓMO CORRER EL PROYECTO
+
+Este fork usa **pnpm** (Node 22+ recomendado) y el siguiente stack:
+
+| Pieza | Uso |
+| --- | --- |
+| React 19 + TypeScript + Vite 8 | App SPA |
+| Tailwind CSS v4 | Estilos |
+| shadcn/ui | Componentes |
+| Zustand | Estado |
+| Zod | Validación |
+| Husky | Git hooks |
+| OpenSpec | Cambios spec-driven (`.cursor/commands/opsx-*`) |
+| Vitest | Tests unitarios |
+| Playwright | E2E |
+| eslint-plugin-sonarjs | Reglas SonarQube en ESLint |
+| Graphify | Grafo del código (AST local) |
+
+```sh
+pnpm install
+pnpm dev
+```
+
+La app queda en `http://localhost:5173`.
+
+Otros comandos:
+
+```sh
+pnpm lint          # ESLint + SonarJS
+pnpm build         # TypeScript + Vite
+pnpm preview       # Preview del build de producción
+pnpm test          # Vitest (unitarios; aún no hay archivos)
+pnpm test:e2e      # Playwright (Chromium)
+```
+
+Los unitarios van en `src/` como `*.test.ts` / `*.spec.ts` (o `.tsx`). Los E2E de Playwright están en `tests/`. Watch de Vitest: `pnpm exec vitest`.
+
+Si Playwright no encuentra el browser:
+
+```sh
+pnpm exec playwright install chromium
+```
+
+Extensión recomendada en Cursor/VS Code: **SonarQube for IDE** (`sonarsource.sonarlint-vscode`), listada en `.vscode/extensions.json`.
+
+Grafo del código (Graphify, AST local, sin API de pago):
+
+```sh
+graphify extract . --code-only
+graphify cluster-only . --no-label
+```
+
+Salida en `graphify-out/` (`GRAPH_REPORT.md`, `graph.json`, `graph.html`). En Cursor el skill queda en `.cursor/rules/graphify.mdc`; para Codex, en `.codex/` y `AGENTS.md`.
 
 ## EJERCICIO PRÁCTICO
 
 **Objetivo:** Desarrollar una aplicación web, con base a maqueta.png.
 
- 
 #### Requerimientos generales
 
 1. La aplicación debe cumplir con los siguientes **requisitos funcionales:**
@@ -49,7 +102,7 @@ Principalmente los siguientes aspectos:
 
 - Crear sección de busqueda por id, company o monto
 
-- Paginación de las remesas 
+- Paginación de las remesas
 
 - Mostrar los primeros 10 remesas por **charged_at** y que hayan sido cobradas; del resultado de la búsqueda, incluyendo id (`'remesa.id'`), la compañia (`'remesa.company'`) y monto (`'remesa.amount'`) de cada registro.
 
@@ -58,11 +111,10 @@ Principalmente los siguientes aspectos:
     2) validar formato de id, max(8)
     3) validar que el id de la remesa,no haya sido cobrada en la lista. Si, no agrega la fecha en que se cobro, actualiza el estatus de "NO_COBRADO" a "COBRADO" y muestrala en el listado de la interfaz.
 
-- Qué la aplicación sea capaz de ajustarse de manera correcta a diversas dimensiones. 
-
+- Qué la aplicación sea capaz de ajustarse de manera correcta a diversas dimensiones.
 
 - Incluir un componente para mostrar mensajes de Errores Generales en toda la aplicación.
 
-2.  **CSS:** Utilizar CSS Grid y/o CSS Flexbox, para la maquetación del proyecto 
+2. **CSS:** Utilizar CSS Grid y/o CSS Flexbox, para la maquetación del proyecto
 
-3.  **Iconos:** Utilizar una librería para el manejo de iconos donde lo considere necesario (_se recomienda el uso de [Font Awesome](http://fontawesome.io/) o [Glyphicons](http://glyphicons.com/)._)
+3. **Iconos:** Utilizar una librería para el manejo de iconos donde lo considere necesario (_se recomienda el uso de [Font Awesome](http://fontawesome.io/) o [Glyphicons](http://glyphicons.com/)._)

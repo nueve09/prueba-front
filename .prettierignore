@@ -1,0 +1,6 @@
+dist
+pnpm-lock.yaml
+graphify-out
+playwright-report
+test-results
+coverage

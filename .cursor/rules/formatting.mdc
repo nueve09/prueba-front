@@ -1,0 +1,25 @@
+---
+description: JS/TS formatting — single quotes, no semicolons
+globs: "**/*.{ts,tsx,js,jsx,mjs,cjs}"
+alwaysApply: false
+---
+
+# Formatting
+
+This project uses Prettier (`.prettierrc`). Format on save in Cursor/VS Code follows that config via `.vscode/settings.json`.
+
+## Style
+
+- Prefer **single quotes** (`'...'`), not double quotes
+- **No semicolons** at the end of statements
+- Do not “fix” code by adding `;` or switching to `"`
+
+```ts
+// ❌ BAD
+import { useAppStore } from "@/stores/app-store";
+
+// ✅ GOOD
+import { useAppStore } from '@/stores/app-store'
+```
+
+Template literals and JSX attribute quotes are fine when required by syntax.

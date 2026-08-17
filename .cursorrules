@@ -1,0 +1,45 @@
+# Git workflow (light GitFlow)
+
+This repository uses a simplified GitFlow: one protected mainline plus short-lived topic branches.
+
+Cursor docs: the official project-rules format is `.cursor/rules/*.mdc`.
+This `.cursorrules` file is the legacy filename (still read as a fallback).
+The same rules also live in `.cursor/rules/gitflow.mdc` (`alwaysApply: true`).
+
+## Branches
+
+- `master`: production-ready; always deployable. Do not commit directly.
+- `feature/<short-description>`: new work (e.g. `feature/chat-reconnect`)
+- `fix/<short-description>`: bugfixes (e.g. `fix/splash-handoff`)
+
+Rules:
+
+- Branch from `master`; merge back via pull request with review and passing CI.
+- Keep topic branches short-lived (days, not weeks); rebase or merge `master` often to avoid drift.
+- One logical change per branch; use kebab-case, lowercase names.
+- Tag releases on `master` with semantic versions when shipping (e.g. `v0.2.0`).
+
+This repo does not use `develop`, `release/*`, or `hotfix/*`. Urgent production fixes follow the same `fix/*` flow from `master`.
+
+## Commit messages (Source Control "Generate commit message")
+
+When Cursor auto-generates a Git commit message for this repository:
+
+- Use Conventional Commits: `type(optional-scope): short summary`
+- Allowed types: `feat`, `fix`, `docs`, `chore`, `refactor`, `test`, `ci`, `style`, `perf`
+- Subject: imperative mood ("Add", "Fix", "Update"), max ~72 characters, no trailing period
+- Focus on WHY / intent of the change, not a file-by-file changelog
+- One subject line only unless a short body is truly needed
+- English is preferred for commit subjects
+- Do NOT use verbose essay style (multi-sentence summaries listing every touched file)
+- Do NOT start with "Update filename:" as the whole message pattern
+- Branch names are separate from commit messages; do not paste the branch name into the subject
+
+Examples:
+
+- Good: `feat(chat): retry unsent messages after reconnect`
+- Good: `fix(splash): dismiss overlay when bootstrap completes`
+- Good: `docs: add local relay setup instructions`
+- Good: `ci: run lint and typecheck on pull requests`
+- Bad: `Update README.md: Revise architecture section and document setup steps for development environment...`
+- Bad: `feature/chat-reconnect: add retry logic`

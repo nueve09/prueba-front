@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "sonarsource.sonarlint-vscode",
+    "dbaeumer.vscode-eslint",
+    "bradlc.vscode-tailwindcss",
+    "esbenp.prettier-vscode"
+  ]
+}

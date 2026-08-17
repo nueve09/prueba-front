@@ -1,0 +1,11 @@
+schema: spec-driven
+
+context: |
+  Tech stack: React 19, Vite 8, TypeScript, Tailwind CSS v4, shadcn/ui (radix-nova), Zustand, Zod, Playwright, Husky, ESLint + eslint-plugin-sonarjs.
+  Package manager: pnpm (required).
+  Git: light GitFlow + Conventional Commits in .cursor/rules/gitflow.mdc.
+  Assignment: N09 frontend test (remesas UI from maqueta.png). Scaffold only until the exercise is implemented.
+  Do not add a backend. Keep the app client-side.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
