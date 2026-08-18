@@ -15,13 +15,13 @@
     "semantic_hash": "4309401ded0527ef65581f5ae99855a6"
   },
   "eslint.config.js": {
-    "mtime": 1786996763.8891928,
+    "mtime": 1787026682.4908283,
     "ast_hash": "023a31b10c8c6829be3d0f8b9f24fd6a",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1787024696.1848524,
-    "ast_hash": "a2f032a33744230cf3a00a1ccbbefee6",
+    "mtime": 1787027408.683029,
+    "ast_hash": "98d063e3d8c11e547596789ed3773ef4",
     "semantic_hash": ""
   },
   "playwright.config.ts": {
@@ -30,7 +30,7 @@
     "semantic_hash": "00a48fbec36e973bf2412c0b3e9d0859"
   },
   "src/App.tsx": {
-    "mtime": 1787024683.884031,
+    "mtime": 1787026682.4905977,
     "ast_hash": "d22d66a390fe19b8a051b78f78feb35b",
     "semantic_hash": ""
   },
@@ -40,7 +40,7 @@
     "semantic_hash": ""
   },
   "src/lib/schemas.ts": {
-    "mtime": 1786996798.2757444,
+    "mtime": 1787026682.4833653,
     "ast_hash": "9f6819eb177c05bf28d34689ae2a5e7f",
     "semantic_hash": ""
   },
@@ -55,7 +55,7 @@
     "semantic_hash": "787e5a07efeb2bf6209d5937195f2f68"
   },
   "tests/app.spec.ts": {
-    "mtime": 1786996715.6400177,
+    "mtime": 1787026682.484729,
     "ast_hash": "2d05604ad7783e7993397d2b0aed20b2",
     "semantic_hash": ""
   },
@@ -75,8 +75,8 @@
     "semantic_hash": "a025ae6df83a50f9a681dce491f1642c"
   },
   "vite.config.ts": {
-    "mtime": 1786939038.989391,
-    "ast_hash": "5184f266f0ddbcdf601b9b804115640e",
+    "mtime": 1787027428.7067633,
+    "ast_hash": "9a6b8d53745d3feaac7473eab0828bc8",
     "semantic_hash": ""
   },
   ".codex/skills/graphify/SKILL.md": {
@@ -195,7 +195,7 @@
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1786996716.8349392,
+    "mtime": 1787026682.4846795,
     "ast_hash": "6a7ad35135bf50aa25b994a5d3eb63ae",
     "semantic_hash": ""
   },
@@ -1490,47 +1490,47 @@
     "semantic_hash": ""
   },
   "src/api/remesas.ts": {
-    "mtime": 1786996486.8897004,
-    "ast_hash": "e88b2e28a2d4bd5c0bab8c9153b3c296",
+    "mtime": 1787027428.7063265,
+    "ast_hash": "5cc46d92885e812cdfcec299ead8a2da",
     "semantic_hash": ""
   },
   "src/components/layout/app-shell.tsx": {
-    "mtime": 1786996711.996685,
+    "mtime": 1787026682.4833558,
     "ast_hash": "ec5b84811a943cb43691d8bdf60d2831",
     "semantic_hash": ""
   },
   "src/components/layout/icon-rail.tsx": {
-    "mtime": 1786996607.8547308,
+    "mtime": 1787026682.4846668,
     "ast_hash": "b087b2077c135f74ed9896eb721473fd",
     "semantic_hash": ""
   },
   "src/components/layout/mobile-tabs.tsx": {
-    "mtime": 1786996609.5669508,
+    "mtime": 1787026682.4847374,
     "ast_hash": "da213b3508b11bf2ce508bf68c3a6d5f",
     "semantic_hash": ""
   },
   "src/components/layout/placeholder-page.tsx": {
-    "mtime": 1786996773.003881,
+    "mtime": 1787026682.490781,
     "ast_hash": "7d8f03b5e21ac9998f7d4388f5c8dfca",
     "semantic_hash": ""
   },
   "src/components/remesas/history-panel.tsx": {
-    "mtime": 1786996772.688247,
-    "ast_hash": "fbe2fd71bb7172d2134490abf13f5d05",
+    "mtime": 1787027746.5887527,
+    "ast_hash": "b69139988e259e9cf9acd84533166009",
     "semantic_hash": ""
   },
   "src/components/remesas/keypad-dialog.tsx": {
-    "mtime": 1787001952.9985607,
+    "mtime": 1787026682.4846938,
     "ast_hash": "d0c1b5a84ce00f608eeb906ab2ba5675",
     "semantic_hash": ""
   },
   "src/components/remesas/keypad.tsx": {
-    "mtime": 1787001938.6808827,
+    "mtime": 1787026682.4906316,
     "ast_hash": "f1b8c993f6e260e4522ce42ef9285b30",
     "semantic_hash": ""
   },
   "src/components/remesas/remesas-page.tsx": {
-    "mtime": 1787024720.3455338,
+    "mtime": 1787026682.484701,
     "ast_hash": "43ba7242c3cf9c11031446d0236f2bd7",
     "semantic_hash": ""
   },
@@ -1545,7 +1545,7 @@
     "semantic_hash": ""
   },
   "src/components/ui/pagination.tsx": {
-    "mtime": 1787002975.069236,
+    "mtime": 1787026491.8582125,
     "ast_hash": "6fa4d9326f6f8383a910e1dd4c724ba3",
     "semantic_hash": ""
   },
@@ -1565,43 +1565,43 @@
     "semantic_hash": ""
   },
   "src/data/remesas.ts": {
-    "mtime": 1786996482.7224398,
+    "mtime": 1787026682.4905477,
     "ast_hash": "d93384ff75783cae9e6f78e5e290997e",
     "semantic_hash": ""
   },
   "src/hooks/use-debounce.ts": {
-    "mtime": 1786996588.8196926,
+    "mtime": 1787026682.49075,
     "ast_hash": "4746e224436bee838343c8f5a293bff3",
     "semantic_hash": ""
   },
   "src/hooks/use-remesas-filter.ts": {
-    "mtime": 1786996798.2261488,
-    "ast_hash": "f6f54e44a96cfa0c7c973916569372d4",
+    "mtime": 1787027741.8590934,
+    "ast_hash": "6f80b68b05fe8c9d7dc6a480b9ddf160",
     "semantic_hash": ""
   },
   "src/lib/charge-remesa.ts": {
-    "mtime": 1787024689.1256897,
+    "mtime": 1787026682.4908247,
     "ast_hash": "a4732a47fca6279fbb121b30905d8126",
     "semantic_hash": ""
   },
   "src/lib/dates.ts": {
-    "mtime": 1786996459.6999304,
+    "mtime": 1787026682.4905992,
     "ast_hash": "911bef802837c96e36c760627a8a2ee1",
     "semantic_hash": ""
   },
   "src/lib/errors.ts": {
-    "mtime": 1786996477.927267,
+    "mtime": 1787026682.4847043,
     "ast_hash": "8c7fc799885ca46575a3c0ec5c63562b",
     "semantic_hash": ""
   },
   "src/lib/format.ts": {
-    "mtime": 1786996798.2681315,
+    "mtime": 1787026682.4857306,
     "ast_hash": "78c8da07c3f4a2c5e70fe05fa6ee42b7",
     "semantic_hash": ""
   },
   "src/stores/remesas-store.ts": {
-    "mtime": 1786996487.3988967,
-    "ast_hash": "c55ba6c666081d799974d0bae6be416e",
+    "mtime": 1787026987.0897288,
+    "ast_hash": "1e7c27a4569b535168afe7aab96d2e39",
     "semantic_hash": ""
   },
   ".agents/skills/react-router-framework-mode/SKILL.md": {
@@ -1785,13 +1785,13 @@
     "semantic_hash": ""
   },
   "openspec/changes/add-remesas-ventanilla/tasks.md": {
-    "mtime": 1786996855.738743,
+    "mtime": 1787026682.490772,
     "ast_hash": "df9d3dae96b2d6ba4e786b8cddcdd7a5",
     "semantic_hash": ""
   },
   "src/components/ui/toast.tsx": {
-    "mtime": 1787024683.1709936,
-    "ast_hash": "2ba0db9e58ef817219db22597c70443b",
+    "mtime": 1787026682.4848704,
+    "ast_hash": "3236d10b16df9dfaa63733d8f177defc",
     "semantic_hash": ""
   },
   ".agents/skills/migrate-radix-to-base/SKILL.md": {
@@ -1852,6 +1852,116 @@
   ".agents/skills/shadcn/rules/chat.md": {
     "mtime": 1787024387.4272275,
     "ast_hash": "43b95727b2f6b05e22081d3f7fe5c729",
+    "semantic_hash": ""
+  },
+  "src/App.test.tsx": {
+    "mtime": 1787027670.2150867,
+    "ast_hash": "01ac1580a780d9639028e8aebd1a58fa",
+    "semantic_hash": ""
+  },
+  "src/api/remesas.test.ts": {
+    "mtime": 1787027736.1154685,
+    "ast_hash": "fd4547184ee54e53d00c4fade2486951",
+    "semantic_hash": ""
+  },
+  "src/components/layout/app-shell.test.tsx": {
+    "mtime": 1787027700.197448,
+    "ast_hash": "034e0a3eacfeefaa014a5f1893968064",
+    "semantic_hash": ""
+  },
+  "src/components/remesas/history-panel.test.tsx": {
+    "mtime": 1787027596.9907987,
+    "ast_hash": "634f015b34cd5e48942a9ab47b804a0a",
+    "semantic_hash": ""
+  },
+  "src/components/remesas/keypad-dialog.test.tsx": {
+    "mtime": 1787027668.4221094,
+    "ast_hash": "7131bb9d6a846675007f8cabfd924af6",
+    "semantic_hash": ""
+  },
+  "src/components/remesas/keypad.test.tsx": {
+    "mtime": 1787027638.538424,
+    "ast_hash": "b9fe3d43d4329fcc692dd18175ef0be7",
+    "semantic_hash": ""
+  },
+  "src/components/remesas/remesas-page.test.tsx": {
+    "mtime": 1787027700.0912414,
+    "ast_hash": "4df8cac00e498512cbeb0dda7fad5ab6",
+    "semantic_hash": ""
+  },
+  "src/data/remesas.test.ts": {
+    "mtime": 1787027446.815948,
+    "ast_hash": "89be7646796d335904869f4370baa099",
+    "semantic_hash": ""
+  },
+  "src/hooks/use-debounce.test.ts": {
+    "mtime": 1787027591.61086,
+    "ast_hash": "7a66fb5a4f0522ff59c23553cf1ff676",
+    "semantic_hash": ""
+  },
+  "src/hooks/use-remesas-filter.test.ts": {
+    "mtime": 1787027450.2927003,
+    "ast_hash": "41399170b7cd24da67ba9777f6229b98",
+    "semantic_hash": ""
+  },
+  "src/lib/charge-remesa.test.ts": {
+    "mtime": 1787027549.2538545,
+    "ast_hash": "5a454a62787e19dd0835dadb8ef554d9",
+    "semantic_hash": ""
+  },
+  "src/lib/dates.test.ts": {
+    "mtime": 1787027529.4013805,
+    "ast_hash": "63db65c5ab3ef52c2c36c761250c5529",
+    "semantic_hash": ""
+  },
+  "src/lib/errors.test.ts": {
+    "mtime": 1787027452.180991,
+    "ast_hash": "09eb0e19e5ab4daa0d152ab33a5468f8",
+    "semantic_hash": ""
+  },
+  "src/lib/format.test.ts": {
+    "mtime": 1787027531.0386157,
+    "ast_hash": "d79472a9e9e8c9d0ba90219ab749569f",
+    "semantic_hash": ""
+  },
+  "src/lib/schemas.test.ts": {
+    "mtime": 1787027527.8079624,
+    "ast_hash": "69d41283af7ea2dc8d72fdb3fac91923",
+    "semantic_hash": ""
+  },
+  "src/stores/remesas-store.test.ts": {
+    "mtime": 1787027534.3182242,
+    "ast_hash": "e7d6ba381346a1129f67f98e89c21d9f",
+    "semantic_hash": ""
+  },
+  "src/test/setup.ts": {
+    "mtime": 1787027566.7383635,
+    "ast_hash": "1bc4a2ecb0612c7435812cbc30664d11",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-unit-tests/.openspec.yaml": {
+    "mtime": 1787026803.3259969,
+    "ast_hash": "2aff0556fc211137f182b8a31bcc3fe0",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-unit-tests/design.md": {
+    "mtime": 1787026929.2070253,
+    "ast_hash": "0a83610f9e6d4391da9c914cda4d77a9",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-unit-tests/proposal.md": {
+    "mtime": 1787026818.877911,
+    "ast_hash": "8d4352205211cd713374cf76525aa180",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-unit-tests/specs/unit-testing/spec.md": {
+    "mtime": 1787026883.493538,
+    "ast_hash": "5079e0542447431534760d412e2b4f81",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-unit-tests/tasks.md": {
+    "mtime": 1787027721.4109309,
+    "ast_hash": "2c5a61d2654d2d7026c68d44e1aa3bc6",
     "semantic_hash": ""
   }
 }

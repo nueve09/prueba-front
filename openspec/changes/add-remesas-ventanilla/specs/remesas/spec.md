@@ -24,10 +24,10 @@ The system SHALL load and update remesas through a client-side mock fetch layer 
 
 #### Scenario: Invalid mock payload is rejected
 - **WHEN** mock data fails Zod validation
-- **THEN** the system MUST NOT treat it as a remesa list and MUST show a general error via Sonner
+- **THEN** the system MUST NOT treat it as a remesa list and MUST show a general error via the app-wide toast
 
 ### Requirement: Functional keypad charge flow
-The keypad SHALL collect a remesa id (digits displayed without a `**` prefix). Confirming the entry MUST run Zod validation, then look up the remesa. If the remesa exists and status is `NO_COBRADO`, the system MUST set `charged_at` to today’s `YYYYMMDD` date, set status to `COBRADO`, and show the remesa in the charged history. General errors MUST be shown with Sonner. On large viewports the keypad MUST be inline in the central column. On viewports below `lg` the keypad MUST appear only inside a Dialog.
+The keypad SHALL collect a remesa id (digits displayed without a `**` prefix). Confirming the entry MUST run Zod validation, then look up the remesa. If the remesa exists and status is `NO_COBRADO`, the system MUST set `charged_at` to today’s `YYYYMMDD` date, set status to `COBRADO`, and show the remesa in the charged history. General errors MUST be shown with the app-wide toast. On large viewports the keypad MUST be inline in the central column. On viewports below `lg` the keypad MUST appear only inside a Dialog.
 
 #### Scenario: Charge an uncharged remesa
 - **WHEN** the operator enters a valid id of a `NO_COBRADO` remesa and confirms
@@ -50,7 +50,7 @@ The keypad SHALL collect a remesa id (digits displayed without a `**` prefix). C
 - **THEN** the keypad MUST be visible in the central column and the keypad Dialog MUST NOT be required
 
 ### Requirement: History search, pagination, and print
-The history list SHALL show charged remesas (`status` `COBRADO`) from the current search result, sorted by `charged_at`, at 10 items per page, displaying `id`, `company`, and `amount`. Search MUST match id, company, or amount and MUST debounce input via a dedicated debounce hook plus a filter hook. Pagination MUST use the shadcn Pagination component. A print control MUST trigger the browser print dialog with a minimal print stylesheet (hide chrome that is not the list).
+The history list SHALL show charged remesas (`status` `COBRADO`) from the current search result, sorted by `charged_at`, at 10 items per page, displaying `id`, `company`, and `amount`. Search MUST match id, company, or amount (after normalizing spaces and currency noise) and MUST debounce input via a dedicated debounce hook plus a filter hook. Pagination MUST use the shadcn Pagination component. A print control MUST trigger the browser print dialog with a minimal print stylesheet (hide chrome that is not the list).
 
 #### Scenario: Default list is charged remesas, ten per page
 - **WHEN** the remesas workspace has loaded and the search query is empty
@@ -59,6 +59,10 @@ The history list SHALL show charged remesas (`status` `COBRADO`) from the curren
 #### Scenario: Search filters by id, company, or amount
 - **WHEN** the operator types a query that matches a charged remesa’s id, company, or amount
 - **THEN** after debounce the list MUST include matching charged remesas and MUST exclude non-matching ones
+
+#### Scenario: Search ignores spaces and currency punctuation
+- **WHEN** the operator types a company name with spaces (for example `western union`) or an amount with `$` or commas
+- **THEN** matching charged remesas MUST still be included
 
 #### Scenario: Pagination moves between pages
 - **WHEN** more than 10 charged remesas match the current search and the operator opens page 2

@@ -17,7 +17,7 @@
 
 ## 3. Phase 3 — Charge keypad (desktop)
 
-- [x] 3.1 Mount Sonner `<Toaster />` and map Zod/domain errors to `toast.error`
+- [x] 3.1 Mount the app-wide toaster and map Zod/domain errors to `toast.add`
 - [x] 3.2 Build the keypad component (digit display without `**`, backspace, enter; decimal key allowed visually but rejected by id schema)
 - [x] 3.3 Render the keypad inline in the central column at `lg+` and wire confirm to `chargeRemesa` (uncharged → `COBRADO` + today’s `charged_at`; already charged / unknown / invalid → toast, no mutation)
 
@@ -38,6 +38,6 @@
 
 Do not implement these during `/opsx-apply` of `add-remesas-ventanilla`. Track them as later OpenSpec changes.
 
-- Phase 6 — Tests: Vitest unit/integration (do not add Jest; Vitest is already the runner) covering schema, charge rules, debounce/filter; Playwright E2E covering search, pagination, charge, and mobile Dialog
+- Phase 6 — Tests: **unit/integration shipped** in `add-phase-6-unit-tests` (Vitest, Jest-compatible API; no Jest). **Still later:** Playwright E2E (`add-phase-6-e2e`) covering search typing, pagination clicks, desktop keypad charge, mobile Dialog, and real `lg` breakpoints
 - Phase 7 — Git gates: Husky **pre-push** that rejects branches not matching GitFlow (`feature/<kebab>` | `fix/<kebab>`) and blocks push unless lint + tests pass; GitHub Action with the same checks on PR/push
 - Phase 8 — README: visible note that the assignment allows **vanilla (html + css + js)** or **the library/framework of your choice**, plus a short rationale for this stack (tool fluency, adaptability, architecture, spec-driven development with AI)
