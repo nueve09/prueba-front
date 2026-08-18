@@ -1,27 +1,31 @@
-import { Button } from '@/components/ui/button'
-import { useAppStore } from '@/stores/app-store'
+import { BrowserRouter, Route, Routes } from 'react-router'
+
+import { AppShell } from '@/components/layout/app-shell'
+import { PlaceholderPage } from '@/components/layout/placeholder-page'
+import { RemesasPage } from '@/components/remesas/remesas-page'
+import { Toaster } from '@/components/ui/toast'
 
 const App = () => {
-  const count = useAppStore((state) => state.count)
-
-  const handleIncrement = () => {
-    useAppStore.getState().increment()
-  }
-
   return (
-    <main className="mx-auto flex min-h-svh max-w-xl flex-col justify-center gap-6 px-6 py-16">
-      <div className="flex flex-col gap-2">
-        <p className="text-sm text-muted-foreground">N09 · Front-end</p>
-        <h1 className="text-3xl font-medium tracking-tight">Prueba Front</h1>
-        <p className="text-muted-foreground">
-          Stack listo con Vite, React, TypeScript, Tailwind, shadcn/ui, Zustand
-          y Zod. El ejercicio de remesas todavía no está implementado.
-        </p>
-      </div>
-      <Button type="button" onClick={handleIncrement}>
-        Count is {count}
-      </Button>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<AppShell />}>
+          <Route index element={<RemesasPage />} />
+          <Route path="inicio" element={<PlaceholderPage title="Inicio" />} />
+          <Route
+            path="tarjetas"
+            element={<PlaceholderPage title="Tarjetas" />}
+          />
+          <Route path="pagos" element={<PlaceholderPage title="Pagos" />} />
+          <Route path="divisas" element={<PlaceholderPage title="Divisas" />} />
+          <Route
+            path="reportes"
+            element={<PlaceholderPage title="Reportes" />}
+          />
+        </Route>
+      </Routes>
+      <Toaster />
+    </BrowserRouter>
   )
 }
 
