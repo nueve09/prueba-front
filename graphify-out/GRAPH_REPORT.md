@@ -1,16 +1,16 @@
 # Graph Report - prueba-front  (2026-08-18)
 
 ## Corpus Check
-- 394 files · ~274,740 words
+- 400 files · ~277,607 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4134 nodes · 4329 edges · 375 communities (249 shown, 126 thin omitted)
+- 4196 nodes · 4387 edges · 381 communities (253 shown, 128 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3b3f538a`
+- Built from commit: `296aba23`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -22,7 +22,7 @@
 - components.json
 - api/remesas.ts
 - schemas.ts
-- Patterns
+- GitLab CI/CD Configuration
 - tsconfig.json
 - Tailwind v4 + shadcn/ui Production Stack
 - Node.js Best Practices
@@ -316,7 +316,7 @@
 - Configuration
 - proposal.md
 - tasks.md
-- dialog.tsx
+- ADDED Requirements
 - package.json
 - Critical Rules
 - vitest/GENERATION.md
@@ -356,18 +356,24 @@
 - add-app-shell-coverage/proposal.md
 - dates.ts
 - zustand
-- useFetcher (Preferred for Mutations)
-- root.tsx (Required)
+- Decisions
+- remesas.spec.ts
 - add-app-shell-coverage/tasks.md
-- eslint-plugin-react-refresh
-- eslint-plugin-sonarjs
-- jsdom
+- clsx
+- @fontsource-variable/syne
+- lucide-react
 - Requirements
-- react
-- @testing-library/react
-- @types/react-dom
-- typescript
-- vitest
+- react-dom
+- react-router
+- shadcn
+- tailwind-merge
+- tailwindcss
+- add-phase-6-e2e/proposal.md
+- Common Patterns
+- add-phase-6-e2e/tasks.md
+- MODIFIED Requirements
+- @tailwindcss/vite
+- tw-animate-css
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 38 edges
@@ -382,29 +388,29 @@
 10. `5. Re-render Optimization` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `DialogOverlay()` --calls--> `cn()`  [EXTRACTED]
-  src/components/ui/dialog.tsx → src/lib/utils.ts
-- `DialogFooter()` --calls--> `cn()`  [EXTRACTED]
-  src/components/ui/dialog.tsx → src/lib/utils.ts
+- `TabsContent()` --calls--> `cn()`  [EXTRACTED]
+  src/components/ui/tabs.tsx → src/lib/utils.ts
 - `chargeRemesa()` --calls--> `todayCompactDate()`  [EXTRACTED]
   src/api/remesas.ts → src/lib/dates.ts
 - `IconRail()` --calls--> `cn()`  [EXTRACTED]
   src/components/layout/icon-rail.tsx → src/lib/utils.ts
 - `RemesaHistoryPanel()` --calls--> `formatLongDate()`  [EXTRACTED]
   src/components/remesas/history-panel.tsx → src/lib/dates.ts
+- `RemesaKeypad()` --calls--> `cn()`  [EXTRACTED]
+  src/components/remesas/keypad.tsx → src/lib/utils.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (375 total, 126 thin omitted)
+## Communities (381 total, 128 thin omitted)
 
 ### Community 0 - "devDependencies"
-Cohesion: 0.07
-Nodes (29): eslint, @eslint/js, eslint-plugin-react-hooks, globals, husky, devDependencies, eslint, @eslint/js (+21 more)
+Cohesion: 0.05
+Nodes (43): eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh, eslint-plugin-sonarjs, globals, husky, jsdom (+35 more)
 
 ### Community 1 - "dependencies"
-Cohesion: 0.06
-Nodes (31): @base-ui/react, class-variance-authority, clsx, @fontsource-variable/geist, @fontsource-variable/syne, lucide-react, dependencies, @base-ui/react (+23 more)
+Cohesion: 0.15
+Nodes (13): @base-ui/react, class-variance-authority, @fontsource-variable/geist, dependencies, @base-ui/react, class-variance-authority, @fontsource-variable/geist, radix-ui (+5 more)
 
 ### Community 2 - "compilerOptions"
 Cohesion: 0.08
@@ -426,9 +432,9 @@ Nodes (15): chargeRemesa(), fetchRemesas(), remesas, replaceRemesasApi(), resetR
 Cohesion: 0.20
 Nodes (12): compactDateSchema, pageSchema, remesaAmountSchema, remesaCompanySchema, remesaFieldsSchema, RemesaId, remesaIdSchema, remesaSchema (+4 more)
 
-### Community 7 - "Patterns"
+### Community 7 - "GitLab CI/CD Configuration"
 Cohesion: 0.11
-Nodes (18): Anti-Patterns, CLI Commands, Decision Guide, Dynamic Shard Count, Merged report missing results, Merging Shard Reports, More workers = Slower, "No tests found" in some shards (+10 more)
+Nodes (18): Anti-Patterns, Basic Pipeline Configuration, Browser launch fails: "Failed to launch browser", Decision Guide, Environment Variables and Secrets, GitLab CI/CD Configuration, Key Commands, Merged report is empty after sharded run (+10 more)
 
 ### Community 8 - "tsconfig.json"
 Cohesion: 0.40
@@ -951,12 +957,12 @@ Cohesion: 0.33
 Nodes (5): For /graphify explain, For /graphify path, graphify reference: query, path, explain, Step 0 — Constrained query expansion (REQUIRED before traversal), Step 1 — Traversal
 
 ### Community 142 - "App.tsx"
-Cohesion: 0.17
-Nodes (10): App(), unusedNavItems, AppShell(), IconRail(), MobileTabs(), PlaceholderPage(), PlaceholderPageProps, Toaster() (+2 more)
+Cohesion: 0.13
+Nodes (15): App(), unusedNavItems, AppShell(), IconRail(), MobileTabs(), PlaceholderPage(), PlaceholderPageProps, Tabs() (+7 more)
 
 ### Community 143 - "Prueba Técnica - (Front-end) - N09"
-Cohesion: 0.25
-Nodes (7): CÓMO CORRER EL PROYECTO, EJERCICIO PRÁCTICO, IMPORTANTE, INTRODUCCIÓN, Prueba Técnica - (Front-end) - N09, ¿Qué se busca evaluar?, Requerimientos generales
+Cohesion: 0.22
+Nodes (8): Cómo comprobar que el E2E funciona, CÓMO CORRER EL PROYECTO, EJERCICIO PRÁCTICO, IMPORTANTE, INTRODUCCIÓN, Prueba Técnica - (Front-end) - N09, ¿Qué se busca evaluar?, Requerimientos generales
 
 ### Community 144 - "8. Advanced Patterns"
 Cohesion: 0.40
@@ -1007,8 +1013,8 @@ Cohesion: 0.10
 Nodes (20): ADDED Requirements, Requirement: Functional keypad charge flow, Requirement: History search, pagination, and print, Requirement: Mock fetch API, Requirement: Remesa model validated and typed with Zod, Scenario: Charge an uncharged remesa, Scenario: Default list is charged remesas, ten per page, Scenario: Desktop keypad is inline (+12 more)
 
 ### Community 264 - "cn"
-Cohesion: 0.11
-Nodes (26): RemesaHistoryPanelProps, Button(), buttonVariants, Input(), Pagination(), PaginationContent(), PaginationEllipsis(), PaginationItem() (+18 more)
+Cohesion: 0.10
+Nodes (30): RemesaHistoryPanelProps, RemesaKeypadDialog(), Button(), buttonVariants, Dialog(), DialogContent(), DialogDescription(), DialogFooter() (+22 more)
 
 ### Community 268 - "playwright-best-practices/SKILL.md"
 Cohesion: 0.06
@@ -1019,8 +1025,8 @@ Cohesion: 0.04
 Nodes (46): accordion, Accordion.Content → Accordion.Panel, Accordion.Header → Accordion.Header, Accordion.Item → Accordion.Item, Accordion.Root → Accordion.Root, Accordion.Trigger → Accordion.Trigger, Base UI only props worth knowing, Base UI only props worth knowing (+38 more)
 
 ### Community 275 - "Actions and Form Handling"
-Cohesion: 0.15
-Nodes (13): Actions and Form Handling, Anti-Patterns to Avoid, Choosing the Right Pattern, Client Action, Form Component, Form Props, Form Validation Pattern, Multiple Actions per Route (+5 more)
+Cohesion: 0.11
+Nodes (18): Actions and Form Handling, Anti-Patterns to Avoid, Basic Usage, Choosing the Right Pattern, Client Action, Fetcher Properties, Form Component, Form Props (+10 more)
 
 ### Community 276 - "Route Modules"
 Cohesion: 0.11
@@ -1051,7 +1057,7 @@ Cohesion: 0.12
 Nodes (16): CI Integration, Code Coverage, Configuration, Coverage with Sharding, Ignoring Code, Istanbul, Istanbul, Key Points (+8 more)
 
 ### Community 296 - "Test Environments"
-Cohesion: 0.12
+Cohesion: 0.13
 Nodes (15): Available Environments, Browser Mode (Separate from Environments), Configuration, CSS and Assets, Custom Environment, Environment with VM, Fixing External Dependencies, happy-dom Environment (+7 more)
 
 ### Community 297 - "Type Testing"
@@ -1091,16 +1097,16 @@ Cohesion: 0.14
 Nodes (13): Accessing Location State, Form Navigation, Link Component, Link Props, Navigate Options, Navigation, NavLink Component, NavLink Props (+5 more)
 
 ### Community 306 - "Special Files"
-Cohesion: 0.14
-Nodes (14): Anti-Patterns, .client Modules, Common Configuration Options, entry.client.tsx (Optional), entry.server.tsx (Optional), Pre-rendering, Quick Reference, react-router.config.ts (Optional) (+6 more)
+Cohesion: 0.11
+Nodes (19): Anti-Patterns, Basic root.tsx Structure, .client Modules, Common Configuration Options, Customizing root.tsx (Complete Example), entry.client.tsx (Optional), entry.server.tsx (Optional), Pre-rendering (+11 more)
 
 ### Community 307 - "Projects"
-Cohesion: 0.15
+Cohesion: 0.14
 Nodes (13): Basic Projects Setup, Browser + Node Projects, Different Environments, Global Setup per Project, Key Points, Monorepo Pattern, Project Isolation, Project-Specific Dependencies (+5 more)
 
 ### Community 308 - "Middleware & Context API"
-Cohesion: 0.10
-Nodes (19): 404 Fallback, Authentication, Basic Middleware, Common Patterns, Conditional Execution, Context API, Enabling Middleware, Error Handling (+11 more)
+Cohesion: 0.15
+Nodes (13): Basic Middleware, Context API, Enabling Middleware, Error Handling, Middleware & Context API, Overview, Reading Context in Loaders/Actions, See Also (+5 more)
 
 ### Community 309 - "Expect API"
 Cohesion: 0.15
@@ -1127,8 +1133,8 @@ Cohesion: 0.20
 Nodes (9): Critical Patterns, Forms & Mutations, Further Documentation, Layouts, React Router Framework Mode, References, Route Module Exports, Version Compatibility (+1 more)
 
 ### Community 315 - "scripts"
-Cohesion: 0.20
-Nodes (10): scripts, build, dev, doctor, format, lint, prepare, preview (+2 more)
+Cohesion: 0.15
+Nodes (13): scripts, build, dev, doctor, format, lint, prepare, preview (+5 more)
 
 ### Community 316 - "Error Handling"
 Cohesion: 0.22
@@ -1154,9 +1160,9 @@ Nodes (6): Capabilities, Impact, Modified Capabilities, New Capabilities, What C
 Cohesion: 0.29
 Nodes (6): 1. Phase 1 — Domain, 2. Phase 2 — App shell and routing, 3. Phase 3 — Charge keypad (desktop), 4. Phase 4 — History search, pagination, print, 5. Phase 5 — Mobile, Future (out of scope for this change)
 
-### Community 323 - "dialog.tsx"
-Cohesion: 0.22
-Nodes (9): RemesaKeypadDialog(), Dialog(), DialogContent(), DialogDescription(), DialogFooter(), DialogHeader(), DialogOverlay(), DialogTitle() (+1 more)
+### Community 323 - "ADDED Requirements"
+Cohesion: 0.11
+Nodes (17): ADDED Requirements, Purpose, Requirement: Desktop operator journeys, Requirement: Mobile viewport and Dialog charge, Requirement: Playwright is a separate command, Requirement: Print media hides chrome, Requirement: Visible error toast, Scenario: Desktop keypad charges an unpaid remesa (+9 more)
 
 ### Community 324 - "package.json"
 Cohesion: 0.33
@@ -1290,13 +1296,13 @@ Nodes (6): Capabilities, Impact, Modified Capabilities, New Capabilities, What C
 Cohesion: 0.48
 Nodes (5): compactFormatter, formatLongDate(), longDateFormatter, toCompactDate(), todayCompactDate()
 
-### Community 363 - "useFetcher (Preferred for Mutations)"
-Cohesion: 0.40
-Nodes (5): Basic Usage, Fetcher Properties, Optimistic UI Pattern (Recommended), Typing useFetcher, useFetcher (Preferred for Mutations)
+### Community 363 - "Decisions"
+Cohesion: 0.14
+Nodes (13): 1. One file, one browser, viewport in the test, 2. Role locators, scoped so keypad ≠ pagination, 3. Wait on UI, never `waitForTimeout`, 4. Tiny `enterId` helper, no POM, 5. Toast from the DOM; print via `emulateMedia`, 6. Isolation is a full page load, 7. Production diff only if a journey fails, Context (+5 more)
 
-### Community 364 - "root.tsx (Required)"
-Cohesion: 0.40
-Nodes (5): Basic root.tsx Structure, Customizing root.tsx (Complete Example), root.tsx (Required), Using the Layout Export, What Belongs in root.tsx
+### Community 364 - "remesas.spec.ts"
+Cohesion: 0.28
+Nodes (4): desktopKeypad(), gotoDesktop(), historyRows(), rowIds()
 
 ### Community 365 - "add-app-shell-coverage/tasks.md"
 Cohesion: 0.50
@@ -1306,25 +1312,41 @@ Nodes (3): 1. Layout unit tests, 2. Router and screen tests, 3. Verify
 Cohesion: 0.12
 Nodes (16): app-shell Specification, Purpose, Requirement: Chrome omitted from the mockup, Requirement: Custom icon rail navigation, Requirement: Declarative routing, Requirement: Desktop three-column shell, Requirement: Mobile tabs and stacked layout, Requirements (+8 more)
 
+### Community 375 - "add-phase-6-e2e/proposal.md"
+Cohesion: 0.29
+Nodes (6): Capabilities, Impact, Modified Capabilities, New Capabilities, What Changes, Why
+
+### Community 376 - "Common Patterns"
+Cohesion: 0.33
+Nodes (6): 404 Fallback, Authentication, Common Patterns, Conditional Execution, Request Logging, Response Headers
+
+### Community 377 - "add-phase-6-e2e/tasks.md"
+Cohesion: 0.33
+Nodes (5): 1. Harness, 2. Desktop journeys (`lg+`), 3. Mobile viewport, 4. Layer B — toast and print, 5. Verify
+
+### Community 378 - "MODIFIED Requirements"
+Cohesion: 0.50
+Nodes (3): MODIFIED Requirements, Requirement: Playwright E2E is a separate suite, Scenario: Unit command excludes Playwright remesas flows
+
 ## Knowledge Gaps
-- **2915 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+2910 more)
+- **2952 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+2947 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **126 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **128 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `CI/CD Integration` connect `CI/CD Integration` to `playwright-best-practices/SKILL.md`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **Why does `Electron Testing` connect `Electron Testing` to `playwright-best-practices/SKILL.md`?**
-  _High betweenness centrality (0.013) - this node is a cross-community bridge._
+  _High betweenness centrality (0.016) - this node is a cross-community bridge._
 - **Why does `Internationalization (i18n) Testing` connect `Internationalization (i18n) Testing` to `playwright-best-practices/SKILL.md`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
+- **Why does `Accessibility Testing` connect `Accessibility Testing` to `playwright-best-practices/SKILL.md`?**
+  _High betweenness centrality (0.013) - this node is a cross-community bridge._
 - **What connects `$schema`, `style`, `rsc` to the rest of the system?**
-  _2915 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2952 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `devDependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._
-- **Should `dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.06451612903225806 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.046511627906976744 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+- **Should `compilerOptions` be split into smaller, more focused modules?**
+  _Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected._

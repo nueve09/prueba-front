@@ -20,14 +20,14 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1787031975.5720284,
+    "mtime": 1787034546.269435,
     "ast_hash": "efb2c8df1019c5a68a64daa8da76384b",
     "semantic_hash": ""
   },
   "playwright.config.ts": {
-    "mtime": 1786913285.3514419,
-    "ast_hash": "00a48fbec36e973bf2412c0b3e9d0859",
-    "semantic_hash": "00a48fbec36e973bf2412c0b3e9d0859"
+    "mtime": 1787034439.2270014,
+    "ast_hash": "3cd3a55521caaef3b72f0ca43aeadeba",
+    "semantic_hash": ""
   },
   "src/App.tsx": {
     "mtime": 1787026682.4905977,
@@ -190,8 +190,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786996826.2260513,
-    "ast_hash": "941333ea5e739c17be9315c0138ba1f2",
+    "mtime": 1787034452.5878048,
+    "ast_hash": "c862c91eb6dd85c213e77f8d696bb2b8",
     "semantic_hash": ""
   },
   "index.html": {
@@ -1855,8 +1855,8 @@
     "semantic_hash": ""
   },
   "src/App.test.tsx": {
-    "mtime": 1787027670.2150867,
-    "ast_hash": "01ac1580a780d9639028e8aebd1a58fa",
+    "mtime": 1787032787.7091236,
+    "ast_hash": "f1eb427c253631a440c0d84183630e33",
     "semantic_hash": ""
   },
   "src/api/remesas.test.ts": {
@@ -1992,6 +1992,86 @@
   "src/components/ui/toast-manager.ts": {
     "mtime": 1787031856.078023,
     "ast_hash": "34db4badbf7d31751690aee7b78f87e8",
+    "semantic_hash": ""
+  },
+  "src/components/layout/icon-rail.test.tsx": {
+    "mtime": 1787032781.0362566,
+    "ast_hash": "6c0d270d8559b98358a83fe1caa840b0",
+    "semantic_hash": ""
+  },
+  "src/components/layout/mobile-tabs.test.tsx": {
+    "mtime": 1787032782.6818562,
+    "ast_hash": "acfa0b84331f1e9953b32b468c3e7d45",
+    "semantic_hash": ""
+  },
+  "src/components/layout/placeholder-page.test.tsx": {
+    "mtime": 1787032787.6341965,
+    "ast_hash": "a7744e846b6a71493717dbc47124d297",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/.openspec.yaml": {
+    "mtime": 1787032540.1460066,
+    "ast_hash": "2aff0556fc211137f182b8a31bcc3fe0",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/design.md": {
+    "mtime": 1787032675.4815192,
+    "ast_hash": "e1cd1e3a4ef14cd0b572ca9f7e3e0702",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/proposal.md": {
+    "mtime": 1787032559.6968462,
+    "ast_hash": "d1db42fd04c45643a1580d0b9e995517",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md": {
+    "mtime": 1787032623.6177418,
+    "ast_hash": "bc2f812c4740d318210db53412e8c0c7",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md": {
+    "mtime": 1787032623.6177158,
+    "ast_hash": "a87a246d614a3996b21440ddbb716c9e",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/tasks.md": {
+    "mtime": 1787032834.0719182,
+    "ast_hash": "d458e0ce59af4916cbb468f99be44dad",
+    "semantic_hash": ""
+  },
+  "tests/remesas.spec.ts": {
+    "mtime": 1787034717.8895936,
+    "ast_hash": "11ba5dd3e26633baa6600b848aedfbd0",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/.openspec.yaml": {
+    "mtime": 1787034129.3633463,
+    "ast_hash": "2aff0556fc211137f182b8a31bcc3fe0",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/design.md": {
+    "mtime": 1787034223.4865088,
+    "ast_hash": "c5f159ec49c0009dc5d5b149a5d9b053",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/proposal.md": {
+    "mtime": 1787034152.6044102,
+    "ast_hash": "5fccebee192fdf9ef6ab1e3cd5dcce1d",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md": {
+    "mtime": 1787034186.3139257,
+    "ast_hash": "1948dae4ea30153cdfde7e3f3a45d5bc",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/specs/unit-testing/spec.md": {
+    "mtime": 1787034186.3139114,
+    "ast_hash": "2d4a18585f5b63fee57b66a371fa6a5d",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/tasks.md": {
+    "mtime": 1787034740.3228421,
+    "ast_hash": "3c6505b904a31a043a0a994dc9434bfc",
     "semantic_hash": ""
   }
 }

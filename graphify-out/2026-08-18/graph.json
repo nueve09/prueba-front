@@ -1031,8 +1031,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "package_dependencies_base_ui_react",
-      "community": 358,
-      "community_name": "@base-ui/react",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "@base-ui/react"
     },
     {
@@ -1042,8 +1042,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "base_ui_react",
-      "community": 358,
-      "community_name": "@base-ui/react",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "@base-ui/react"
     },
     {
@@ -1053,8 +1053,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "package_dependencies_fontsource_variable_geist",
-      "community": 364,
-      "community_name": "@fontsource-variable/geist",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "@fontsource-variable/geist"
     },
     {
@@ -1064,8 +1064,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "fontsource_variable_geist",
-      "community": 364,
-      "community_name": "@fontsource-variable/geist",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "@fontsource-variable/geist"
     },
     {
@@ -1119,8 +1119,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "package_dependencies_class_variance_authority",
-      "community": 361,
-      "community_name": "class-variance-authority",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "class-variance-authority"
     },
     {
@@ -1130,8 +1130,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "class_variance_authority",
-      "community": 361,
-      "community_name": "class-variance-authority",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "class-variance-authority"
     },
     {
@@ -1141,8 +1141,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "package_dependencies_clsx",
-      "community": 363,
-      "community_name": "clsx",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "clsx"
     },
     {
@@ -1152,8 +1152,8 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "clsx",
-      "community": 363,
-      "community_name": "clsx",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "clsx"
     },
     {
@@ -1185,8 +1185,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "package_dependencies_radix_ui",
-      "community": 365,
-      "community_name": "radix-ui",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "radix-ui"
     },
     {
@@ -1196,8 +1196,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "radix_ui",
-      "community": 365,
-      "community_name": "radix-ui",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "radix-ui"
     },
     {
@@ -1207,8 +1207,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "package_dependencies_react",
-      "community": 1,
-      "community_name": "dependencies",
+      "community": 370,
+      "community_name": "react",
       "norm_label": "react"
     },
     {
@@ -1218,8 +1218,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "react",
-      "community": 1,
-      "community_name": "dependencies",
+      "community": 370,
+      "community_name": "react",
       "norm_label": "react"
     },
     {
@@ -1229,8 +1229,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "package_dependencies_react_dom",
-      "community": 366,
-      "community_name": "react-dom",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "react-dom"
     },
     {
@@ -1240,8 +1240,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "react_dom",
-      "community": 366,
-      "community_name": "react-dom",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "react-dom"
     },
     {
@@ -1251,8 +1251,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "package_dependencies_react_router",
-      "community": 360,
-      "community_name": "react-router",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "react-router"
     },
     {
@@ -1262,8 +1262,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "react_router",
-      "community": 360,
-      "community_name": "react-router",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "react-router"
     },
     {
@@ -1273,8 +1273,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "package_dependencies_shadcn",
-      "community": 367,
-      "community_name": "shadcn",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "shadcn"
     },
     {
@@ -1284,8 +1284,8 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "shadcn",
-      "community": 367,
-      "community_name": "shadcn",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "shadcn"
     },
     {
@@ -1339,8 +1339,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "package_dependencies_tw_animate_css",
-      "community": 368,
-      "community_name": "tw-animate-css",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "tw-animate-css"
     },
     {
@@ -1350,8 +1350,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "tw_animate_css",
-      "community": 368,
-      "community_name": "tw-animate-css",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "tw-animate-css"
     },
     {
@@ -1361,8 +1361,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "package_dependencies_zod",
-      "community": 370,
-      "community_name": "zod",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "zod"
     },
     {
@@ -1372,8 +1372,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "zod",
-      "community": 370,
-      "community_name": "zod",
+      "community": 1,
+      "community_name": "dependencies",
       "norm_label": "zod"
     },
     {
@@ -1482,8 +1482,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "package_devdependencies_testing_library_react",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 371,
+      "community_name": "@testing-library/react",
       "norm_label": "@testing-library/react"
     },
     {
@@ -1493,8 +1493,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "testing_library_react",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 371,
+      "community_name": "@testing-library/react",
       "norm_label": "@testing-library/react"
     },
     {
@@ -1570,8 +1570,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "package_devdependencies_types_react_dom",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 372,
+      "community_name": "@types/react-dom",
       "norm_label": "@types/react-dom"
     },
     {
@@ -1581,8 +1581,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "types_react_dom",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 372,
+      "community_name": "@types/react-dom",
       "norm_label": "@types/react-dom"
     },
     {
@@ -1658,8 +1658,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "package_devdependencies_eslint_plugin_react_refresh",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 366,
+      "community_name": "eslint-plugin-react-refresh",
       "norm_label": "eslint-plugin-react-refresh"
     },
     {
@@ -1669,8 +1669,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "eslint_plugin_react_refresh",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 366,
+      "community_name": "eslint-plugin-react-refresh",
       "norm_label": "eslint-plugin-react-refresh"
     },
     {
@@ -1680,8 +1680,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "package_devdependencies_eslint_plugin_sonarjs",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 367,
+      "community_name": "eslint-plugin-sonarjs",
       "norm_label": "eslint-plugin-sonarjs"
     },
     {
@@ -1691,8 +1691,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "eslint_plugin_sonarjs",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 367,
+      "community_name": "eslint-plugin-sonarjs",
       "norm_label": "eslint-plugin-sonarjs"
     },
     {
@@ -1746,8 +1746,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "package_devdependencies_jsdom",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 368,
+      "community_name": "jsdom",
       "norm_label": "jsdom"
     },
     {
@@ -1757,8 +1757,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "jsdom",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 368,
+      "community_name": "jsdom",
       "norm_label": "jsdom"
     },
     {
@@ -1790,8 +1790,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "package_devdependencies_typescript",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 373,
+      "community_name": "typescript",
       "norm_label": "typescript"
     },
     {
@@ -1801,8 +1801,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "typescript",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 373,
+      "community_name": "typescript",
       "norm_label": "typescript"
     },
     {
@@ -1856,8 +1856,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "package_devdependencies_vitest",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 374,
+      "community_name": "vitest",
       "norm_label": "vitest"
     },
     {
@@ -1867,8 +1867,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "vitest",
-      "community": 0,
-      "community_name": "devDependencies",
+      "community": 374,
+      "community_name": "vitest",
       "norm_label": "vitest"
     },
     {
@@ -1900,9 +1900,20 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app_test",
-      "community": 347,
+      "community": 142,
       "community_name": "App.tsx",
       "norm_label": "app.test.tsx"
+    },
+    {
+      "label": "unusedNavItems",
+      "file_type": "code",
+      "source_file": "src/App.test.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_app_test_unusednavitems",
+      "community": 142,
+      "community_name": "App.tsx",
+      "norm_label": "unusednavitems"
     },
     {
       "label": "App.tsx",
@@ -1911,7 +1922,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app",
-      "community": 347,
+      "community": 142,
       "community_name": "App.tsx",
       "norm_label": "app.tsx"
     },
@@ -1923,7 +1934,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_app_app",
-      "community": 347,
+      "community": 142,
       "community_name": "App.tsx",
       "norm_label": "app()"
     },
@@ -2052,7 +2063,7 @@
       "_origin": "ast",
       "id": "src_components_layout_app_shell_test",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "app-shell.test.tsx"
     },
     {
@@ -2063,7 +2074,7 @@
       "_origin": "ast",
       "id": "src_components_layout_app_shell",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "app-shell.tsx"
     },
     {
@@ -2075,8 +2086,19 @@
       "_origin": "ast",
       "id": "src_components_layout_app_shell_appshell",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "appshell()"
+    },
+    {
+      "label": "icon-rail.test.tsx",
+      "file_type": "code",
+      "source_file": "src/components/layout/icon-rail.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_layout_icon_rail_test",
+      "community": 142,
+      "community_name": "App.tsx",
+      "norm_label": "icon-rail.test.tsx"
     },
     {
       "label": "icon-rail.tsx",
@@ -2086,7 +2108,7 @@
       "_origin": "ast",
       "id": "src_components_layout_icon_rail",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "icon-rail.tsx"
     },
     {
@@ -2098,8 +2120,31 @@
       "_origin": "ast",
       "id": "src_components_layout_icon_rail_iconrail",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "iconrail()"
+    },
+    {
+      "label": "mobile-tabs.test.tsx",
+      "file_type": "code",
+      "source_file": "src/components/layout/mobile-tabs.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_layout_mobile_tabs_test",
+      "community": 142,
+      "community_name": "App.tsx",
+      "norm_label": "mobile-tabs.test.tsx"
+    },
+    {
+      "label": "PathnameProbe()",
+      "file_type": "code",
+      "source_file": "src/components/layout/mobile-tabs.test.tsx",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "src_components_layout_mobile_tabs_test_pathnameprobe",
+      "community": 142,
+      "community_name": "App.tsx",
+      "norm_label": "pathnameprobe()"
     },
     {
       "label": "mobile-tabs.tsx",
@@ -2109,7 +2154,7 @@
       "_origin": "ast",
       "id": "src_components_layout_mobile_tabs",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "mobile-tabs.tsx"
     },
     {
@@ -2121,8 +2166,19 @@
       "_origin": "ast",
       "id": "src_components_layout_mobile_tabs_mobiletabs",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "mobiletabs()"
+    },
+    {
+      "label": "placeholder-page.test.tsx",
+      "file_type": "code",
+      "source_file": "src/components/layout/placeholder-page.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_components_layout_placeholder_page_test",
+      "community": 142,
+      "community_name": "App.tsx",
+      "norm_label": "placeholder-page.test.tsx"
     },
     {
       "label": "placeholder-page.tsx",
@@ -2131,7 +2187,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_layout_placeholder_page",
-      "community": 347,
+      "community": 142,
       "community_name": "App.tsx",
       "norm_label": "placeholder-page.tsx"
     },
@@ -2144,7 +2200,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_components_layout_placeholder_page_placeholderpageprops",
-      "community": 347,
+      "community": 142,
       "community_name": "App.tsx",
       "norm_label": "placeholderpageprops"
     },
@@ -2156,7 +2212,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_layout_placeholder_page_placeholderpage",
-      "community": 347,
+      "community": 142,
       "community_name": "App.tsx",
       "norm_label": "placeholderpage()"
     },
@@ -2168,7 +2224,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_history_panel_test",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "history-panel.test.tsx"
     },
     {
@@ -2180,7 +2236,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_history_panel_test_charged",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "charged()"
     },
     {
@@ -2191,7 +2247,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_history_panel_test_manycharged",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "manycharged"
     },
     {
@@ -2201,8 +2257,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_remesas_history_panel",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "history-panel.tsx"
     },
     {
@@ -2214,8 +2270,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_components_remesas_history_panel_remesahistorypanelprops",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "remesahistorypanelprops"
     },
     {
@@ -2227,7 +2283,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_history_panel_pageitems",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "pageitems()"
     },
     {
@@ -2238,8 +2294,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_remesas_history_panel_printpage",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "printpage()"
     },
     {
@@ -2251,7 +2307,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_history_panel_remesahistorypanel",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "remesahistorypanel()"
     },
     {
@@ -2261,8 +2317,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_remesas_keypad_dialog_test",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "keypad-dialog.test.tsx"
     },
     {
@@ -2284,8 +2340,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_remesas_keypad_dialog_remesakeypaddialog",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "remesakeypaddialog()"
     },
     {
@@ -2296,7 +2352,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_keypad_test",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "keypad.test.tsx"
     },
     {
@@ -2308,7 +2364,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_keypad_test_readystore",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "readystore()"
     },
     {
@@ -2320,7 +2376,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_keypad_test_press",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "press()"
     },
     {
@@ -2331,7 +2387,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_keypad",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "keypad.tsx"
     },
     {
@@ -2342,7 +2398,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_keypad_number_keys",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "number_keys"
     },
     {
@@ -2355,7 +2411,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_keypad_remesakeypadprops",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "remesakeypadprops"
     },
     {
@@ -2367,7 +2423,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_keypad_digitcount",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "digitcount()"
     },
     {
@@ -2379,7 +2435,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_keypad_formatdisplay",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "formatdisplay()"
     },
     {
@@ -2391,7 +2447,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_keypad_remesakeypad",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "remesakeypad()"
     },
     {
@@ -2402,7 +2458,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_remesas_page_test",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "remesas-page.test.tsx"
     },
     {
@@ -2413,7 +2469,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_remesas_page",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "remesas-page.tsx"
     },
     {
@@ -2425,7 +2481,7 @@
       "_origin": "ast",
       "id": "src_components_remesas_remesas_page_remesaspage",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "remesaspage()"
     },
     {
@@ -2623,8 +2679,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_ui_pagination",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "pagination.tsx"
     },
     {
@@ -2635,8 +2691,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_ui_pagination_pagination",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "pagination()"
     },
     {
@@ -2647,8 +2703,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_ui_pagination_paginationcontent",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "paginationcontent()"
     },
     {
@@ -2659,8 +2715,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_ui_pagination_paginationitem",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "paginationitem()"
     },
     {
@@ -2672,8 +2728,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_components_ui_pagination_paginationlinkprops",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "paginationlinkprops"
     },
     {
@@ -2684,8 +2740,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_ui_pagination_paginationlink",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "paginationlink()"
     },
     {
@@ -2696,8 +2752,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_ui_pagination_paginationprevious",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "paginationprevious()"
     },
     {
@@ -2708,8 +2764,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_ui_pagination_paginationnext",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "paginationnext()"
     },
     {
@@ -2720,8 +2776,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_ui_pagination_paginationellipsis",
-      "community": 145,
-      "community_name": "history-panel.tsx",
+      "community": 264,
+      "community_name": "cn",
       "norm_label": "paginationellipsis()"
     },
     {
@@ -2755,7 +2811,7 @@
       "_origin": "ast",
       "id": "src_components_ui_tabs",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "tabs.tsx"
     },
     {
@@ -2767,7 +2823,7 @@
       "_origin": "ast",
       "id": "src_components_ui_tabs_tabs",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "tabs()"
     },
     {
@@ -2778,7 +2834,7 @@
       "_origin": "ast",
       "id": "src_components_ui_tabs_tabslistvariants",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "tabslistvariants"
     },
     {
@@ -2790,7 +2846,7 @@
       "_origin": "ast",
       "id": "src_components_ui_tabs_tabslist",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "tabslist()"
     },
     {
@@ -2802,7 +2858,7 @@
       "_origin": "ast",
       "id": "src_components_ui_tabs_tabstrigger",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "tabstrigger()"
     },
     {
@@ -2814,7 +2870,7 @@
       "_origin": "ast",
       "id": "src_components_ui_tabs_tabscontent",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "tabscontent()"
     },
     {
@@ -2825,7 +2881,7 @@
       "_origin": "ast",
       "id": "src_components_ui_toast_manager",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "toast-manager.ts"
     },
     {
@@ -2836,7 +2892,7 @@
       "_origin": "ast",
       "id": "src_components_ui_toast_manager_createtoastmanager",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "createtoastmanager"
     },
     {
@@ -2847,7 +2903,7 @@
       "_origin": "ast",
       "id": "src_components_ui_toast_manager_toast",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "toast"
     },
     {
@@ -3001,7 +3057,7 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_components_ui_toast_toaster",
-      "community": 347,
+      "community": 142,
       "community_name": "App.tsx",
       "norm_label": "toaster()"
     },
@@ -3013,7 +3069,7 @@
       "_origin": "ast",
       "id": "src_config_nav",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "nav.ts"
     },
     {
@@ -3026,7 +3082,7 @@
       "_origin": "ast",
       "id": "src_config_nav_appnavitem",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "appnavitem"
     },
     {
@@ -3037,7 +3093,7 @@
       "_origin": "ast",
       "id": "src_config_nav_app_nav_items",
       "community": 142,
-      "community_name": "mobile-tabs.tsx",
+      "community_name": "App.tsx",
       "norm_label": "app_nav_items"
     },
     {
@@ -3092,7 +3148,7 @@
       "_origin": "ast",
       "id": "src_hooks_use_debounce_test",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "use-debounce.test.ts"
     },
     {
@@ -3103,7 +3159,7 @@
       "_origin": "ast",
       "id": "src_hooks_use_debounce",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "use-debounce.ts"
     },
     {
@@ -3115,7 +3171,7 @@
       "_origin": "ast",
       "id": "src_hooks_use_debounce_usedebounce",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "usedebounce()"
     },
     {
@@ -3125,8 +3181,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_hooks_use_remesas_filter_test",
-      "community": 6,
-      "community_name": "schemas.ts",
+      "community": 145,
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "use-remesas-filter.test.ts"
     },
     {
@@ -3137,8 +3193,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_hooks_use_remesas_filter_test_charged",
-      "community": 6,
-      "community_name": "schemas.ts",
+      "community": 145,
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "charged()"
     },
     {
@@ -3148,8 +3204,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_hooks_use_remesas_filter_test_fixture",
-      "community": 6,
-      "community_name": "schemas.ts",
+      "community": 145,
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "fixture"
     },
     {
@@ -3159,8 +3215,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_hooks_use_remesas_filter",
-      "community": 6,
-      "community_name": "schemas.ts",
+      "community": 145,
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "use-remesas-filter.ts"
     },
     {
@@ -3170,8 +3226,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_hooks_use_remesas_filter_remesa_page_size",
-      "community": 6,
-      "community_name": "schemas.ts",
+      "community": 145,
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "remesa_page_size"
     },
     {
@@ -3183,8 +3239,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_hooks_use_remesas_filter_remesasfilterresult",
-      "community": 6,
-      "community_name": "schemas.ts",
+      "community": 145,
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "remesasfilterresult"
     },
     {
@@ -3195,8 +3251,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_hooks_use_remesas_filter_matchesquery",
-      "community": 6,
-      "community_name": "schemas.ts",
+      "community": 145,
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "matchesquery()"
     },
     {
@@ -3207,8 +3263,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_hooks_use_remesas_filter_useremesasfilter",
-      "community": 6,
-      "community_name": "schemas.ts",
+      "community": 145,
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "useremesasfilter()"
     },
     {
@@ -3218,8 +3274,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_charge_remesa_test",
-      "community": 332,
-      "community_name": "remesas-store.ts",
+      "community": 5,
+      "community_name": "api/remesas.ts",
       "norm_label": "charge-remesa.test.ts"
     },
     {
@@ -3230,7 +3286,7 @@
       "_origin": "ast",
       "id": "src_lib_charge_remesa",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "charge-remesa.ts"
     },
     {
@@ -3242,7 +3298,7 @@
       "_origin": "ast",
       "id": "src_lib_charge_remesa_submitremesacharge",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "submitremesacharge()"
     },
     {
@@ -3252,8 +3308,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_dates_test",
-      "community": 5,
-      "community_name": "api/remesas.ts",
+      "community": 361,
+      "community_name": "dates.ts",
       "norm_label": "dates.test.ts"
     },
     {
@@ -3263,8 +3319,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_dates",
-      "community": 5,
-      "community_name": "api/remesas.ts",
+      "community": 361,
+      "community_name": "dates.ts",
       "norm_label": "dates.ts"
     },
     {
@@ -3274,8 +3330,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_dates_compactformatter",
-      "community": 5,
-      "community_name": "api/remesas.ts",
+      "community": 361,
+      "community_name": "dates.ts",
       "norm_label": "compactformatter"
     },
     {
@@ -3285,8 +3341,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_lib_dates_longdateformatter",
-      "community": 5,
-      "community_name": "api/remesas.ts",
+      "community": 361,
+      "community_name": "dates.ts",
       "norm_label": "longdateformatter"
     },
     {
@@ -3297,8 +3353,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_lib_dates_tocompactdate",
-      "community": 5,
-      "community_name": "api/remesas.ts",
+      "community": 361,
+      "community_name": "dates.ts",
       "norm_label": "tocompactdate()"
     },
     {
@@ -3309,8 +3365,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_lib_dates_todaycompactdate",
-      "community": 5,
-      "community_name": "api/remesas.ts",
+      "community": 361,
+      "community_name": "dates.ts",
       "norm_label": "todaycompactdate()"
     },
     {
@@ -3321,8 +3377,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_lib_dates_formatlongdate",
-      "community": 5,
-      "community_name": "api/remesas.ts",
+      "community": 361,
+      "community_name": "dates.ts",
       "norm_label": "formatlongdate()"
     },
     {
@@ -3332,8 +3388,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_errors_test",
-      "community": 332,
-      "community_name": "remesas-store.ts",
+      "community": 5,
+      "community_name": "api/remesas.ts",
       "norm_label": "errors.test.ts"
     },
     {
@@ -3343,8 +3399,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_errors",
-      "community": 332,
-      "community_name": "remesas-store.ts",
+      "community": 5,
+      "community_name": "api/remesas.ts",
       "norm_label": "errors.ts"
     },
     {
@@ -3354,8 +3410,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "src_lib_errors_remesaerrormessage",
-      "community": 332,
-      "community_name": "remesas-store.ts",
+      "community": 5,
+      "community_name": "api/remesas.ts",
       "norm_label": "remesaerrormessage"
     },
     {
@@ -3367,8 +3423,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_lib_errors_remesaerrorcode",
-      "community": 332,
-      "community_name": "remesas-store.ts",
+      "community": 5,
+      "community_name": "api/remesas.ts",
       "norm_label": "remesaerrorcode"
     },
     {
@@ -3380,8 +3436,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_lib_errors_remesaapierror",
-      "community": 332,
-      "community_name": "remesas-store.ts",
+      "community": 5,
+      "community_name": "api/remesas.ts",
       "norm_label": "remesaapierror"
     },
     {
@@ -3392,8 +3448,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_lib_errors_remesaapierror_constructor",
-      "community": 332,
-      "community_name": "remesas-store.ts",
+      "community": 5,
+      "community_name": "api/remesas.ts",
       "norm_label": ".constructor()"
     },
     {
@@ -3405,7 +3461,7 @@
       "_origin": "ast",
       "id": "src_lib_errors_formatunknownerror",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "formatunknownerror()"
     },
     {
@@ -3416,7 +3472,7 @@
       "_origin": "ast",
       "id": "src_lib_format_test",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "format.test.ts"
     },
     {
@@ -3427,7 +3483,7 @@
       "_origin": "ast",
       "id": "src_lib_format",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "format.ts"
     },
     {
@@ -3438,7 +3494,7 @@
       "_origin": "ast",
       "id": "src_lib_format_amountformatter",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "amountformatter"
     },
     {
@@ -3450,7 +3506,7 @@
       "_origin": "ast",
       "id": "src_lib_format_formatremesaamount",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "formatremesaamount()"
     },
     {
@@ -3462,7 +3518,7 @@
       "_origin": "ast",
       "id": "src_lib_format_formatremesaid",
       "community": 145,
-      "community_name": "history-panel.tsx",
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "formatremesaid()"
     },
     {
@@ -3473,8 +3529,8 @@
       "_callable": true,
       "_origin": "ast",
       "id": "src_lib_format_normalizesearchvalue",
-      "community": 6,
-      "community_name": "schemas.ts",
+      "community": 145,
+      "community_name": "use-remesas-filter.ts",
       "norm_label": "normalizesearchvalue()"
     },
     {
@@ -3643,8 +3699,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_lib_schemas_remesa",
-      "community": 6,
-      "community_name": "schemas.ts",
+      "community": 5,
+      "community_name": "api/remesas.ts",
       "norm_label": "remesa"
     },
     {
@@ -3703,7 +3759,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_main",
-      "community": 347,
+      "community": 142,
       "community_name": "App.tsx",
       "norm_label": "main.tsx"
     },
@@ -3725,8 +3781,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_stores_remesas_store",
-      "community": 332,
-      "community_name": "remesas-store.ts",
+      "community": 5,
+      "community_name": "api/remesas.ts",
       "norm_label": "remesas-store.ts"
     },
     {
@@ -3738,8 +3794,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_stores_remesas_store_loadstatus",
-      "community": 332,
-      "community_name": "remesas-store.ts",
+      "community": 5,
+      "community_name": "api/remesas.ts",
       "norm_label": "loadstatus"
     },
     {
@@ -3751,8 +3807,8 @@
       "_callable_class": true,
       "_origin": "ast",
       "id": "src_stores_remesas_store_remesasstate",
-      "community": 332,
-      "community_name": "remesas-store.ts",
+      "community": 5,
+      "community_name": "api/remesas.ts",
       "norm_label": "remesasstate"
     },
     {
@@ -3763,7 +3819,7 @@
       "_origin": "ast",
       "id": "src_stores_remesas_store_useremesasstore",
       "community": 332,
-      "community_name": "remesas-store.ts",
+      "community_name": "keypad.tsx",
       "norm_label": "useremesasstore"
     },
     {
@@ -3787,6 +3843,113 @@
       "community": 11,
       "community_name": "app.spec.ts",
       "norm_label": "app.spec.ts"
+    },
+    {
+      "label": "remesas.spec.ts",
+      "file_type": "code",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_remesas_spec",
+      "community": 364,
+      "community_name": "remesas.spec.ts",
+      "norm_label": "remesas.spec.ts"
+    },
+    {
+      "label": "enterId()",
+      "file_type": "code",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L3",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "tests_remesas_spec_enterid",
+      "community": 364,
+      "community_name": "remesas.spec.ts",
+      "norm_label": "enterid()"
+    },
+    {
+      "label": "desktopKeypad()",
+      "file_type": "code",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "tests_remesas_spec_desktopkeypad",
+      "community": 364,
+      "community_name": "remesas.spec.ts",
+      "norm_label": "desktopkeypad()"
+    },
+    {
+      "label": "railNav()",
+      "file_type": "code",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "tests_remesas_spec_railnav",
+      "community": 364,
+      "community_name": "remesas.spec.ts",
+      "norm_label": "railnav()"
+    },
+    {
+      "label": "tabsNav()",
+      "file_type": "code",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L17",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "tests_remesas_spec_tabsnav",
+      "community": 364,
+      "community_name": "remesas.spec.ts",
+      "norm_label": "tabsnav()"
+    },
+    {
+      "label": "historyRows()",
+      "file_type": "code",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L22",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "tests_remesas_spec_historyrows",
+      "community": 364,
+      "community_name": "remesas.spec.ts",
+      "norm_label": "historyrows()"
+    },
+    {
+      "label": "rowIds()",
+      "file_type": "code",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "tests_remesas_spec_rowids",
+      "community": 364,
+      "community_name": "remesas.spec.ts",
+      "norm_label": "rowids()"
+    },
+    {
+      "label": "gotoDesktop()",
+      "file_type": "code",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L35",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "tests_remesas_spec_gotodesktop",
+      "community": 364,
+      "community_name": "remesas.spec.ts",
+      "norm_label": "gotodesktop()"
+    },
+    {
+      "label": "gotoMobile()",
+      "file_type": "code",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L42",
+      "_callable": true,
+      "_origin": "ast",
+      "id": "tests_remesas_spec_gotomobile",
+      "community": 364,
+      "community_name": "remesas.spec.ts",
+      "norm_label": "gotomobile()"
     },
     {
       "label": "tsconfig.app.json",
@@ -20273,8 +20436,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "gitlab.md"
     },
     {
@@ -20284,8 +20447,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_gitlab_ci_cd_configuration",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "gitlab ci/cd configuration"
     },
     {
@@ -20295,8 +20458,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_table_of_contents",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "table of contents"
     },
     {
@@ -20306,8 +20469,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_key_commands",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "key commands"
     },
     {
@@ -20317,8 +20480,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_patterns",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "patterns"
     },
     {
@@ -20328,8 +20491,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_basic_pipeline_configuration",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "basic pipeline configuration"
     },
     {
@@ -20339,8 +20502,8 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_sharded_parallel_execution",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "sharded parallel execution"
     },
     {
@@ -20350,8 +20513,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_environment_variables_and_secrets",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "environment variables and secrets"
     },
     {
@@ -20361,8 +20524,8 @@
       "source_location": "L190",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_multi_browser_matrix",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "multi-browser matrix"
     },
     {
@@ -20372,8 +20535,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_services_integration_database_cache",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "services integration (database, cache)"
     },
     {
@@ -20383,8 +20546,8 @@
       "source_location": "L284",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_scheduled_nightly_regression",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "scheduled nightly regression"
     },
     {
@@ -20394,8 +20557,8 @@
       "source_location": "L307",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_decision_guide",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "decision guide"
     },
     {
@@ -20405,8 +20568,8 @@
       "source_location": "L319",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_anti_patterns",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "anti-patterns"
     },
     {
@@ -20416,8 +20579,8 @@
       "source_location": "L330",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_troubleshooting",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "troubleshooting"
     },
     {
@@ -20427,8 +20590,8 @@
       "source_location": "L332",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_browser_launch_fails_failed_to_launch_browser",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "browser launch fails: \"failed to launch browser\""
     },
     {
@@ -20438,8 +20601,8 @@
       "source_location": "L343",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_tests_hang_in_gitlab_runner_navigation_timeout_exceeded",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "tests hang in gitlab runner: \"navigation timeout exceeded\""
     },
     {
@@ -20449,8 +20612,8 @@
       "source_location": "L358",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_pipeline_runs_on_every_push_not_just_merge_requests",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "pipeline runs on every push, not just merge requests"
     },
     {
@@ -20460,8 +20623,8 @@
       "source_location": "L370",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_services_postgres_redis_not_reachable_from_tests",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "services (postgres/redis) not reachable from tests"
     },
     {
@@ -20471,8 +20634,8 @@
       "source_location": "L385",
       "_origin": "ast",
       "id": "agents_skills_playwright_best_practices_infrastructure_ci_cd_gitlab_merged_report_is_empty_after_sharded_run",
-      "community": 359,
-      "community_name": "GitLab CI/CD Configuration",
+      "community": 268,
+      "community_name": "playwright-best-practices/SKILL.md",
       "norm_label": "merged report is empty after sharded run"
     },
     {
@@ -29546,7 +29709,7 @@
       "source_location": "L182",
       "_origin": "ast",
       "id": "agents_skills_react_router_framework_mode_references_middleware_common_patterns",
-      "community": 323,
+      "community": 376,
       "community_name": "Common Patterns",
       "norm_label": "common patterns"
     },
@@ -29557,7 +29720,7 @@
       "source_location": "L184",
       "_origin": "ast",
       "id": "agents_skills_react_router_framework_mode_references_middleware_authentication",
-      "community": 323,
+      "community": 376,
       "community_name": "Common Patterns",
       "norm_label": "authentication"
     },
@@ -29568,7 +29731,7 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "agents_skills_react_router_framework_mode_references_middleware_request_logging",
-      "community": 323,
+      "community": 376,
       "community_name": "Common Patterns",
       "norm_label": "request logging"
     },
@@ -29579,7 +29742,7 @@
       "source_location": "L214",
       "_origin": "ast",
       "id": "agents_skills_react_router_framework_mode_references_middleware_response_headers",
-      "community": 323,
+      "community": 376,
       "community_name": "Common Patterns",
       "norm_label": "response headers"
     },
@@ -29590,7 +29753,7 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "agents_skills_react_router_framework_mode_references_middleware_404_fallback",
-      "community": 323,
+      "community": 376,
       "community_name": "Common Patterns",
       "norm_label": "404 fallback"
     },
@@ -29601,7 +29764,7 @@
       "source_location": "L246",
       "_origin": "ast",
       "id": "agents_skills_react_router_framework_mode_references_middleware_conditional_execution",
-      "community": 323,
+      "community": 376,
       "community_name": "Common Patterns",
       "norm_label": "conditional execution"
     },
@@ -42630,10 +42793,21 @@
       "norm_label": "como correr el proyecto"
     },
     {
+      "label": "C\u00f3mo comprobar que el E2E funciona",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "readme_c\u00f3mo_comprobar_que_el_e2e_funciona",
+      "community": 143,
+      "community_name": "Prueba T\u00e9cnica - (Front-end) - N09",
+      "norm_label": "como comprobar que el e2e funciona"
+    },
+    {
       "label": "EJERCICIO PR\u00c1CTICO",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L91",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "readme_ejercicio_pr\u00e1ctico",
       "community": 143,
@@ -42644,12 +42818,1046 @@
       "label": "Requerimientos generales",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L95",
+      "source_location": "L118",
       "_origin": "ast",
       "id": "readme_requerimientos_generales",
       "community": 143,
       "community_name": "Prueba T\u00e9cnica - (Front-end) - N09",
       "norm_label": "requerimientos generales"
+    },
+    {
+      "label": "add-app-shell-coverage/design.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "add-app-shell-coverage/design.md"
+    },
+    {
+      "label": "Context",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design_context",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "context"
+    },
+    {
+      "label": "Goals / Non-Goals",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design_goals_non_goals",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "goals / non-goals"
+    },
+    {
+      "label": "Decisions",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design_decisions",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "decisions"
+    },
+    {
+      "label": "1. Unique assertion per file",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design_1_unique_assertion_per_file",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "1. unique assertion per file"
+    },
+    {
+      "label": "2. Current page via `aria-current`, not a custom class assertion",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design_2_current_page_via_aria_current_not_a_custom_class_assertion",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "2. current page via `aria-current`, not a custom class assertion"
+    },
+    {
+      "label": "3. MemoryRouter for layout units, BrowserRouter for App",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design_3_memoryrouter_for_layout_units_browserrouter_for_app",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "3. memoryrouter for layout units, browserrouter for app"
+    },
+    {
+      "label": "4. Walk unused paths from `APP_NAV_ITEMS`",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design_4_walk_unused_paths_from_app_nav_items",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "4. walk unused paths from `app_nav_items`"
+    },
+    {
+      "label": "5. No production diff unless a test proves a bug",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design_5_no_production_diff_unless_a_test_proves_a_bug",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "5. no production diff unless a test proves a bug"
+    },
+    {
+      "label": "Risks / Trade-offs",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design_risks_trade_offs",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "risks / trade-offs"
+    },
+    {
+      "label": "Migration Plan",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design_migration_plan",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "migration plan"
+    },
+    {
+      "label": "Open Questions",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_design_open_questions",
+      "community": 358,
+      "community_name": "add-app-shell-coverage/design.md",
+      "norm_label": "open questions"
+    },
+    {
+      "label": "add-app-shell-coverage/proposal.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_proposal",
+      "community": 360,
+      "community_name": "add-app-shell-coverage/proposal.md",
+      "norm_label": "add-app-shell-coverage/proposal.md"
+    },
+    {
+      "label": "Why",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_proposal_why",
+      "community": 360,
+      "community_name": "add-app-shell-coverage/proposal.md",
+      "norm_label": "why"
+    },
+    {
+      "label": "What Changes",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_proposal_what_changes",
+      "community": 360,
+      "community_name": "add-app-shell-coverage/proposal.md",
+      "norm_label": "what changes"
+    },
+    {
+      "label": "Capabilities",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_proposal_capabilities",
+      "community": 360,
+      "community_name": "add-app-shell-coverage/proposal.md",
+      "norm_label": "capabilities"
+    },
+    {
+      "label": "New Capabilities",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_proposal_new_capabilities",
+      "community": 360,
+      "community_name": "add-app-shell-coverage/proposal.md",
+      "norm_label": "new capabilities"
+    },
+    {
+      "label": "Modified Capabilities",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_proposal_modified_capabilities",
+      "community": 360,
+      "community_name": "add-app-shell-coverage/proposal.md",
+      "norm_label": "modified capabilities"
+    },
+    {
+      "label": "Impact",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_proposal_impact",
+      "community": 360,
+      "community_name": "add-app-shell-coverage/proposal.md",
+      "norm_label": "impact"
+    },
+    {
+      "label": "add-app-shell-coverage/specs/app-shell/spec.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "add-app-shell-coverage/specs/app-shell/spec.md"
+    },
+    {
+      "label": "MODIFIED Requirements",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_modified_requirements",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "modified requirements"
+    },
+    {
+      "label": "Requirement: Custom icon rail navigation",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_custom_icon_rail_navigation",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "requirement: custom icon rail navigation"
+    },
+    {
+      "label": "Scenario: Remesas is the default route",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_remesas_is_the_default_route",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "scenario: remesas is the default route"
+    },
+    {
+      "label": "Scenario: Unused nav items open blank screens",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_unused_nav_items_open_blank_screens",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "scenario: unused nav items open blank screens"
+    },
+    {
+      "label": "Scenario: Every unused destination has a placeholder",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_every_unused_destination_has_a_placeholder",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "scenario: every unused destination has a placeholder"
+    },
+    {
+      "label": "Requirement: Declarative routing",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_declarative_routing",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "requirement: declarative routing"
+    },
+    {
+      "label": "Scenario: Client-side navigation between rail destinations",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_client_side_navigation_between_rail_destinations",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "scenario: client-side navigation between rail destinations"
+    },
+    {
+      "label": "Scenario: Rail click updates location",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_rail_click_updates_location",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "scenario: rail click updates location"
+    },
+    {
+      "label": "Requirement: Mobile tabs and stacked layout",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_mobile_tabs_and_stacked_layout",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "requirement: mobile tabs and stacked layout"
+    },
+    {
+      "label": "Scenario: Small viewport uses tabs instead of the rail",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_small_viewport_uses_tabs_instead_of_the_rail",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "scenario: small viewport uses tabs instead of the rail"
+    },
+    {
+      "label": "Scenario: Remesas on small viewport shows history, not the inline keypad",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_remesas_on_small_viewport_shows_history_not_the_inline_keypad",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "scenario: remesas on small viewport shows history, not the inline keypad"
+    },
+    {
+      "label": "Scenario: Activating a tab navigates",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_activating_a_tab_navigates",
+      "community": 347,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "scenario: activating a tab navigates"
+    },
+    {
+      "label": "add-app-shell-coverage/specs/unit-testing/spec.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec",
+      "community": 359,
+      "community_name": "Requirement: Shell layout unit tests",
+      "norm_label": "add-app-shell-coverage/specs/unit-testing/spec.md"
+    },
+    {
+      "label": "ADDED Requirements",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_added_requirements",
+      "community": 359,
+      "community_name": "Requirement: Shell layout unit tests",
+      "norm_label": "added requirements"
+    },
+    {
+      "label": "Requirement: Shell layout unit tests",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_requirement_shell_layout_unit_tests",
+      "community": 359,
+      "community_name": "Requirement: Shell layout unit tests",
+      "norm_label": "requirement: shell layout unit tests"
+    },
+    {
+      "label": "Scenario: IconRail exposes nav destinations and current remesas",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_scenario_iconrail_exposes_nav_destinations_and_current_remesas",
+      "community": 359,
+      "community_name": "Requirement: Shell layout unit tests",
+      "norm_label": "scenario: iconrail exposes nav destinations and current remesas"
+    },
+    {
+      "label": "Scenario: MobileTabs exposes the same destinations and navigates",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_scenario_mobiletabs_exposes_the_same_destinations_and_navigates",
+      "community": 359,
+      "community_name": "Requirement: Shell layout unit tests",
+      "norm_label": "scenario: mobiletabs exposes the same destinations and navigates"
+    },
+    {
+      "label": "Scenario: PlaceholderPage is a blank title screen",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_scenario_placeholderpage_is_a_blank_title_screen",
+      "community": 359,
+      "community_name": "Requirement: Shell layout unit tests",
+      "norm_label": "scenario: placeholderpage is a blank title screen"
+    },
+    {
+      "label": "Requirement: Router table and click navigation tests",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_requirement_router_table_and_click_navigation_tests",
+      "community": 359,
+      "community_name": "Requirement: Shell layout unit tests",
+      "norm_label": "requirement: router table and click navigation tests"
+    },
+    {
+      "label": "Scenario: Every unused nav path is a placeholder",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_scenario_every_unused_nav_path_is_a_placeholder",
+      "community": 359,
+      "community_name": "Requirement: Shell layout unit tests",
+      "norm_label": "scenario: every unused nav path is a placeholder"
+    },
+    {
+      "label": "Scenario: Activating a rail destination changes the route",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_scenario_activating_a_rail_destination_changes_the_route",
+      "community": 359,
+      "community_name": "Requirement: Shell layout unit tests",
+      "norm_label": "scenario: activating a rail destination changes the route"
+    },
+    {
+      "label": "add-app-shell-coverage/tasks.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/tasks.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_tasks",
+      "community": 365,
+      "community_name": "add-app-shell-coverage/tasks.md",
+      "norm_label": "add-app-shell-coverage/tasks.md"
+    },
+    {
+      "label": "1. Layout unit tests",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/tasks.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_tasks_1_layout_unit_tests",
+      "community": 365,
+      "community_name": "add-app-shell-coverage/tasks.md",
+      "norm_label": "1. layout unit tests"
+    },
+    {
+      "label": "2. Router and screen tests",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/tasks.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_tasks_2_router_and_screen_tests",
+      "community": 365,
+      "community_name": "add-app-shell-coverage/tasks.md",
+      "norm_label": "2. router and screen tests"
+    },
+    {
+      "label": "3. Verify",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-app-shell-coverage/tasks.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "openspec_changes_add_app_shell_coverage_tasks_3_verify",
+      "community": 365,
+      "community_name": "add-app-shell-coverage/tasks.md",
+      "norm_label": "3. verify"
+    },
+    {
+      "label": "add-phase-6-e2e/design.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "add-phase-6-e2e/design.md"
+    },
+    {
+      "label": "Context",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_context",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "context"
+    },
+    {
+      "label": "Goals / Non-Goals",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_goals_non_goals",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "goals / non-goals"
+    },
+    {
+      "label": "Decisions",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_decisions",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "decisions"
+    },
+    {
+      "label": "1. One file, one browser, viewport in the test",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_1_one_file_one_browser_viewport_in_the_test",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "1. one file, one browser, viewport in the test"
+    },
+    {
+      "label": "2. Role locators, scoped so keypad \u2260 pagination",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_2_role_locators_scoped_so_keypad_pagination",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "2. role locators, scoped so keypad = pagination"
+    },
+    {
+      "label": "3. Wait on UI, never `waitForTimeout`",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_3_wait_on_ui_never_waitfortimeout",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "3. wait on ui, never `waitfortimeout`"
+    },
+    {
+      "label": "4. Tiny `enterId` helper, no POM",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_4_tiny_enterid_helper_no_pom",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "4. tiny `enterid` helper, no pom"
+    },
+    {
+      "label": "5. Toast from the DOM; print via `emulateMedia`",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_5_toast_from_the_dom_print_via_emulatemedia",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "5. toast from the dom; print via `emulatemedia`"
+    },
+    {
+      "label": "6. Isolation is a full page load",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_6_isolation_is_a_full_page_load",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "6. isolation is a full page load"
+    },
+    {
+      "label": "7. Production diff only if a journey fails",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_7_production_diff_only_if_a_journey_fails",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "7. production diff only if a journey fails"
+    },
+    {
+      "label": "Risks / Trade-offs",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_risks_trade_offs",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "risks / trade-offs"
+    },
+    {
+      "label": "Migration Plan",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_migration_plan",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "migration plan"
+    },
+    {
+      "label": "Open Questions",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_design_open_questions",
+      "community": 363,
+      "community_name": "Decisions",
+      "norm_label": "open questions"
+    },
+    {
+      "label": "add-phase-6-e2e/proposal.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_proposal",
+      "community": 375,
+      "community_name": "add-phase-6-e2e/proposal.md",
+      "norm_label": "add-phase-6-e2e/proposal.md"
+    },
+    {
+      "label": "Why",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_proposal_why",
+      "community": 375,
+      "community_name": "add-phase-6-e2e/proposal.md",
+      "norm_label": "why"
+    },
+    {
+      "label": "What Changes",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_proposal_what_changes",
+      "community": 375,
+      "community_name": "add-phase-6-e2e/proposal.md",
+      "norm_label": "what changes"
+    },
+    {
+      "label": "Capabilities",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_proposal_capabilities",
+      "community": 375,
+      "community_name": "add-phase-6-e2e/proposal.md",
+      "norm_label": "capabilities"
+    },
+    {
+      "label": "New Capabilities",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_proposal_new_capabilities",
+      "community": 375,
+      "community_name": "add-phase-6-e2e/proposal.md",
+      "norm_label": "new capabilities"
+    },
+    {
+      "label": "Modified Capabilities",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_proposal_modified_capabilities",
+      "community": 375,
+      "community_name": "add-phase-6-e2e/proposal.md",
+      "norm_label": "modified capabilities"
+    },
+    {
+      "label": "Impact",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_proposal_impact",
+      "community": 375,
+      "community_name": "add-phase-6-e2e/proposal.md",
+      "norm_label": "impact"
+    },
+    {
+      "label": "e2e-testing/spec.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "e2e-testing/spec.md"
+    },
+    {
+      "label": "Purpose",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_purpose",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "purpose"
+    },
+    {
+      "label": "ADDED Requirements",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_added_requirements",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "added requirements"
+    },
+    {
+      "label": "Requirement: Playwright is a separate command",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_playwright_is_a_separate_command",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "requirement: playwright is a separate command"
+    },
+    {
+      "label": "Scenario: Unit command still excludes Playwright",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_unit_command_still_excludes_playwright",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "scenario: unit command still excludes playwright"
+    },
+    {
+      "label": "Scenario: E2E command runs Chromium remesas flows",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_e2e_command_runs_chromium_remesas_flows",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "scenario: e2e command runs chromium remesas flows"
+    },
+    {
+      "label": "Requirement: Desktop operator journeys",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_desktop_operator_journeys",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "requirement: desktop operator journeys"
+    },
+    {
+      "label": "Scenario: Loaded history shows ten charged remesas",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_loaded_history_shows_ten_charged_remesas",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "scenario: loaded history shows ten charged remesas"
+    },
+    {
+      "label": "Scenario: Search filters the charged list",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_search_filters_the_charged_list",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "scenario: search filters the charged list"
+    },
+    {
+      "label": "Scenario: Pagination shows the next page",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_pagination_shows_the_next_page",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "scenario: pagination shows the next page"
+    },
+    {
+      "label": "Scenario: Desktop keypad charges an unpaid remesa",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_desktop_keypad_charges_an_unpaid_remesa",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "scenario: desktop keypad charges an unpaid remesa"
+    },
+    {
+      "label": "Requirement: Mobile viewport and Dialog charge",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_mobile_viewport_and_dialog_charge",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "requirement: mobile viewport and dialog charge"
+    },
+    {
+      "label": "Scenario: Small viewport shows tabs and history, not the inline keypad",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_small_viewport_shows_tabs_and_history_not_the_inline_keypad",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "scenario: small viewport shows tabs and history, not the inline keypad"
+    },
+    {
+      "label": "Scenario: Mobile Dialog charges an unpaid remesa",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_mobile_dialog_charges_an_unpaid_remesa",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "scenario: mobile dialog charges an unpaid remesa"
+    },
+    {
+      "label": "Requirement: Visible error toast",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_visible_error_toast",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "requirement: visible error toast"
+    },
+    {
+      "label": "Scenario: Unknown or already charged id shows a toast",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_unknown_or_already_charged_id_shows_a_toast",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "scenario: unknown or already charged id shows a toast"
+    },
+    {
+      "label": "Requirement: Print media hides chrome",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_print_media_hides_chrome",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "requirement: print media hides chrome"
+    },
+    {
+      "label": "Scenario: Print media hides rail, keypad, tabs, and list chrome",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_print_media_hides_rail_keypad_tabs_and_list_chrome",
+      "community": 323,
+      "community_name": "ADDED Requirements",
+      "norm_label": "scenario: print media hides rail, keypad, tabs, and list chrome"
+    },
+    {
+      "label": "add-phase-6-e2e/specs/unit-testing/spec.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/unit-testing/spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_unit_testing_spec",
+      "community": 378,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "add-phase-6-e2e/specs/unit-testing/spec.md"
+    },
+    {
+      "label": "MODIFIED Requirements",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/unit-testing/spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_unit_testing_spec_modified_requirements",
+      "community": 378,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "modified requirements"
+    },
+    {
+      "label": "Requirement: Playwright E2E is a separate suite",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/unit-testing/spec.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_unit_testing_spec_requirement_playwright_e2e_is_a_separate_suite",
+      "community": 378,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "requirement: playwright e2e is a separate suite"
+    },
+    {
+      "label": "Scenario: Unit command excludes Playwright remesas flows",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/unit-testing/spec.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_specs_unit_testing_spec_scenario_unit_command_excludes_playwright_remesas_flows",
+      "community": 378,
+      "community_name": "MODIFIED Requirements",
+      "norm_label": "scenario: unit command excludes playwright remesas flows"
+    },
+    {
+      "label": "add-phase-6-e2e/tasks.md",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/tasks.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_tasks",
+      "community": 377,
+      "community_name": "add-phase-6-e2e/tasks.md",
+      "norm_label": "add-phase-6-e2e/tasks.md"
+    },
+    {
+      "label": "1. Harness",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/tasks.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_tasks_1_harness",
+      "community": 377,
+      "community_name": "add-phase-6-e2e/tasks.md",
+      "norm_label": "1. harness"
+    },
+    {
+      "label": "2. Desktop journeys (`lg+`)",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/tasks.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_tasks_2_desktop_journeys_lg",
+      "community": 377,
+      "community_name": "add-phase-6-e2e/tasks.md",
+      "norm_label": "2. desktop journeys (`lg+`)"
+    },
+    {
+      "label": "3. Mobile viewport",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/tasks.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_tasks_3_mobile_viewport",
+      "community": 377,
+      "community_name": "add-phase-6-e2e/tasks.md",
+      "norm_label": "3. mobile viewport"
+    },
+    {
+      "label": "4. Layer B \u2014 toast and print",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/tasks.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_tasks_4_layer_b_toast_and_print",
+      "community": 377,
+      "community_name": "add-phase-6-e2e/tasks.md",
+      "norm_label": "4. layer b \u2014 toast and print"
+    },
+    {
+      "label": "5. Verify",
+      "file_type": "document",
+      "source_file": "openspec/changes/add-phase-6-e2e/tasks.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "openspec_changes_add_phase_6_e2e_tasks_5_verify",
+      "community": 377,
+      "community_name": "add-phase-6-e2e/tasks.md",
+      "norm_label": "5. verify"
     },
     {
       "label": "add-phase-6-unit-tests/design.md",
@@ -46869,7 +48077,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.test.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_test",
@@ -46881,11 +48089,46 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/App.test.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "src_app_test",
       "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.test.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_test",
+      "target": "src_app_test_unusednavitems",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_test",
+      "target": "src_config_nav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_app_test",
+      "target": "src_config_nav_app_nav_items",
       "confidence_score": 1.0
     },
     {
@@ -47587,6 +48830,54 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/icon-rail.test.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_layout_icon_rail_test",
+      "target": "src_components_layout_icon_rail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/icon-rail.test.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_layout_icon_rail_test",
+      "target": "src_components_layout_icon_rail_iconrail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/icon-rail.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_layout_icon_rail_test",
+      "target": "src_config_nav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/icon-rail.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_layout_icon_rail_test",
+      "target": "src_config_nav_app_nav_items",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/components/layout/icon-rail.tsx",
@@ -47656,6 +48947,65 @@
       "_origin": "ast",
       "source": "src_components_layout_icon_rail_iconrail",
       "target": "src_lib_utils_cn"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/mobile-tabs.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_layout_mobile_tabs_test",
+      "target": "src_components_layout_mobile_tabs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/mobile-tabs.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_layout_mobile_tabs_test",
+      "target": "src_components_layout_mobile_tabs_mobiletabs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/mobile-tabs.test.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_layout_mobile_tabs_test",
+      "target": "src_components_layout_mobile_tabs_test_pathnameprobe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/mobile-tabs.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_layout_mobile_tabs_test",
+      "target": "src_config_nav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/mobile-tabs.test.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_layout_mobile_tabs_test",
+      "target": "src_config_nav_app_nav_items",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -47738,6 +49088,30 @@
       "_origin": "ast",
       "source": "src_components_layout_mobile_tabs",
       "target": "src_config_nav_app_nav_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/placeholder-page.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_layout_placeholder_page_test",
+      "target": "src_components_layout_placeholder_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/layout/placeholder-page.test.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "src_components_layout_placeholder_page_test",
+      "target": "src_components_layout_placeholder_page_placeholderpage",
       "confidence_score": 1.0
     },
     {
@@ -51440,6 +52814,118 @@
       "_origin": "ast",
       "source": "src_test_setup",
       "target": "src_stores_remesas_store_useremesasstore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_remesas_spec",
+      "target": "tests_remesas_spec_desktopkeypad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_remesas_spec",
+      "target": "tests_remesas_spec_enterid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_remesas_spec",
+      "target": "tests_remesas_spec_gotodesktop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_remesas_spec",
+      "target": "tests_remesas_spec_gotomobile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_remesas_spec",
+      "target": "tests_remesas_spec_historyrows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_remesas_spec",
+      "target": "tests_remesas_spec_railnav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_remesas_spec",
+      "target": "tests_remesas_spec_rowids",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_remesas_spec",
+      "target": "tests_remesas_spec_tabsnav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_remesas_spec_gotodesktop",
+      "target": "tests_remesas_spec_desktopkeypad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/remesas.spec.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_remesas_spec_rowids",
+      "target": "tests_remesas_spec_historyrows",
       "confidence_score": 1.0
     },
     {
@@ -90097,7 +91583,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L91",
+      "source_location": "L114",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme_prueba_t\u00e9cnica_front_end_n09",
@@ -90141,11 +91627,946 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L95",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "readme_c\u00f3mo_correr_el_proyecto",
+      "target": "readme_c\u00f3mo_comprobar_que_el_e2e_funciona",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L118",
       "weight": 1.0,
       "_origin": "ast",
       "source": "readme_ejercicio_pr\u00e1ctico",
       "target": "readme_requerimientos_generales",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_design",
+      "target": "openspec_changes_add_app_shell_coverage_design_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_design",
+      "target": "openspec_changes_add_app_shell_coverage_design_decisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_design",
+      "target": "openspec_changes_add_app_shell_coverage_design_goals_non_goals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_design",
+      "target": "openspec_changes_add_app_shell_coverage_design_migration_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_design",
+      "target": "openspec_changes_add_app_shell_coverage_design_open_questions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_design",
+      "target": "openspec_changes_add_app_shell_coverage_design_risks_trade_offs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_design_decisions",
+      "target": "openspec_changes_add_app_shell_coverage_design_1_unique_assertion_per_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_design_decisions",
+      "target": "openspec_changes_add_app_shell_coverage_design_2_current_page_via_aria_current_not_a_custom_class_assertion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_design_decisions",
+      "target": "openspec_changes_add_app_shell_coverage_design_3_memoryrouter_for_layout_units_browserrouter_for_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_design_decisions",
+      "target": "openspec_changes_add_app_shell_coverage_design_4_walk_unused_paths_from_app_nav_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/design.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_design_decisions",
+      "target": "openspec_changes_add_app_shell_coverage_design_5_no_production_diff_unless_a_test_proves_a_bug",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_proposal",
+      "target": "openspec_changes_add_app_shell_coverage_proposal_capabilities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_proposal",
+      "target": "openspec_changes_add_app_shell_coverage_proposal_impact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_proposal",
+      "target": "openspec_changes_add_app_shell_coverage_proposal_what_changes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_proposal",
+      "target": "openspec_changes_add_app_shell_coverage_proposal_why",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_proposal_capabilities",
+      "target": "openspec_changes_add_app_shell_coverage_proposal_modified_capabilities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/proposal.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_proposal_capabilities",
+      "target": "openspec_changes_add_app_shell_coverage_proposal_new_capabilities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_modified_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_modified_requirements",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_custom_icon_rail_navigation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_modified_requirements",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_declarative_routing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_modified_requirements",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_mobile_tabs_and_stacked_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_custom_icon_rail_navigation",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_every_unused_destination_has_a_placeholder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_custom_icon_rail_navigation",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_remesas_is_the_default_route",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_custom_icon_rail_navigation",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_unused_nav_items_open_blank_screens",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_declarative_routing",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_client_side_navigation_between_rail_destinations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_declarative_routing",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_rail_click_updates_location",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_mobile_tabs_and_stacked_layout",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_activating_a_tab_navigates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_mobile_tabs_and_stacked_layout",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_remesas_on_small_viewport_shows_history_not_the_inline_keypad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_requirement_mobile_tabs_and_stacked_layout",
+      "target": "openspec_changes_add_app_shell_coverage_specs_app_shell_spec_scenario_small_viewport_uses_tabs_instead_of_the_rail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec",
+      "target": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_added_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_added_requirements",
+      "target": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_requirement_router_table_and_click_navigation_tests",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_added_requirements",
+      "target": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_requirement_shell_layout_unit_tests",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_requirement_shell_layout_unit_tests",
+      "target": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_scenario_iconrail_exposes_nav_destinations_and_current_remesas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_requirement_shell_layout_unit_tests",
+      "target": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_scenario_mobiletabs_exposes_the_same_destinations_and_navigates",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_requirement_shell_layout_unit_tests",
+      "target": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_scenario_placeholderpage_is_a_blank_title_screen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_requirement_router_table_and_click_navigation_tests",
+      "target": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_scenario_activating_a_rail_destination_changes_the_route",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_requirement_router_table_and_click_navigation_tests",
+      "target": "openspec_changes_add_app_shell_coverage_specs_unit_testing_spec_scenario_every_unused_nav_path_is_a_placeholder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/tasks.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_tasks",
+      "target": "openspec_changes_add_app_shell_coverage_tasks_1_layout_unit_tests",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/tasks.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_tasks",
+      "target": "openspec_changes_add_app_shell_coverage_tasks_2_router_and_screen_tests",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-app-shell-coverage/tasks.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_app_shell_coverage_tasks",
+      "target": "openspec_changes_add_app_shell_coverage_tasks_3_verify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design",
+      "target": "openspec_changes_add_phase_6_e2e_design_context",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design",
+      "target": "openspec_changes_add_phase_6_e2e_design_decisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design",
+      "target": "openspec_changes_add_phase_6_e2e_design_goals_non_goals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design",
+      "target": "openspec_changes_add_phase_6_e2e_design_migration_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design",
+      "target": "openspec_changes_add_phase_6_e2e_design_open_questions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design",
+      "target": "openspec_changes_add_phase_6_e2e_design_risks_trade_offs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design_decisions",
+      "target": "openspec_changes_add_phase_6_e2e_design_1_one_file_one_browser_viewport_in_the_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design_decisions",
+      "target": "openspec_changes_add_phase_6_e2e_design_2_role_locators_scoped_so_keypad_pagination",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design_decisions",
+      "target": "openspec_changes_add_phase_6_e2e_design_3_wait_on_ui_never_waitfortimeout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design_decisions",
+      "target": "openspec_changes_add_phase_6_e2e_design_4_tiny_enterid_helper_no_pom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design_decisions",
+      "target": "openspec_changes_add_phase_6_e2e_design_5_toast_from_the_dom_print_via_emulatemedia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design_decisions",
+      "target": "openspec_changes_add_phase_6_e2e_design_6_isolation_is_a_full_page_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/design.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_design_decisions",
+      "target": "openspec_changes_add_phase_6_e2e_design_7_production_diff_only_if_a_journey_fails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_proposal",
+      "target": "openspec_changes_add_phase_6_e2e_proposal_capabilities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_proposal",
+      "target": "openspec_changes_add_phase_6_e2e_proposal_impact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_proposal",
+      "target": "openspec_changes_add_phase_6_e2e_proposal_what_changes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_proposal",
+      "target": "openspec_changes_add_phase_6_e2e_proposal_why",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_proposal_capabilities",
+      "target": "openspec_changes_add_phase_6_e2e_proposal_modified_capabilities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/proposal.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_proposal_capabilities",
+      "target": "openspec_changes_add_phase_6_e2e_proposal_new_capabilities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_added_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_added_requirements",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_desktop_operator_journeys",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_added_requirements",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_mobile_viewport_and_dialog_charge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_added_requirements",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_playwright_is_a_separate_command",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_added_requirements",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_print_media_hides_chrome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_added_requirements",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_visible_error_toast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_playwright_is_a_separate_command",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_e2e_command_runs_chromium_remesas_flows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_playwright_is_a_separate_command",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_unit_command_still_excludes_playwright",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_desktop_operator_journeys",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_desktop_keypad_charges_an_unpaid_remesa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_desktop_operator_journeys",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_loaded_history_shows_ten_charged_remesas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_desktop_operator_journeys",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_pagination_shows_the_next_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_desktop_operator_journeys",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_search_filters_the_charged_list",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_mobile_viewport_and_dialog_charge",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_mobile_dialog_charges_an_unpaid_remesa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_mobile_viewport_and_dialog_charge",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_small_viewport_shows_tabs_and_history_not_the_inline_keypad",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_visible_error_toast",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_unknown_or_already_charged_id_shows_a_toast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_requirement_print_media_hides_chrome",
+      "target": "openspec_changes_add_phase_6_e2e_specs_e2e_testing_spec_scenario_print_media_hides_rail_keypad_tabs_and_list_chrome",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/unit-testing/spec.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_unit_testing_spec",
+      "target": "openspec_changes_add_phase_6_e2e_specs_unit_testing_spec_modified_requirements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/unit-testing/spec.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_unit_testing_spec_modified_requirements",
+      "target": "openspec_changes_add_phase_6_e2e_specs_unit_testing_spec_requirement_playwright_e2e_is_a_separate_suite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/specs/unit-testing/spec.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_specs_unit_testing_spec_requirement_playwright_e2e_is_a_separate_suite",
+      "target": "openspec_changes_add_phase_6_e2e_specs_unit_testing_spec_scenario_unit_command_excludes_playwright_remesas_flows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/tasks.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_tasks",
+      "target": "openspec_changes_add_phase_6_e2e_tasks_1_harness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/tasks.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_tasks",
+      "target": "openspec_changes_add_phase_6_e2e_tasks_2_desktop_journeys_lg",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/tasks.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_tasks",
+      "target": "openspec_changes_add_phase_6_e2e_tasks_3_mobile_viewport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/tasks.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_tasks",
+      "target": "openspec_changes_add_phase_6_e2e_tasks_4_layer_b_toast_and_print",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "openspec/changes/add-phase-6-e2e/tasks.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "openspec_changes_add_phase_6_e2e_tasks",
+      "target": "openspec_changes_add_phase_6_e2e_tasks_5_verify",
       "confidence_score": 1.0
     },
     {
@@ -92394,5 +94815,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "2dab98ce0fc6cec76ca37b6cd25988ae244a509d"
+  "built_at_commit": "296aba234b38a3a15de2a8556d2919be85bc5af3"
 }

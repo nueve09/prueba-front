@@ -20,14 +20,14 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1787031975.5720284,
-    "ast_hash": "efb2c8df1019c5a68a64daa8da76384b",
+    "mtime": 1787035456.0640337,
+    "ast_hash": "9fc123686efd31d875a743be71db8813",
     "semantic_hash": ""
   },
   "playwright.config.ts": {
-    "mtime": 1786913285.3514419,
-    "ast_hash": "00a48fbec36e973bf2412c0b3e9d0859",
-    "semantic_hash": "00a48fbec36e973bf2412c0b3e9d0859"
+    "mtime": 1787035455.8586307,
+    "ast_hash": "99c917bdc8845b7c21db44ade11e4ccc",
+    "semantic_hash": ""
   },
   "src/App.tsx": {
     "mtime": 1787026682.4905977,
@@ -190,8 +190,8 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1786996826.2260513,
-    "ast_hash": "941333ea5e739c17be9315c0138ba1f2",
+    "mtime": 1787035482.2803676,
+    "ast_hash": "0908328a8fde10422683f336ffd48cba",
     "semantic_hash": ""
   },
   "index.html": {
@@ -2035,8 +2035,43 @@
     "semantic_hash": ""
   },
   "openspec/changes/add-app-shell-coverage/tasks.md": {
-    "mtime": 1787032803.8428497,
-    "ast_hash": "c621cae82cb8fce09eee79ed275f6d66",
+    "mtime": 1787032834.0719182,
+    "ast_hash": "d458e0ce59af4916cbb468f99be44dad",
+    "semantic_hash": ""
+  },
+  "tests/remesas.spec.ts": {
+    "mtime": 1787034717.8895936,
+    "ast_hash": "11ba5dd3e26633baa6600b848aedfbd0",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/.openspec.yaml": {
+    "mtime": 1787034129.3633463,
+    "ast_hash": "2aff0556fc211137f182b8a31bcc3fe0",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/design.md": {
+    "mtime": 1787034223.4865088,
+    "ast_hash": "c5f159ec49c0009dc5d5b149a5d9b053",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/proposal.md": {
+    "mtime": 1787034152.6044102,
+    "ast_hash": "5fccebee192fdf9ef6ab1e3cd5dcce1d",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/specs/e2e-testing/spec.md": {
+    "mtime": 1787034186.3139257,
+    "ast_hash": "1948dae4ea30153cdfde7e3f3a45d5bc",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/specs/unit-testing/spec.md": {
+    "mtime": 1787034186.3139114,
+    "ast_hash": "2d4a18585f5b63fee57b66a371fa6a5d",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-phase-6-e2e/tasks.md": {
+    "mtime": 1787034740.3228421,
+    "ast_hash": "3c6505b904a31a043a0a994dc9434bfc",
     "semantic_hash": ""
   }
 }

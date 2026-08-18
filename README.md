@@ -65,16 +65,55 @@ Otros comandos:
 pnpm lint          # ESLint + SonarJS
 pnpm build         # TypeScript + Vite
 pnpm preview       # Preview del build de producción
-pnpm test          # Vitest (unitarios; aún no hay archivos)
-pnpm test:e2e      # Playwright (Chromium)
+pnpm test          # Vitest (unitarios en src/**/*.test.ts)
+pnpm test:e2e      # Playwright (Chromium; tests/*.spec.ts)
+pnpm test:e2e:ui   # Playwright UI (replay de trazas)
+pnpm test:e2e:headed  # Chromium visible, velocidad normal
+pnpm test:e2e:slow    # Chromium visible, 800 ms entre acciones
 ```
 
-Los unitarios van en `src/` como `*.test.ts` / `*.spec.ts` (o `.tsx`). Los E2E de Playwright están en `tests/`. Watch de Vitest: `pnpm exec vitest`.
+Los unitarios van en `src/` como `*.test.ts` / `*.spec.ts` (o `.tsx`). Los E2E de Playwright están en `tests/`. Watch de Vitest: `pnpm exec vitest`. `pnpm test` **no** ejecuta Playwright.
 
-Si Playwright no encuentra el browser:
+### Cómo comprobar que el E2E funciona
+
+1. Node 22+ y `pnpm install` (una vez).
+2. Instalar el browser de Playwright (una vez por máquina):
 
 ```sh
 pnpm exec playwright install chromium
+```
+
+3. Correr la suite. El config arranca Vite en `http://127.0.0.1:5173` si no hay ya un `pnpm dev` en ese puerto:
+
+```sh
+pnpm test:e2e
+```
+
+4. Debe pasar el smoke (`tests/app.spec.ts`) y los journeys de remesas (`tests/remesas.spec.ts`): historial de 10 cobradas, búsqueda, paginación, cobro en keypad desktop, cobro en Dialog móvil, toast de error, chrome oculto en print.
+
+5. Informe HTML:
+
+```sh
+pnpm exec playwright show-report
+```
+
+Si Playwright no encuentra el browser, el paso 2 lo instala.
+
+### Scripts de Playwright (qué hace cada uno)
+
+| Script | Qué hace |
+| --- | --- |
+| `pnpm test:e2e` | Corre la suite en **headless** (sin ventana). Es el comando de CI / verificación rápida. |
+| `pnpm test:e2e:ui` | Abre el **Playwright UI**: lista de tests, replay de cada step, locators y timeline. No es el Chromium de la app “en vivo”; es un visor de trazas. |
+| `pnpm test:e2e:headed` | Abre **Chromium visible** y corre los tests a velocidad normal. Un solo worker (`--workers=1`) para no abrir varias ventanas. |
+| `pnpm test:e2e:slow` | Igual que headed, pero con **800 ms entre cada acción** (`PLAYWRIGHT_SLOW_MO=800` en `playwright.config.ts`). Sirve para ver keypad, búsqueda y cobros paso a paso. El timeout del test sube a 120 s para que no corte a mitad. |
+
+`--slow-mo` **no** es una flag de `playwright test`; por eso la cámara lenta va por variable de entorno, no por CLI.
+
+Para un test concreto en cámara lenta:
+
+```sh
+pnpm test:e2e:slow tests/remesas.spec.ts -g "desktop keypad"
 ```
 
 Extensión recomendada en Cursor/VS Code: **SonarQube for IDE** (`sonarsource.sonarlint-vscode`), listada en `.vscode/extensions.json`.
