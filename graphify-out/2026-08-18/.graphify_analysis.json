@@ -1,0 +1,321 @@
+{
+  "communities": {
+    "0": [
+      "eslint",
+      "eslint_js",
+      "eslint_plugin_react_hooks",
+      "eslint_plugin_react_refresh",
+      "eslint_plugin_sonarjs",
+      "globals",
+      "husky",
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_js",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_eslint_plugin_react_refresh",
+      "package_devdependencies_eslint_plugin_sonarjs",
+      "package_devdependencies_globals",
+      "package_devdependencies_husky",
+      "package_devdependencies_playwright_test",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "package_devdependencies_typescript_eslint",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react",
+      "playwright_test",
+      "types_node",
+      "types_react",
+      "types_react_dom",
+      "typescript",
+      "typescript_eslint",
+      "vite",
+      "vitejs_plugin_react"
+    ],
+    "1": [
+      "class_variance_authority",
+      "clsx",
+      "fontsource_variable_geist",
+      "lucide_react",
+      "package_dependencies",
+      "package_dependencies_class_variance_authority",
+      "package_dependencies_clsx",
+      "package_dependencies_fontsource_variable_geist",
+      "package_dependencies_lucide_react",
+      "package_dependencies_radix_ui",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_shadcn",
+      "package_dependencies_tailwind_merge",
+      "package_dependencies_tailwindcss",
+      "package_dependencies_tailwindcss_vite",
+      "package_dependencies_tw_animate_css",
+      "package_dependencies_zod",
+      "package_dependencies_zustand",
+      "radix_ui",
+      "react",
+      "react_dom",
+      "shadcn",
+      "tailwind_merge",
+      "tailwindcss",
+      "tailwindcss_vite",
+      "tw_animate_css",
+      "zod",
+      "zustand"
+    ],
+    "2": [
+      "ref_dom",
+      "ref_src",
+      "ref_vite_client",
+      "tsconfig_app",
+      "tsconfig_app_compileroptions",
+      "tsconfig_app_compileroptions_allowarbitraryextensions",
+      "tsconfig_app_compileroptions_allowimportingtsextensions",
+      "tsconfig_app_compileroptions_erasablesyntaxonly",
+      "tsconfig_app_compileroptions_jsx",
+      "tsconfig_app_compileroptions_lib",
+      "tsconfig_app_compileroptions_module",
+      "tsconfig_app_compileroptions_moduledetection",
+      "tsconfig_app_compileroptions_moduleresolution",
+      "tsconfig_app_compileroptions_noemit",
+      "tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_app_compileroptions_nounusedlocals",
+      "tsconfig_app_compileroptions_nounusedparameters",
+      "tsconfig_app_compileroptions_paths",
+      "tsconfig_app_compileroptions_skiplibcheck",
+      "tsconfig_app_compileroptions_target",
+      "tsconfig_app_compileroptions_tsbuildinfofile",
+      "tsconfig_app_compileroptions_types",
+      "tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "tsconfig_app_include",
+      "tsconfig_app_json_ref_es2023"
+    ],
+    "3": [
+      "ref_node",
+      "ref_playwright_config_ts",
+      "ref_vite_config_ts",
+      "tsconfig_node",
+      "tsconfig_node_compileroptions",
+      "tsconfig_node_compileroptions_allowimportingtsextensions",
+      "tsconfig_node_compileroptions_erasablesyntaxonly",
+      "tsconfig_node_compileroptions_lib",
+      "tsconfig_node_compileroptions_module",
+      "tsconfig_node_compileroptions_moduledetection",
+      "tsconfig_node_compileroptions_noemit",
+      "tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_node_compileroptions_nounusedlocals",
+      "tsconfig_node_compileroptions_nounusedparameters",
+      "tsconfig_node_compileroptions_skiplibcheck",
+      "tsconfig_node_compileroptions_target",
+      "tsconfig_node_compileroptions_tsbuildinfofile",
+      "tsconfig_node_compileroptions_types",
+      "tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "tsconfig_node_include",
+      "tsconfig_node_json_ref_es2023"
+    ],
+    "4": [
+      "components",
+      "components_aliases",
+      "components_aliases_components",
+      "components_aliases_hooks",
+      "components_aliases_lib",
+      "components_aliases_ui",
+      "components_aliases_utils",
+      "components_iconlibrary",
+      "components_menuaccent",
+      "components_menucolor",
+      "components_registries",
+      "components_rsc",
+      "components_rtl",
+      "components_schema",
+      "components_style",
+      "components_tsx"
+    ],
+    "5": [
+      "package",
+      "package_name",
+      "package_packagemanager",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_prepare",
+      "package_scripts_preview",
+      "package_scripts_test_e2e",
+      "package_type",
+      "package_version"
+    ],
+    "6": [
+      "src_app",
+      "src_app_app",
+      "src_components_ui_button",
+      "src_components_ui_button_button",
+      "src_components_ui_button_buttonvariants",
+      "src_lib_schemas",
+      "src_lib_schemas_counterschema",
+      "src_lib_utils",
+      "src_lib_utils_cn",
+      "src_main",
+      "src_stores_app_store",
+      "src_stores_app_store_appstate",
+      "src_stores_app_store_useappstore"
+    ],
+    "7": [
+      "components_tailwind",
+      "components_tailwind_basecolor",
+      "components_tailwind_config",
+      "components_tailwind_css",
+      "components_tailwind_cssvariables",
+      "components_tailwind_prefix"
+    ],
+    "8": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_files",
+      "tsconfig_references"
+    ],
+    "9": [
+      "eslint_config"
+    ],
+    "10": [
+      "playwright_config"
+    ],
+    "11": [
+      "tests_app_spec"
+    ],
+    "12": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.06451612903225806,
+    "1": 0.06896551724137931,
+    "2": 0.08,
+    "3": 0.09523809523809523,
+    "4": 0.125,
+    "5": 0.15384615384615385,
+    "6": 0.2564102564102564,
+    "7": 0.3333333333333333,
+    "8": 0.4,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_app_compileroptions",
+      "label": "compilerOptions",
+      "degree": 19
+    },
+    {
+      "id": "tsconfig_node_compileroptions",
+      "label": "compilerOptions",
+      "degree": 15
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 7
+    },
+    {
+      "id": "components_tailwind",
+      "label": "tailwind",
+      "degree": 6
+    },
+    {
+      "id": "components_aliases",
+      "label": "aliases",
+      "degree": 6
+    },
+    {
+      "id": "src_components_ui_button_button",
+      "label": "Button()",
+      "degree": 4
+    },
+    {
+      "id": "src_app_app",
+      "label": "App()",
+      "degree": 3
+    },
+    {
+      "id": "src_lib_utils_cn",
+      "label": "cn()",
+      "degree": 3
+    },
+    {
+      "id": "src_stores_app_store_useappstore",
+      "label": "useAppStore",
+      "degree": 3
+    },
+    {
+      "id": "tsconfig_app_compileroptions_lib",
+      "label": "lib",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "App()",
+      "target": "useAppStore",
+      "source_files": [
+        "src/App.tsx",
+        "src/stores/app-store.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "Button()",
+      "target": "cn()",
+      "source_files": [
+        "src/components/ui/button.tsx",
+        "src/lib/utils.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `devDependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.129) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `dependencies` connect `dependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.122) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `$schema`, `style`, `rsc` to the rest of the system?",
+      "why": "99 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `devDependencies` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06451612903225806 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `dependencies` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `compilerOptions` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `compilerOptions` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.09523809523809523 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

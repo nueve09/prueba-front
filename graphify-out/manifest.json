@@ -1855,8 +1855,8 @@
     "semantic_hash": ""
   },
   "src/App.test.tsx": {
-    "mtime": 1787027670.2150867,
-    "ast_hash": "01ac1580a780d9639028e8aebd1a58fa",
+    "mtime": 1787032787.7091236,
+    "ast_hash": "f1eb427c253631a440c0d84183630e33",
     "semantic_hash": ""
   },
   "src/api/remesas.test.ts": {
@@ -1992,6 +1992,51 @@
   "src/components/ui/toast-manager.ts": {
     "mtime": 1787031856.078023,
     "ast_hash": "34db4badbf7d31751690aee7b78f87e8",
+    "semantic_hash": ""
+  },
+  "src/components/layout/icon-rail.test.tsx": {
+    "mtime": 1787032781.0362566,
+    "ast_hash": "6c0d270d8559b98358a83fe1caa840b0",
+    "semantic_hash": ""
+  },
+  "src/components/layout/mobile-tabs.test.tsx": {
+    "mtime": 1787032782.6818562,
+    "ast_hash": "acfa0b84331f1e9953b32b468c3e7d45",
+    "semantic_hash": ""
+  },
+  "src/components/layout/placeholder-page.test.tsx": {
+    "mtime": 1787032787.6341965,
+    "ast_hash": "a7744e846b6a71493717dbc47124d297",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/.openspec.yaml": {
+    "mtime": 1787032540.1460066,
+    "ast_hash": "2aff0556fc211137f182b8a31bcc3fe0",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/design.md": {
+    "mtime": 1787032675.4815192,
+    "ast_hash": "e1cd1e3a4ef14cd0b572ca9f7e3e0702",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/proposal.md": {
+    "mtime": 1787032559.6968462,
+    "ast_hash": "d1db42fd04c45643a1580d0b9e995517",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/specs/app-shell/spec.md": {
+    "mtime": 1787032623.6177418,
+    "ast_hash": "bc2f812c4740d318210db53412e8c0c7",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/specs/unit-testing/spec.md": {
+    "mtime": 1787032623.6177158,
+    "ast_hash": "a87a246d614a3996b21440ddbb716c9e",
+    "semantic_hash": ""
+  },
+  "openspec/changes/add-app-shell-coverage/tasks.md": {
+    "mtime": 1787032803.8428497,
+    "ast_hash": "c621cae82cb8fce09eee79ed275f6d66",
     "semantic_hash": ""
   }
 }
