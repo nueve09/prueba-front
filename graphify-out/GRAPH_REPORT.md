@@ -1,16 +1,16 @@
-# Graph Report - prueba-front  (2026-08-16)
+# Graph Report - prueba-front  (2026-08-17)
 
 ## Corpus Check
-- 290 files · ~206,962 words
+- 361 files · ~261,815 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2914 nodes · 2907 edges · 287 communities (170 shown, 117 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
+- 3897 nodes · 4023 edges · 363 communities (238 shown, 125 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `22545b8a`
+- Built from commit: `82436857`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -20,8 +20,8 @@
 - compilerOptions
 - compilerOptions
 - components.json
-- Container-Based Testing
-- App.tsx
+- schemas.ts
+- history-panel.tsx
 - playwright-best-practices/SKILL.md
 - tsconfig.json
 - Tailwind v4 + shadcn/ui Production Stack
@@ -82,7 +82,7 @@
 - Patterns
 - GitHub Actions for Playwright
 - Patterns
-- Critical Rules
+- dropdown-menu (Radix `DropdownMenu` → Base UI `Menu`)
 - Patterns
 - Tailwind CSS Development Patterns
 - Mocking Strategy: Real vs Mock Services
@@ -153,6 +153,7 @@
 - Environment Variables
 - Glob Import
 - graphify reference: query, path, explain
+- mobile-tabs.tsx
 - Prueba Técnica - (Front-end) - N09
 - 8. Advanced Patterns
 - Icons
@@ -249,15 +250,15 @@
 - compose-pipe.md
 - compose-preprocess.md
 - compose-shared-schemas.md
-- error-avoid-throwing-in-refine.md
+- Sessions & Cookies
 - error-custom-messages.md
 - error-i18n.md
 - error-path-for-nested.md
-- object-discriminated-unions.md
+- Test API
 - object-extend-for-composition.md
 - object-pick-omit.md
 - object-strict-vs-strip.md
-- parse-handle-all-issues.md
+- Requirement: Functional keypad charge flow
 - parse-never-trust-json.md
 - parse-use-safeparse.md
 - perf-arrays.md
@@ -270,47 +271,127 @@
 - refine-defaults.md
 - refine-vs-superrefine.md
 - schema-avoid-optional-abuse.md
-- schema-coercion-for-form-data.md
+- cn
 - schema-string-validations.md
 - schema-use-enums.md
 - schema-use-primitives-correctly.md
+- GitLab CI/CD Configuration
 - type-branded-types.md
 - type-enable-strict-mode.md
-- type-export-schemas-and-types.md
+- toolbar
 - type-input-vs-output.md
 - type-use-z-infer.md
 - extraction-spec.md
+- Actions and Form Handling
+- Route Modules
+- Describe API
+- Concurrency & Parallelism
+- Mocking
+- Decisions
+- Routing
+- Code Coverage
+- Test Environments
+- Type Testing
+- Vi Utilities
+- Test Filtering
+- Pending UI and Optimistic Updates
+- Commands
+- Lifecycle Hooks
+- Test Context & Fixtures
+- ADDED Requirements
+- Navigation
+- Special Files
+- Projects
+- Middleware & Context API
+- Expect API
+- Snapshot Testing
+- Data Loading
+- select
+- Rendering Strategies
+- React Router Framework Mode
+- scripts
+- Error Handling
+- Route Module Types
+- vitest/SKILL.md
+- Configuration
+- proposal.md
+- tasks.md
+- Common Patterns
+- package.json
+- root.tsx (Required)
+- vitest/GENERATION.md
+- error-use-flatten.md
+- object-partial-for-updates.md
+- parse-async-for-async-refinements.md
+- Per-component notes
+- @eslint/js
+- keypad.tsx
+- alert-dialog
+- toast
+- prettier
+- popover
+- tooltip
+- dialog
+- @vitejs/plugin-react
+- Target wrapper shapes (golden-derived specifics)
+- scroll-area
+- hover-card → preview-card
+- Registry Authoring and Addresses
+- Chat & Messaging
+- form
+- App.tsx
+- Class-string rewrites (layer 2)
+- display-misc.md
+- avatar
+- Radix UI -> Base UI migration
+- Suite Modifiers
+- Consumer-side prop changes (call sites, not wrappers)
+- Progress.Indicator → Progress.Indicator
+- Separator.Root → Separator
+- (new) Fieldset.Root and Fieldset.Legend
+- overlays.md
+- @fontsource-variable/syne
+- lucide-react
+- react-router
+- tailwind-merge
+- zustand
 
 ## God Nodes (most connected - your core abstractions)
-1. `compilerOptions` - 19 edges
-2. `compilerOptions` - 19 edges
-3. `Tailwind v4 + shadcn/ui Production Stack` - 18 edges
-4. `Tailwind CSS Documentation` - 17 edges
-5. `Angular Testing with Playwright` - 16 edges
-6. `5. Re-render Optimization` - 16 edges
-7. `compilerOptions` - 15 edges
-8. `7. JavaScript Performance` - 15 edges
-9. `Node.js Best Practices` - 14 edges
-10. `Next.js Testing Patterns` - 14 edges
+1. `cn()` - 38 edges
+2. `dropdown-menu (Radix `DropdownMenu` → Base UI `Menu`)` - 20 edges
+3. `compilerOptions` - 19 edges
+4. `compilerOptions` - 19 edges
+5. `select` - 19 edges
+6. `Route Modules` - 18 edges
+7. `Tailwind v4 + shadcn/ui Production Stack` - 18 edges
+8. `Tailwind CSS Documentation` - 17 edges
+9. `Angular Testing with Playwright` - 16 edges
+10. `5. Re-render Optimization` - 16 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `App()` --calls--> `useAppStore`  [EXTRACTED]
-  src/App.tsx → src/stores/app-store.ts
-- `Button()` --calls--> `cn()`  [EXTRACTED]
-  src/components/ui/button.tsx → src/lib/utils.ts
+- `PaginationEllipsis()` --calls--> `cn()`  [EXTRACTED]
+  src/components/ui/pagination.tsx → src/lib/utils.ts
+- `TabsContent()` --calls--> `cn()`  [EXTRACTED]
+  src/components/ui/tabs.tsx → src/lib/utils.ts
+- `IconRail()` --calls--> `cn()`  [EXTRACTED]
+  src/components/layout/icon-rail.tsx → src/lib/utils.ts
+- `RemesaKeypad()` --calls--> `cn()`  [EXTRACTED]
+  src/components/remesas/keypad.tsx → src/lib/utils.ts
+- `DialogOverlay()` --calls--> `cn()`  [EXTRACTED]
+  src/components/ui/dialog.tsx → src/lib/utils.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (287 total, 117 thin omitted)
+## Communities (363 total, 125 thin omitted)
 
 ### Community 0 - "devDependencies"
-Cohesion: 0.06
-Nodes (35): eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh, eslint-plugin-sonarjs, globals, husky, devDependencies (+27 more)
+Cohesion: 0.07
+Nodes (29): eslint, eslint-plugin-react-hooks, eslint-plugin-react-refresh, eslint-plugin-sonarjs, globals, husky, devDependencies, eslint (+21 more)
 
 ### Community 1 - "dependencies"
-Cohesion: 0.05
-Nodes (43): class-variance-authority, clsx, @fontsource-variable/geist, lucide-react, dependencies, class-variance-authority, clsx, @fontsource-variable/geist (+35 more)
+Cohesion: 0.07
+Nodes (27): @base-ui/react, class-variance-authority, clsx, @fontsource-variable/geist, next-themes, dependencies, @base-ui/react, class-variance-authority (+19 more)
 
 ### Community 2 - "compilerOptions"
 Cohesion: 0.08
@@ -324,17 +405,17 @@ Nodes (20): node, playwright.config.ts, vite.config.ts, compilerOptions, allowIm
 Cohesion: 0.09
 Nodes (21): aliases, components, hooks, lib, ui, utils, iconLibrary, menuAccent (+13 more)
 
-### Community 5 - "Container-Based Testing"
-Cohesion: 0.12
-Nodes (15): Anti-Patterns, "browserType.launch: Executable doesn't exist", CI Container Jobs, Container-Based Testing, Custom Dockerfile, Decision Guide, Dev Container Setup, Docker Compose Stack (+7 more)
+### Community 5 - "schemas.ts"
+Cohesion: 0.09
+Nodes (27): chargeRemesa(), fetchRemesas(), remesas, wait(), remesaSeed, remesaSeedList, compactFormatter, longDateFormatter (+19 more)
 
-### Community 6 - "App.tsx"
-Cohesion: 0.26
-Nodes (7): App(), Button(), buttonVariants, counterSchema, cn(), AppState, useAppStore
+### Community 6 - "history-panel.tsx"
+Cohesion: 0.13
+Nodes (23): pageItems(), RemesaHistoryPanel(), RemesaHistoryPanelProps, Pagination(), PaginationContent(), PaginationEllipsis(), PaginationItem(), PaginationLink() (+15 more)
 
 ### Community 7 - "playwright-best-practices/SKILL.md"
 Cohesion: 0.08
-Nodes (18): Anti-Patterns, Basic Pipeline Configuration, Browser launch fails: "Failed to launch browser", Decision Guide, Environment Variables and Secrets, GitLab CI/CD Configuration, Key Commands, Merged report is empty after sharded run (+10 more)
+Nodes (15): Anti-Patterns, "browserType.launch: Executable doesn't exist", CI Container Jobs, Container-Based Testing, Custom Dockerfile, Decision Guide, Dev Container Setup, Docker Compose Stack (+7 more)
 
 ### Community 8 - "tsconfig.json"
 Cohesion: 0.40
@@ -572,9 +653,9 @@ Nodes (19): Basic Workflow, Browser launch fails: "Missing dependencies", CLI Co
 Cohesion: 0.11
 Nodes (18): Anti-Patterns, CLI Commands, Decision Guide, Dynamic Shard Count, Merged report missing results, Merging Shard Reports, More workers = Slower, "No tests found" in some shards (+10 more)
 
-### Community 71 - "Critical Rules"
-Cohesion: 0.29
-Nodes (7): CLI, Component Structure → [composition.md](./rules/composition.md), Critical Rules, Forms & Inputs → [forms.md](./rules/forms.md), Icons → [icons.md](./rules/icons.md), Styling & Tailwind → [styling.md](./rules/styling.md), Use Components, Not Custom Markup → [composition.md](./rules/composition.md)
+### Community 71 - "dropdown-menu (Radix `DropdownMenu` → Base UI `Menu`)"
+Cohesion: 0.04
+Nodes (48): Arrow / Item / Group / Label / CheckboxItem / RadioGroup / RadioItem / ItemIndicator / Separator / Sub / SubTrigger / SubContent, Arrow → Menu.Arrow, Base UI only, data attributes, CSS variables, Base UI only props worth knowing (Menu), Base UI only props worth knowing (NavigationMenu), CheckboxItem → Menu.CheckboxItem, Content → ContextMenu.Portal > Positioner > Popup, Content → Menu.Portal > Menu.Positioner > Menu.Popup (+40 more)
 
 ### Community 72 - "Patterns"
 Cohesion: 0.11
@@ -589,8 +670,8 @@ Cohesion: 0.11
 Nodes (18): Anti-Patterns, Blocking Unwanted Requests, Core Principle, Decision Flowchart, Decision Matrix, Environment-Based Test Projects, Full Mock (route.fulfill), Hybrid Approach: Fixture-Based Mock Control (+10 more)
 
 ### Community 75 - "shadcn/ui"
-Cohesion: 0.18
-Nodes (11): Component Docs, Examples, and Usage, Component Selection, Current Project Context, Detailed References, Key Fields, Key Patterns, Principles, Quick Reference (+3 more)
+Cohesion: 0.11
+Nodes (19): Chat & Messaging → [chat.md](./rules/chat.md), CLI, Component Docs, Examples, and Usage, Component Selection, Component Structure → [composition.md](./rules/composition.md), Critical Rules, Current Project Context, Detailed References (+11 more)
 
 ### Community 76 - "Dark Mode Implementation"
 Cohesion: 0.11
@@ -641,8 +722,8 @@ Cohesion: 0.13
 Nodes (14): 1. Eliminating Waterfalls (CRITICAL), 2. Bundle Size Optimization (CRITICAL), 3. Server-Side Performance (HIGH), 4. Client-Side Data Fetching (MEDIUM-HIGH), 5. Re-render Optimization (MEDIUM), 6. Rendering Performance (MEDIUM), 7. JavaScript Performance (LOW-MEDIUM), 8. Advanced Patterns (LOW) (+6 more)
 
 ### Community 88 - "zod/AGENTS.md"
-Cohesion: 0.15
-Nodes (6): Rule Title Here, Use flatten() for Form Error Display, Use partial() for Update Schemas, Use parseAsync for Async Refinements, Avoid Double Validation, Validate at System Boundaries
+Cohesion: 0.10
+Nodes (8): Rule Title Here, Return False Instead of Throwing in Refine, Use Discriminated Unions for Type Narrowing, Avoid Double Validation, Handle All Validation Issues Not Just First, Validate at System Boundaries, Use Coercion for Form and Query Data, Export Both Schemas and Inferred Types
 
 ### Community 89 - "Organizing Reusable Test Code"
 Cohesion: 0.14
@@ -709,8 +790,8 @@ Cohesion: 0.17
 Nodes (11): Configuring Registries, Setup, `shadcn:get_add_command_for_items`, `shadcn:get_audit_checklist`, `shadcn:get_item_examples_from_registries`, `shadcn:get_project_registries`, `shadcn:list_items_in_registries`, shadcn MCP Server (+3 more)
 
 ### Community 105 - "Styling & Customization"
-Cohesion: 0.17
-Nodes (12): Built-in variants first, className for layout only, Contents, No manual dark: color overrides, No manual z-index on overlay components, No raw color values for status/state indicators, No space-x-* / space-y-*, Prefer size-* over w-* h-* when equal (+4 more)
+Cohesion: 0.15
+Nodes (13): Built-in variants first, className for layout only, Contents, No manual dark: color overrides, No manual z-index on overlay components, No raw color values for status/state indicators, No space-x-* / space-y-*, Prefer size-* over w-* h-* when equal (+5 more)
 
 ### Community 106 - "Rolldown Migration (Vite 8)"
 Cohesion: 0.17
@@ -813,7 +894,7 @@ Cohesion: 0.25
 Nodes (8): Accessible authentication (3.3.8) — new in 2.2, Consistent help (3.2.6) — new in 2.2, Consistent navigation (3.2.3), Error handling (3.3.1, 3.3.3), Form labels (3.3.2), Page language (3.1.1), Redundant entry (3.3.7) — new in 2.2, Understandable
 
 ### Community 131 - "Forms & Inputs"
-Cohesion: 0.16
+Cohesion: 0.25
 Nodes (8): Buttons inside inputs use InputGroup + InputGroupAddon, Contents, Field validation and disabled states, FieldSet + FieldLegend for grouping related fields, Forms & Inputs, Forms use FieldGroup + Field, InputGroup requires InputGroupInput/InputGroupTextarea, Option sets (2–7 choices) use ToggleGroup
 
 ### Community 132 - "theme-provider.tsx"
@@ -837,7 +918,7 @@ Cohesion: 0.33
 Nodes (5): Creating a New Rule, Getting Started, React Best Practices, Rule File Structure, Structure
 
 ### Community 137 - "shadcn CLI Reference"
-Cohesion: 0.33
+Cohesion: 0.40
 Nodes (5): Contents, Presets, shadcn CLI Reference, Switching Presets, Templates
 
 ### Community 138 - "Zustand"
@@ -855,6 +936,10 @@ Nodes (6): Custom Queries, Eager Loading, Glob Import, Multiple Patterns, Named 
 ### Community 141 - "graphify reference: query, path, explain"
 Cohesion: 0.33
 Nodes (5): For /graphify explain, For /graphify path, graphify reference: query, path, explain, Step 0 — Constrained query expansion (REQUIRED before traversal), Step 1 — Traversal
+
+### Community 142 - "mobile-tabs.tsx"
+Cohesion: 0.24
+Nodes (9): IconRail(), MobileTabs(), Tabs(), TabsContent(), TabsList(), tabsListVariants, TabsTrigger(), APP_NAV_ITEMS (+1 more)
 
 ### Community 143 - "Prueba Técnica - (Front-end) - N09"
 Cohesion: 0.25
@@ -896,25 +981,289 @@ Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify refer
 Cohesion: 0.50
 Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
 
+### Community 241 - "Sessions & Cookies"
+Cohesion: 0.10
+Nodes (20): Auth Middleware, Authentication Middleware, Cookie Attributes Reference, Getting/Setting Session Data, In Actions, In Loaders, Key Points, Login Route (+12 more)
+
+### Community 245 - "Test API"
+Cohesion: 0.10
+Nodes (19): Async Tests, Basic Test, Concurrent Tests, Custom Test with Fixtures, Failing Tests, Focus Tests, Key Points, Parameterized Tests (+11 more)
+
+### Community 250 - "Requirement: Functional keypad charge flow"
+Cohesion: 0.10
+Nodes (19): ADDED Requirements, Requirement: Functional keypad charge flow, Requirement: History search, pagination, and print, Requirement: Mock fetch API, Requirement: Remesa model validated and typed with Zod, Scenario: Charge an uncharged remesa, Scenario: Default list is charged remesas, ten per page, Scenario: Desktop keypad is inline (+11 more)
+
+### Community 264 - "cn"
+Cohesion: 0.12
+Nodes (20): RemesaKeypadDialog(), Button(), buttonVariants, Dialog(), DialogContent(), DialogDescription(), DialogFooter(), DialogHeader() (+12 more)
+
+### Community 268 - "GitLab CI/CD Configuration"
+Cohesion: 0.11
+Nodes (18): Anti-Patterns, Basic Pipeline Configuration, Browser launch fails: "Failed to launch browser", Decision Guide, Environment Variables and Secrets, GitLab CI/CD Configuration, Key Commands, Merged report is empty after sharded run (+10 more)
+
+### Community 271 - "toolbar"
+Cohesion: 0.04
+Nodes (46): accordion, Accordion.Content → Accordion.Panel, Accordion.Header → Accordion.Header, Accordion.Item → Accordion.Item, Accordion.Root → Accordion.Root, Accordion.Trigger → Accordion.Trigger, Base UI only props worth knowing, Base UI only props worth knowing (+38 more)
+
+### Community 275 - "Actions and Form Handling"
+Cohesion: 0.11
+Nodes (18): Actions and Form Handling, Anti-Patterns to Avoid, Basic Usage, Choosing the Right Pattern, Client Action, Fetcher Properties, Form Component, Form Props (+10 more)
+
+### Community 276 - "Route Modules"
+Cohesion: 0.11
+Nodes (18): `action`, `clientAction`, `clientLoader`, `clientMiddleware`, Complete Example, Component (`default`), `ErrorBoundary`, Exports Quick Reference (+10 more)
+
+### Community 277 - "Describe API"
+Cohesion: 0.18
+Nodes (10): Basic Usage, Describe API, describe.each, describe.for, Hooks in Suites, Key Points, Modifier Combinations, Nested Suites (+2 more)
+
+### Community 278 - "Concurrency & Parallelism"
+Cohesion: 0.11
+Nodes (17): Bail on Failure, CI Example (GitHub Actions), Concurrency & Parallelism, Concurrent Tests, File Parallelism, Forks, Isolation, Key Points (+9 more)
+
+### Community 279 - "Mocking"
+Cohesion: 0.11
+Nodes (17): Async Timer Methods, Auto-mock with Spy, Clearing Mocks, Config Auto-Reset, Dynamic Mocking (vi.doMock), Hoisted Variables for Mocks, Key Points, Manual Mocks (__mocks__) (+9 more)
+
+### Community 280 - "Decisions"
+Cohesion: 0.11
+Nodes (17): 10. Future quality stack (not this change), 1. Custom icon rail, not shadcn Sidebar, 2. React Router Declarative Mode, 3. Zod as the source of types, 4. Mock fetch + Zustand, 5. Hooks: `useDebounce` + remesas filter, 6. Keypad: desktop inline, mobile Dialog only, 7. Sonner for general errors (+9 more)
+
+### Community 281 - "Routing"
+Cohesion: 0.12
+Nodes (17): 404 Catch-All, Anti-Pattern: Flat Routes, Combining with File-Based Routes, Complete Example, Dynamic Segments, Index Routes, Layout Routes (Use Them!), Nested Routes (+9 more)
+
+### Community 295 - "Code Coverage"
+Cohesion: 0.12
+Nodes (16): CI Integration, Code Coverage, Configuration, Coverage with Sharding, Ignoring Code, Istanbul, Istanbul, Key Points (+8 more)
+
+### Community 296 - "Test Environments"
+Cohesion: 0.12
+Nodes (15): Available Environments, Browser Mode (Separate from Environments), Configuration, CSS and Assets, Custom Environment, Environment with VM, Fixing External Dependencies, happy-dom Environment (+7 more)
+
+### Community 297 - "Type Testing"
+Cohesion: 0.12
+Nodes (16): assertType, Branded Types, Configuration, Equality vs Matching, expectTypeOf API, Function Types, Generic Types, Key Points (+8 more)
+
+### Community 298 - "Vi Utilities"
+Cohesion: 0.12
+Nodes (16): Dynamic Mocking, Fake Timers, Global/Env Mocking, Global Mock Management, Hoisted Code, Key Points, Mock Date/Time, Mock Functions (+8 more)
+
+### Community 299 - "Test Filtering"
+Cohesion: 0.12
+Nodes (16): By File Path, By Test Name, Changed Files, CLI Filtering, Combining Filters, Environment-based Filtering, Focus Tests (.only), Include/Exclude Patterns (+8 more)
+
+### Community 300 - "Pending UI and Optimistic Updates"
+Cohesion: 0.13
+Nodes (15): Busy Indicators with CSS, Complete Optimistic UI Example, Disabling During Submission, Fetcher States, Navigation States, NavLink Pending State, Optimistic UI with useFetcher (Recommended Pattern), Optimistic UI with useNavigation (+7 more)
+
+### Community 301 - "Commands"
+Cohesion: 0.13
+Nodes (14): Command Line Interface, Commands, Common Options, Key Points, Package.json Scripts, Sharding for CI, `vitest`, `vitest bench` (+6 more)
+
+### Community 302 - "Lifecycle Hooks"
+Cohesion: 0.13
+Nodes (14): Around Hooks, aroundAll, Basic Hooks, Cleanup Return Pattern, Concurrent Test Hooks, Extended Test Hooks, Hook Execution Order, Hook Timeout (+6 more)
+
+### Community 303 - "Test Context & Fixtures"
+Cohesion: 0.13
+Nodes (14): Auto Fixtures, Built-in Context, Composing Fixtures, Context Properties, Custom Fixtures with test.extend, Extended Test Hooks, File Scope, Fixture Initialization (+6 more)
+
+### Community 304 - "ADDED Requirements"
+Cohesion: 0.13
+Nodes (14): ADDED Requirements, Requirement: Chrome omitted from the mockup, Requirement: Custom icon rail navigation, Requirement: Declarative routing, Requirement: Desktop three-column shell, Requirement: Mobile tabs and stacked layout, Scenario: Central workspace is dark and history is light, Scenario: Client-side navigation between rail destinations (+6 more)
+
+### Community 305 - "Navigation"
+Cohesion: 0.14
+Nodes (13): Accessing Location State, Form Navigation, Link Component, Link Props, Navigate Options, Navigation, NavLink Component, NavLink Props (+5 more)
+
+### Community 306 - "Special Files"
+Cohesion: 0.14
+Nodes (14): Anti-Patterns, .client Modules, Common Configuration Options, entry.client.tsx (Optional), entry.server.tsx (Optional), Pre-rendering, Quick Reference, react-router.config.ts (Optional) (+6 more)
+
+### Community 307 - "Projects"
+Cohesion: 0.15
+Nodes (13): Basic Projects Setup, Browser + Node Projects, Different Environments, Global Setup per Project, Key Points, Monorepo Pattern, Project Isolation, Project-Specific Dependencies (+5 more)
+
+### Community 308 - "Middleware & Context API"
+Cohesion: 0.15
+Nodes (13): Basic Middleware, Context API, Enabling Middleware, Error Handling, Middleware & Context API, Overview, Reading Context in Loaders/Actions, See Also (+5 more)
+
+### Community 309 - "Expect API"
+Cohesion: 0.15
+Nodes (13): Assertion Count, Asymmetric Matchers, Basic Assertions, Error Assertions, Expect API, Extending Matchers, Key Points, Negation (+5 more)
+
+### Community 310 - "Snapshot Testing"
+Cohesion: 0.15
+Nodes (13): Basic Snapshot, Concurrent Test Snapshots, Custom Serializers, Error Snapshots, File Snapshots, Inline Snapshots, Key Points, Object Shape Matching (+5 more)
+
+### Community 311 - "Data Loading"
+Cohesion: 0.17
+Nodes (11): Client Loader, Combining Server and Client Loaders, Data Loading, Hydration with Client Loader, LoaderArgs, Parallel Data Loading, Returning Responses, Server Loader (+3 more)
+
+### Community 312 - "select"
+Cohesion: 0.04
+Nodes (44): Base UI only props worth knowing (checkbox), Base UI only props worth knowing (radio-group), Base UI only props worth knowing (select), Base UI only props worth knowing (slider), Base UI only props worth knowing (switch), checkbox, Checkbox.Indicator → Checkbox.Indicator, Checkbox.Root → Checkbox.Root (+36 more)
+
+### Community 313 - "Rendering Strategies"
+Cohesion: 0.18
+Nodes (10): Client-Side Rendering (SPA Mode), Configuration Reference, Mixing Strategies, Pre-render Dynamic Paths, Pre-render Specific Paths, Rendering Strategies, Route-Level Data Loading, Server-Side Rendering (SSR) (+2 more)
+
+### Community 314 - "React Router Framework Mode"
+Cohesion: 0.20
+Nodes (9): Critical Patterns, Forms & Mutations, Further Documentation, Layouts, React Router Framework Mode, References, Route Module Exports, Version Compatibility (+1 more)
+
+### Community 315 - "scripts"
+Cohesion: 0.20
+Nodes (10): scripts, build, dev, doctor, format, lint, prepare, preview (+2 more)
+
+### Community 316 - "Error Handling"
+Cohesion: 0.22
+Nodes (9): Error Bubbling, Error Handling, Error Reporting, ErrorBoundary Export, isRouteErrorResponse, Production vs Development, Root Error Boundary, Throwing Responses (+1 more)
+
+### Community 317 - "Route Module Types"
+Cohesion: 0.22
+Nodes (9): Available Types, Example, Importing Types, Is Typegen Set Up?, Route Module Types, See Also, Type-Safe URLs with `href`, Typing useFetcher (+1 more)
+
+### Community 318 - "vitest/SKILL.md"
+Cohesion: 0.22
+Nodes (3): Advanced, Core, Features
+
+### Community 319 - "Configuration"
+Cohesion: 0.22
+Nodes (8): Basic Setup, Common Options, Conditional Configuration, Configuration, Key Points, Merging Configs, Projects (Monorepos), Using with Existing Vite Config
+
+### Community 321 - "proposal.md"
+Cohesion: 0.29
+Nodes (6): Capabilities, Impact, Modified Capabilities, New Capabilities, What Changes, Why
+
+### Community 322 - "tasks.md"
+Cohesion: 0.29
+Nodes (6): 1. Phase 1 — Domain, 2. Phase 2 — App shell and routing, 3. Phase 3 — Charge keypad (desktop), 4. Phase 4 — History search, pagination, print, 5. Phase 5 — Mobile, Future (out of scope for this change)
+
+### Community 323 - "Common Patterns"
+Cohesion: 0.33
+Nodes (6): 404 Fallback, Authentication, Common Patterns, Conditional Execution, Request Logging, Response Headers
+
+### Community 324 - "package.json"
+Cohesion: 0.33
+Nodes (5): name, packageManager, private, type, version
+
+### Community 325 - "root.tsx (Required)"
+Cohesion: 0.40
+Nodes (5): Basic root.tsx Structure, Customizing root.tsx (Complete Example), root.tsx (Required), Using the Layout Export, What Belongs in root.tsx
+
+### Community 330 - "Per-component notes"
+Cohesion: 0.08
+Nodes (24): accordion, asChild -> render, breadcrumb / marker (Slot users), Coverage matrix, CSS custom properties, Data attributes / class hooks, dialog / alert-dialog / sheet, Doc-validation TODOs (before specs are final) (+16 more)
+
+### Community 332 - "keypad.tsx"
+Cohesion: 0.32
+Nodes (10): digitCount(), formatDisplay(), NUMBER_KEYS, RemesaKeypad(), RemesaKeypadProps, RemesasPage(), toast, submitRemesaCharge() (+2 more)
+
+### Community 333 - "alert-dialog"
+Cohesion: 0.17
+Nodes (12): Action → (no primitive), alert-dialog, Base UI only props worth knowing (alert-dialog), Cancel → Close, Content → Popup, CSS variables (alert-dialog), Data attributes (alert-dialog), Overlay → Backdrop (+4 more)
+
+### Community 334 - "toast"
+Cohesion: 0.18
+Nodes (11): Base UI only props worth knowing, CSS variables, Data attributes, toast, Toast.Action → Toast.Action, Toast.Close → Toast.Close, Toast.Description → Toast.Description, Toast.Provider → Toast.Provider (+3 more)
+
+### Community 336 - "popover"
+Cohesion: 0.18
+Nodes (11): Anchor → Positioner `anchor` prop, Arrow → Arrow, Base UI only props worth knowing (popover), Close → Close, Content → Positioner + Popup, CSS variables (popover), Data attributes (popover), popover (+3 more)
+
+### Community 337 - "tooltip"
+Cohesion: 0.20
+Nodes (10): Arrow → Arrow, Base UI only props worth knowing (tooltip), Content → Positioner + Popup, CSS variables (tooltip), Data attributes (tooltip), Portal → Portal, Provider → Provider, Root → Root (+2 more)
+
+### Community 338 - "dialog"
+Cohesion: 0.20
+Nodes (10): Base UI only props worth knowing (dialog), Content → Popup, CSS variables (dialog), Data attributes (dialog), dialog, Overlay → Backdrop, Portal → Portal, Root → Root (+2 more)
+
+### Community 340 - "Target wrapper shapes (golden-derived specifics)"
+Cohesion: 0.20
+Nodes (9): Accordion animation placement, Button, Conventions, DropdownMenu / ContextMenu SubContent, Select, SubTrigger open styling, Tabs, Target wrapper shapes (golden-derived specifics) (+1 more)
+
+### Community 341 - "scroll-area"
+Cohesion: 0.22
+Nodes (9): Base UI only props worth knowing, CSS variables, Data attributes, scroll-area, ScrollArea.Corner → ScrollArea.Corner, ScrollArea.Root → ScrollArea.Root, ScrollArea.Viewport → ScrollArea.Viewport, ScrollAreaScrollbar → ScrollArea.Scrollbar (+1 more)
+
+### Community 342 - "hover-card → preview-card"
+Cohesion: 0.22
+Nodes (9): Arrow → Arrow, Base UI only props worth knowing (preview-card), Content → Positioner + Popup, CSS variables (preview-card), Data attributes (preview-card), hover-card → preview-card, Portal → Portal, Root → Root (+1 more)
+
+### Community 344 - "Registry Authoring and Addresses"
+Cohesion: 0.22
+Nodes (9): Address Schemes, Build and Verify, GitHub Registries, Include, Item Definitions, Mental Model, Registry Authoring and Addresses, Registry Dependencies (+1 more)
+
+### Community 345 - "Chat & Messaging"
+Cohesion: 0.22
+Nodes (9): Attachments use Attachment, Chat & Messaging, Contents, Escape hatch: the scroller hooks, Message rows use Message, Message surfaces use Bubble, Scrollable threads use MessageScroller, Streaming, anchoring, and jump-to-latest are built in (+1 more)
+
+### Community 346 - "form"
+Cohesion: 0.25
+Nodes (8): form, Form.Control → Field.Control, Form.Field → Field.Root, Form.Label → Field.Label, Form.Message → Field.Error, Form.Root → Form, Form.Submit → (none), Form.ValidityState → Field.Validity
+
+### Community 347 - "App.tsx"
+Cohesion: 0.32
+Nodes (5): App(), AppShell(), PlaceholderPage(), PlaceholderPageProps, Toaster()
+
+### Community 348 - "Class-string rewrites (layer 2)"
+Cohesion: 0.29
+Nodes (6): Animation idiom, Class-string rewrites (layer 2), CSS variables, Data-attribute selectors, Disabled-state hooks, Element changes kill pseudo-class variants
+
+### Community 349 - "display-misc.md"
+Cohesion: 0.29
+Nodes (6): AccessibleIcon (radix `AccessibleIcon.Root`: `label` required), AspectRatio (radix `AspectRatio.Root`: `asChild`, `ratio` default `1`), Label (radix `Label.Root`: `asChild`, `htmlFor`), No Base UI counterpart, Radix UI → Base UI props mapping: progress, scroll-area, separator, avatar, toast, form, VisuallyHidden (radix `VisuallyHidden.Root`: `asChild`)
+
+### Community 350 - "avatar"
+Cohesion: 0.29
+Nodes (7): avatar, Avatar.Fallback → Avatar.Fallback, Avatar.Image → Avatar.Image, Avatar.Root → Avatar.Root, Base UI only props worth knowing, CSS variables, Data attributes
+
+### Community 351 - "Radix UI -> Base UI migration"
+Cohesion: 0.29
+Nodes (6): Hard rules, Modes, Preflight (always), Radix UI -> Base UI migration, Strategy: golden pair first, transformation engine second, Verify and report
+
+### Community 352 - "Suite Modifiers"
+Cohesion: 0.29
+Nodes (7): Concurrent Suites, Focus Suites, Sequential in Concurrent, Shuffle Tests, Skip Suites, Suite Modifiers, Todo Suites
+
+### Community 353 - "Consumer-side prop changes (call sites, not wrappers)"
+Cohesion: 0.33
+Nodes (5): Callback signature rule, Consumer-side prop changes (call sites, not wrappers), Per component, Sweep procedure, Universal
+
+### Community 354 - "Progress.Indicator → Progress.Indicator"
+Cohesion: 0.33
+Nodes (6): Base UI only props worth knowing, CSS variables, Data attributes, progress, Progress.Indicator → Progress.Indicator, Progress.Root → Progress.Root
+
+### Community 355 - "Separator.Root → Separator"
+Cohesion: 0.40
+Nodes (5): Base UI only props worth knowing, CSS variables, Data attributes, separator, Separator.Root → Separator
+
+### Community 356 - "(new) Fieldset.Root and Fieldset.Legend"
+Cohesion: 0.50
+Nodes (4): Base UI only props worth knowing (form-wide), CSS variables, Data attributes, (new) Fieldset.Root and Fieldset.Legend
+
 ## Knowledge Gaps
-- **2060 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+2055 more)
+- **2767 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+2762 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **117 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **125 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Locator Strategies` connect `Locator Strategies` to `playwright-best-practices/SKILL.md`?**
-  _High betweenness centrality (0.023) - this node is a cross-community bridge._
-- **Why does `Fixtures & Hooks` connect `Fixtures & Hooks` to `playwright-best-practices/SKILL.md`?**
-  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **Why does `Debugging & Troubleshooting` connect `Debugging & Troubleshooting` to `playwright-best-practices/SKILL.md`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `Performance & Parallelization` connect `Performance & Parallelization` to `playwright-best-practices/SKILL.md`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Why does `CI/CD Integration` connect `CI/CD Integration` to `playwright-best-practices/SKILL.md`?**
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **What connects `$schema`, `style`, `rsc` to the rest of the system?**
-  _2060 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2767 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `devDependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._
 - **Should `dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.045454545454545456 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
