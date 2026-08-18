@@ -1,0 +1,8 @@
+minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+  - '@testing-library/user-event'
+  - shadcn
+  - zustand
+trustPolicy: no-downgrade
+trustPolicyIgnoreAfter: 43200
+blockExoticSubdeps: true

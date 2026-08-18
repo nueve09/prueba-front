@@ -10,9 +10,8 @@ import {
 } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
+import { toast } from '@/components/ui/toast-manager'
 import { cn } from '@/lib/utils'
-
-const toast = ToastPrimitive.createToastManager()
 
 function ToastProvider({ ...props }: Readonly<ToastPrimitive.Provider.Props>) {
   return <ToastPrimitive.Provider {...props} />
@@ -207,7 +206,6 @@ function Toaster({
   )
 }
 
-const createToastManager = ToastPrimitive.createToastManager
 const useToastManager = ToastPrimitive.useToastManager
 
 export {
@@ -221,7 +219,5 @@ export {
   ToastProvider,
   ToastTitle,
   ToastViewport,
-  createToastManager,
-  toast,
   useToastManager,
 }

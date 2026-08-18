@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
 import { RemesaKeypad } from '@/components/remesas/keypad'
-import { toast } from '@/components/ui/toast'
+import { toast } from '@/components/ui/toast-manager'
 import { useRemesasStore } from '@/stores/remesas-store'
 
 const UNCHARGED_ID = '290034'

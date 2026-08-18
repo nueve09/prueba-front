@@ -1,16 +1,16 @@
 # Graph Report - prueba-front  (2026-08-17)
 
 ## Corpus Check
-- 382 files · ~268,444 words
+- 386 files · ~272,389 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3999 nodes · 4192 edges · 375 communities (246 shown, 129 thin omitted)
+- 4084 nodes · 4275 edges · 371 communities (243 shown, 128 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `05614dad`
+- Built from commit: `2dab98ce`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -275,7 +275,7 @@
 - schema-string-validations.md
 - schema-use-enums.md
 - schema-use-primitives-correctly.md
-- GitLab CI/CD Configuration
+- playwright-best-practices/SKILL.md
 - type-branded-types.md
 - type-enable-strict-mode.md
 - toolbar
@@ -332,7 +332,7 @@
 - popover
 - tooltip
 - dialog
-- useFetcher (Preferred for Mutations)
+- Requirement: Module and component gap tests
 - Target wrapper shapes (golden-derived specifics)
 - scroll-area
 - hover-card → preview-card
@@ -342,28 +342,28 @@
 - form
 - App.tsx
 - Class-string rewrites (layer 2)
-- display-misc.md
+- No Base UI counterpart
 - avatar
 - Radix UI -> Base UI migration
+- Requirement: Functional keypad charge flow
 - Consumer-side prop changes (call sites, not wrappers)
 - Progress.Indicator → Progress.Indicator
-- Separator.Root → Separator
+- display-misc.md
 - (new) Fieldset.Root and Fieldset.Legend
 - overlays.md
-- class-variance-authority
-- lucide-react
+- @base-ui/react
+- GitLab CI/CD Configuration
 - react-router
-- tailwind-merge
+- class-variance-authority
 - zustand
 - clsx
 - @fontsource-variable/geist
 - radix-ui
 - react-dom
-- @tailwindcss/vite
+- shadcn
 - tw-animate-css
-- Container-Based Testing
-- Test Modifiers
-- next-themes
+- Requirements
+- zod
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 38 edges
@@ -392,7 +392,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (375 total, 129 thin omitted)
+## Communities (371 total, 128 thin omitted)
 
 ### Community 0 - "devDependencies"
 Cohesion: 0.05
@@ -400,7 +400,7 @@ Nodes (43): eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-r
 
 ### Community 1 - "dependencies"
 Cohesion: 0.15
-Nodes (13): @base-ui/react, @fontsource-variable/syne, dependencies, @base-ui/react, @fontsource-variable/syne, react, shadcn, tailwindcss (+5 more)
+Nodes (13): @fontsource-variable/syne, lucide-react, dependencies, @fontsource-variable/syne, lucide-react, react, tailwind-merge, tailwindcss (+5 more)
 
 ### Community 2 - "compilerOptions"
 Cohesion: 0.08
@@ -416,11 +416,11 @@ Nodes (21): aliases, components, hooks, lib, ui, utils, iconLibrary, menuAccent 
 
 ### Community 5 - "api/remesas.ts"
 Cohesion: 0.16
-Nodes (15): chargeRemesa(), fetchRemesas(), remesas, replaceRemesasApi(), resetRemesasApi(), wait(), remesaSeed, remesaSeedList (+7 more)
+Nodes (14): chargeRemesa(), fetchRemesas(), remesas, replaceRemesasApi(), resetRemesasApi(), wait(), remesaSeed, remesaSeedList (+6 more)
 
 ### Community 6 - "schemas.ts"
-Cohesion: 0.14
-Nodes (17): matchesQuery(), REMESA_PAGE_SIZE, RemesasFilterResult, fixture, useRemesasFilter(), normalizeSearchValue(), compactDateSchema, pageSchema (+9 more)
+Cohesion: 0.13
+Nodes (19): matchesQuery(), REMESA_PAGE_SIZE, RemesasFilterResult, fixture, useRemesasFilter(), normalizeSearchValue(), compactDateSchema, pageSchema (+11 more)
 
 ### Community 7 - "Patterns"
 Cohesion: 0.11
@@ -660,7 +660,7 @@ Nodes (19): Basic Workflow, Browser launch fails: "Missing dependencies", CLI Co
 
 ### Community 70 - "Requirement: Wave 2 — gap tests by module then component"
 Cohesion: 0.05
-Nodes (37): ADDED Requirements, Requirement: Isolated remesa state between tests, Requirement: Playwright E2E is out of this change, Requirement: Vitest runner with Jest-compatible API, Requirement: Wave 1 — README contract tests first, Requirement: Wave 2 — gap tests by module then component, Requirement: Wave 3 — gap tests by screen section, Scenario: A charge in one test does not appear in the next (+29 more)
+Nodes (38): ADDED Requirements, Requirement: Isolated remesa state between tests, Requirement: Playwright E2E is out of this change, Requirement: Vitest runner with Jest-compatible API, Requirement: Wave 1 — README contract tests first, Requirement: Wave 2 — gap tests by module then component, Requirement: Wave 3 — gap tests by screen section, Scenario: A charge in one test does not appear in the next (+30 more)
 
 ### Community 71 - "dropdown-menu (Radix `DropdownMenu` → Base UI `Menu`)"
 Cohesion: 0.04
@@ -995,28 +995,28 @@ Cohesion: 0.10
 Nodes (20): Auth Middleware, Authentication Middleware, Cookie Attributes Reference, Getting/Setting Session Data, In Actions, In Loaders, Key Points, Login Route (+12 more)
 
 ### Community 245 - "Test API"
-Cohesion: 0.15
-Nodes (12): Async Tests, Basic Test, Custom Test with Fixtures, Key Points, Parameterized Tests, Retry Configuration, Tags, Test API (+4 more)
+Cohesion: 0.10
+Nodes (19): Async Tests, Basic Test, Concurrent Tests, Custom Test with Fixtures, Failing Tests, Focus Tests, Key Points, Parameterized Tests (+11 more)
 
 ### Community 250 - "Requirement: Functional keypad charge flow"
 Cohesion: 0.10
-Nodes (19): ADDED Requirements, Requirement: Functional keypad charge flow, Requirement: History search, pagination, and print, Requirement: Mock fetch API, Requirement: Remesa model validated and typed with Zod, Scenario: Charge an uncharged remesa, Scenario: Default list is charged remesas, ten per page, Scenario: Desktop keypad is inline (+11 more)
+Nodes (20): ADDED Requirements, Requirement: Functional keypad charge flow, Requirement: History search, pagination, and print, Requirement: Mock fetch API, Requirement: Remesa model validated and typed with Zod, Scenario: Charge an uncharged remesa, Scenario: Default list is charged remesas, ten per page, Scenario: Desktop keypad is inline (+12 more)
 
 ### Community 264 - "cn"
-Cohesion: 0.13
-Nodes (19): Button(), buttonVariants, Dialog(), DialogContent(), DialogDescription(), DialogFooter(), DialogHeader(), DialogOverlay() (+11 more)
+Cohesion: 0.12
+Nodes (20): Button(), buttonVariants, Dialog(), DialogContent(), DialogDescription(), DialogFooter(), DialogHeader(), DialogOverlay() (+12 more)
 
-### Community 268 - "GitLab CI/CD Configuration"
-Cohesion: 0.11
-Nodes (18): Anti-Patterns, Basic Pipeline Configuration, Browser launch fails: "Failed to launch browser", Decision Guide, Environment Variables and Secrets, GitLab CI/CD Configuration, Key Commands, Merged report is empty after sharded run (+10 more)
+### Community 268 - "playwright-best-practices/SKILL.md"
+Cohesion: 0.08
+Nodes (15): Anti-Patterns, "browserType.launch: Executable doesn't exist", CI Container Jobs, Container-Based Testing, Custom Dockerfile, Decision Guide, Dev Container Setup, Docker Compose Stack (+7 more)
 
 ### Community 271 - "toolbar"
 Cohesion: 0.04
 Nodes (46): accordion, Accordion.Content → Accordion.Panel, Accordion.Header → Accordion.Header, Accordion.Item → Accordion.Item, Accordion.Root → Accordion.Root, Accordion.Trigger → Accordion.Trigger, Base UI only props worth knowing, Base UI only props worth knowing (+38 more)
 
 ### Community 275 - "Actions and Form Handling"
-Cohesion: 0.15
-Nodes (13): Actions and Form Handling, Anti-Patterns to Avoid, Choosing the Right Pattern, Client Action, Form Component, Form Props, Form Validation Pattern, Multiple Actions per Route (+5 more)
+Cohesion: 0.11
+Nodes (18): Actions and Form Handling, Anti-Patterns to Avoid, Basic Usage, Choosing the Right Pattern, Client Action, Fetcher Properties, Form Component, Form Props (+10 more)
 
 ### Community 276 - "Route Modules"
 Cohesion: 0.11
@@ -1036,7 +1036,7 @@ Nodes (17): Async Timer Methods, Auto-mock with Spy, Clearing Mocks, Config Auto
 
 ### Community 280 - "Decisions"
 Cohesion: 0.11
-Nodes (17): 10. Future quality stack (not this change), 1. Custom icon rail, not shadcn Sidebar, 2. React Router Declarative Mode, 3. Zod as the source of types, 4. Mock fetch + Zustand, 5. Hooks: `useDebounce` + remesas filter, 6. Keypad: desktop inline, mobile Dialog only, 7. Sonner for general errors (+9 more)
+Nodes (17): 10. Future quality stack (not this change), 1. Custom icon rail, not shadcn Sidebar, 2. React Router Declarative Mode, 3. Zod as the source of types, 4. Mock fetch + Zustand, 5. Hooks: `useDebounce` + remesas filter, 6. Keypad: desktop inline, mobile Dialog only, 7. App-wide toast for general errors (+9 more)
 
 ### Community 281 - "Routing"
 Cohesion: 0.12
@@ -1047,7 +1047,7 @@ Cohesion: 0.12
 Nodes (16): CI Integration, Code Coverage, Configuration, Coverage with Sharding, Ignoring Code, Istanbul, Istanbul, Key Points (+8 more)
 
 ### Community 296 - "Test Environments"
-Cohesion: 0.12
+Cohesion: 0.13
 Nodes (15): Available Environments, Browser Mode (Separate from Environments), Configuration, CSS and Assets, Custom Environment, Environment with VM, Fixing External Dependencies, happy-dom Environment (+7 more)
 
 ### Community 297 - "Type Testing"
@@ -1172,7 +1172,7 @@ Nodes (6): Capabilities, Impact, Modified Capabilities, New Capabilities, What C
 
 ### Community 332 - "remesas-store.ts"
 Cohesion: 0.17
-Nodes (16): digitCount(), formatDisplay(), NUMBER_KEYS, RemesaKeypad(), RemesaKeypadProps, RemesasPage(), toast, submitRemesaCharge() (+8 more)
+Nodes (16): digitCount(), formatDisplay(), NUMBER_KEYS, RemesaKeypad(), RemesaKeypadProps, RemesasPage(), createToastManager, toast (+8 more)
 
 ### Community 333 - "alert-dialog"
 Cohesion: 0.17
@@ -1198,9 +1198,9 @@ Nodes (10): Arrow → Arrow, Base UI only props worth knowing (tooltip), Content
 Cohesion: 0.20
 Nodes (10): Base UI only props worth knowing (dialog), Content → Popup, CSS variables (dialog), Data attributes (dialog), dialog, Overlay → Backdrop, Portal → Portal, Root → Root (+2 more)
 
-### Community 339 - "useFetcher (Preferred for Mutations)"
-Cohesion: 0.40
-Nodes (5): Basic Usage, Fetcher Properties, Optimistic UI Pattern (Recommended), Typing useFetcher, useFetcher (Preferred for Mutations)
+### Community 339 - "Requirement: Module and component gap tests"
+Cohesion: 0.05
+Nodes (40): Purpose, Requirement: Isolated remesa state between tests, Requirement: Module and component gap tests, Requirement: Playwright E2E is a separate suite, Requirement: README contract tests, Requirement: Screen section tests, Requirement: Vitest runner with Jest-compatible API, Requirements (+32 more)
 
 ### Community 340 - "Target wrapper shapes (golden-derived specifics)"
 Cohesion: 0.20
@@ -1238,9 +1238,9 @@ Nodes (4): App(), PlaceholderPage(), PlaceholderPageProps, Toaster()
 Cohesion: 0.29
 Nodes (6): Animation idiom, Class-string rewrites (layer 2), CSS variables, Data-attribute selectors, Disabled-state hooks, Element changes kill pseudo-class variants
 
-### Community 349 - "display-misc.md"
-Cohesion: 0.29
-Nodes (6): AccessibleIcon (radix `AccessibleIcon.Root`: `label` required), AspectRatio (radix `AspectRatio.Root`: `asChild`, `ratio` default `1`), Label (radix `Label.Root`: `asChild`, `htmlFor`), No Base UI counterpart, Radix UI → Base UI props mapping: progress, scroll-area, separator, avatar, toast, form, VisuallyHidden (radix `VisuallyHidden.Root`: `asChild`)
+### Community 349 - "No Base UI counterpart"
+Cohesion: 0.40
+Nodes (5): AccessibleIcon (radix `AccessibleIcon.Root`: `label` required), AspectRatio (radix `AspectRatio.Root`: `asChild`, `ratio` default `1`), Label (radix `Label.Root`: `asChild`, `htmlFor`), No Base UI counterpart, VisuallyHidden (radix `VisuallyHidden.Root`: `asChild`)
 
 ### Community 350 - "avatar"
 Cohesion: 0.29
@@ -1250,6 +1250,10 @@ Nodes (7): avatar, Avatar.Fallback → Avatar.Fallback, Avatar.Image → Avatar.
 Cohesion: 0.29
 Nodes (6): Hard rules, Modes, Preflight (always), Radix UI -> Base UI migration, Strategy: golden pair first, transformation engine second, Verify and report
 
+### Community 352 - "Requirement: Functional keypad charge flow"
+Cohesion: 0.09
+Nodes (22): Purpose, remesas Specification, Requirement: Functional keypad charge flow, Requirement: History search, pagination, and print, Requirement: Mock fetch API, Requirement: Remesa model validated and typed with Zod, Requirements, Scenario: Charge an uncharged remesa (+14 more)
+
 ### Community 353 - "Consumer-side prop changes (call sites, not wrappers)"
 Cohesion: 0.33
 Nodes (5): Callback signature rule, Consumer-side prop changes (call sites, not wrappers), Per component, Sweep procedure, Universal
@@ -1258,38 +1262,38 @@ Nodes (5): Callback signature rule, Consumer-side prop changes (call sites, not 
 Cohesion: 0.33
 Nodes (6): Base UI only props worth knowing, CSS variables, Data attributes, progress, Progress.Indicator → Progress.Indicator, Progress.Root → Progress.Root
 
-### Community 355 - "Separator.Root → Separator"
-Cohesion: 0.40
-Nodes (5): Base UI only props worth knowing, CSS variables, Data attributes, separator, Separator.Root → Separator
+### Community 355 - "display-misc.md"
+Cohesion: 0.29
+Nodes (6): Base UI only props worth knowing, CSS variables, Data attributes, Radix UI → Base UI props mapping: progress, scroll-area, separator, avatar, toast, form, separator, Separator.Root → Separator
 
 ### Community 356 - "(new) Fieldset.Root and Fieldset.Legend"
 Cohesion: 0.50
 Nodes (4): Base UI only props worth knowing (form-wide), CSS variables, Data attributes, (new) Fieldset.Root and Fieldset.Legend
 
-### Community 370 - "Container-Based Testing"
-Cohesion: 0.13
-Nodes (15): Anti-Patterns, "browserType.launch: Executable doesn't exist", CI Container Jobs, Container-Based Testing, Custom Dockerfile, Decision Guide, Dev Container Setup, Docker Compose Stack (+7 more)
+### Community 359 - "GitLab CI/CD Configuration"
+Cohesion: 0.11
+Nodes (18): Anti-Patterns, Basic Pipeline Configuration, Browser launch fails: "Failed to launch browser", Decision Guide, Environment Variables and Secrets, GitLab CI/CD Configuration, Key Commands, Merged report is empty after sharded run (+10 more)
 
-### Community 373 - "Test Modifiers"
-Cohesion: 0.29
-Nodes (7): Concurrent Tests, Failing Tests, Focus Tests, Sequential Tests, Skip Tests, Test Modifiers, Todo Tests
+### Community 369 - "Requirements"
+Cohesion: 0.12
+Nodes (16): app-shell Specification, Purpose, Requirement: Chrome omitted from the mockup, Requirement: Custom icon rail navigation, Requirement: Declarative routing, Requirement: Desktop three-column shell, Requirement: Mobile tabs and stacked layout, Requirements (+8 more)
 
 ## Knowledge Gaps
-- **2823 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+2818 more)
+- **2883 isolated node(s):** `$schema`, `style`, `rsc`, `tsx`, `config` (+2878 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **129 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **128 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Global Setup & Teardown` connect `Global Setup & Teardown` to `fixtures-hooks.md`?**
+- **Why does `Global Setup & Teardown` connect `Global Setup & Teardown` to `playwright-best-practices/SKILL.md`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
-- **Why does `Authentication Testing` connect `Patterns` to `fixtures-hooks.md`?**
+- **Why does `Projects & Dependencies` connect `Projects & Dependencies` to `playwright-best-practices/SKILL.md`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
-- **Why does `Browser Console & JavaScript Error Handling` connect `Browser Console & JavaScript Error Handling` to `fixtures-hooks.md`?**
+- **Why does `Authentication Testing` connect `Patterns` to `playwright-best-practices/SKILL.md`?**
   _High betweenness centrality (0.009) - this node is a cross-community bridge._
 - **What connects `$schema`, `style`, `rsc` to the rest of the system?**
-  _2823 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2883 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `devDependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.046511627906976744 - nodes in this community are weakly interconnected._
 - **Should `compilerOptions` be split into smaller, more focused modules?**

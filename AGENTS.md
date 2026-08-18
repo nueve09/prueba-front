@@ -1,3 +1,28 @@
+## pnpm supply-chain hardening
+
+Source of truth: [`pnpm-workspace.yaml`](pnpm-workspace.yaml). Do not copy these values into `.npmrc` or `package.json`; pnpm 11 reads them from that file.
+
+```yaml
+minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+  - '@testing-library/user-event'
+  - shadcn
+  - zustand
+trustPolicy: no-downgrade
+trustPolicyIgnoreAfter: 43200
+blockExoticSubdeps: true
+```
+
+| Key | Value | What it does |
+| --- | --- | --- |
+| `minimumReleaseAge` | `10080` | Wait 7 days (minutes) after a version is published before pnpm will install it. Blocks malware that gets published and yanked within hours. |
+| `minimumReleaseAgeExclude` | `user-event`, `shadcn`, `zustand` | Those three specifiers have no version older than 7 days, so they skip the age gate. Remove a name once a mature in-range version exists. |
+| `trustPolicy` | `no-downgrade` | Abort install if a package's provenance/signature trust is weaker than earlier publishes (typical stolen-token pattern). |
+| `trustPolicyIgnoreAfter` | `43200` | Skip the trust check for versions published more than 30 days ago. Needed so old packages like `semver@6.3.1` (via `eslint-plugin-react-hooks`) can install. |
+| `blockExoticSubdeps` | `true` | Transitive deps must come from the registry; git/tarball URLs are allowed only on direct dependencies. |
+
+Docs: [pnpm supply-chain security](https://pnpm.io/supply-chain-security), [pnpm-workspace.yaml settings](https://pnpm.io/settings). These keys satisfy `react-doctor/require-pnpm-hardening`. After changing them, run `pnpm install` so the lockfile is re-checked.
+
 ## graphify
 
 This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.

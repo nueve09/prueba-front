@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 import { RemesaHistoryPanel } from '@/components/remesas/history-panel'
 import { RemesaKeypad } from '@/components/remesas/keypad'
-import { toast } from '@/components/ui/toast'
+import { toast } from '@/components/ui/toast-manager'
 import { formatUnknownError } from '@/lib/errors'
 import { useRemesasStore } from '@/stores/remesas-store'
 

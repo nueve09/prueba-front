@@ -35,8 +35,8 @@
     "semantic_hash": ""
   },
   "src/components/ui/button.tsx": {
-    "mtime": 1786939954.5966349,
-    "ast_hash": "523ea8b37741e7b52c0bd2625d91e04c",
+    "mtime": 1787031854.050824,
+    "ast_hash": "0b9ea40cdb9eea7c12eb82c916fbd1cb",
     "semantic_hash": ""
   },
   "src/lib/schemas.ts": {
@@ -185,8 +185,8 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1786996826.2258272,
-    "ast_hash": "6a47d64fcc136324ca395065a707ef76",
+    "mtime": 1787031554.208203,
+    "ast_hash": "4ddafe69f8dcf79c30b1ee6da2ce9ecc",
     "semantic_hash": ""
   },
   "README.md": {
@@ -1515,8 +1515,8 @@
     "semantic_hash": ""
   },
   "src/components/remesas/history-panel.tsx": {
-    "mtime": 1787026682.5159018,
-    "ast_hash": "fbe2fd71bb7172d2134490abf13f5d05",
+    "mtime": 1787027746.5887527,
+    "ast_hash": "b69139988e259e9cf9acd84533166009",
     "semantic_hash": ""
   },
   "src/components/remesas/keypad-dialog.tsx": {
@@ -1530,8 +1530,8 @@
     "semantic_hash": ""
   },
   "src/components/remesas/remesas-page.tsx": {
-    "mtime": 1787026682.484701,
-    "ast_hash": "43ba7242c3cf9c11031446d0236f2bd7",
+    "mtime": 1787031862.0290005,
+    "ast_hash": "7926fbb3310e7da0db4c6f7cf13a562e",
     "semantic_hash": ""
   },
   "src/components/ui/dialog.tsx": {
@@ -1545,8 +1545,8 @@
     "semantic_hash": ""
   },
   "src/components/ui/pagination.tsx": {
-    "mtime": 1787026491.8582125,
-    "ast_hash": "6fa4d9326f6f8383a910e1dd4c724ba3",
+    "mtime": 1787031682.8564935,
+    "ast_hash": "d12d9ebaf9e569a8cb1e2b4bce4bf7e4",
     "semantic_hash": ""
   },
   "src/components/ui/separator.tsx": {
@@ -1555,8 +1555,8 @@
     "semantic_hash": ""
   },
   "src/components/ui/tabs.tsx": {
-    "mtime": 1786996798.1809409,
-    "ast_hash": "4c88511c9d7b0b7b416ef9ff10cd14b2",
+    "mtime": 1787031854.899147,
+    "ast_hash": "eda9341fc5bf7b6cb485492195e0621a",
     "semantic_hash": ""
   },
   "src/config/nav.ts": {
@@ -1575,13 +1575,13 @@
     "semantic_hash": ""
   },
   "src/hooks/use-remesas-filter.ts": {
-    "mtime": 1787027482.944296,
-    "ast_hash": "308f0b2f600ab99ad5900fd4484bbe3b",
+    "mtime": 1787027741.8590934,
+    "ast_hash": "6f80b68b05fe8c9d7dc6a480b9ddf160",
     "semantic_hash": ""
   },
   "src/lib/charge-remesa.ts": {
-    "mtime": 1787026682.4908247,
-    "ast_hash": "a4732a47fca6279fbb121b30905d8126",
+    "mtime": 1787031860.0080023,
+    "ast_hash": "6d9ffd433be450dd84ac91c8d8159b91",
     "semantic_hash": ""
   },
   "src/lib/dates.ts": {
@@ -1765,13 +1765,13 @@
     "semantic_hash": ""
   },
   "openspec/changes/add-remesas-ventanilla/design.md": {
-    "mtime": 1786996826.226535,
-    "ast_hash": "591511dd55cd032d05b973313517b9c2",
+    "mtime": 1787027925.6664996,
+    "ast_hash": "070ec8ce496102449baa4d85c8f772d0",
     "semantic_hash": ""
   },
   "openspec/changes/add-remesas-ventanilla/proposal.md": {
-    "mtime": 1786995443.09574,
-    "ast_hash": "61bc7df1c8b5ff7661417160b4aad578",
+    "mtime": 1787027910.4985943,
+    "ast_hash": "759e2818de93d7f13bca4f7de362b184",
     "semantic_hash": ""
   },
   "openspec/changes/add-remesas-ventanilla/specs/app-shell/spec.md": {
@@ -1780,18 +1780,18 @@
     "semantic_hash": ""
   },
   "openspec/changes/add-remesas-ventanilla/specs/remesas/spec.md": {
-    "mtime": 1786996826.2272208,
-    "ast_hash": "b000a09ddd4ff804f463131748bb3eba",
+    "mtime": 1787027881.0571764,
+    "ast_hash": "9712a757b99d7dfbef886eb1249acaf7",
     "semantic_hash": ""
   },
   "openspec/changes/add-remesas-ventanilla/tasks.md": {
-    "mtime": 1787026682.490772,
-    "ast_hash": "df9d3dae96b2d6ba4e786b8cddcdd7a5",
+    "mtime": 1787027924.828911,
+    "ast_hash": "89b2cab3ee8f4806e11b017b547b4e47",
     "semantic_hash": ""
   },
   "src/components/ui/toast.tsx": {
-    "mtime": 1787026682.4848704,
-    "ast_hash": "3236d10b16df9dfaa63733d8f177defc",
+    "mtime": 1787031859.0613058,
+    "ast_hash": "653f73c3882c3bf8168fe6b834b8166d",
     "semantic_hash": ""
   },
   ".agents/skills/migrate-radix-to-base/SKILL.md": {
@@ -1860,8 +1860,8 @@
     "semantic_hash": ""
   },
   "src/api/remesas.test.ts": {
-    "mtime": 1787027544.19257,
-    "ast_hash": "73f29a57c33e0077b80dfd7f765d689a",
+    "mtime": 1787027736.1154685,
+    "ast_hash": "fd4547184ee54e53d00c4fade2486951",
     "semantic_hash": ""
   },
   "src/components/layout/app-shell.test.tsx": {
@@ -1880,8 +1880,8 @@
     "semantic_hash": ""
   },
   "src/components/remesas/keypad.test.tsx": {
-    "mtime": 1787027638.538424,
-    "ast_hash": "b9fe3d43d4329fcc692dd18175ef0be7",
+    "mtime": 1787031862.141612,
+    "ast_hash": "b5aa601a538dcbe99a37c4687ff7b65a",
     "semantic_hash": ""
   },
   "src/components/remesas/remesas-page.test.tsx": {
@@ -1905,8 +1905,8 @@
     "semantic_hash": ""
   },
   "src/lib/charge-remesa.test.ts": {
-    "mtime": 1787027549.2538545,
-    "ast_hash": "5a454a62787e19dd0835dadb8ef554d9",
+    "mtime": 1787031862.432962,
+    "ast_hash": "bcadf25658cebd83bf811afbde6f55db",
     "semantic_hash": ""
   },
   "src/lib/dates.test.ts": {
@@ -1950,18 +1950,48 @@
     "semantic_hash": ""
   },
   "openspec/changes/add-phase-6-unit-tests/proposal.md": {
-    "mtime": 1787026818.877911,
-    "ast_hash": "8d4352205211cd713374cf76525aa180",
+    "mtime": 1787027888.198482,
+    "ast_hash": "6be11c62d42f42b08af03e8214ee6b27",
     "semantic_hash": ""
   },
   "openspec/changes/add-phase-6-unit-tests/specs/unit-testing/spec.md": {
-    "mtime": 1787026883.493538,
-    "ast_hash": "5079e0542447431534760d412e2b4f81",
+    "mtime": 1787027921.1465163,
+    "ast_hash": "e22085949115b48b4668579b787c082e",
     "semantic_hash": ""
   },
   "openspec/changes/add-phase-6-unit-tests/tasks.md": {
-    "mtime": 1787027664.5653353,
-    "ast_hash": "d3b5de14eccd9fddd29648e80e64846e",
+    "mtime": 1787027721.4109309,
+    "ast_hash": "2c5a61d2654d2d7026c68d44e1aa3bc6",
+    "semantic_hash": ""
+  },
+  ".github/workflows/react-doctor.yml": {
+    "mtime": 1787030859.3613088,
+    "ast_hash": "c5fc1c65ca5f31909e8e70a1feab6559",
+    "semantic_hash": ""
+  },
+  "openspec/specs/app-shell/spec.md": {
+    "mtime": 1787027854.587113,
+    "ast_hash": "0345a3922d47d6314e8b40ecd583883d",
+    "semantic_hash": ""
+  },
+  "openspec/specs/remesas/spec.md": {
+    "mtime": 1787027840.5514119,
+    "ast_hash": "c64e1f966043757e74386e5758f2e68c",
+    "semantic_hash": ""
+  },
+  "openspec/specs/unit-testing/spec.md": {
+    "mtime": 1787027918.4938672,
+    "ast_hash": "6eec8fe8e63a4983869ac8f0fc4cd045",
+    "semantic_hash": ""
+  },
+  "pnpm-workspace.yaml": {
+    "mtime": 1787031282.1079988,
+    "ast_hash": "f56749632091b1cefcce1c167e7e3f2d",
+    "semantic_hash": ""
+  },
+  "src/components/ui/toast-manager.ts": {
+    "mtime": 1787031856.078023,
+    "ast_hash": "34db4badbf7d31751690aee7b78f87e8",
     "semantic_hash": ""
   }
 }

@@ -20,7 +20,7 @@ const isCalendarDate = (value: string) => {
   )
 }
 
-export const remesaStatusSchema = z.enum(['NO_COBRADO', 'COBRADO'], {
+const remesaStatusSchema = z.enum(['NO_COBRADO', 'COBRADO'], {
   error: 'Estatus de remesa inválido',
 })
 

@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
-import { toast } from '@/components/ui/toast'
+import { toast } from '@/components/ui/toast-manager'
 import { remesaSeedList } from '@/data/remesas'
 import { submitRemesaCharge } from '@/lib/charge-remesa'
 import { remesaErrorMessage } from '@/lib/errors'

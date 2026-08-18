@@ -1,4 +1,4 @@
-import { toast } from '@/components/ui/toast'
+import { toast } from '@/components/ui/toast-manager'
 
 import { formatUnknownError } from '@/lib/errors'
 import { remesaIdSchema } from '@/lib/schemas'
