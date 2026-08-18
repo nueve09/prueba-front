@@ -12,6 +12,14 @@ const MOCK_DELAY_MS = 280
 
 let remesas: Remesa[] = remesaSeedList.map((remesa) => ({ ...remesa }))
 
+export const resetRemesasApi = () => {
+  remesas = remesaSeedList.map((remesa) => ({ ...remesa }))
+}
+
+export const replaceRemesasApi = (next: unknown) => {
+  remesas = next as Remesa[]
+}
+
 const wait = (ms: number) =>
   new Promise<void>((resolve) => {
     window.setTimeout(resolve, ms)

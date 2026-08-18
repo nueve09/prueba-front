@@ -27,6 +27,10 @@ type RemesaHistoryPanelProps = {
 const pageItems = (pageCount: number) =>
   Array.from({ length: pageCount }, (_, index) => index + 1)
 
+const printPage = () => {
+  window.print()
+}
+
 export const RemesaHistoryPanel = ({
   remesas,
   isLoading,
@@ -35,10 +39,6 @@ export const RemesaHistoryPanel = ({
   const [page, setPage] = useState(1)
   const debouncedQuery = useDebounce(query, 300)
   const filtered = useRemesasFilter(remesas, debouncedQuery, page)
-
-  const handlePrint = () => {
-    window.print()
-  }
 
   return (
     <aside className="flex h-full min-h-0 flex-col bg-background px-5 py-6 text-foreground">
@@ -70,7 +70,7 @@ export const RemesaHistoryPanel = ({
             type="button"
             variant="outline"
             aria-label="Imprimir"
-            onClick={handlePrint}
+            onClick={printPage}
           >
             <PrinterIcon />
           </Button>

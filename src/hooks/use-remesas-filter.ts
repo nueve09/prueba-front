@@ -18,8 +18,8 @@ const matchesQuery = (remesa: Remesa, query: string) => {
   }
 
   const amount = normalizeSearchValue(remesa.amount)
-  const company = remesa.company.toLowerCase()
-  const id = remesa.id.toLowerCase()
+  const company = normalizeSearchValue(remesa.company)
+  const id = normalizeSearchValue(remesa.id)
 
   return id.includes(query) || company.includes(query) || amount.includes(query)
 }
@@ -39,8 +39,10 @@ export const useRemesasFilter = (
 
   return useMemo(() => {
     const charged = remesas
-      .filter((remesa) => remesa.status === 'COBRADO')
-      .filter((remesa) => matchesQuery(remesa, normalizedQuery))
+      .filter(
+        (remesa) =>
+          remesa.status === 'COBRADO' && matchesQuery(remesa, normalizedQuery),
+      )
       .toSorted((left, right) =>
         right.charged_at.localeCompare(left.charged_at),
       )
