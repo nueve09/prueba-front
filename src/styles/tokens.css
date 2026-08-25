@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #2914bf;
+  --color-primary-dark: #2c13b9;
+  --color-primary-soft: #d7d8fa;
+  --color-accent: #48d8e8;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f4f3f6;
+  --color-sidebar: #303030;
+  --color-text: #303030;
+  --color-text-muted: #6d6d6d;
+  --color-border: #dedde2;
+  --color-focus: #71e2ef;
+  --font-family-sans: Arial, Helvetica, sans-serif;
+  --radius-sm: 0.3rem;
+  --radius-md: 0.5rem;
+  --shadow-floating: 0 0.5rem 1.5rem rgb(27 20 104 / 12%);
+}

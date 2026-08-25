@@ -1,0 +1,46 @@
+.app-shell {
+  background: var(--color-surface);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.app-shell__sidebar {
+  background: var(--color-sidebar);
+}
+
+.app-shell__content {
+  min-width: 0;
+}
+
+.main-screen {
+  min-height: 100%;
+  position: relative;
+}
+
+.main-screen .alert {
+  margin: 0;
+  max-width: 24rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  z-index: 1;
+}
+
+.main-screen__workspace {
+  display: grid;
+  grid-template-columns: minmax(18rem, 24.5rem) minmax(0, 1fr);
+  min-height: 100vh;
+  overflow: hidden;
+  transition: grid-template-columns 320ms ease;
+}
+
+.main-screen__workspace--keypad-hidden {
+  grid-template-columns: 0 minmax(0, 1fr);
+}
+
+.main-screen__right-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
