@@ -1,7 +1,3 @@
-# Prueba Técnica - (Front-end) - N09
-
-Esta evaluación se ha creado para analizar las habilidades de los candidatos que aspiran a la posición de desarrollador **Front-end**.
-
 🚀 Demo
 
 👉 **[Ver aplicación desplegada](https://remesasnu09.vercel.app/remittance?sortBy=charged_at&sortDirection=desc&perPage=5&page=1)**
@@ -15,6 +11,12 @@ Notistack
 Supabase Client
 
 Remesas v1
+
+---
+
+# Prueba Técnica - (Front-end) - N09
+
+Esta evaluación se ha creado para analizar las habilidades de los candidatos que aspiran a la posición de desarrollador **Front-end**.
 
 ## INTRODUCCIÓN
 
