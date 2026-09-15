@@ -1,0 +1,10 @@
+@use "../../styles/variables" as *;
+
+.separator-container {
+  width: 100%;
+
+  &__line {
+    height: 1px;
+    background-color: $primary-blue;
+  }
+}

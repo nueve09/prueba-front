@@ -1,0 +1,14 @@
+@use "../../styles/variables" as *;
+
+.navbar-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: right;
+  align-items: center;
+  height: $navbar-height;
+  padding: $content-padding $right-content-padding $content-padding
+    $content-padding;
+  gap: 24px;
+}

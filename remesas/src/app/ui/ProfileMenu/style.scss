@@ -1,0 +1,32 @@
+@use "../../styles/variables" as *;
+
+.profile-menu-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 24px;
+
+  &__photo {
+    box-shadow: $icons-shadow;
+    border-radius: 50%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-family: $font;
+    font-size: 0.75rem;
+
+    &__name {
+      font-weight: normal;
+    }
+
+    &__role {
+      font-weight: bold;
+    }
+  }
+  &__menu {
+    cursor: pointer;
+  }
+}

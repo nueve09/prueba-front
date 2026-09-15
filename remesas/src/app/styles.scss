@@ -1,0 +1,8 @@
+@use "./styles/variables" as *;
+
+.page-title {
+  font-family: $font;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #2b2bb5;
+}

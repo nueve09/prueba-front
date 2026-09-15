@@ -1,0 +1,116 @@
+@use "../../styles/variables" as *;
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: $separator-padding;
+  padding: $content-padding $right-content-padding 0 $content-padding;
+  width: calc($content-width - $content-padding - $right-content-padding);
+  height: 100vh;
+  background-color: $sidebar-content-background;
+
+  &__title {
+    color: #ffffff;
+    font-family: $font;
+  }
+
+  &__subtitle {
+    color: $primary-blue;
+    font-family: $font;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 32px;
+    padding: 50px 30px 30px 0;
+
+    &__input {
+      width: 70%;
+      height: 60px;
+      font-size: larger;
+      font-weight: bolder;
+      text-align: center;
+      border: none;
+      border-radius: 10px;
+    }
+
+    &__pad {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      width: 70%;
+      margin-top: 24px;
+
+      &__numbers {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex: 1;
+
+        &__grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 16px;
+        }
+      }
+
+      &__actions {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 72px;
+      }
+
+      &__key {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 64px;
+        font-family: $font;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2a2a2a;
+        background-color: #f5f2ec;
+        border: none;
+        border-radius: 999px;
+        cursor: pointer;
+        transition:
+          background-color 0.2s ease-in-out,
+          transform 0.1s ease-in-out;
+
+        &:hover {
+          background-color: #ffffff;
+        }
+
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+
+      &__zero {
+        width: 100%;
+      }
+
+      &__backspace {
+        flex: 1;
+      }
+
+      &__submit {
+        flex: 1;
+        color: #ffffff;
+        background-color: #2b2bb5;
+
+        &:hover {
+          background-color: #2b2bb5;
+          filter: brightness(1.15);
+        }
+      }
+    }
+  }
+}
