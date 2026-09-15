@@ -1,0 +1,43 @@
+@use "../../styles/variables" as *;
+
+.custom-table {
+  width: 100%;
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: $font;
+  }
+
+  &__header {
+    padding: 16px 24px;
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #6b6b6b;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      color: #2a2a2a;
+    }
+  }
+
+  &__row {
+    transition: background-color 0.15s ease-in-out;
+
+    &:hover {
+      background-color: #fafafa;
+    }
+  }
+
+  &__cell {
+    padding: 20px 24px;
+    font-size: 1rem;
+    color: #4a4a4a;
+    border-bottom: 1px solid #ededed;
+  }
+}

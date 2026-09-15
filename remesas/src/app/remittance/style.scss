@@ -1,0 +1,124 @@
+@use "../styles/variables" as *;
+
+.remittance-container {
+  &__top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: $content-padding;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__day {
+      font-family: $font;
+      font-size: 1.75rem;
+      font-weight: bold;
+      color: #2b2bb5;
+    }
+
+    &__date {
+      font-family: $font;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #2a2a2a;
+    }
+  }
+
+  &__filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 0;
+    padding-right: $content-padding;
+
+    &__search {
+      flex: 1;
+      height: 44px;
+      padding: 0 16px;
+      font-family: $font;
+      font-size: 1rem;
+      color: #2a2a2a;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      outline: none;
+
+      &:focus {
+        border-color: $primary-blue;
+      }
+    }
+
+    &__status {
+      height: 44px;
+      padding: 0 12px;
+      font-family: $font;
+      font-size: 1rem;
+      color: #2a2a2a;
+      border: 1px solid #e6e6e6;
+      border-radius: 10px;
+      background-color: #ffffff;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 0;
+    padding-right: $content-padding;
+    font-family: $font;
+    color: #4a4a4a;
+
+    &__per-page {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      select {
+        height: 36px;
+        padding: 0 8px;
+        font-family: $font;
+        border: 1px solid #e6e6e6;
+        border-radius: 8px;
+        background-color: #ffffff;
+        cursor: pointer;
+      }
+    }
+
+    &__controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      button {
+        height: 36px;
+        padding: 0 16px;
+        font-family: $font;
+        color: #ffffff;
+        background-color: #2b2bb5;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: filter 0.15s ease-in-out;
+
+        &:hover:not(:disabled) {
+          filter: brightness(1.15);
+        }
+
+        &:disabled {
+          background-color: #c7c7c7;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
