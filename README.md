@@ -2,6 +2,20 @@
 
 Esta evaluación se ha creado para analizar las habilidades de los candidatos que aspiran a la posición de desarrollador **Front-end**.
 
+🚀 Demo
+
+👉 **[Ver aplicación desplegada](https://remesasnu09.vercel.app/remittance?sortBy=charged_at&sortDirection=desc&perPage=5&page=1)**
+
+Note: The .env file is intentionally committed for testing purposes. It only contains Supabase public/anon keys, which are designed to be exposed in client-side applications. No private or secret credentials are included.
+
+🛠️ Tech Stack
+Next.js
+Material UI Icons
+Notistack
+Supabase Client
+
+Remesas v1
+
 ## INTRODUCCIÓN
 
 En este repositorio, encontrarás un conjunto de criterios para un caso práctico diseñado para evaluar las habilidades técnicas de los candidatos en relación con las funciones y responsabilidades clave en el ámbito del Desarrollo de Tecnología. El objetivo es medir la capacidad del candidato para abordar los desafíos y tareas esenciales dentro de este campo específico.
@@ -10,35 +24,34 @@ En este repositorio, encontrarás un conjunto de criterios para un caso práctic
 
 Principalmente los siguientes aspectos:
 
-+ Creatividad para resolver los requerimientos,
-+ Calidad del código entregado (estructura y buenas prácticas),
-+ Sencilles y calidad,
-+ Menor uso de dependencias o frameworks,
-+ Ajuste de los componentes en diferentes dimensiones.
+- Creatividad para resolver los requerimientos,
+- Calidad del código entregado (estructura y buenas prácticas),
+- Sencilles y calidad,
+- Menor uso de dependencias o frameworks,
+- Ajuste de los componentes en diferentes dimensiones.
 
 ## IMPORTANTE
+
 1. Asegúrate de tener `git` y tus herramientas de desarrollo instaladas.
 
 2. Se solicita crear la aplicación utilizando tecnología vanilla (html + css + js) o usando la libería/framework de tu elección:
 
 3. Se requiere de una **cuenta de GitHub** para realizar este ejercicio.
 
-4.  **Antes de comenzar a programar:**
+4. **Antes de comenzar a programar:**
 
-* Realizar un `Fork` de este repositorio (https://github.com/nueve09/prueba-front).
-* Clonar el fork a su máquina local `git clone git@github.com:USERNAME/FORKED-PROJECT.git`
-* Crear un `branch` en su cuenta de GitHub utilizando su nombre completo.
+- Realizar un `Fork` de este repositorio (https://github.com/nueve09/prueba-front).
+- Clonar el fork a su máquina local `git clone git@github.com:USERNAME/FORKED-PROJECT.git`
+- Crear un `branch` en su cuenta de GitHub utilizando su nombre completo.
 
 5.  **Al finalizar**:
 
-* 1) Realizar un `Commit` de su proyecto, **enviar un `Pull Request` al branch con su NOMBRE**, y notificar a la siguiente dirección de correo electrónico jrios@nueve09.mx, CC: jaraujo@nueve09.mx.
-
+- 1. Realizar un `Commit` de su proyecto, **enviar un `Pull Request` al branch con su NOMBRE**, y notificar a la siguiente dirección de correo electrónico jrios@nueve09.mx, CC: jaraujo@nueve09.mx.
 
 ## EJERCICIO PRÁCTICO
 
 **Objetivo:** Desarrollar una aplicación web, con base a maqueta.png.
 
- 
 #### Requerimientos generales
 
 1. La aplicación debe cumplir con los siguientes **requisitos funcionales:**
@@ -49,20 +62,19 @@ Principalmente los siguientes aspectos:
 
 - Crear sección de busqueda por id, company o monto
 
-- Paginación de las remesas 
+- Paginación de las remesas
 
 - Mostrar los primeros 10 remesas por **charged_at** y que hayan sido cobradas; del resultado de la búsqueda, incluyendo id (`'remesa.id'`), la compañia (`'remesa.company'`) y monto (`'remesa.amount'`) de cada registro.
 
 - La interfaz tipo calculadora debe ser funcional.
-    1) validar datos de entrada
-    2) validar formato de id, max(8)
-    3) validar que el id de la remesa,no haya sido cobrada en la lista. Si, no agrega la fecha en que se cobro, actualiza el estatus de "NO_COBRADO" a "COBRADO" y muestrala en el listado de la interfaz.
+  1. validar datos de entrada
+  2. validar formato de id, max(8)
+  3. validar que el id de la remesa,no haya sido cobrada en la lista. Si, no agrega la fecha en que se cobro, actualiza el estatus de "NO_COBRADO" a "COBRADO" y muestrala en el listado de la interfaz.
 
-- Qué la aplicación sea capaz de ajustarse de manera correcta a diversas dimensiones. 
-
+- Qué la aplicación sea capaz de ajustarse de manera correcta a diversas dimensiones.
 
 - Incluir un componente para mostrar mensajes de Errores Generales en toda la aplicación.
 
-2.  **CSS:** Utilizar CSS Grid y/o CSS Flexbox, para la maquetación del proyecto 
+2.  **CSS:** Utilizar CSS Grid y/o CSS Flexbox, para la maquetación del proyecto
 
 3.  **Iconos:** Utilizar una librería para el manejo de iconos donde lo considere necesario (_se recomienda el uso de [Font Awesome](http://fontawesome.io/) o [Glyphicons](http://glyphicons.com/)._)

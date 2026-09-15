@@ -4,7 +4,7 @@ App de gestión de remesas construida como prueba técnica front-end.
 
 ## 🚀 Demo
 
-👉 **[Ver aplicación desplegada](https://remesas909.vercel.app/remittance?sortBy=charged_at&sortDirection=asc&perPage=5&page=1)**
+👉 **[Ver aplicación desplegada](https://remesasnu09.vercel.app/remittance?sortBy=charged_at&sortDirection=desc&perPage=5&page=1)**
 
 ## 🛠️ Tecnologías
 
