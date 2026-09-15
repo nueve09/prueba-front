@@ -1,0 +1,79 @@
+CREATE TABLE payments (
+  id BIGINT PRIMARY KEY,
+  company TEXT NOT NULL,
+  amount NUMERIC(12, 2) NOT NULL,
+  status TEXT NOT NULL CHECK (status IN ('NO_COBRADO', 'COBRADO')),
+  created_at TIMESTAMPTZ NOT NULL,
+  charged_at TIMESTAMPTZ
+);
+
+INSERT INTO payments (id, company, amount, status, created_at, charged_at)
+VALUES
+  (58310427, 'Empresa Alpha', 12000.50, 'COBRADO', '2026-08-01T10:15:00Z', '2026-08-03T14:20:00Z'),
+  (74192805, 'Empresa Beta', 8500.00, 'NO_COBRADO', '2026-08-02T09:30:00Z', NULL),
+  (20641793, 'Comercial Gamma', 15320.75, 'COBRADO', '2026-08-03T11:45:00Z', '2026-08-05T16:10:00Z'),
+  (89523016, 'Servicios Delta', 4200.25, 'NO_COBRADO', '2026-08-04T08:20:00Z', NULL),
+  (31478562, 'Industrias Omega', 27500.00, 'COBRADO', '2026-08-05T13:00:00Z', '2026-08-07T10:30:00Z'),
+  (62741038, 'Grupo Norte', 9999.99, 'COBRADO', '2026-08-06T15:25:00Z', '2026-08-09T12:45:00Z'),
+  (15293674, 'Tecnologia MX', 6300.50, 'NO_COBRADO', '2026-08-07T10:10:00Z', NULL),
+  (48021795, 'Logistica Central', 18750.80, 'COBRADO', '2026-08-08T12:40:00Z', '2026-08-10T09:15:00Z'),
+  (93650281, 'Constructora Sol', 32000.00, 'NO_COBRADO', '2026-08-09T09:00:00Z', NULL),
+  (27184963, 'Distribuidora Uno', 7450.35, 'COBRADO', '2026-08-10T14:30:00Z', '2026-08-12T11:20:00Z'),
+  (70431589, 'Empresa Horizonte', 11800.00, 'COBRADO', '2026-08-11T08:45:00Z', '2026-08-13T15:00:00Z'),
+  (38962417, 'Servicios Nova', 5600.75, 'NO_COBRADO', '2026-08-12T16:20:00Z', NULL),
+  (81503742, 'Grupo Industrial MX', 22450.40, 'COBRADO', '2026-08-13T10:35:00Z', '2026-08-15T13:25:00Z'),
+  (46379120, 'Comercial Pacifico', 9100.00, 'NO_COBRADO', '2026-08-14T11:10:00Z', NULL),
+  (92715468, 'Manufacturas Atlas', 34780.90, 'COBRADO', '2026-08-15T09:50:00Z', '2026-08-17T14:40:00Z'),
+  (53068291, 'Transportes Express', 6800.25, 'COBRADO', '2026-08-16T13:15:00Z', '2026-08-18T10:05:00Z'),
+  (18472539, 'Servicios Integral', 12500.00, 'NO_COBRADO', '2026-08-17T08:30:00Z', NULL),
+  (67290315, 'Grupo Empresarial', 19340.60, 'COBRADO', '2026-08-18T15:45:00Z', '2026-08-20T12:10:00Z'),
+  (34851672, 'Comercial Centro', 4750.80, 'NO_COBRADO', '2026-08-19T10:00:00Z', NULL),
+  (75924183, 'Insumos del Bajio', 28900.50, 'COBRADO', '2026-08-20T12:25:00Z', '2026-08-22T16:30:00Z'),
+  (41683057, 'Empresa Victoria', 8200.00, 'COBRADO', '2026-08-21T09:40:00Z', '2026-08-23T11:15:00Z'),
+  (80361724, 'Soluciones Digitales', 15675.35, 'NO_COBRADO', '2026-08-22T14:10:00Z', NULL),
+  (29574861, 'Industrial Potosina', 42000.00, 'COBRADO', '2026-08-23T08:15:00Z', '2026-08-25T13:50:00Z'),
+  (64120593, 'Grupo Comercial', 7350.90, 'NO_COBRADO', '2026-08-24T11:35:00Z', NULL),
+  (51793628, 'Servicios Ejecutivos', 10999.99, 'COBRADO', '2026-08-25T16:00:00Z', '2026-08-27T10:20:00Z'),
+  (86247105, 'Alimentos del Centro', 18350.25, 'COBRADO', '2026-08-26T10:50:00Z', '2026-08-28T15:45:00Z'),
+  (23059847, 'Tecnologia Avanzada', 6700.00, 'NO_COBRADO', '2026-08-27T13:30:00Z', NULL),
+  (97431652, 'Proyectos MX', 24780.75, 'COBRADO', '2026-08-28T09:20:00Z', '2026-08-30T12:35:00Z'),
+  (38572014, 'Grupo Constructivo', 31500.40, 'NO_COBRADO', '2026-08-29T15:15:00Z', NULL),
+  (61843927, 'Comercial del Norte', 8950.00, 'COBRADO', '2026-08-30T08:40:00Z', '2026-09-01T14:10:00Z'),
+  (45280731, 'Empresa Continental', 13250.65, 'COBRADO', '2026-08-31T11:00:00Z', '2026-09-02T09:30:00Z'),
+  (79016345, 'Logistica MX', 5400.20, 'NO_COBRADO', '2026-09-01T14:25:00Z', NULL),
+  (32691480, 'Manufacturas del Centro', 27650.00, 'COBRADO', '2026-09-02T09:10:00Z', '2026-09-04T16:00:00Z'),
+  (85162739, 'Servicios Profesionales', 9600.50, 'NO_COBRADO', '2026-09-03T12:45:00Z', NULL),
+  (56938024, 'Grupo Metropolitano', 21100.75, 'COBRADO', '2026-09-04T10:30:00Z', '2026-09-06T13:20:00Z'),
+  (21764598, 'Distribuciones Alfa', 7800.00, 'COBRADO', '2026-09-05T15:50:00Z', '2026-09-07T11:40:00Z'),
+  (90317426, 'Empresa Regional', 14560.30, 'NO_COBRADO', '2026-09-06T08:55:00Z', NULL),
+  (73482910, 'Tecnologia Integral', 19875.99, 'COBRADO', '2026-09-07T13:05:00Z', '2026-09-09T15:10:00Z'),
+  (16850372, 'Comercial Reforma', 6250.00, 'NO_COBRADO', '2026-09-08T10:15:00Z', NULL),
+  (48276135, 'Industrias del Valle', 35400.85, 'COBRADO', '2026-09-09T14:40:00Z', '2026-09-11T10:50:00Z'),
+  (69521483, 'Grupo Logistico', 11200.45, 'COBRADO', '2026-09-10T09:25:00Z', '2026-09-12T14:30:00Z'),
+  (34089517, 'Servicios Corporativos', 8700.00, 'NO_COBRADO', '2026-09-10T16:10:00Z', NULL),
+  (82746301, 'Empresa Industrial', 25990.60, 'COBRADO', '2026-09-11T11:35:00Z', '2026-09-13T12:15:00Z'),
+  (51372869, 'Soluciones Empresariales', 7300.25, 'NO_COBRADO', '2026-09-11T15:20:00Z', NULL),
+  (24698153, 'Manufacturas Modernas', 30250.00, 'COBRADO', '2026-09-12T08:35:00Z', '2026-09-13T16:45:00Z'),
+  (93841726, 'Comercial Industrial', 11500.90, 'NO_COBRADO', '2026-09-12T13:50:00Z', NULL),
+  (67135208, 'Grupo Tecnico', 16840.75, 'COBRADO', '2026-09-13T09:15:00Z', '2026-09-14T11:30:00Z'),
+  (40582916, 'Servicios Nacionales', 5900.00, 'NO_COBRADO', '2026-09-13T14:05:00Z', NULL),
+  (78624051, 'Empresa del Pacifico', 22650.35, 'COBRADO', '2026-09-14T08:20:00Z', '2026-09-14T15:40:00Z'),
+  (35971482, 'Grupo Mexicano', 9750.80, 'NO_COBRADO', '2026-09-14T10:45:00Z', NULL);
+
+  -- Enable Row Level Security
+ALTER TABLE payments ENABLE ROW LEVEL SECURITY;
+
+-- Allow unauthenticated users to read payments
+CREATE POLICY "Allow public read access"
+ON payments
+FOR SELECT
+TO anon
+USING (true);
+
+-- Allow unauthenticated users to update payments
+CREATE POLICY "Allow public update access"
+ON payments
+FOR UPDATE
+TO anon
+USING (true)
+WITH CHECK (true);
