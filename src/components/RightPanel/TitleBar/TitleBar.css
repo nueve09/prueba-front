@@ -1,0 +1,44 @@
+.titlebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 25px;
+}
+
+.titlebar-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.titlebar-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #144bb8;
+}
+
+.titlebar-date {
+  font-size: 13px;
+  color: #616062;
+  font-weight: bold;
+}
+
+.titlebar-keyboard {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #3557f6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.titlebar-keyboard .icon {
+  width: 18px;
+  height: 18px;
+}

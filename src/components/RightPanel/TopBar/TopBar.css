@@ -1,0 +1,97 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.topbar-bell {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s;
+}
+
+.topbar-bell:hover {
+  background: #f4f0f6;
+}
+
+.topbar-bell .icon {
+  width: 18px;
+  height: 18px;
+  color: #08060d;
+}
+
+.topbar-badge {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ef4444;
+  border: 2px solid #fff;
+}
+
+.topbar-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  margin: -6px -12px;
+  border-radius: 9999px;
+  cursor: pointer;
+  background: transparent;
+  transition: background-color 0.2s;
+}
+
+.topbar-profile:hover {
+  background: #f4f0f6;
+}
+
+.topbar-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.topbar-profile-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.topbar-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #08060d;
+}
+
+.topbar-title {
+  font-size: 12px;
+  color: #9a97a1;
+}
+
+.topbar-chevron {
+  width: 12px;
+  height: 12px;
+  color: #9a97a1;
+}
