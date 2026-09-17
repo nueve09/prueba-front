@@ -1,0 +1,46 @@
+/* README: maquetación con CSS Flexbox */
+.layout {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.panel {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.panel-left {
+  align-items: stretch;
+  background: #17171c;
+  color: #fff;
+  padding: 24px 32px;
+  border-right: 1px solid var(--border);
+}
+
+.panel-right {
+  align-items: flex-start;
+  background: #fff;
+  padding: 24px 32px;
+}
+
+/* README: ajuste de los componentes a diversas dimensiones */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .panel {
+    flex: 1 1 50%;
+  }
+
+  .panel-left {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}

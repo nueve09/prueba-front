@@ -1,0 +1,47 @@
+.list {
+  width: 100%;
+  background: #fff;
+}
+
+.list-rows {
+  width: 100%;
+}
+
+.list-empty {
+  padding: 24px 4px;
+  color: #9a97a1;
+  font-size: 14px;
+  text-align: center;
+}
+
+.list-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 4px;
+  border-top: 1px solid #e5e4e7;
+}
+
+.list-id {
+  flex: 0 0 auto;
+  color: #08060d;
+  font-size: 14px;
+  min-width: 150px;
+  padding-left: 25px;
+}
+
+.list-company {
+  flex: 1 1 auto;
+  color: #08060d;
+  font-size: 14px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.list-amount {
+  flex: 0 0 auto;
+  color: #08060d;
+  font-size: 14px;
+  padding-right: 25px;
+  padding-left: 25px;
+}

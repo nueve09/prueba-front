@@ -1,0 +1,81 @@
+.sidebar {
+  width: 84px;
+  flex-shrink: 0;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.sidebar-logo {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #141417;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sidebar-logo-mark {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #3557f6, #1ecbd1);
+}
+
+.sidebar-logo-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #3557f6;
+  border: 2px solid #000000;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #8a8891;
+}
+
+.sidebar-nav-item .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar-nav-item.is-active {
+  color: #1ecbd1;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    gap: 20px;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    gap: 20px;
+  }
+}

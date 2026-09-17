@@ -1,0 +1,28 @@
+.left-panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-panel-header {
+  padding-bottom: 12px;
+  border-bottom: 2px solid #1ecbd1;
+}
+
+.left-panel-title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #f4f3f6;
+}
+
+.left-panel-title strong {
+  font-weight: 700;
+}
+
+.left-panel-heading {
+  margin: 20px 0 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1ecbd1;
+}
